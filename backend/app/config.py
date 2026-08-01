@@ -7,8 +7,8 @@ class Settings(BaseSettings):
     # LLM
     llm_api_key: str = ""
     llm_base_url: str = "https://dashscope.aliyuncs.com/compatible-mode/v1"
-    llm_model_pro: str = "deepseek-v4-pro"
-    llm_model_lite: str = "qwen3.6-flash"
+    llm_model_pro: str = "qwen3.7-max"
+    llm_model_lite: str = "qwen3.7-flash"
 
     # Database
     database_url: str = "sqlite:///./data/app.db"

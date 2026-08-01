@@ -3,6 +3,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
+from app.api import auth, assessments, cases, sessions
 from app.config import settings
 from app.database import Base, engine
 
@@ -16,6 +17,12 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Register API routers
+app.include_router(auth.router)
+app.include_router(cases.router)
+app.include_router(sessions.router)
+app.include_router(assessments.router)
 
 
 @app.on_event("startup")

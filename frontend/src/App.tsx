@@ -1,15 +1,19 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import LoginPage from "./pages/LoginPage";
+import CaseListPage from "./pages/CaseListPage";
+import InterviewPage from "./pages/InterviewPage";
+import AssessmentPage from "./pages/AssessmentPage";
 
 function App() {
   return (
     <BrowserRouter>
-      <div style={{ padding: "2rem", fontFamily: "sans-serif" }}>
-        <h1>🩺 临床问诊模拟系统</h1>
-        <p>Clinical Interview Simulation — AI-Powered Virtual Standardized Patient</p>
-        <Routes>
-          <Route path="/" element={<p>系统已就绪。开始开发问诊模块。</p>} />
-        </Routes>
-      </div>
+      <Routes>
+        <Route path="/" element={<Navigate to="/cases" replace />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/cases" element={<CaseListPage />} />
+        <Route path="/interview/:id" element={<InterviewPage />} />
+        <Route path="/assessment/:id" element={<AssessmentPage />} />
+      </Routes>
     </BrowserRouter>
   );
 }

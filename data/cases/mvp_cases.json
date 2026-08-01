@@ -1,0 +1,155 @@
+[
+  {
+    "title": "病例1：右侧牙痛（慢性牙髓炎+智齿阻生）",
+    "department": "口腔科",
+    "difficulty": "intermediate",
+    "status": "published",
+    "data": {
+      "basic_info": {
+        "gender": "男",
+        "age_range": "21–40",
+        "visit_type": "首诊"
+      },
+      "chief_complaint": "右边牙疼好几天了，疼得晚上睡不着觉",
+      "present_illness": {
+        "onset": "几天前开始右侧牙疼",
+        "duration": "数天",
+        "character": "持续性疼痛，夜间加重，影响睡眠",
+        "aggravating_factors": ["冷热刺激加重"],
+        "relieving_factors": [],
+        "radiation": ""
+      },
+      "past_history": {
+        "dental": "无特殊口腔治疗史",
+        "medical": "否认高血压、糖尿病等全身病史",
+        "allergy": "否认药物过敏史",
+        "medication": "未服用药物"
+      },
+      "oral_examination": {
+        "inspection": "右上第一磨牙远中邻面可见深龋洞，探诊可探入髓腔",
+        "percussion": "右上第一磨牙叩诊有不适感",
+        "palpation": "根尖区无明显异常",
+        "mobility": "无明显松动",
+        "thermal": "冷诊敏感，热诊激发疼痛",
+        "periodontal": "牙龈无明显异常。右上第三磨牙垂直阻生，叩诊（-）"
+      },
+      "auxiliary_examination": {
+        "xray": "",
+        "cbct": ""
+      },
+      "diagnosis": {
+        "primary": "右上第一磨牙慢性牙髓炎",
+        "secondary": ["右上第三磨牙阻生齿"],
+        "icd_code": "K04.002"
+      },
+      "treatment_plan": {
+        "emergency": "右上第一磨牙开髓引流",
+        "definitive": "右上第一磨牙根管治疗，右上第三磨牙择期拔除",
+        "restoration": "根管治疗后全冠修复",
+        "notes": "术后口服抗生素3天，一周后复诊"
+      }
+    }
+  },
+  {
+    "title": "病例2：上前牙疼痛松动（慢性根尖周炎）",
+    "department": "口腔科",
+    "difficulty": "intermediate",
+    "status": "published",
+    "data": {
+      "basic_info": {
+        "gender": "男",
+        "age_range": "21–40",
+        "visit_type": "首诊"
+      },
+      "chief_complaint": "上面的门牙疼了好几天，感觉牙齿在动",
+      "present_illness": {
+        "onset": "几天前开始上前牙疼痛",
+        "duration": "数天",
+        "character": "持续性钝痛，自觉牙齿有松动感",
+        "aggravating_factors": ["咀嚼时加重"],
+        "relieving_factors": [],
+        "radiation": ""
+      },
+      "past_history": {
+        "dental": "上前牙曾做过全冠修复",
+        "medical": "否认高血压、糖尿病等全身病史",
+        "allergy": "否认药物过敏史",
+        "medication": "未服用药物"
+      },
+      "oral_examination": {
+        "inspection": "右上1、2和左上1、2可见全冠修复体，I度松动",
+        "percussion": "叩诊有不适感",
+        "palpation": "根尖区无明显肿胀",
+        "mobility": "I度松动",
+        "thermal": "",
+        "periodontal": "牙龈无明显异常。CBCT示根管内原根充物透射，根尖可见低密度影"
+      },
+      "auxiliary_examination": {
+        "xray": "",
+        "cbct": "根尖低密度阴影，原根管充填不充分"
+      },
+      "diagnosis": {
+        "primary": "上前牙慢性根尖周炎",
+        "secondary": [],
+        "icd_code": "K04.500"
+      },
+      "treatment_plan": {
+        "emergency": "",
+        "definitive": "方案一：拆除冠修复体后根管再治疗；方案二：拔除后种植修复",
+        "restoration": "再治疗后重新全冠修复",
+        "notes": "需告知患者两种方案的利弊，由患者选择"
+      }
+    }
+  },
+  {
+    "title": "病例3：刷牙出血+牙龈红肿（慢性牙龈炎+牙本质龋）",
+    "department": "口腔科",
+    "difficulty": "beginner",
+    "status": "published",
+    "data": {
+      "basic_info": {
+        "gender": "女",
+        "age_range": "21–40",
+        "visit_type": "首诊"
+      },
+      "chief_complaint": "刷牙时出血好几个月了，不疼，就是老出血",
+      "present_illness": {
+        "onset": "数月前开始刷牙时牙龈出血",
+        "duration": "数月",
+        "character": "刷牙时牙龈出血，无自发性疼痛",
+        "aggravating_factors": ["刷牙时出血明显"],
+        "relieving_factors": [],
+        "radiation": ""
+      },
+      "past_history": {
+        "dental": "无特殊口腔治疗史",
+        "medical": "否认高血压、糖尿病等全身病史",
+        "allergy": "否认药物过敏史",
+        "medication": "未服用药物"
+      },
+      "oral_examination": {
+        "inspection": "全口牙龈红肿，探诊易出血，未探及牙周袋。右上7、左下6、左下6、左下7可见龋坏达牙本质层",
+        "percussion": "各牙叩诊（-）",
+        "palpation": "无异常",
+        "mobility": "各牙无松动",
+        "thermal": "冷诊（-）",
+        "periodontal": "牙石（+），软垢（+），CBCT示龋坏未及髓腔"
+      },
+      "auxiliary_examination": {
+        "xray": "",
+        "cbct": "龋坏未及髓腔"
+      },
+      "diagnosis": {
+        "primary": "慢性牙龈炎",
+        "secondary": ["多牙位牙本质龋"],
+        "icd_code": "K05.100"
+      },
+      "treatment_plan": {
+        "emergency": "",
+        "definitive": "全口龈上洁治（洗牙）+ 龋洞充填治疗",
+        "restoration": "树脂充填",
+        "notes": "口腔卫生宣教，指导正确刷牙方法，建议使用牙线"
+      }
+    }
+  }
+]

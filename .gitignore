@@ -31,5 +31,8 @@ medical_records.csv
 .DS_Store
 Thumbs.db
 
+# Local files (scratch, notes, experiments)
+local/
+
 # Logs
 *.log
