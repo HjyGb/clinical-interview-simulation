@@ -1,5 +1,5 @@
 import { apiGet, apiPost, apiPostSSE } from './client';
-import type { SessionInfo, ChatMessage } from '../types';
+import type { SessionInfo, ChatMessage, SessionListItem } from '../types';
 
 export function createSession(caseId: number): Promise<SessionInfo> {
   return apiPost<SessionInfo>('/sessions', { case_id: caseId });
@@ -24,4 +24,8 @@ export function sendMessage(
 
 export function endSession(sessionId: number): Promise<{ status: string }> {
   return apiPost(`/sessions/${sessionId}/end`);
+}
+
+export function listSessions(): Promise<{ sessions: SessionListItem[]; total: number }> {
+  return apiGet('/sessions');
 }

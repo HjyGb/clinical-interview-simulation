@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
 import { useLocation, useParams, useNavigate } from 'react-router-dom';
+import { RefreshCw } from 'lucide-react';
 import { getAssessment } from '../api/assessments';
 import ScoreCard from '../components/ScoreCard';
+import LoadingDots from '../components/ui/LoadingDots';
 import type { AssessmentResult } from '../types';
 
 export default function AssessmentPage() {
@@ -25,57 +27,65 @@ export default function AssessmentPage() {
 
   if (loading) {
     return (
-      <div style={{ textAlign: 'center', padding: 80, color: '#999' }}>
-        <p style={{ fontSize: 18 }}>正在生成评估报告...</p>
-        <p style={{ fontSize: 14 }}>AI 正在分析你的问诊表现</p>
+      <div className="flex flex-col items-center justify-center h-screen gap-3 text-[var(--color-text-secondary)]">
+        <span className="text-4xl">📊</span>
+        <p className="text-lg font-medium">正在生成评估报告...</p>
+        <LoadingDots text="AI 正在分析你的问诊表现" />
       </div>
     );
   }
 
   if (!result) {
     return (
-      <div style={{ textAlign: 'center', padding: 80 }}>
-        <p>无法加载评估结果</p>
-        <button onClick={() => navigate('/cases')} style={{
-          marginTop: 16,
-          padding: '10px 24px',
-          background: '#1677ff',
-          color: '#fff',
-          border: 'none',
-          borderRadius: 8,
-          cursor: 'pointer',
-        }}>
+      <div className="flex flex-col items-center justify-center h-screen gap-4">
+        <p className="text-lg text-[var(--color-text-secondary)]">无法加载评估结果</p>
+        <button
+          onClick={() => navigate('/cases')}
+          className="px-6 py-2.5 rounded-lg font-medium text-sm transition-all
+                     bg-[var(--color-primary)] text-white hover:opacity-90 active:scale-[0.98]"
+        >
           返回病例列表
         </button>
       </div>
     );
   }
 
+  const compositeScore = ((result.diagnostic.total_score + result.communication.total_score) / 2).toFixed(1);
+  const compositePct = parseFloat(compositeScore);
+  const scoreColor =
+    compositePct >= 85
+      ? 'text-green-600'
+      : compositePct >= 70
+        ? 'text-amber-600'
+        : 'text-red-600';
+
   return (
-    <div style={{ maxWidth: 720, margin: '0 auto', padding: 24 }}>
-      <div style={{ textAlign: 'center', marginBottom: 32 }}>
-        <h1 style={{ fontSize: 28, margin: 0 }}>📊 评估报告</h1>
-        <p style={{ color: '#999', marginTop: 4 }}>
-          综合评分：{((result.diagnostic.total_score + result.communication.total_score) / 2).toFixed(1)}/100
-        </p>
+    <div className="max-w-3xl mx-auto py-8 px-4">
+      {/* Header */}
+      <div className="text-center mb-8">
+        <h1 className="text-2xl font-bold text-[var(--color-text)] mb-2">
+          📊 评估报告
+        </h1>
+        <div className="flex items-center justify-center gap-2">
+          <span className={`text-5xl font-bold ${scoreColor}`}>{compositeScore}</span>
+          <span className="text-lg text-[var(--color-text-secondary)]">/ 100</span>
+        </div>
+        <p className="text-sm text-[var(--color-text-secondary)] mt-1">综合评分</p>
       </div>
 
+      {/* Score Cards */}
       <ScoreCard title="🏥 诊断能力评估 (Station 4 标准)" block={result.diagnostic} />
       <ScoreCard title="💬 沟通能力评估 (MAAS-Global 标准)" block={result.communication} />
 
-      <div style={{ textAlign: 'center', marginTop: 24 }}>
+      {/* Actions */}
+      <div className="flex justify-center gap-3 mt-6">
         <button
           onClick={() => navigate('/cases')}
-          style={{
-            padding: '12px 32px',
-            background: '#1677ff',
-            color: '#fff',
-            border: 'none',
-            borderRadius: 8,
-            fontSize: 16,
-            cursor: 'pointer',
-          }}
+          className="flex items-center gap-1.5 px-6 py-2.5 rounded-lg font-medium text-sm
+                     transition-all active:scale-[0.98]
+                     bg-[var(--color-primary)] text-white hover:opacity-90"
         >
+          <RefreshCw className="w-4 h-4" />
           练习其他病例
         </button>
       </div>

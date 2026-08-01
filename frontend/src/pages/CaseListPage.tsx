@@ -1,27 +1,18 @@
 import { useEffect, useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { listCases } from '../api/cases';
 import { createSession } from '../api/sessions';
 import { useInterviewStore } from '../stores/interviewStore';
+import DifficultyBadge from '../components/ui/DifficultyBadge';
+import LoadingDots from '../components/ui/LoadingDots';
 import type { CaseSummary } from '../types';
-
-const DIFFICULTY_COLORS: Record<string, string> = {
-  beginner: '#52c41a',
-  intermediate: '#faad14',
-  advanced: '#ff4d4f',
-};
-
-const DIFFICULTY_LABELS: Record<string, string> = {
-  beginner: '初级',
-  intermediate: '中级',
-  advanced: '高级',
-};
 
 export default function CaseListPage() {
   const [cases, setCases] = useState<CaseSummary[]>([]);
   const [loading, setLoading] = useState(true);
   const [creating, setCreating] = useState<number | null>(null);
   const navigate = useNavigate();
+  const location = useLocation();
   const setSession = useInterviewStore((s) => s.setSession);
 
   useEffect(() => {
@@ -56,56 +47,61 @@ export default function CaseListPage() {
 
   if (loading) {
     return (
-      <div style={{ padding: 60, textAlign: 'center', color: '#999' }}>
-        加载病例列表中...
+      <div className="flex items-center justify-center min-h-screen">
+        <LoadingDots text="加载病例列表中..." />
       </div>
     );
   }
 
   return (
-    <div style={{ maxWidth: 800, margin: '0 auto', padding: 40 }}>
-      <h1 style={{ fontSize: 24, marginBottom: 8 }}>📋 选择练习病例</h1>
-      <p style={{ color: '#999', marginBottom: 24 }}>
+    <div className="max-w-3xl mx-auto py-10 px-4">
+      {/* Navigation tabs */}
+      <div className="flex items-center gap-6 mb-6 border-b border-[var(--color-border)] pb-0">
+        <button
+          onClick={() => navigate('/cases')}
+          className={`text-sm font-medium pb-2.5 border-b-2 transition-colors
+            ${location.pathname === '/cases'
+              ? 'text-[var(--color-primary)] border-[var(--color-primary)]'
+              : 'text-[var(--color-text-secondary)] border-transparent hover:text-[var(--color-text)]'}`}
+        >
+          📋 病例列表
+        </button>
+        <button
+          onClick={() => navigate('/history')}
+          className="text-sm font-medium pb-2.5 border-b-2 border-transparent
+                     text-[var(--color-text-secondary)] hover:text-[var(--color-text)] transition-colors"
+        >
+          📜 历史记录
+        </button>
+      </div>
+
+      <h1 className="text-2xl font-bold text-[var(--color-text)] mb-2">
+        选择练习病例
+      </h1>
+      <p className="text-sm text-[var(--color-text-secondary)] mb-6">
         选择一个病例开始 AI 问诊练习。每个病例有不同的难度和疾病类型。
       </p>
 
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 16 }}>
+      <div className="flex flex-col gap-4">
         {cases.map((c) => (
           <div
             key={c.id}
-            style={{
-              padding: 20,
-              border: '1px solid #e8e8e8',
-              borderRadius: 12,
-              cursor: creating === c.id ? 'wait' : 'pointer',
-              transition: 'box-shadow 0.2s',
-              opacity: creating === c.id ? 0.6 : 1,
-            }}
-            onMouseEnter={(e) => {
-              e.currentTarget.style.boxShadow = '0 4px 16px rgba(0,0,0,0.08)';
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.boxShadow = 'none';
-            }}
             onClick={() => creating === null && handleSelect(c)}
+            className={`p-5 border border-[var(--color-border)] rounded-xl
+                        transition-colors cursor-pointer
+                        hover:border-blue-200 hover:bg-blue-50/50 hover:shadow-sm
+                        ${creating === c.id ? 'opacity-60 pointer-events-none' : ''}`}
           >
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'start' }}>
-              <h3 style={{ margin: 0, fontSize: 17 }}>{c.title}</h3>
-              <span style={{
-                padding: '2px 10px',
-                borderRadius: 12,
-                fontSize: 12,
-                fontWeight: 500,
-                background: DIFFICULTY_COLORS[c.difficulty] + '20',
-                color: DIFFICULTY_COLORS[c.difficulty],
-              }}>
-                {DIFFICULTY_LABELS[c.difficulty] || c.difficulty}
-              </span>
+            <div className="flex justify-between items-start">
+              <h3 className="text-lg font-semibold text-[var(--color-text)] m-0">
+                {c.title}
+              </h3>
+              <DifficultyBadge difficulty={c.difficulty} />
             </div>
-            <p style={{ color: '#666', fontSize: 14, marginTop: 8 }}>
+            <p className="text-sm text-[var(--color-text-secondary)] mt-2 line-clamp-2">
               {c.chief_complaint || '（病例详情请点击查看）'}
             </p>
-            <div style={{ display: 'flex', gap: 12, marginTop: 8, fontSize: 13, color: '#999' }}>
+            <div className="flex gap-3 mt-3 text-xs text-[var(--color-text-secondary)]">
               <span>🏥 {c.department}</span>
               <span>{c.visit_type}</span>
             </div>

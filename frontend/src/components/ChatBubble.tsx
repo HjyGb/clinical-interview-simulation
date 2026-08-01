@@ -6,37 +6,32 @@ interface Props {
 
 export default function ChatBubble({ role, content, isStreaming }: Props) {
   const isStudent = role === 'student';
+
   return (
-    <div style={{
-      display: 'flex',
-      justifyContent: isStudent ? 'flex-end' : 'flex-start',
-      marginBottom: 16,
-    }}>
-      <div style={{
-        maxWidth: '70%',
-        padding: '12px 18px',
-        borderRadius: 16,
-        borderTopRightRadius: isStudent ? 4 : 16,
-        borderTopLeftRadius: isStudent ? 16 : 4,
-        background: isStudent ? '#1677ff' : '#f0f0f0',
-        color: isStudent ? '#fff' : '#333',
-        fontSize: 15,
-        lineHeight: 1.6,
-        whiteSpace: 'pre-wrap',
-        wordBreak: 'break-word',
-      }}>
-        {role === 'patient' && (
-          <div style={{ fontSize: 12, color: '#999', marginBottom: 4 }}>🤒 患者</div>
-        )}
-        {content}
-        {isStreaming && <span style={{
-          display: 'inline-block',
-          width: 8,
-          height: 16,
-          background: '#999',
-          marginLeft: 2,
-          animation: 'blink 0.8s infinite',
-        }} />}
+    <div
+      className={`flex mb-4 ${isStudent ? 'justify-end' : 'justify-start'}`}
+    >
+      <div className={`max-w-[80%] ${isStudent ? 'items-end' : 'items-start'}`}>
+        <div className="flex items-end gap-2">
+          {!isStudent && (
+            <span className="text-lg shrink-0 select-none">🤒</span>
+          )}
+          <div
+            className={`px-4 py-2.5 text-sm leading-relaxed whitespace-pre-wrap break-words
+                        ${isStudent
+                          ? 'bg-[var(--color-primary)] text-white rounded-2xl rounded-br-md'
+                          : 'bg-gray-100 text-[var(--color-text)] rounded-2xl rounded-bl-md'
+                        }`}
+          >
+            {content}
+            {isStreaming && (
+              <span className="inline-block w-2 h-4 bg-current ml-0.5 animate-blink align-middle" />
+            )}
+          </div>
+          {isStudent && (
+            <span className="text-lg shrink-0 select-none">🩺</span>
+          )}
+        </div>
       </div>
     </div>
   );

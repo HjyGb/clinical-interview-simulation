@@ -1,10 +1,13 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import { ArrowLeft } from 'lucide-react';
 import { getMessages, sendMessage, endSession } from '../api/sessions';
 import { submitAssessment } from '../api/assessments';
 import ChatBubble from '../components/ChatBubble';
 import ChatInput from '../components/ChatInput';
 import DiagnosisForm from '../components/DiagnosisForm';
+import Alert from '../components/ui/Alert';
+import LoadingDots from '../components/ui/LoadingDots';
 import { useInterviewStore } from '../stores/interviewStore';
 import type { DiagnosisSubmit } from '../types';
 
@@ -55,7 +58,7 @@ export default function InterviewPage() {
   const handleSend = useCallback(async (content: string) => {
     if (store.isStreaming || store.isEnded) return;
 
-    // Add student message to state
+    setError(null);
     store.addMessage({
       id: Date.now(),
       session_id: sessionId,
@@ -92,7 +95,6 @@ export default function InterviewPage() {
         setError(`发送失败：${(e as Error).message}`);
       }
     }
-    // streaming stays true until next explicit action or error
     store.setStreaming(false);
   }, [sessionId, store]);
 
@@ -121,114 +123,85 @@ export default function InterviewPage() {
   // ── Loading State ──
   if (loading) {
     return (
-      <div style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: '100vh',
-        color: '#999',
-      }}>
-        <p style={{ fontSize: 18 }}>🤒 AI 患者正在准备...</p>
-        <p style={{ fontSize: 14 }}>正在生成开场白，请稍候</p>
+      <div className="flex flex-col items-center justify-center h-screen gap-3 text-[var(--color-text-secondary)]">
+        <span className="text-4xl">🤒</span>
+        <p className="text-lg font-medium">AI 患者正在准备...</p>
+        <LoadingDots text="正在生成开场白，请稍候" />
       </div>
     );
   }
 
-  // ── Error State ──
+  // ── Error State (no messages) ──
   if (error && store.messages.length === 0) {
     return (
-      <div style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        height: '100vh',
-        color: '#ff4d4f',
-      }}>
-        <p style={{ fontSize: 18 }}>❌ 加载失败</p>
-        <p style={{ fontSize: 14, color: '#666' }}>{error}</p>
-        <button onClick={() => navigate('/cases')} style={{
-          marginTop: 16,
-          padding: '10px 24px',
-          background: '#1677ff',
-          color: '#fff',
-          border: 'none',
-          borderRadius: 8,
-          cursor: 'pointer',
-        }}>返回病例列表</button>
+      <div className="flex flex-col items-center justify-center h-screen gap-2">
+        <p className="text-lg text-[var(--color-error)]">❌ 加载失败</p>
+        <p className="text-sm text-[var(--color-text-secondary)]">{error}</p>
+        <button
+          onClick={() => navigate('/cases')}
+          className="mt-4 px-6 py-2.5 rounded-lg font-medium text-sm transition-all
+                     bg-[var(--color-primary)] text-white hover:opacity-90 active:scale-[0.98]"
+        >
+          返回病例列表
+        </button>
       </div>
     );
   }
 
   // ── Main Interview UI ──
   return (
-    <div style={{
-      display: 'flex',
-      flexDirection: 'column',
-      height: '100vh',
-      maxWidth: 720,
-      margin: '0 auto',
-      background: '#fafafa',
-    }}>
+    <div className="flex flex-col h-screen max-w-[720px] mx-auto bg-[var(--color-bg)] overflow-hidden">
       {/* Header */}
-      <div style={{
-        padding: '12px 20px',
-        background: '#fff',
-        borderBottom: '1px solid #e8e8e8',
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-      }}>
-        <h3 style={{ margin: 0 }}>🩺 AI 患者问诊</h3>
-        <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+      <header className="flex justify-between items-center px-5 py-3 bg-white border-b border-[var(--color-border)] shrink-0">
+        <div className="flex items-center gap-3">
+          <button
+            onClick={() => navigate('/cases')}
+            className="flex items-center gap-1 text-sm text-[var(--color-text-secondary)]
+                       hover:text-[var(--color-text)] transition-colors"
+          >
+            <ArrowLeft className="w-4 h-4" />
+            <span>返回</span>
+          </button>
+          <h3 className="text-base font-semibold text-[var(--color-text)] m-0">
+            🩺 AI 患者问诊
+          </h3>
+        </div>
+        <div className="flex gap-2 items-center">
           {roundsLeft !== null && roundsLeft <= 2 && (
-            <span style={{ color: '#ff4d4f', fontSize: 13 }}>
+            <span className="text-xs text-[var(--color-error)] font-medium">
               ⚠️ 剩余 {roundsLeft} 轮
             </span>
           )}
-          <span style={{ fontSize: 13, color: '#999' }}>
+          <span className="text-xs text-[var(--color-text-secondary)]">
             第 {store.currentRound}/{store.maxRounds} 轮
           </span>
           {!store.isEnded && (
-            <button onClick={handleEndSession} style={{
-              padding: '6px 14px',
-              background: '#ff4d4f',
-              color: '#fff',
-              border: 'none',
-              borderRadius: 6,
-              fontSize: 13,
-              cursor: 'pointer',
-            }}>结束问诊</button>
+            <button
+              onClick={handleEndSession}
+              className="px-3.5 py-1.5 rounded-md text-xs font-medium text-white
+                         bg-[var(--color-error)] hover:opacity-90 active:scale-[0.98] transition-all"
+            >
+              结束问诊
+            </button>
           )}
         </div>
-      </div>
+      </header>
 
       {/* Error banner */}
       {error && (
-        <div style={{
-          padding: '8px 16px',
-          background: '#fff2f0',
-          borderBottom: '1px solid #ffccc7',
-          color: '#ff4d4f',
-          fontSize: 13,
-          display: 'flex',
-          justifyContent: 'space-between',
-          alignItems: 'center',
-        }}>
+        <Alert type="error" className="rounded-none border-l-0 border-b border-red-200 flex justify-between items-center">
           <span>{error}</span>
-          <button onClick={() => setError(null)} style={{
-            background: 'none',
-            border: 'none',
-            color: '#ff4d4f',
-            cursor: 'pointer',
-            fontSize: 14,
-          }}>✕</button>
-        </div>
+          <button
+            onClick={() => setError(null)}
+            className="text-sm opacity-70 hover:opacity-100 ml-2"
+          >
+            ✕
+          </button>
+        </Alert>
       )}
 
       {/* Messages area */}
-      <div style={{ flex: 1, overflow: 'auto', padding: '20px' }}>
+      <div className="flex-1 overflow-y-auto px-5 py-4">
         {store.messages.map((msg, i) => (
           <ChatBubble
             key={msg.id === -1 ? `stream-${i}` : msg.id}
@@ -240,14 +213,16 @@ export default function InterviewPage() {
         <div ref={chatEndRef} />
       </div>
 
+      {/* Round warning */}
+      {!store.isEnded && roundsLeft !== null && roundsLeft <= 2 && (
+        <Alert type="warning" className="rounded-none border-l-0 text-center">
+          已达到最大问诊轮次 ({store.maxRounds})，请提交病例诊断记录。
+        </Alert>
+      )}
+
       {/* Diagnosis or input */}
       {showDiagnosis ? (
-        <div style={{
-          borderTop: '1px solid #e8e8e8',
-          background: '#fff',
-          maxHeight: '60vh',
-          overflow: 'auto',
-        }}>
+        <div className="border-t border-[var(--color-border)] bg-white max-h-[60vh] overflow-y-auto">
           <DiagnosisForm onSubmit={handleDiagnosisSubmit} loading={assessing} />
         </div>
       ) : (
@@ -255,9 +230,11 @@ export default function InterviewPage() {
           onSend={handleSend}
           disabled={store.isStreaming || store.isEnded}
           placeholder={
-            store.isStreaming ? '患者正在输入...' :
-            store.isEnded ? '问诊已结束 — 点击上方"结束问诊"提交诊断' :
-            '输入你的问诊问题，按 Enter 发送'
+            store.isStreaming
+              ? '患者正在输入...'
+              : store.isEnded
+                ? '问诊已结束 — 点击上方"结束问诊"提交诊断'
+                : '输入你的问诊问题，按 Enter 发送'
           }
         />
       )}

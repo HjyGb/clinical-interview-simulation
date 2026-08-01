@@ -19,6 +19,16 @@ from app.services import case_service, session_service
 router = APIRouter(prefix="/api/v1/sessions", tags=["sessions"])
 
 
+def _verify_ownership(db: Session, session_id: int, user_id: int) -> dict | None:
+    """Verify session exists and belongs to user. Returns session dict or raises 403/404."""
+    s = session_service.get_session(db, session_id)
+    if not s:
+        raise HTTPException(status_code=404, detail="会话不存在")
+    if s["user_id"] != user_id:
+        raise HTTPException(status_code=403, detail="无权访问此会话")
+    return s
+
+
 @router.post("")
 async def create_session(
     req: SessionCreate,
@@ -40,31 +50,32 @@ def list_sessions(
     db: Session = Depends(get_db),
     current_user: dict = Depends(get_current_user),
 ):
-    """List current user's sessions (stub — returns empty for MVP)."""
-    # MVP: return empty list; full implementation would query by user_id
-    return {"sessions": [], "total": 0}
+    """List current user's sessions with case info and assessment status."""
+    user_id = int(current_user["sub"])
+    sessions = session_service.list_user_sessions(db, user_id)
+    return {"sessions": sessions, "total": len(sessions)}
 
 
 @router.get("/{session_id}", response_model=SessionResponse)
 def get_session(
     session_id: int,
     db: Session = Depends(get_db),
-    _current_user: dict = Depends(get_current_user),
+    current_user: dict = Depends(get_current_user),
 ):
     """Get session details."""
-    s = session_service.get_session(db, session_id)
-    if not s:
-        raise HTTPException(status_code=404, detail="会话不存在")
-    return s
+    user_id = int(current_user["sub"])
+    return _verify_ownership(db, session_id, user_id)
 
 
 @router.get("/{session_id}/messages")
 def get_messages(
     session_id: int,
     db: Session = Depends(get_db),
-    _current_user: dict = Depends(get_current_user),
+    current_user: dict = Depends(get_current_user),
 ):
     """Get all messages in a session."""
+    user_id = int(current_user["sub"])
+    _verify_ownership(db, session_id, user_id)
     msgs = session_service.get_messages(db, session_id)
     return {"messages": [MessageResponse(**m) for m in msgs], "total": len(msgs)}
 
@@ -77,10 +88,8 @@ async def send_message(
     _current_user: dict = Depends(get_current_user),
 ):
     """Send a message to the patient and receive a streaming response via SSE."""
-    # Get case data for the Agent
-    s = session_service.get_session(db, session_id)
-    if not s:
-        raise HTTPException(status_code=404, detail="会话不存在")
+    user_id = int(_current_user["sub"])
+    s = _verify_ownership(db, session_id, user_id)
 
     case = case_service.get_case_full(db, s["case_id"])
     if not case:
@@ -112,9 +121,11 @@ async def send_message(
 def end_session(
     session_id: int,
     db: Session = Depends(get_db),
-    _current_user: dict = Depends(get_current_user),
+    current_user: dict = Depends(get_current_user),
 ):
     """End a session."""
+    user_id = int(current_user["sub"])
+    _verify_ownership(db, session_id, user_id)
     result = session_service.end_session(db, session_id)
     if not result:
         raise HTTPException(status_code=404, detail="会话不存在")

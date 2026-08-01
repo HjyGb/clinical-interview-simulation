@@ -34,4 +34,5 @@ class AssessmentResponse(BaseModel):
     diagnostic: AssessmentBlock
     communication: AssessmentBlock
     comment: str | None = None
+    student_report: dict | None = None
     created_at: datetime

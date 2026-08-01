@@ -9,6 +9,8 @@ from sqlalchemy.orm import Session
 
 from agent.patient_agent import get_opening_statement, process_message
 from agent.persona import DEFAULT_PERSONA
+from app.models.assessment import Assessment as AssessmentModel
+from app.models.case import Case
 from app.models.message import Message
 from app.models.session import Session as SessionModel
 
@@ -206,3 +208,31 @@ def end_session(db: Session, session_id: int) -> dict | None:
     session.ended_at = datetime.now(timezone.utc)
     db.commit()
     return {"status": "ended", "ended_at": session.ended_at.isoformat()}
+
+
+def list_user_sessions(db: Session, user_id: int) -> list[dict]:
+    """List all sessions for a user with case info and assessment status."""
+    rows = (
+        db.query(SessionModel, Case, AssessmentModel)
+        .join(Case, SessionModel.case_id == Case.id)
+        .outerjoin(AssessmentModel, AssessmentModel.session_id == SessionModel.id)
+        .filter(SessionModel.user_id == user_id)
+        .order_by(SessionModel.started_at.desc())
+        .all()
+    )
+    return [
+        {
+            "id": s.id,
+            "case_id": s.case_id,
+            "status": s.status,
+            "max_rounds": s.max_rounds,
+            "started_at": s.started_at.isoformat() if s.started_at else None,
+            "ended_at": s.ended_at.isoformat() if s.ended_at else None,
+            "case_title": case.title,
+            "case_department": case.department,
+            "case_difficulty": case.difficulty,
+            "has_assessment": assessment is not None,
+            "assessment_id": assessment.id if assessment else None,
+        }
+        for s, case, assessment in rows
+    ]

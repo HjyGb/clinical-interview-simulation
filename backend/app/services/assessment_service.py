@@ -81,6 +81,7 @@ async def run_assessment(
         "diagnostic": assessment.diagnostic,
         "communication": assessment.communication,
         "comment": assessment.comment,
+        "student_report": assessment.student_report,
         "created_at": assessment.created_at,
     }
 
@@ -96,5 +97,6 @@ def get_assessment(db: Session, session_id: int) -> dict | None:
         "diagnostic": a.diagnostic,
         "communication": a.communication,
         "comment": a.comment,
+        "student_report": a.student_report,
         "created_at": a.created_at,
     }

@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Send } from 'lucide-react';
 
 interface Props {
   onSend: (content: string) => void;
@@ -24,13 +25,7 @@ export default function ChatInput({ onSend, disabled, placeholder }: Props) {
   };
 
   return (
-    <div style={{
-      display: 'flex',
-      gap: 10,
-      padding: '12px 16px',
-      borderTop: '1px solid #e8e8e8',
-      background: '#fff',
-    }}>
+    <div className="flex gap-2.5 px-4 py-3 border-t border-[var(--color-border)] bg-white">
       <input
         type="text"
         value={text}
@@ -38,29 +33,20 @@ export default function ChatInput({ onSend, disabled, placeholder }: Props) {
         onKeyDown={handleKeyDown}
         disabled={disabled}
         placeholder={placeholder || '输入你的问诊问题...'}
-        style={{
-          flex: 1,
-          padding: '10px 16px',
-          border: '1px solid #d9d9d9',
-          borderRadius: 8,
-          fontSize: 15,
-          outline: 'none',
-        }}
+        className="flex-1 px-4 py-2.5 border border-[var(--color-border)] rounded-lg text-sm
+                   focus:outline-none focus:ring-2 focus:ring-[var(--color-primary)] focus:border-transparent
+                   disabled:bg-gray-50 disabled:text-gray-400 transition-shadow"
       />
       <button
         onClick={handleSend}
         disabled={disabled || !text.trim()}
-        style={{
-          padding: '10px 24px',
-          background: disabled || !text.trim() ? '#d9d9d9' : '#1677ff',
-          color: '#fff',
-          border: 'none',
-          borderRadius: 8,
-          fontSize: 15,
-          cursor: disabled || !text.trim() ? 'not-allowed' : 'pointer',
-        }}
+        className="flex items-center gap-1.5 px-5 py-2.5 rounded-lg font-medium text-sm
+                   transition-all active:scale-[0.98]
+                   bg-[var(--color-primary)] text-white hover:opacity-90
+                   disabled:bg-gray-200 disabled:text-gray-400 disabled:cursor-not-allowed"
       >
-        发送
+        <Send className="w-4 h-4" />
+        <span>发送</span>
       </button>
     </div>
   );

@@ -89,5 +89,20 @@ export interface AssessmentResult {
   diagnostic: AssessmentBlock;
   communication: AssessmentBlock;
   comment: string | null;
+  student_report?: DiagnosisSubmit;
   created_at: string;
+}
+
+export interface SessionListItem {
+  id: number;
+  case_id: number;
+  case_title: string;
+  case_department: string;
+  case_difficulty: string;
+  status: string;
+  max_rounds: number;
+  has_assessment: boolean;
+  assessment_id: number | null;
+  started_at: string;
+  ended_at: string | null;
 }

@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+/* ═══════════════════════════════════
+   设计令牌 — Design Tokens
+   ═══════════════════════════════════ */
+:root {
+  --color-primary:        #1677ff;
+  --color-primary-light:  #e6f4ff;
+  --color-primary-dark:   #0958d9;
+  --color-bg:             #f8fafc;
+  --color-card:           #ffffff;
+  --color-border:         #e2e8f0;
+  --color-text:           #1e293b;
+  --color-text-secondary: #64748b;
+  --color-success:        #16a34a;
+  --color-warning:        #f59e0b;
+  --color-error:          #ef4444;
+}
+
+/* ═══════════════════════════════════
+   全局重置
+   ═══════════════════════════════════ */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+               "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ═══════════════════════════════════
+   滚动条定制 (WebKit)
+   ═══════════════════════════════════ */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* ═══════════════════════════════════
+   自定义动画
+   ═══════════════════════════════════ */
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(100%); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes blink-cursor {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0; }
+}
+
+.animate-slide-in {
+  animation: slide-in-right 0.3s ease-out;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.2s ease-out;
+}
+
+.animate-blink {
+  animation: blink-cursor 0.8s step-end infinite;
+}
