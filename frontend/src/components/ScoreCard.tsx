@@ -31,12 +31,12 @@ function DimensionRow({ dim }: { dim: ScoreDimension }) {
         }} />
       </div>
       <p style={{ fontSize: 13, color: '#666', margin: '4px 0 0' }}>{dim.justification}</p>
-      {dim.missed_items.length > 0 && (
+      {dim.missed_items && dim.missed_items.length > 0 && (
         <p style={{ fontSize: 12, color: '#ff4d4f', margin: '4px 0 0' }}>
           遗漏：{dim.missed_items.join('、')}
         </p>
       )}
-      {dim.suggestions.length > 0 && (
+      {dim.suggestions && dim.suggestions.length > 0 && (
         <p style={{ fontSize: 12, color: '#1677ff', margin: '4px 0 0' }}>
           建议：{dim.suggestions.join('；')}
         </p>

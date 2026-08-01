@@ -19,20 +19,20 @@ from app.services import case_service, session_service
 router = APIRouter(prefix="/api/v1/sessions", tags=["sessions"])
 
 
-@router.post("", response_model=SessionResponse)
-def create_session(
+@router.post("")
+async def create_session(
     req: SessionCreate,
     db: Session = Depends(get_db),
     current_user: dict = Depends(get_current_user),
 ):
-    """Create a new interview session."""
-    # Verify case exists
+    """Create a new interview session with AI opening statement."""
     case = case_service.get_case_full(db, req.case_id)
     if not case:
         raise HTTPException(status_code=404, detail="病例不存在")
 
     user_id = int(current_user["sub"])
-    return session_service.create_session(db, user_id, req.case_id)
+    result = await session_service.create_session(db, user_id, req.case_id, case["data"])
+    return result
 
 
 @router.get("")

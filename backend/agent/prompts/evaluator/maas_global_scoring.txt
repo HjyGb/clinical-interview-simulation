@@ -41,51 +41,51 @@
 ## 输出格式
 
 请严格输出 JSON：
-{
+{{
   "total_score": <0-100>,
   "max_score": 100,
   "dimensions": [
-    {
+    {{
       "name": "问诊开场",
       "score": <0-10>,
       "max_score": 10,
       "justification": "具体评分理由",
       "suggestions": ["改进建议"]
-    },
-    {
+    }},
+    {{
       "name": "提问系统性",
       "score": <0-25>,
       "max_score": 25,
       "justification": "具体评分理由",
       "suggestions": ["改进建议"]
-    },
-    {
+    }},
+    {{
       "name": "倾听与共情",
       "score": <0-20>,
       "max_score": 20,
       "justification": "具体评分理由",
       "suggestions": ["改进建议"]
-    },
-    {
+    }},
+    {{
       "name": "语言表达",
       "score": <0-15>,
       "max_score": 15,
       "justification": "具体评分理由",
       "suggestions": ["改进建议"]
-    },
-    {
+    }},
+    {{
       "name": "信息归纳能力",
       "score": <0-15>,
       "max_score": 15,
       "justification": "具体评分理由",
       "suggestions": ["改进建议"]
-    },
-    {
+    }},
+    {{
       "name": "问诊效率",
       "score": <0-15>,
       "max_score": 15,
       "justification": "具体评分理由",
       "suggestions": ["改进建议"]
-    }
+    }}
   ]
-}
+}}

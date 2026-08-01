@@ -23,6 +23,6 @@
 ## 输出格式
 
 严格输出 JSON：
-{"pass": true/false, "violations": [{"claim": "编造的内容", "fact": "对应的事实或null", "severity": "high/medium/low"}]}
+{{"pass": true/false, "violations": [{{"claim": "编造的内容", "fact": "对应的事实或null", "severity": "high/medium/low"}}]}}
 
 如果没有违规，violations 为空数组 []。

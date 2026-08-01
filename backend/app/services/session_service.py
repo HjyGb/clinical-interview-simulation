@@ -13,8 +13,10 @@ from app.models.message import Message
 from app.models.session import Session as SessionModel
 
 
-def create_session(db: Session, user_id: int, case_id: int) -> dict:
-    """Create a new interview session with opening statement."""
+async def create_session(
+    db: Session, user_id: int, case_id: int, case_data: dict
+) -> dict:
+    """Create a new interview session and generate the AI patient's opening statement."""
     persona = {
         "anxiety_level": DEFAULT_PERSONA.anxiety_level,
         "verbosity": DEFAULT_PERSONA.verbosity,
@@ -33,6 +35,24 @@ def create_session(db: Session, user_id: int, case_id: int) -> dict:
     db.commit()
     db.refresh(session)
 
+    # Generate the patient's opening statement via LLM
+    try:
+        opening = await get_opening_statement(case_data, DEFAULT_PERSONA)
+    except Exception as e:
+        logger.error(f"[Session] opening statement generation failed: {e}")
+        opening = "你好...（患者暂时无法说话，请稍后再试）"
+
+    # Store as the first patient message (round 0)
+    opening_msg = Message(
+        session_id=session.id,
+        role="patient",
+        content=opening,
+        round_num=0,
+        intent="greeting",
+    )
+    db.add(opening_msg)
+    db.commit()
+
     return {
         "id": session.id,
         "user_id": session.user_id,
@@ -42,6 +62,7 @@ def create_session(db: Session, user_id: int, case_id: int) -> dict:
         "current_round": 0,
         "started_at": session.started_at,
         "ended_at": session.ended_at,
+        "opening_message": opening,
     }
 
 

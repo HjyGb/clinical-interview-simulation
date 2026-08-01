@@ -47,44 +47,44 @@
 ## 输出格式
 
 请严格输出 JSON：
-{
+{{
   "total_score": <0-100>,
   "max_score": 100,
   "dimensions": [
-    {
+    {{
       "name": "主诉与现病史采集",
       "score": <0-30>,
       "max_score": 30,
       "justification": "具体扣分/加分理由",
       "missed_items": ["遗漏项1", "遗漏项2"]
-    },
-    {
+    }},
+    {{
       "name": "既往史采集",
       "score": <0-15>,
       "max_score": 15,
       "justification": "具体扣分/加分理由",
       "missed_items": []
-    },
-    {
+    }},
+    {{
       "name": "检查结果利用",
       "score": <0-15>,
       "max_score": 15,
       "justification": "具体扣分/加分理由",
       "missed_items": []
-    },
-    {
+    }},
+    {{
       "name": "诊断准确性",
       "score": <0-25>,
       "max_score": 25,
       "justification": "具体扣分/加分理由",
       "missed_items": []
-    },
-    {
+    }},
+    {{
       "name": "治疗方案合理性",
       "score": <0-15>,
       "max_score": 15,
       "justification": "具体扣分/加分理由",
       "missed_items": []
-    }
+    }}
   ]
-}
+}}

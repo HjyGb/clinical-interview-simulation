@@ -98,6 +98,16 @@ async def evaluate_communication(
         return {"total_score": 0, "max_score": 100, "dimensions": [], "error": str(e)}
 
 
+def _normalize_dimensions(result: dict) -> dict:
+    """Ensure every dimension has both missed_items and suggestions arrays."""
+    for dim in result.get("dimensions", []):
+        if "missed_items" not in dim or dim["missed_items"] is None:
+            dim["missed_items"] = []
+        if "suggestions" not in dim or dim["suggestions"] is None:
+            dim["suggestions"] = []
+    return result
+
+
 async def evaluate(
     student_report: dict,
     case_data: dict,
@@ -113,6 +123,6 @@ async def evaluate(
         evaluate_communication(conversation_history),
     )
     return {
-        "diagnostic": diagnostic_result,
-        "communication": comm_result,
+        "diagnostic": _normalize_dimensions(diagnostic_result),
+        "communication": _normalize_dimensions(comm_result),
     }
