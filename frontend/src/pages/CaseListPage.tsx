@@ -25,11 +25,21 @@ export default function CaseListPage() {
   const setSession = useInterviewStore((s) => s.setSession);
 
   useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (!token) {
+      navigate('/login');
+      return;
+    }
     listCases()
       .then((res) => setCases(res.cases))
-      .catch(console.error)
+      .catch((err) => {
+        console.error(err);
+        if ((err as Error).message.includes('401') || (err as Error).message.includes('登录')) {
+          navigate('/login');
+        }
+      })
       .finally(() => setLoading(false));
-  }, []);
+  }, [navigate]);
 
   const handleSelect = async (c: CaseSummary) => {
     setCreating(c.id);

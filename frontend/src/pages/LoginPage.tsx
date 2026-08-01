@@ -11,8 +11,8 @@ export default function LoginPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!username.trim()) return;
-    await login(username.trim(), password);
-    navigate('/cases');
+    const ok = await login(username.trim(), password);
+    if (ok) navigate('/cases');
   };
 
   return (

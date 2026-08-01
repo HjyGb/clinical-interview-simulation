@@ -7,7 +7,7 @@ interface AuthState {
   user: UserInfo | null;
   loading: boolean;
   error: string | null;
-  login: (username: string, password: string) => Promise<void>;
+  login: (username: string, password: string) => Promise<boolean>;
   logout: () => void;
   checkAuth: () => Promise<void>;
 }
@@ -28,8 +28,10 @@ export const useAuthStore = create<AuthState>((set) => ({
         user: { id: 0, username: result.username, role: result.role },
         loading: false,
       });
+      return true;
     } catch (e) {
       set({ loading: false, error: (e as Error).message });
+      return false;
     }
   },
 
