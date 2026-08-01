@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "The front tooth knocked until the 2nd day"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "The front tooth knocked until the 2nd day"
+  },
+  "present_illness": {
+    "present_illness": "The patient complained that his front teeth were knocked by chopsticks while eating last night. He came to our hospital for treatment today.",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "The patient complained that his front teeth were knocked by chopsticks while eating last night. He came to our hospital for treatment today.",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "11 Lip tilt, 2 degrees of looseness, and the surrounding gums will be red and swollen, causing bleeding. 12 21 1 degree of loosening, and the surrounding gums will be red and swollen, causing bleeding."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "12 21 11 Tooth shock",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "12 21 11 13 Adjustment after periodontal fixation, patient refused periodontal fixation",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Adjust the high points of the bite, and the doctor recommends regular review after 1/3/6/12 months",
+  "visit_type": "首诊"
+}

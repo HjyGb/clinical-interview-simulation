@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "The lower right back tooth has been missing for more than 10 years"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "The lower right back tooth has been missing for more than 10 years"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had been missing his lower right posterior tooth for more than 10 years and now came to our hospital for consultation on implantation.",
+    "past_history": "He denied any history of systemic diseases, family history, drug allergies, or dental treatment."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had been missing his lower right posterior tooth for more than 10 years and now came to our hospital for consultation on implantation.",
+    "past_history": "He denied any history of systemic diseases, family history, drug allergies, or dental treatment."
+  },
+  "oral_examination": {
+    "oral_examination": "*45*46 The missing alveolar ridge is slightly depressed. No obvious abnormality was found in the adjacent teeth, cold (-), probing (-), percussion (-), loose (-). No obvious abnormality was found in the remaining teeth. The opposing teeth are slightly elongated. The oral hygiene of the whole mouth is acceptable, with tartar ( ) and pigment ( ). No obvious abnormalities were found in the bite and joints."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Missing teeth (K00.001)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Implant restoration.",
+    "restoration": "",
+    "notes": "Avoid acidic foods within a week and avoid hot and cold stimulation. Maintain oral hygiene as directed by your doctor and rinse with mouthwash. Regular re-examination and follow-up treatment if any discomfort occurs."
+  },
+  "source_handle": "Not disposed.",
+  "visit_type": "首诊"
+}

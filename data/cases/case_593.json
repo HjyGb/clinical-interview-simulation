@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "The right lower back tooth has been affected by food impaction and pain for several months."
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "The right lower back tooth has been affected by food impaction and pain for several months."
+  },
+  "present_illness": {
+    "present_illness": "I have been experiencing monthly pain due to food impaction in my lower right posterior tooth. Occasionally there is spontaneous pain, which is often dull or distended. No treatment has been given. I am now seeking treatment at our hospital.",
+    "past_history": "Nothing special"
+  },
+  "past_history": {
+    "present_illness": "I have been experiencing monthly pain due to food impaction in my lower right posterior tooth. Occasionally there is spontaneous pain, which is often dull or distended. No treatment has been given. I am now seeking treatment at our hospital.",
+    "past_history": "Nothing special"
+  },
+  "oral_examination": {
+    "oral_examination": "47 Deep and large caries cavity and pulp in the maxillofacial area, food impaction, soft during probing, probing: (-); no response to cold test; looseness: (-); percussion\\nDiagnosis: (±);\\n46 residual root, slightly red and swollen gums"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "47Chronic pulpitis 46Residual root",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "47Root canal treatment. 46 removal",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "No one",
+  "visit_type": "首诊"
+}

@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "toothache"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "toothache"
+  },
+  "present_illness": {
+    "present_illness": "The lower right back tooth suffered from subtoothache for several days, severe pain, pain at night, and the upper left back tooth experienced transient pain due to hot and cold stimulation.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2C."
+  },
+  "past_history": {
+    "present_illness": "The lower right back tooth suffered from subtoothache for several days, severe pain, pain at night, and the upper left back tooth experienced transient pain due to hot and cold stimulation.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2C."
+  },
+  "oral_examination": {
+    "oral_examination": "47 Maxillofacial caries, probing deep into the dentin, cold diagnosis, percussion, looseness, 24 26 Adjacent maxillofacial caries, probing deep into the dentin, cold diagnosis, percussion -,"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "24 26 Deep caries 47 Pulpitis",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "47 Crown restoration after root canal treatment 24 26 Trial of pulp preservation",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "47 Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Remove the decay, the decay has not been removed and the marrow is leaking, seal the inactivator 24 26. Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Decay removal, near marrow, calcium silicate backing, resin filling, blending, polishing",
+  "visit_type": "首诊"
+}

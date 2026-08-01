@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Front teeth loose for half a year"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Front teeth loose for half a year"
+  },
+  "present_illness": {
+    "present_illness": "The patient gradually felt that his teeth became loose and shifted for several months, and there was bleeding when brushing his teeth, but no obvious pain.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, and a history of traveling to Southeast Asia within 1 week. He denied fever, general muscle aches, joint pain, fatigue, bleeding tendency, lymphadenopathy and other dengue fever-related manifestations."
+  },
+  "past_history": {
+    "present_illness": "The patient gradually felt that his teeth became loose and shifted for several months, and there was bleeding when brushing his teeth, but no obvious pain.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, and a history of traveling to Southeast Asia within 1 week. He denied fever, general muscle aches, joint pain, fatigue, bleeding tendency, lymphadenopathy and other dengue fever-related manifestations."
+  },
+  "oral_examination": {
+    "oral_examination": "The gums of the whole mouth were severely receded, and the periodontal probe was prone to bleeding and displacement. The looseness was III degree, and the periodontal pocket was detected with a depth of 7mm. Full mouth guard\\nThe health condition is poor; soft calculus index (DI): 1, calculus index (CI): 1 = supragingival calculus covers no more than 1/3 of the tooth surface, and attachment loss can be detected.\\nThe calculus in the bag was detected, and the bleeding index was: 4 = after probing, the bleeding overflowed and overflowed into the gingival sulcus, the gums were red and swollen, the gums turned dark red, and the attached gingival stippling disappeared. Auxiliary examination: X-ray showed severe alveolar bone resorption of the whole mouth of teeth. *11*24 Vertical bone resorption to the apical 1/3."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Chronic periodontitis (K05.300)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Systemic periodontal treatment. *11*24 Consideration for patients with implant restoration after extraction",
+    "restoration": "",
+    "notes": ""
+  },
+  "source_handle": "",
+  "visit_type": "首诊"
+}

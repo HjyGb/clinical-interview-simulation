@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Fillings"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Fillings"
+  },
+  "present_illness": {
+    "present_illness": "Found a tooth cavity in the mouth, which is painful when exposed to cold. Now I need a filling.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2"
+  },
+  "past_history": {
+    "present_illness": "Found a tooth cavity in the mouth, which is painful when exposed to cold. Now I need a filling.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2"
+  },
+  "oral_examination": {
+    "oral_examination": "15 M.O. The caries is deep into the dentin. When probed, percussed, cooled and loosened, the gingiva is normal. CBCT shows: the caries is close to the pulp."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Deep caries in permanent teeth (K02.800x008)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Trial of marrow-preserving and post-filling treatment",
+    "restoration": "",
+    "notes": "Pay attention to oral hygiene and return to the clinic regularly."
+  },
+  "source_handle": "Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Local infiltration anesthesia with 4% articaine was used to remove caries and prepare the hole. Upper molding piece. Clean and blow dry, place LC bottom near the marrow. Etch with acid etchant, rinse and blow dry. Apply adhesive, blow thin, and illuminate. 3M-P60 resin is filled in layers and light-cured in layers for shaping, jaw adjustment and polishing.",
+  "visit_type": "首诊"
+}

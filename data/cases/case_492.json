@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Gum irritation and bleeding all over the mouth for several months"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Gum irritation and bleeding all over the mouth for several months"
+  },
+  "present_illness": {
+    "present_illness": "Bleeding after brushing teeth for several months without pain or other discomfort.",
+    "past_history": "He denied any history of systemic diseases, infectious diseases and drug allergies."
+  },
+  "past_history": {
+    "present_illness": "Bleeding after brushing teeth for several months without pain or other discomfort.",
+    "past_history": "He denied any history of systemic diseases, infectious diseases and drug allergies."
+  },
+  "oral_examination": {
+    "oral_examination": "The gums in the whole mouth are red and swollen, and they bleed easily when probed, and the periodontal pockets are not reached. Tartar ( ), tooth surface pigment."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Chronic gingivitis (K05.100).",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Full mouth scaling.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Full mouth supragingival scaling and polishing.",
+  "visit_type": "首诊"
+}

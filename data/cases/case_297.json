@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Bleeding occurred all over my mouth after brushing my teeth for 1 week."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Bleeding occurred all over my mouth after brushing my teeth for 1 week."
+  },
+  "present_illness": {
+    "present_illness": "The patient felt bleeding after brushing his teeth a week ago and came to our hospital for treatment today.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient felt bleeding after brushing his teeth a week ago and came to our hospital for treatment today.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "Poor dental hygiene, tartar, soft plaque, pigment, obvious redness and swelling of the gums, bleeding at the gum margin, no periodontal pockets, and no obvious loosening of the teeth."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Gingivitis.",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Full mouth ultrasonic supragingival scaling.",
+    "restoration": "",
+    "notes": "Routine medical advice and follow-up consultation if any discomfort occurs. Restoration will be done after three months."
+  },
+  "source_handle": "Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Full mouth ultrasonic supragingival scaling, polishing and medication. OHI oral hygiene education, education on brushing teeth, flossing, and using interstitial brushes.",
+  "visit_type": "首诊"
+}

@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "The lower right back tooth is crooked, so I asked for implantation."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "The lower right back tooth is crooked, so I asked for implantation."
+  },
+  "present_illness": {
+    "present_illness": "The lower right back tooth is crooked and severely blocked. After examination at an external hospital, it is recommended to extract it and consult for implantation.",
+    "past_history": "Nothing special."
+  },
+  "past_history": {
+    "present_illness": "The lower right back tooth is crooked and severely blocked. After examination at an external hospital, it is recommended to extract it and consult for implantation.",
+    "past_history": "Nothing special."
+  },
+  "oral_examination": {
+    "oral_examination": "47 Mesial impaction, large area of ​​tooth-colored filling material; not loose; no abnormality in the gums."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "47 Impacted teeth (K01.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "47 Selective planting after removal.",
+    "restoration": "",
+    "notes": "Chew after 2 hours and do not bite hard objects. Slight swelling and pain in the past few days is normal."
+  },
+  "source_handle": "47 informed the plan and the patient expressed consideration.",
+  "visit_type": "首诊"
+}

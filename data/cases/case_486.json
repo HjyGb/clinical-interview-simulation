@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "The lower right back tooth has been loose for several years"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "The lower right back tooth has been loose for several years"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that the right lower back tooth had been loose for several years and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that the right lower back tooth had been loose for several years and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "47 Grade III looseness, no redness or swelling in the gums, (-), no abnormality in the buccal mucosa, nothing special. CBCT shows: low-density image of the root tip."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Periodontal disease (K05.600)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "47 removal. It is recommended that 48 scaling be performed before removal.",
+    "restoration": "",
+    "notes": "Instructions for follow-up consultation for discomfort include chewing a cotton roll for 40 minutes and not brushing teeth and gargling for 24 hours. You can eat and drink after 2 hours. It is recommended that the food should not be too hot. See (Precautions after tooth extraction) for details."
+  },
+  "source_handle": "Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Local disinfection with iodophor, local infiltration anesthesia with 4% articaine, separation of the gums after the anesthesia takes effect, extraction of loose teeth, routine scraping of the extraction socket, reduction of the extraction socket, and implantation of iodophor gauze strips in the extraction socket , suture and compress to stop bleeding.",
+  "visit_type": "首诊"
+}

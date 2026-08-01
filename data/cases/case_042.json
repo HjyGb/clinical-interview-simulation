@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Upper front teeth require fillings"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Upper front teeth require fillings"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had dentures on his upper front teeth and now came to our hospital to ask for fillings.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had dentures on his upper front teeth and now came to our hospital to ask for fillings.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "oral_examination": {
+    "oral_examination": "*21 Movable dentures can be seen, and suspected tooth roots can be seen on the buccal side. Cold (-)*11 The crown of the tooth is dark brown, and (-)*22 shows no abnormality. Cold (-) percussion (-)."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "*21, *22, *11 missing teeth (K00.001)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Option 1: *21 Implant Restoration\\nPlan 2: *21*11*22 Crown and bridge repair (*11 If there are symptoms, root canal treatment may be possible at a later stage)",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "*21, *22, *11 not processed",
+  "visit_type": "首诊"
+}

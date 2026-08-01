@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Full mouth oral examination"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Full mouth oral examination"
+  },
+  "present_illness": {
+    "present_illness": "Request a full mouth dental exam",
+    "past_history": "abled. Nothing special. Denied systemic history."
+  },
+  "past_history": {
+    "present_illness": "Request a full mouth dental exam",
+    "past_history": "abled. Nothing special. Denied systemic history."
+  },
+  "oral_examination": {
+    "oral_examination": "|6 The edge of the restoration is not tight, probing, tapping, loosening, the gums are not different 37 The original filling material is not tight, secondary caries occurs at the edge, probing, tapping, loosening, the gums are not different 26 caries To the dentin layer, probe and tap, loosen, no difference in the gums. 36 CBCT shows: radiolucency of the root filling material can be seen in the root canal, and low-density dark shadow can be seen in the root tip. 37 CBCT shows: radiolucency of the original filling material can be seen in the coronal part. Closer to the medullary cavity"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "36 Poor restoration, apicalitis 37 Secondary caries 26 Caries (K02.900)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "36 Full crown after root canal retreatment 37 Plan 1. Filling treatment\\nPlan 2. Root Canal Treatment 26 Filling Treatment",
+    "restoration": "",
+    "notes": "Follow-up for discomfort"
+  },
+  "source_handle": "Explain the condition, keep the patient and family informed, ask for consideration, and choose a day for treatment.",
+  "visit_type": "首诊"
+}

@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Pain in left lower back tooth for several days"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Pain in left lower back tooth for several days"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that the pain in his left lower posterior tooth had worsened in the past three days, and he sought medical attention today.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that the pain in his left lower posterior tooth had worsened in the past three days, and he sought medical attention today.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2."
+  },
+  "oral_examination": {
+    "oral_examination": "In the mouth, there is underlying impaction, the surrounding gums are red and swollen, the blind pocket is deep, and pus overflows."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "38Pericoronitis of wisdom teeth",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "1. Apply local irrigation and medicine; 2. Give antibiotic drip/oral antibiotics throughout the body; 3. Remove as soon as possible after the inflammation is eliminated.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "38. Alternate local flushing with hydrogen peroxide and normal saline, and apply iodine mixture in the blind bag. Once the inflammation has subsided, make an appointment with a surgeon to remove the impacted tooth.",
+  "visit_type": "首诊"
+}

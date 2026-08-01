@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "It took several months for the upper left back tooth to be extracted."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "It took several months for the upper left back tooth to be extracted."
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had been missing his upper left posterior tooth for several months and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had been missing his upper left posterior tooth for several months and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "26 27 The gums are sunken, there are no bone spurs, the occlusal space is acceptable, the gap between missing teeth is acceptable, and no other abnormalities are found. CBCT shows: insufficient bone mass"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "26 27 Missing teeth (K00.002)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "26 27 Implant repair, bone grafting powder and periosteum.",
+    "restoration": "",
+    "notes": "Routine medical advice and follow-up consultation if any discomfort occurs. Repaired after three months."
+  },
+  "source_handle": "1. The doctor has fulfilled his obligation to inform, and the patient has fully informed consent and signed the &quot;Informed Consent Form for Implantation&quot;. 2. Routine disinfection and draping. 4% articaine 1.7ml The implant is screwed into the healing abutment. 27 Nobel CC5.0*10mm is implanted, the autologous bone is implanted in the neck, the upper part is screwed into the healing abutment, sutured, and the location for filming is OK.",
+  "visit_type": "首诊"
+}

@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "The left lower back tooth has been missing for several years"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "The left lower back tooth has been missing for several years"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that his lower left posterior tooth had been extracted for several years due to caries, and he now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that his lower left posterior tooth had been extracted for several years due to caries, and he now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "36 The gingiva is flat without bone spurs, the opposing teeth are slightly elongated, 37 II degree loose, the buccal mucosa is normal, and the rest are normal."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "36 Missing teeth (K00.002)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "36 Implant restoration.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "1. The doctor has fulfilled his obligation to inform, and the patient has fully informed consent and signed the &quot;Informed Consent Form for Implantation&quot;. 2. Routine disinfection and draping. 4% articaine 1.7ml Screw in the healing abutment. Suture and filming position are available.",
+  "visit_type": "首诊"
+}

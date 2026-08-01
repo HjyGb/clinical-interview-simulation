@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Blackened front teeth"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Blackened front teeth"
+  },
+  "present_illness": {
+    "present_illness": "Feeling that the front teeth are black and requesting an examination",
+    "past_history": "abled. Nothing special. Denied systemic history."
+  },
+  "past_history": {
+    "present_illness": "Feeling that the front teeth are black and requesting an examination",
+    "past_history": "abled. Nothing special. Denied systemic history."
+  },
+  "oral_examination": {
+    "oral_examination": "11,12 The proximal caries are damaged to the dentin layer, probing, percussion, loosening, and there is no discomfort in the gums. CBCT shows: the caries does not reach the pulp cavity."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "11,12 Dentin caries (K02.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "filling treatment",
+    "restoration": "",
+    "notes": ""
+  },
+  "source_handle": "The patient is nervous and chooses a day for treatment",
+  "visit_type": "首诊"
+}

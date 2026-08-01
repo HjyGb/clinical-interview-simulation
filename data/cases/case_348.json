@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "The lower right back tooth has been loose for several months"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "The lower right back tooth has been loose for several months"
+  },
+  "present_illness": {
+    "present_illness": "The lower right tooth gradually became loose and shifted, affecting chewing, but there was no pain or other discomfort.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2"
+  },
+  "past_history": {
+    "present_illness": "The lower right tooth gradually became loose and shifted, affecting chewing, but there was no pain or other discomfort.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2"
+  },
+  "oral_examination": {
+    "oral_examination": "47 The gums are severely receded, loosening to degree III, and percussion (-). Dental calculus ( ) is nothing special."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "47Chronic periodontitis(K05.300)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "47 removal",
+    "restoration": "",
+    "notes": ""
+  },
+  "source_handle": "Topical povidone-iodine disinfection. Bibima local infiltration anesthesia. After the anesthesia takes effect, the gums are separated and the tooth extraction forceps are removed. Routinely scratch the tooth extraction wound and apply pressure to stop bleeding.",
+  "visit_type": "首诊"
+}

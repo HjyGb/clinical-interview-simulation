@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Preoperative teeth cleaning"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Preoperative teeth cleaning"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had been missing his upper front teeth for several years and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had been missing his upper front teeth for several years and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "Missing, flat gums without bone spurs, 11, 12 porcelain crowns repaired, I degree loosening, no abnormality in the buccal mucosa."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "12,11 teeth are missing (K00.002).",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "12 and 11 are removed and the two seeds are worn and one is worn.",
+    "restoration": "",
+    "notes": "Avoid acidic foods within a week and avoid hot and cold stimulation. Maintain oral hygiene as directed by your doctor and rinse with mouthwash. Regular re-examination and follow-up treatment if any discomfort occurs."
+  },
+  "source_handle": "After oral hygiene treatment, today&#39;s blood pressure was 176/129mmHg. I received treatment from the internal medicine department of a higher-level hospital and rescheduled the implantation date.",
+  "visit_type": "首诊"
+}

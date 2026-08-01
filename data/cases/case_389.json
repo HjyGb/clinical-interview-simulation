@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Request dental implants"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Request dental implants"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had been missing his maxillary posterior teeth for several months and his front incisors had been loose for several years. He now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had been missing his maxillary posterior teeth for several months and his front incisors had been loose for several years. He now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "11 12 13 22 23 degrees of looseness, no abnormality in the buccal mucosa, and no other differences. The remaining teeth are missing and the gums are flat without bone spurs."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Missing teeth (K00.002)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Loose teeth were extracted and the upper half of the mouth was fixed with implants.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "",
+  "visit_type": "首诊"
+}

@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Pain in left lower back tooth for 1 week."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Pain in left lower back tooth for 1 week."
+  },
+  "present_illness": {
+    "present_illness": "The patient complained of pain in the lower left posterior tooth for 1 week and came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient complained of pain in the lower left posterior tooth for 1 week and came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "*37,*38 Pussy leakage can be seen on the buccal side, and the gums are red and swollen, but there is no difference."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "*37,*38Pericoronal abscess (K05.202)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "*38 Recommend removal. rinse.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "*37,*38Hydrogen peroxide and physiological saline are rinsed alternately.",
+  "visit_type": "首诊"
+}

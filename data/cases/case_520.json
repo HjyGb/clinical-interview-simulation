@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Request tooth extraction."
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Request tooth extraction."
+  },
+  "present_illness": {
+    "present_illness": "The patient requested to have his lower right wisdom teeth removed and came to our hospital for treatment today.",
+    "past_history": "abled. Nothing special. Denied systemic history."
+  },
+  "past_history": {
+    "present_illness": "The patient requested to have his lower right wisdom teeth removed and came to our hospital for treatment today.",
+    "past_history": "abled. Nothing special. Denied systemic history."
+  },
+  "oral_examination": {
+    "oral_examination": "48 The teeth are mesially tilted, the crowns are not fully erupted, the distal blind pockets are covered, the teeth are not loose, and the gums are not red or swollen."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "48 Impacted teeth (K01.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "48 removal.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "48 Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. 2% lidocaine block anesthesia, 4% articaine local infiltration anesthesia, gingival division, crown division, tooth extraction and elongation, scraping of the alveolar socket, two sutures, and compression to stop bleeding.",
+  "visit_type": "首诊"
+}

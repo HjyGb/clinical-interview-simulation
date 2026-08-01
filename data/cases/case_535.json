@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Fillings"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Fillings"
+  },
+  "present_illness": {
+    "present_illness": "It was found that there was a cavity in the left lower back tooth, but there was no pain or discomfort. A filling was required.",
+    "past_history": "abled. Nothing special. Denied systemic history. Denies hypertension. Denies heart disease. Denies drug allergy."
+  },
+  "past_history": {
+    "present_illness": "It was found that there was a cavity in the left lower back tooth, but there was no pain or discomfort. A filling was required.",
+    "past_history": "abled. Nothing special. Denied systemic history. Denies hypertension. Denies heart disease. Denies drug allergy."
+  },
+  "oral_examination": {
+    "oral_examination": "37 The caries reaches deep into the dentin, and the buccal caries reaches subgingivally. No discomfort in the gums when probed, percussed, cooled, or loosened."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Dentin caries (K02.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "37. Filling treatment after marrow protection",
+    "restoration": "",
+    "notes": "Routine medical advice and follow-up consultation if any discomfort occurs."
+  },
+  "source_handle": "Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Remove cavities and prepare the hole. Gingival retraction, cleaning and blow-drying, acid etching, rinsing and blow-drying. Apply adhesive, blow thin, and illuminate. 3M-Z350 resin is filled in layers and light-cured in layers for shaping, jaw adjustment and polishing.",
+  "visit_type": "首诊"
+}

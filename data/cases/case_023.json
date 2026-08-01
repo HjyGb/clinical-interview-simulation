@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "There was a hole in the lower right back tooth for several days and required extraction."
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "There was a hole in the lower right back tooth for several days and required extraction."
+  },
+  "present_illness": {
+    "present_illness": "The patient said that he had undergone root canal treatment in another hospital a few days ago. Because the defect was too large, it was cracked and required extraction. Now he came to our hospital and asked for extraction.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "past_history": {
+    "present_illness": "The patient said that he had undergone root canal treatment in another hospital a few days ago. Because the defect was too large, it was cracked and required extraction. Now he came to our hospital and asked for extraction.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "oral_examination": {
+    "oral_examination": "*46 Large area of ​​maxillofacial defect, explore the root canal orifice, cold (-), percussion (). *48 Mesial impaction, 2/3 of the tooth crown exposed, no abnormality in the mucosa, and the rest is normal. cbct shows *48 near-middle low-level obstruction\\n*46 Large area of ​​low-density shadow and root bifurcation can be seen in the jaw"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "*46 Chronic periapical inflammation (LCO5) vertical root fissure (K03.801) *48 Impacted tooth (K01.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "*46*48 removal",
+    "restoration": "",
+    "notes": "Avoid acidic foods within a week and avoid hot and cold stimulation. Maintain oral hygiene as directed by your doctor and rinse with mouthwash. Regular re-examination and follow-up treatment if any discomfort occurs."
+  },
+  "source_handle": "*48, *46 The patient was informed of the relevant costs and precautions, and the patient gave informed consent to the treatment and signed a tooth extraction consent form. *48 Local iodophor disinfection, mandibular block anesthesia with 2% lidocaine, and local infiltration anesthesia with 4% articaine. After the anesthesia takes effect, separate the gingiva, divide the crown, remove the mesial resistance, loosen the pieces, and extract the tooth. The forceps were used to remove the tooth, the extraction socket was scraped and repositioned, and cotton balls were used to compress the tooth to stop bleeding. *46 Local iodophor disinfection, 2% lidocaine, mandibular block anesthesia, 4% articaine local infiltration anesthesia, after the anesthesia takes effect, separate the gums, divide the roots, loosen the roots, remove the tooth extraction forceps, and perform routine scraping Extraction socket, extraction socket reduction, cotton ball compression to stop bleeding.",
+  "visit_type": "首诊"
+}

@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Asked to check upper right back teeth"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Asked to check upper right back teeth"
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "*17 distal proximal hole *18 mesial low impaction *17 CBCT shows deep caries penetrating the pulp"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "*17 Chronic pulpitis (K04.002) *18 Impacted tooth (K01.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "*18 Recommend removal *17 Recommend RCT",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Explain the condition, keep the patient and family informed, ask for consideration, and choose a day for treatment.",
+  "visit_type": "首诊"
+}

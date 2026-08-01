@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Orthodontic appointment plan."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Orthodontic appointment plan."
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": "No difference."
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": "No difference."
+  },
+  "oral_examination": {
+    "oral_examination": "Same as initial diagnosis."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Malformed teeth (K07.302)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "The patient goes back to consider the treatment plan after learning more about it.",
+  "visit_type": "复诊"
+}

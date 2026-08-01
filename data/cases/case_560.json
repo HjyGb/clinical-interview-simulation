@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Seek medical attention for misaligned teeth and protruding teeth."
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Seek medical attention for misaligned teeth and protruding teeth."
+  },
+  "present_illness": {
+    "present_illness": "The patient felt that his teeth were misaligned and his teeth were protruding, so he came for orthodontic consultation.",
+    "past_history": "He denied any systemic medical history, family history, or drug allergy."
+  },
+  "past_history": {
+    "present_illness": "The patient felt that his teeth were misaligned and his teeth were protruding, so he came for orthodontic consultation.",
+    "past_history": "He denied any systemic medical history, family history, or drug allergy."
+  },
+  "oral_examination": {
+    "oral_examination": "1. The face is slightly asymmetrical from left to right, with the right cheek being plump; the upper and lower lips are protruding on the sides; the bilateral temporomandibular joint mobility is normal, and the opening is three horizontal degrees.\\nThe fingers are open to the middle and downward, with no tenderness or snapping in the joint area;\\n2. The permanent dentition in the mouth has rounded tips in the upper and lower dental arches, and the anterior segments of the upper and lower dentition are crowded;\\n3. The distal relationship of the bilateral molars, deep overjet and overbite of the anterior teeth, uneven midlines of the upper and lower dentition; labial inclination of the upper and lower anterior teeth;\\n4. Oral hygiene is average, and there is no obvious redness, swelling, abnormality or soft scale in the gums;"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Malformed teeth (K07.302)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Fill out medical records, keep a full set of orthodontic information (intraoral photos, facial photos, 3D models, curved tomographic films, lateral cephalograms), and perform orthodontic diagnostic analysis.",
+  "visit_type": "首诊"
+}

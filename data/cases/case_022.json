@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Lower right back tooth pain for several years"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Lower right back tooth pain for several years"
+  },
+  "present_illness": {
+    "present_illness": "The patient said that he rarely eats on the right side since he had food impaction pain on his lower right posterior tooth a few years ago. Now he comes to our hospital for examination.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "past_history": {
+    "present_illness": "The patient said that he rarely eats on the right side since he had food impaction pain on his lower right posterior tooth a few years ago. Now he comes to our hospital for examination.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "oral_examination": {
+    "oral_examination": "*46 Caries can be seen on the distal adjacent maxillary surface, and decay can be seen. Probe ( ) and cold ( ) percussion ( -)"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "*46 Pulpitis (K04.000)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "*46 After root canal treatment, the tooth is restored with a crown. The patient is informed of the course of treatment, related risks and costs, and the patient agrees to the treatment.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "*46 Under local infiltration anesthesia with 4% articaine 1.7ml",
+  "visit_type": "首诊"
+}

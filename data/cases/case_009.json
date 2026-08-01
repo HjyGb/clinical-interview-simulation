@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Request an oral exam"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Request an oral exam"
+  },
+  "present_illness": {
+    "present_illness": "The patient requested routine oral examination and orthodontic consultation, so he came to our hospital for treatment.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2C."
+  },
+  "past_history": {
+    "present_illness": "The patient requested routine oral examination and orthodontic consultation, so he came to our hospital for treatment.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2C."
+  },
+  "oral_examination": {
+    "oral_examination": "Second degree dental calculus in the whole mouth, red and swollen gums, bleeding on probing, which can be stopped, *38,*48 mesial impaction, poor oral hygiene. Coverage, overbite, and lower front teeth crowding degree II."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Gingivitis*38,*48Impacted teeth",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Full mouth scaling, extraction of impacted teeth, and oral hygiene education",
+    "restoration": "",
+    "notes": "It is forbidden to eat foods with pigments within two days, and instructions on how to brush teeth will be provided, and any discomfort will be followed up."
+  },
+  "source_handle": "Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and consider the patient&#39;s informed request. It has not been processed yet.",
+  "visit_type": "首诊"
+}

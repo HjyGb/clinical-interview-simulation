@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "Loose upper and lower front teeth require implant restoration treatment."
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "Loose upper and lower front teeth require implant restoration treatment."
+  },
+  "present_illness": {
+    "present_illness": "The upper and lower front teeth have been loose for half a year, so I came to the doctor today for implant restoration treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The upper and lower front teeth have been loose for half a year, so I came to the doctor today for implant restoration treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "11. Looseness of 3 degrees, gums red and swollen. 12 21 22 loosened 3 degrees, gums red and swollen. 31 41 Looseness of 3 degrees, gums red and swollen. 32 42 loosened 2 degrees, the gums were red and swollen. CBCT showed that the alveolar bone of 11/31/41 was absorbed to the apex, and the alveolar bone of 12 21 22 32 42 was absorbed to the apical 1/3."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Chronic periodontitis (K05.300)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Remove 112-22, 12-22 implant bridge and repair. Remove 32-42, 32-42 implant bridge and repair.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Explain the condition, keep the patient and family informed, ask for consideration, and choose a day for treatment.",
+  "visit_type": "首诊"
+}

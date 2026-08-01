@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "My whole mouth bleeds after brushing my teeth for several days."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "My whole mouth bleeds after brushing my teeth for several days."
+  },
+  "present_illness": {
+    "present_illness": "The patient had bleeding after brushing his teeth a few days ago. He came to our hospital today and asked for teeth cleaning.",
+    "past_history": "abled. He denies the history of systemic diseases, family history, drug allergies, and infectious diseases."
+  },
+  "past_history": {
+    "present_illness": "The patient had bleeding after brushing his teeth a few days ago. He came to our hospital today and asked for teeth cleaning.",
+    "past_history": "abled. He denies the history of systemic diseases, family history, drug allergies, and infectious diseases."
+  },
+  "oral_examination": {
+    "oral_examination": "The oral hygiene of the entire mouth was poor, with tartar, soft plaque, and pigment, the gums were obviously red and swollen, bleeding at the gum margin was not reached, and the periodontal pockets were not reached, and the teeth were not obviously loose."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Chronic gingivitis (K05.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Full mouth ultrasonic supragingival scaling",
+    "restoration": "",
+    "notes": "Avoid biting hard food, pay attention to oral hygiene, and return to the clinic regularly."
+  },
+  "source_handle": "Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Full mouth ultrasonic supragingival scaling and polishing. OHI oral hygiene education, education on brushing teeth, flossing, and using interstitial brushes.",
+  "visit_type": "首诊"
+}

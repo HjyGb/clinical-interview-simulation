@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "A piece of tooth is broken"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "A piece of tooth is broken"
+  },
+  "present_illness": {
+    "present_illness": "A piece of the left upper back tooth is broken. Come to our hospital for examination today.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2"
+  },
+  "past_history": {
+    "present_illness": "A piece of the left upper back tooth is broken. Come to our hospital for examination today.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2"
+  },
+  "oral_examination": {
+    "oral_examination": "*28 For deep and large caries and pulp, probe-, percussion-, cold, loose-, no difference in the gums"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Chronic pulpitis (K04.002)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "*28 removal",
+    "restoration": "",
+    "notes": "Avoid biting hard objects. If pulp symptoms occur, undergo root canal treatment."
+  },
+  "source_handle": "*28 Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Local disinfection with povidone-iodine and local infiltration anesthesia with bistriol. After the anesthesia takes effect, the gums are separated, the teeth are loosened, and the tooth extraction forceps are removed. Routinely scratch the tooth extraction wound and apply pressure to stop bleeding.",
+  "visit_type": "首诊"
+}

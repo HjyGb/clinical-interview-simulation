@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "He complained that he needed a filling on his left upper back tooth, so he came to our hospital for treatment today."
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "He complained that he needed a filling on his left upper back tooth, so he came to our hospital for treatment today."
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "*37 There is a deep and large carious cavity in the mesiomaxillary surface, and there is pain when probing into the carious cavity. When probing and percussing, the teeth are not loose, and the gums are not red or swollen. *37 CBCT shows deep caries penetrating the pulp and no obvious abnormality in the root apex."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "*37 Pulpitis (K04.000)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "*37 Root canal treatment and crown restoration.",
+    "restoration": "",
+    "notes": "Chew after 2 hours, chew less hard objects, and follow up with a doctor if you feel unwell."
+  },
+  "source_handle": "Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Local infiltration anesthesia with 4% articaine was performed, all the decay was removed, the medullary hole was enlarged, three canals were explored, all the marrow was removed, and the root length was measured (DB=MB=P=16). With the assistance of Glyde, WEVE-ONE System, mechanical nickel titanium, root canal preparation. 5.25% NaClO rinse and 0.9% NaLC alternately rinse, ultrasonic rinse, dry, root canal sealant Ca(OH)2, polycarboxylate temporary seal.",
+  "visit_type": "首诊"
+}

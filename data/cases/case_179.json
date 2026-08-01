@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "The lower right back tooth has been loose for several years"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "The lower right back tooth has been loose for several years"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that the right lower back tooth had been loose for several years and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that the right lower back tooth had been loose for several years and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "47,46 Grade III loosening, no abnormality in the buccal mucosa, and (-) in other cases. 48 Vertical impaction, there is no abnormality in the buccal mucosa (-), and the rest are normal."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "47,46 Periodontal disease (K05.600)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "47,46 can be planted as soon as it is pulled out. 48 removal.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "1. The doctor has fulfilled his obligation to inform, and the patient has fully informed consent and signed the &quot;Informed Consent Form for Implantation&quot;. 2. Routine disinfection and draping. 4% articaine 1.7ml 46 Implant ITI (BLT) 4.8*10mm implant, implant autogenous bone, and screw into the healing abutment. 47 Implant ITI (BLT) 4.8*8mm, screw into the healing abutment, suture, and take the radiograph at the right position.",
+  "visit_type": "首诊"
+}

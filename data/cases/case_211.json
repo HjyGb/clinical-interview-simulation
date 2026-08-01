@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Requesting removal of lower right wisdom teeth"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Requesting removal of lower right wisdom teeth"
+  },
+  "present_illness": {
+    "present_illness": "The lower right wisdom tooth is uncomfortable and requires extraction.",
+    "past_history": "He denies any history of systemic diseases, family history, drug allergies, or dental treatment."
+  },
+  "past_history": {
+    "present_illness": "The lower right wisdom tooth is uncomfortable and requires extraction.",
+    "past_history": "He denies any history of systemic diseases, family history, drug allergies, or dental treatment."
+  },
+  "oral_examination": {
+    "oral_examination": "48 The mesial level is impacted, 2/3 of the tooth crown is exposed, the mucosa is normal, and the rest is normal. The remaining teeth need to be investigated. CBCT showed: 38-level impaction, surrounding bone tissue was normal, and the root tip was closely related to the mandibular neural canal."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "8 Impacted teeth (K01.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "8 removal.",
+    "restoration": "",
+    "notes": "Instruct patients to avoid eating foods that are too cold/hot/hard/sticky. If you have looseness and discomfort, you should follow up in time and make an appointment by phone before coming."
+  },
+  "source_handle": "81. Inform the patient of the relevant costs and precautions, give informed consent to the treatment and sign a tooth extraction consent form. 2. Local iodophor disinfection, left mandibular block anesthesia with 2% lidocaine, and local infiltration anesthesia with 4% articaine. After the anesthesia takes effect, separate the gingiva, divide the crown, remove the mesial resistance, and loosen the pieces. The tooth extraction forceps are taken out, the extraction socket is scratched and repositioned, and cotton balls are used to compress the tooth to stop bleeding.",
+  "visit_type": "首诊"
+}

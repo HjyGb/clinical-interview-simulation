@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "It is required to open the calcified root canal of the upper anterior tooth."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "It is required to open the calcified root canal of the upper anterior tooth."
+  },
+  "present_illness": {
+    "present_illness": "A year ago, I had root canal treatment on my upper front teeth due to &quot;gum bulging&quot; in another hospital, but I did not return for a follow-up visit. Recently, after a visit to another hospital, I was diagnosed with a calcified root canal, which failed to be opened. Now I come to our office for further root canal treatment, and I plan to open up the calcification. bridge.",
+    "past_history": "abled. Nothing special."
+  },
+  "past_history": {
+    "present_illness": "A year ago, I had root canal treatment on my upper front teeth due to &quot;gum bulging&quot; in another hospital, but I did not return for a follow-up visit. Recently, after a visit to another hospital, I was diagnosed with a calcified root canal, which failed to be opened. Now I come to our office for further root canal treatment, and I plan to open up the calcification. bridge.",
+    "past_history": "abled. Nothing special."
+  },
+  "oral_examination": {
+    "oral_examination": "The front teeth were deeply overbited, the upper front teeth were crowded, and there was trauma during the bite. Knock (-), loose (-), temporarily sealed in place."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "11Chronic apical periodontitis (K04.500x001) Vertical root fissure (K03.801) Overbite (K07.201)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Tried to open 11 calcification bridges and informed of the poor prognosis. Refer to orthodontic consultation.",
+    "restoration": "",
+    "notes": ""
+  },
+  "source_handle": "11 Under a microscope, remove the temporary seal and root canal sealant, and see a white calcified bridge at the tip of the root. Under a microscope and use ultrasound to open up the calcified bridge, you can see images of cracks around the apical foramen. Temporarily sealed with FC cotton twist.",
+  "visit_type": "首诊"
+}

@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "Loose lower left back teeth"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "Loose lower left back teeth"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that the lower left posterior tooth had been loose for several months and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that the lower left posterior tooth had been loose for several months and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "36 Grade III looseness, no redness or swelling in the gums, no abnormalities in the buccal mucosa (-), and no abnormalities in the rest."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "36 Longitudinal root fissure (K03.801)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "36 Just pull it out and plant it.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "1. The doctor has fulfilled his obligation to inform, and the patient has fully informed consent and signed the &quot;Informed Consent Form for Implantation&quot;. 2. Routine disinfection and draping. 2% lidocaine block anesthesia, 4% articaine 1.7ml Depth: 36mm, implant the Orthodontic 5.05*11.5mm implant, and screw into the healing abutment. Suture and filming position are available.",
+  "visit_type": "首诊"
+}

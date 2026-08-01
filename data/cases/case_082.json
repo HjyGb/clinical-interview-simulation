@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "The upper left back tooth has been missing for several years"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "The upper left back tooth has been missing for several years"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had been missing his upper left back teeth for several years and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had been missing his upper left back teeth for several years and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "*26 The gums are flat and there are no bone spurs. The gap between the missing teeth is slightly narrow, the bite space is acceptable, there is no obvious caries on the adjacent teeth, and there are no abnormalities in the rest. CBCT showed: bone mass was acceptable."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "*26 Teeth are missing (K00.002).",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "*26 implant restoration.",
+    "restoration": "",
+    "notes": "Routine medical advice and follow-up consultation if any discomfort occurs."
+  },
+  "source_handle": "1. The doctor has fulfilled his obligation to inform, and the patient has fully informed consent and signed the &quot;Informed Consent Form for Implantation&quot;. 2. Routine disinfection and draping. 4% articaine 1.7ml The implant is screwed into the healing abutment. Suture and filming position are available.",
+  "visit_type": "首诊"
+}

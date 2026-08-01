@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Maxillary posterior teeth missing for several years"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Maxillary posterior teeth missing for several years"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that the maxillary posterior teeth had been extracted several years ago and now came to our hospital for consultation on implantation.",
+    "past_history": "He denies family history, history of drug allergies, and history of diabetes (without medication)."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that the maxillary posterior teeth had been extracted several years ago and now came to our hospital for consultation on implantation.",
+    "past_history": "He denies family history, history of drug allergies, and history of diabetes (without medication)."
+  },
+  "oral_examination": {
+    "oral_examination": "*14 The missing alveolar ridge is slightly depressed. No obvious abnormalities were found in the adjacent teeth, cold (-), probing (-), percussion (-), and loose (-). No obvious abnormalities were found in the remaining teeth. The opposing teeth are slightly elongated. The oral hygiene of the whole mouth is acceptable, with tartar ( ) and pigment ( ). No obvious abnormalities were found in the bite and joints. *11 Caries can be seen in the mesial part, and the probe ( ) is cold ( ) and percussion ( -) *21 Large area of ​​caries can be seen in the distal part, and the probing ( ) and cold ( ) percussion ( -) * 22 are loose at the third degree, and percussion ( -) * 23 Caries can be seen in the mesial area, and the texture is hard. Cold (-) percussion (-) probing (-) CBCT shows that *14 bones are wide and high."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "*14 missing teeth (K00.001)*11,*21 pulpitis (K04.000)*22 chronic periodontitis (K05.300)*23 dental caries (K02.900)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "*14 implant restoration. *11*21Root canal treatment plus crown restoration/filling treatment*23Filling treatment*22Extraction",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "*11*21 Under local infiltration anesthesia with 4% articaine 1.7ml Root canal irrigation with sodium chloride, ultrasonic oscillation, drying and disinfection, irootsp hot gutta-percha vertical pressurization and root filling, temporary sealing. 3*23 Remove all decay, prepare the cavity, blow-dry the cavity, apply adhesive, fill with resin, light-cure, adjust the high points of the filling body, and polish. *22 Local disinfection with povidone-iodine and local infiltration anesthesia with bistriol. After the anesthesia takes effect, the gums are separated and the tooth extraction forceps are removed. Routinely scratch the tooth extraction wound and apply pressure to stop bleeding.",
+  "visit_type": "首诊"
+}

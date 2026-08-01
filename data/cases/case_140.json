@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Pain in upper right back tooth."
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Pain in upper right back tooth."
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "16 Large area of ​​mesial caries, black in color and soft in texture. 36 CBCT shows a low-density dark shadow at the root tip and a small amount of filling material in the root canal."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "16 Dental caries (K02.900) 36 Chronic apical periodontitis (K04.500)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "16 recommends inlay repair and 36 recommends crown repair after root canal retreatment.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "16. Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. 4% articaine local infiltration anesthesia, decay removal, internal reconstruction, hole preparation, silicone rubber impression preparation, silicone rubber bite recording, and temporary inlay repair. 36 Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Remove the temporary materials and root canal fillings, measure the root length, and prepare the root canal using nickel-titanium machine with the assistance of Glyde. Rinse, rinse, dry, seal the root canal, and temporarily seal it.",
+  "visit_type": "首诊"
+}

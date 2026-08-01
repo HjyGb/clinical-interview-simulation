@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "The left lower back tooth has been missing for several years"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "The left lower back tooth has been missing for several years"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had been missing his lower left back teeth for more than several years and now came to our hospital for consultation on implantation.",
+    "past_history": "He denied any history of systemic diseases, family history, or drug allergies."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had been missing his lower left back teeth for more than several years and now came to our hospital for consultation on implantation.",
+    "past_history": "He denied any history of systemic diseases, family history, or drug allergies."
+  },
+  "oral_examination": {
+    "oral_examination": "*37 The missing alveolar ridge is slightly depressed. No obvious abnormalities were found in the adjacent teeth, cold (-), probing (-), percussion (-), and loose (-). No obvious abnormalities were found in the remaining teeth. The opposing teeth are slightly elongated. The oral hygiene of the whole mouth is acceptable, with tartar ( ) and pigment ( ). No obvious abnormalities were found in the bite and joints. *12 Residual crown, caries can be seen, loose (-) degree, probing (-), percussion (-). Nothing special. *36 The crown can be repaired and the margin is acceptable. (-) Cold (-) percussion ( ) CBCT shows *37 the bone width is acceptable and the bone height is slightly insufficient. 12 36 High-density shadows can be seen in the root canal."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "37 Teeth are missing. 12 Tooth defects (K07.303) 36 Chronic apical periodontitis (K04.500)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "37 Implant restoration. 36 extractions, implant restoration, 12 crown restorations",
+    "restoration": "",
+    "notes": "Strictly abide by the &quot;Precautions after Tooth Extraction&quot;, take oral antibiotics (bring your own), and follow up with doctors if you feel uncomfortable. The stitches were removed after a week."
+  },
+  "source_handle": "Not disposed.",
+  "visit_type": "首诊"
+}

@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "A cavity was found in the lower right back tooth for several days."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "A cavity was found in the lower right back tooth for several days."
+  },
+  "present_illness": {
+    "present_illness": "He complained that he found a cavity in his lower right back tooth and came to our hospital for treatment and treatment.",
+    "past_history": "abled. Denied systemic history. Nothing special."
+  },
+  "past_history": {
+    "present_illness": "He complained that he found a cavity in his lower right back tooth and came to our hospital for treatment and treatment.",
+    "past_history": "abled. Denied systemic history. Nothing special."
+  },
+  "oral_examination": {
+    "oral_examination": "47 46 The occlusal surface caries damaged the dentin layer, and the probing, percussion and loosening were -, 46 was sensitive to cold stimulation, and no obvious abnormality was found in the gums."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "47 46 Caries (K02.900x001)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "47 46 Composite resin filling. 46. ​​Marrow-preserving filling. If pain and discomfort occur later, root canal treatment may be performed.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Remove the decay, caries damage and the middle layer of dentin, prepare the cavity, acid-etch, rinse and blow-dry, use 46 calcium silicate base, apply 3m adhesive, fill with p60 resin, adjust the occlusion, and polish",
+  "visit_type": "首诊"
+}

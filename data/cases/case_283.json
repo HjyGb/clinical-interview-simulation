@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Implant referral, uneven teeth, consultation for correction"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Implant referral, uneven teeth, consultation for correction"
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "Facial shape, bilateral canine-molar relationship type II. The overbite coverage of the anterior teeth was normal, but there was some crossbite on some individual teeth. 37 stumps, 38 existing."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Malformed teeth (K07.302)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "",
+    "restoration": "",
+    "notes": ""
+  },
+  "source_handle": "Take impressions, take pictures, and agree to discuss the plan next time",
+  "visit_type": "首诊"
+}

@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "The right back tooth has been crooked for several years."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "The right back tooth has been crooked for several years."
+  },
+  "present_illness": {
+    "present_illness": "The patient complained that when his wisdom teeth were extracted a few years ago, he found that the right back tooth was crooked. The doctor recommended correction. Now he comes for consultation. I felt discomfort in the right joint, with snapping sounds, and occasionally limited mouth opening.",
+    "past_history": "Have dental visit experience. He denies any history of systemic disease or drug allergy."
+  },
+  "past_history": {
+    "present_illness": "The patient complained that when his wisdom teeth were extracted a few years ago, he found that the right back tooth was crooked. The doctor recommended correction. Now he comes for consultation. I felt discomfort in the right joint, with snapping sounds, and occasionally limited mouth opening.",
+    "past_history": "Have dental visit experience. He denies any history of systemic disease or drug allergy."
+  },
+  "oral_examination": {
+    "oral_examination": "Full permanent dentition, slightly crowded and uneven, 17 buccal tilt, 47 lingual tilt, 17/47 positive locking."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "17 47 Positive locking occlusion. Crooked teeth.",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "It is recommended that you first go to a jaw joint clinic to check whether there are joint abnormalities, and then consider orthodontic treatment to align the teeth, release locking, and adjust the bite relationship.",
+    "restoration": "",
+    "notes": ""
+  },
+  "source_handle": "Oral hygiene education, appointment with temporomandibular joint clinic.",
+  "visit_type": "首诊"
+}

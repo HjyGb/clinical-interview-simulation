@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "13–20",
+    "chief_complaint": "Protruding teeth, consultation for correction"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "13–20",
+    "chief_complaint": "Protruding teeth, consultation for correction"
+  },
+  "present_illness": {
+    "present_illness": "The patient complained that he had undergone orthodontic tooth extraction treatment in another country 4 years ago, and now the extraction gap has not been closed. He hopes to restart orthodontic treatment in our hospital. The patient requested that the lower half of the mouth not be corrected.",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "The patient complained that he had undergone orthodontic tooth extraction treatment in another country 4 years ago, and now the extraction gap has not been closed. He hopes to restart orthodontic treatment in our hospital. The patient requested that the lower half of the mouth not be corrected.",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "Convex type. Brackets are visible in the upper half of the mouth. The bilateral molars are close to a completely distal relationship, and the bilateral canines are in a distal relationship. 14 and 24 in the mouth have been extracted, and scattered gaps can be seen in the upper dental arch. Deep overbite of anterior teeth."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Malformed teeth (K07.302)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "The maxillary gap is closed, and the anterior teeth are retracted to improve the coverage and overbite of the anterior teeth. The patient&#39;s maxillary alveolar bone is thin, and CBCT should be taken regularly during the process to monitor the root-bone relationship. There is a risk of bone fenestration and bone cracking after correction. The patient requested that the lower half of the mouth not be corrected. The occlusal relationship may not be good after correction. Treatment",
+    "restoration": "",
+    "notes": "Make a follow-up appointment one week later for crown protection."
+  },
+  "source_handle": "Explain the condition, inform the patient, ask for consideration, and choose a day for treatment.",
+  "visit_type": "首诊"
+}

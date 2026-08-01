@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "Missing right lower back tooth"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "Missing right lower back tooth"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that his right lower back tooth was extracted from another hospital a few years ago and he now comes to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that his right lower back tooth was extracted from another hospital a few years ago and he now comes to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "*46 is missing, the gums are flat without bone spurs and are loose at 45 degrees, and the buccal mucosa is normal. No significant lengthening of the opposing teeth was found, and the rest was unremarkable. CBCT showed: bone mass was acceptable."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Deficient dentition.",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "45, 45, 46 implants were removed and restored.",
+    "restoration": "",
+    "notes": "Routine medical advice and follow-up consultation if any discomfort occurs."
+  },
+  "source_handle": "Local disinfection with iodophor, 45% separation of the gums under local infiltration anesthesia with 4% articaine, extraction with extraction forceps, routine scraping of the extraction socket, and reduction of the extraction socket. 1. The doctor has fulfilled his obligation to inform, and the patient has fully informed consent and signed the &quot;Informed Consent Form for Implantation&quot;. 2. Routine disinfection and draping. 4% Articaine 1.7ml body and screw into the healing abutment. 45 Make a horizontal incision on the top of the alveolar, incise the mucoperiosteum in full thickness, flap, position, prepare the hole to the predetermined depth, implant the Orthodontic 4.6*10mm implant, and screw into the healing abutment. Suture and filming position are available.",
+  "visit_type": "首诊"
+}

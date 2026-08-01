@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "60+",
+    "chief_complaint": "Ask for an oral exam."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "60+",
+    "chief_complaint": "Ask for an oral exam."
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "15.35.36 are missing, 26.37 are residual roots, and 44-47 are poor restorations."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "15.45.46 Partial loss of dentition (K08.104) 26.37 Residual root (LC08) 45.46, 44, 47 Poor restoration (LC13)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "15.26.35.36.45.46 Implant restoration, 26.37 extraction, 34.44 crown restoration, 44 crown removal to see if root is needed\\ntube treatment. Cost: 2980/4880 for planting, 3000 for crown",
+    "restoration": "",
+    "notes": "Avoid biting hard objects and follow up with medical advice if any discomfort occurs."
+  },
+  "source_handle": "The patient explained the condition, treatment plan, cost, prognosis, etc., and the patient was informed. The patient left Hangzhou in one month and made an appointment after returning to Hangzhou. I took an intraoral CT scan today.",
+  "visit_type": "首诊"
+}

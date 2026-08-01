@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Mandibular posterior teeth extraction 4 months ago"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Mandibular posterior teeth extraction 4 months ago"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that his mandibular posterior teeth were extracted from another hospital 4 months ago, and now he comes to our hospital for consultation on implantation.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "past_history": {
+    "present_illness": "The patient reported that his mandibular posterior teeth were extracted from another hospital 4 months ago, and now he comes to our hospital for consultation on implantation.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "oral_examination": {
+    "oral_examination": "46 34 Missing alveolar ridge is slightly depressed. No obvious abnormality was found in the adjacent teeth, cold (-), probing (-), percussion (-), loose (-). No obvious abnormality was found in the remaining teeth. The opposing teeth are slightly elongated. The oral hygiene of the whole mouth is acceptable, with tartar ( ) and pigment ( ). No obvious abnormalities were found in the bite and joints."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "46 34 The dentition is partially missing (K08.104).",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Implant restoration, implant type: ITI (blt) implant, model: *34: 3.3*12 mm, *46: 4.8*10mm",
+    "restoration": "",
+    "notes": "Instructions for follow-up consultation for discomfort include chewing a cotton roll for 40 minutes and not brushing teeth and gargling for 24 hours. You can eat and drink after 2 hours. It is recommended that the food should not be too hot."
+  },
+  "source_handle": "The doctor has fulfilled his obligation to inform, and the patient has given full informed consent and signed the &quot;Informed Consent Form for Implantation&quot;. *33 distal, 35 mesial grinding and polishing, *34*46 local supragingival scaling, routine disinfection and draping. 4% articaine 1.7ml",
+  "visit_type": "首诊"
+}

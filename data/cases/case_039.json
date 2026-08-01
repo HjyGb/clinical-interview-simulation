@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "There were no abnormalities when using the temporary crown, and there was no pain caused by hot or cold stimulation."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "There were no abnormalities when using the temporary crown, and there was no pain caused by hot or cold stimulation."
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": "Denies any history of systemic diseases, family history, drug allergies, or dental treatment."
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": "Denies any history of systemic diseases, family history, drug allergies, or dental treatment."
+  },
+  "oral_examination": {
+    "oral_examination": "*46 The temporary crown is in place, with no percussion pain, cold (-), probing (-), loose (-), and no obvious abnormality in the periodontal period. There is no elongation of the opposing teeth. The remaining teeth are nothing special. No obvious abnormalities were found in the bite."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "*46 Tooth defects (K07.303)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "*46 wears teeth.",
+    "restoration": "",
+    "notes": "Follow up in one week"
+  },
+  "source_handle": "*46 Remove the temporary crown and try on the restoration with tight edges and good adjacency. The abutments and restorations are cleaned, blended and polished, and 3MU200 is permanently cemented.",
+  "visit_type": "复诊"
+}

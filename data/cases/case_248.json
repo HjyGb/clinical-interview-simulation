@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "I went to the hospital for pain in my lower right back tooth for two days."
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "I went to the hospital for pain in my lower right back tooth for two days."
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "47 The distal 1/3 of the maxillary surface is defective, with pain upon percussion and probing. CBCT shows a large periapical low-density image, and the distal defect extends to the pulp chamber."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "7Acute pulpitis",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "7 Suggested RCTs",
+    "restoration": "",
+    "notes": "Follow up with follow-up consultation in one week if any discomfort occurs."
+  },
+  "source_handle": "7 Not processed, consider first",
+  "visit_type": "首诊"
+}

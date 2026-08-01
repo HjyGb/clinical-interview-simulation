@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "The upper right front tooth is discolored and I feel there is dental calculus."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "The upper right front tooth is discolored and I feel there is dental calculus."
+  },
+  "present_illness": {
+    "present_illness": "A few years ago, the upper right front tooth became discolored for unknown reasons, and the gums in the apical area repeatedly developed pustules. Now I came to our hospital for treatment.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2C."
+  },
+  "past_history": {
+    "present_illness": "A few years ago, the upper right front tooth became discolored for unknown reasons, and the gums in the apical area repeatedly developed pustules. Now I came to our hospital for treatment.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2C."
+  },
+  "oral_examination": {
+    "oral_examination": "11 The crown of the tooth is dark gray, there is no difference when tapping the (-) gums, and it is loose to the first degree. The gums were locally red and swollen, but there was no bleeding during probing, and no periodontal pockets, dental calculus, or pigments were detected. CBCT showed: 11 apical low-density shadow had clear borders, the root canal was thick, and the apical foramen was not closed."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "11 Apical cyst and apical foramen are not closed. Gingivitis",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "1 Root canal treatment and re-establishing the apical barrier, regular observation after treatment, and elective apical cyst removal. The patient was informed of the cost and treatment plan, and the patient gave informed consent. Ultrasonic teeth cleaning",
+    "restoration": "",
+    "notes": "Routine medical advice and follow-up consultation if any discomfort occurs."
+  },
+  "source_handle": "1. Open the pulp, dredge the root canal, flush the root canal with normal saline, apply rubber dam, ultrasonic cleaning with 1% sodium hypochlorite, dry by moisture, put CP iodoform cotton twist drainage into the root canal, and temporarily seal the ZOE. Ultrasonic teeth cleaning and polishing",
+  "visit_type": "首诊"
+}

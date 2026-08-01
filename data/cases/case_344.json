@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Full mouth implantation phase one"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Full mouth implantation phase one"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that all his teeth were gradually loosening and falling out, and now he came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that all his teeth were gradually loosening and falling out, and now he came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "The gums of the jaw are flat without bone spurs, the gap between missing teeth is acceptable, and the bite space is acceptable. No other abnormalities are found. The defective prosthesis in the upper half of the mouth was repaired and was loose, but the buccal mucosa was normal."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Single-jaw dentition (K08.101)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Full mouth semi-fixed restoration.",
+    "restoration": "",
+    "notes": "Routine medical advice and follow-up consultation if any discomfort occurs. Make an appointment with the anesthesiologist next week to continue the implantation."
+  },
+  "source_handle": "1. The doctor has fulfilled his obligation to inform, and the patient has fully informed consent and signed the &quot;Informed Consent Form for Implantation&quot;. 2. Routine disinfection and draping. 4% articaine 1.7ml Dental implant 4.6*10mm, screwed into the healing abutment. 12 is implanted with an Orthodontic 4.2*11.5mm implant, 22 is implanted with an Orthodontic 3.75*10mm implant, and is screwed into the healing abutment. 24, 44 is implanted with an Orthodontic 4.2*10mm implant, and is screwed into the healing abutment. , 26 is implanted with the Orthodontic 5.08*8.5mm implant, screwed into the healing abutment, 35, 45, and 46 are implanted with the Orthodontic 4.63*8.5mm implant, screwed into the healing abutment, implanted with autogenous bone, and sutured. Filming location available.",
+  "visit_type": "首诊"
+}

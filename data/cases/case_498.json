@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Pain in lower right back tooth for several days"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Pain in lower right back tooth for several days"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported pain in the lower right posterior tooth for several days.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "past_history": {
+    "present_illness": "The patient reported pain in the lower right posterior tooth for several days.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "oral_examination": {
+    "oral_examination": "*46 Distal maxillofacial defect, probe ( ), cold (-) percussion ( )"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Pulpitis(K04.000)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "*46 root canal treatment",
+    "restoration": "",
+    "notes": "Do not chew on the affected side for 2 hours! Follow up for discomfort! Do not bite hard objects. General precautions after tooth extraction."
+  },
+  "source_handle": "*46 not processed",
+  "visit_type": "首诊"
+}

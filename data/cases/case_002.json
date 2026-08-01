@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Right tooth pain for several days"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Right tooth pain for several days"
+  },
+  "present_illness": {
+    "present_illness": "The patient complained of tooth pain on the right side for several days, which was so painful that he could not sleep at night, so he came to our hospital for treatment.",
+    "past_history": "Nothing special"
+  },
+  "past_history": {
+    "present_illness": "The patient complained of tooth pain on the right side for several days, which was so painful that he could not sleep at night, so he came to our hospital for treatment.",
+    "past_history": "Nothing special"
+  },
+  "oral_examination": {
+    "oral_examination": "*14 There is a deep carious cavity and dental pulp in the distal adjacent maxillofacial surface, and there is no pain during probing; sensitivity during cold examination; no obvious loosening; percussion pain ( ); no other obvious abnormalities were found. *18 Vertical impaction, pain on percussion (-), no difference in gums"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "*18 impacted teeth *14 chronic pulpitis",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "*18 extractions *14 root canal treatments",
+    "restoration": "",
+    "notes": "Strictly abide by the &quot;Precautions after Tooth Extraction&quot;, take oral antibiotics (bring your own), and follow up with doctors if you feel uncomfortable."
+  },
+  "source_handle": "*18 Local disinfection with povidone-iodine and infiltration anesthesia with 4% articaine. After the anesthesia takes effect, the gums are separated, the teeth are loosened, and the tooth extraction forceps are removed. Routinely scratch the tooth extraction wound and apply pressure to stop bleeding. Strictly abide by the &quot;Precautions after Tooth Extraction&quot;, take oral antibiotics (bring your own), and follow up with doctors if you feel uncomfortable. *14 4% articaine 1.7mlX1 tube local infiltration anesthesia. Apply rubber dam, remove decay, open the pulp, uncover the top of the pulp, explore the two root canal orifices, extract the pulp; dredge the root canal, 15",
+  "visit_type": "首诊"
+}

@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "The lower right back tooth has been missing for several years"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "The lower right back tooth has been missing for several years"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had lost his lower right back tooth several years ago and now came to our hospital for consultation on implantation.",
+    "past_history": "He denied any history of systemic diseases, family history, or drug allergies."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had lost his lower right back tooth several years ago and now came to our hospital for consultation on implantation.",
+    "past_history": "He denied any history of systemic diseases, family history, or drug allergies."
+  },
+  "oral_examination": {
+    "oral_examination": "*36 Missing alveolar ridge is slightly depressed. No obvious abnormalities were found in the adjacent teeth, cold (-), probing (-), percussion (-), and loose (-). No obvious abnormalities were found in the remaining teeth. The opposing teeth are slightly elongated. The oral hygiene of the whole mouth is acceptable, with tartar ( ) and pigment ( ). No obvious abnormalities were found in the bite and joints. 6*46 had a large area of ​​distal defect on the adjacent maxillofacial surface. After probing (-) and cold ( ) percussion (-), it was loosened to the third degree. 7*47 visible crown repair, third degree looseness, cold (-) percussion ( ) CBCT showed *36 bone width and bone height are acceptable\\n*46 The alveolar bone is absorbed to the apical 1/3 of the root, low-density shadows are visible on the maxillofacial surface and at the root bifurcation, and low-density shadows are visible at the roots.\\n*47 The alveolar bone has been absorbed to the apical 1/3 of the root, low-density shadows can be seen in the root canal, and low-density shadows can be seen in the root."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "36 Tooth loss (K00.001) 46 Chronic periodontitis (K05.300) Vertical root fissure (K03.801) Chronic apical periodontitis (K04.500) 47 Chronic apical periodontitis (K04.500)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Option 1: *36 46 47 implant restoration.\\nOption 2: Crown and Bridge Repair\\nOption 3: Removable denture repair",
+    "restoration": "",
+    "notes": "Second phase after 5.5 months."
+  },
+  "source_handle": "766 not processed.",
+  "visit_type": "首诊"
+}

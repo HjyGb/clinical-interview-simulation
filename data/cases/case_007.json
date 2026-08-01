@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "未知",
+    "chief_complaint": "Mandibular posterior teeth missing for several years"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "未知",
+    "chief_complaint": "Mandibular posterior teeth missing for several years"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that the mandibular posterior teeth had been extracted several years ago and now came to our hospital for consultation on implantation.",
+    "past_history": "He denied any history of systemic diseases, family history, drug allergies, or dental treatment."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that the mandibular posterior teeth had been extracted several years ago and now came to our hospital for consultation on implantation.",
+    "past_history": "He denied any history of systemic diseases, family history, drug allergies, or dental treatment."
+  },
+  "oral_examination": {
+    "oral_examination": "*34, *35, *36, *37, *44, *45, *46, *47 are missing, and the missing alveolar is slightly sunken. No obvious abnormality was found in the adjacent teeth, cold (-), probing (-), percussion (-), loose (-). No obvious abnormality was found in the remaining teeth. The opposing teeth are slightly elongated. The oral hygiene of the whole mouth is acceptable, with tartar ( ) and pigment ( ). No obvious abnormalities were found in the bite and joints. *31, *41 Third degree loosening, percussion (-) CBCT shows *31, *41 alveolar bone is absorbed to the root apex, and the alveolar bone is absorbed horizontally as a whole"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "*34, *35, *36, *37, *44, *45, *46, *47 are missing teeth. *41,*31Chronic periodontitis (K05.300)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "*47,*46,*45,*44,*34,*35,*36,*37 Implantation restoration. *41,*31 removal, implant restoration",
+    "restoration": "",
+    "notes": "Follow-up for discomfort. Instructions for follow-up consultation for discomfort include chewing a cotton roll for 40 minutes and not brushing teeth and gargling for 24 hours. You can eat and drink after 2 hours. It is recommended that the food should not be too hot."
+  },
+  "source_handle": "*47,*46,*45,*44,*34,*35,*36,*37,*31 are not processed.",
+  "visit_type": "首诊"
+}

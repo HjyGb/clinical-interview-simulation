@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Self-reported tooth decay in the mouth and requested a X-ray examination"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Self-reported tooth decay in the mouth and requested a X-ray examination"
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "47. There are deep and large carious cavities in the maxillofacial surface. After probing and percussing, the teeth are not loose and the gums are not red or swollen. CBCT showed deep caries and medullary cavity, and no obvious abnormality in the root apex. 17 27 36 37 46 Black changes were seen on the maxillofacial surface, and rough and hard texture was detected, and the probe was stuck. When percussion, the teeth were not loose, and the gums were not red or swollen."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "47 Deep Caries (LC01) 17 27 36 37 46 Caries (K02.900)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "47 recommend root canal treatment and crown restoration. 17 27 36 37 46 filling treatment.",
+    "restoration": "",
+    "notes": "Routine medical advice and follow-up consultation if any discomfort occurs."
+  },
+  "source_handle": "The patient explained the condition, treatment plan, cost, prognosis, etc. The patient was informed and requested to consider and take a CT scan today.",
+  "visit_type": "首诊"
+}

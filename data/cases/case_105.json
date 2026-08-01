@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Consultation about dental implants"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Consultation about dental implants"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had been missing his upper left posterior tooth for several months and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had been missing his upper left posterior tooth for several months and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "Missing, poor hygiene throughout the mouth, dental calculus (), red and swollen gums that bleed easily when probed, but nothing else. CBCT showed: alveolar bone horizontal resorption."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "The treatment plan for periodontal disease (K05.600) recommends full mouth scaling, subgingival scaling, and 26 implant restorations.",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "",
+    "restoration": "",
+    "notes": ""
+  },
+  "source_handle": "Consultation about filming, go back and think about it.",
+  "visit_type": "首诊"
+}

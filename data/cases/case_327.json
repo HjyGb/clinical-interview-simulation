@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "Maxillary posterior teeth missing for several years"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "Maxillary posterior teeth missing for several years"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had been missing his maxillary posterior teeth for more than several years and now came to our hospital for consultation on implantation.",
+    "past_history": "He denied any history of systemic diseases, family history, drug allergies, or dental treatment."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had been missing his maxillary posterior teeth for more than several years and now came to our hospital for consultation on implantation.",
+    "past_history": "He denied any history of systemic diseases, family history, drug allergies, or dental treatment."
+  },
+  "oral_examination": {
+    "oral_examination": "*12*13*21*22*23 The root is like a stump, caries can be seen, and there is a degree of looseness. Exploring (-) and percussion (-). The remaining maxillary teeth are missing and the alveolar bone is resorbed horizontally. CBCT showed horizontal resorption of the maxillary alveolar bone."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "*12*13*21*22*23 residual root (LC08) 21 24-16 24-26 missing tooth (K00.001)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "*12*13*21*22*23 root canal treatment, post crown restoration, late crown and bridge restoration*13-*23, *14*16 implant restoration, late stage crown and bridge restoration*14*15*16, *24*26 implant restoration Later Xingguan Bridge restoration*24*25*26",
+    "restoration": "",
+    "notes": "Follow-up for discomfort. Avoid biting hard objects. If pulp symptoms occur, undergo root canal treatment."
+  },
+  "source_handle": "Not disposed",
+  "visit_type": "首诊"
+}

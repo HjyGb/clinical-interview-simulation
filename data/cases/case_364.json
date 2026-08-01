@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Defect of lower right posterior tooth"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Defect of lower right posterior tooth"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had had a residual crown on his lower right posterior tooth for several years and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had had a residual crown on his lower right posterior tooth for several years and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "The residual roots of 18, 47, and 48 crowns showed no abnormality when tapping (-) on the buccal mucosa, and the rest were normal."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "18 47 48 Residual root (K08.300x002) Residual crown (K08.302)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "48 47 recommended removal, 47 postponed planting.",
+    "restoration": "",
+    "notes": "Routine medical advice and follow-up consultation if any discomfort occurs."
+  },
+  "source_handle": "Explain the condition, the patient asks for consideration, and chooses a day for treatment.",
+  "visit_type": "首诊"
+}

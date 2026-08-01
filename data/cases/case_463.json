@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "He reported that his front teeth were broken due to impact at 1 o&#39;clock in the morning today, so he came to our hospital for treatment today."
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "He reported that his front teeth were broken due to impact at 1 o&#39;clock in the morning today, so he came to our hospital for treatment today."
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "11 21 Gingival margin bleeding, probing and percussion, and crown loosening. CBCT showed that there was no obvious abnormality in the root apex of the tooth cervical section."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Broken tooth (K02.400)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Root canal treatment and crown restoration are recommended.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Explain the condition, treatment plan, cost, prognosis, etc. to the patient. The patient is informed and requests to go home to discuss with his family.",
+  "visit_type": "首诊"
+}

@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "60+",
+    "chief_complaint": "Ask for an inspection."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "60+",
+    "chief_complaint": "Ask for an inspection."
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": "The initial screening test was positive for hepatitis B. Self-reported history of hypertension."
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": "The initial screening test was positive for hepatitis B. Self-reported history of hypertension."
+  },
+  "oral_examination": {
+    "oral_examination": "26 43-46 Residual root shape, defective and subgingival. 24 25 31-36 41 42 Black caries can be seen on the buccal side and root surface. When probing and percussing, the teeth are not loose and the gums are red and swollen. 7. On percussion, the teeth are not loose and the gums are red and swollen. 6. The residual crown shows no response when percussed or probed. The teeth are not loose and the gums are red and swollen. CBCT showed that the pulp chamber floor was penetrated and the root tip was dark."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "26 43-467 Residual root (LC08) 24 25 31-36 41 42 Caries (K02.900) 6 Residual crown (K08.302) Pulpitis (K04.000)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "16 26 43-46 37 removal. 24 25 31-36 41 42 Filling treatment is recommended. If pulp symptoms occur, root canal treatment may be performed. 17 Root canal treatment is recommended.",
+    "restoration": "",
+    "notes": "Routine medical advice and follow-up consultation if any discomfort occurs."
+  },
+  "source_handle": "Explain the condition, treatment plan, cost, prognosis, etc. to the patient. The patient was informed that the blood test report of our hospital today was positive for hepatitis B, and it was recommended to go to a general hospital for further examination. Today I took an intraoral CT scan.",
+  "visit_type": "首诊"
+}

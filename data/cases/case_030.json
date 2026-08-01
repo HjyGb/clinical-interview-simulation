@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "60+",
+    "chief_complaint": "The lower half of the teeth have been missing for several years"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "60+",
+    "chief_complaint": "The lower half of the teeth have been missing for several years"
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "The teeth in the lower half of the mouth are missing, the alveolar ridge is low, and there are no bone spurs. The rest is normal."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Single-jaw dentition (K08.101)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Fixed implant restoration of the lower half of the mouth or semi-fixed implant restoration of the lower half of the mouth.",
+    "restoration": "",
+    "notes": "Seek medical advice if you feel unwell."
+  },
+  "source_handle": "Explain the condition, keep the patient and family informed, and ask for consideration.",
+  "visit_type": "复诊"
+}

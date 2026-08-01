@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "There was a black line on the lower right back tooth for several days."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "There was a black line on the lower right back tooth for several days."
+  },
+  "present_illness": {
+    "present_illness": "A few days ago, the patient felt that there was a black line on his lower right back tooth for several days. He denied the pain caused by hot and cold stimulation and spontaneous pain, which affected his appearance, so he came to our hospital to ask for a dental filling.",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "A few days ago, the patient felt that there was a black line on his lower right back tooth for several days. He denied the pain caused by hot and cold stimulation and spontaneous pain, which affected his appearance, so he came to our hospital to ask for a dental filling.",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "47 A white filling body can be seen on the occlusal surface, and black caries can be seen on the edge. The probe can be inserted into it. The surface is rough and there is a slight sour feeling when probing. The teeth are slightly sensitive to cold water stimulation. The cold diagnosis is the same as the control teeth. There is no pain when percussion. There is a small amount of soft calculus on the gingival margin."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "47 deep caries",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "47 Marrow-protecting Marrow Filling Treatment",
+    "restoration": "",
+    "notes": "Instruct patients to avoid eating foods that are too cold/hot/hard/sticky. If you have looseness and discomfort, you should follow up in time and make an appointment by phone before coming."
+  },
+  "source_handle": "47 After removing the filling body and removing caries, the deep dentin is reached, the cavity is trimmed, calcium silicate is used as the base, 3m of the eighth generation adhesive is applied, Heraeus resin is filled, blended and polished",
+  "visit_type": "首诊"
+}

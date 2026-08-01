@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Ask for an inspection."
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Ask for an inspection."
+  },
+  "present_illness": {
+    "present_illness": "The right upper back tooth has been feeling uncomfortable for more than three days, so he came to our hospital for treatment.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2."
+  },
+  "past_history": {
+    "present_illness": "The right upper back tooth has been feeling uncomfortable for more than three days, so he came to our hospital for treatment.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2."
+  },
+  "oral_examination": {
+    "oral_examination": "17 18 Mesial adjacent maxillofacial cavity, pain when percussion -, slightly sensitive to temperature stimulation, pain - when probing the cavity, dark color, soft texture, no abnormality in the gums *44*45 X-ray film, visible on the mesial and distal proximal surfaces Caries. *28 Caries can be seen on the maxillofacial surface, which is soft and can be penetrated by a probe. Loose -, no abnormality in the gums."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "17 Deep caries. 45 44 Proximal caries. 18 28 Caries Impacted teeth.",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "45 44 17 Resin filling recommended. 18 28 recommended removal.",
+    "restoration": "",
+    "notes": ""
+  },
+  "source_handle": "Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Place the rubber dam, remove the caries, and prepare the hole. On the molding piece, wedge. Clean and blow-dry, and place BP near the marrow on the bottom. Etch with acid etchant, rinse and blow dry. Apply adhesive, blow thin, and illuminate. Aesthetic resin is filled in layers and light-cured in layers for shaping, jaw adjustment and polishing.",
+  "visit_type": "首诊"
+}

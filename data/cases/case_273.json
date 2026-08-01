@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Discomfort in lower right back tooth"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Discomfort in lower right back tooth"
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "48 The gums are red, swollen and overflowing with pus, the crown has not fully erupted, and the rest is normal."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "48 Impacted teeth (K01.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "8. It is recommended to remove the inflammation after treatment.",
+    "restoration": "",
+    "notes": ""
+  },
+  "source_handle": "8 Take oral anti-inflammatory drugs for three days, and prepare your own anti-inflammatory drugs.",
+  "visit_type": "复诊"
+}

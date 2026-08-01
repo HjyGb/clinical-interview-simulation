@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "request inspection"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "request inspection"
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "18,17 Residual crown, tenderness to percussion, tenderness to probing, CBCT showed periapical low-density image. 37,38 Proximal hole, food impaction, CBCT showed deep caries penetrating the pulp."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "17 stump (LC08) 18,37,38 caries (K02.900x001)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "18,17,38 recommend extraction and 37 recommend crown repair after RCT",
+    "restoration": "",
+    "notes": "Avoid acidic foods within a week and avoid hot and cold stimulation. Maintain oral hygiene as directed by your doctor and rinse with mouthwash. Regular re-examination and follow-up treatment if any discomfort occurs."
+  },
+  "source_handle": "The patient explains the condition, treatment plan, cost, prognosis, etc., and the patient is informed and agrees to the treatment. Today&#39;s blood sugar test 3 hours after meal is 14.1, tooth extraction is postponed",
+  "visit_type": "复诊"
+}

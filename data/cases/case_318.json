@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Tooth loosening and shifting for several months"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Tooth loosening and shifting for several months"
+  },
+  "present_illness": {
+    "present_illness": "I gradually felt that my teeth became loose and shifted for several months. I had bleeding when brushing my teeth and the pain was unbearable. I came to our hospital for treatment today.",
+    "past_history": "History of hypertension, current measurement is 175/115mmHg, nothing else special"
+  },
+  "past_history": {
+    "present_illness": "I gradually felt that my teeth became loose and shifted for several months. I had bleeding when brushing my teeth and the pain was unbearable. I came to our hospital for treatment today.",
+    "past_history": "History of hypertension, current measurement is 175/115mmHg, nothing else special"
+  },
+  "oral_examination": {
+    "oral_examination": "The gums on the buccal and lingual sides are swollen and ball-shaped, loosened by 3 degrees, and the periodontal pockets are deep and overflowing with pus."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Chronic periodontitis (LC06)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "6Extraction after blood pressure control",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Not disposed",
+  "visit_type": "首诊"
+}

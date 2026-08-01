@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Maxillary front teeth missing for several years"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Maxillary front teeth missing for several years"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had been missing his maxillary anterior teeth for several years and now came to our hospital for consultation on implantation.",
+    "past_history": "He denied any history of systemic diseases, family history, drug allergies, or dental treatment."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had been missing his maxillary anterior teeth for several years and now came to our hospital for consultation on implantation.",
+    "past_history": "He denied any history of systemic diseases, family history, drug allergies, or dental treatment."
+  },
+  "oral_examination": {
+    "oral_examination": "*21*23 The root is in the shape of a stump, with caries visible, loose (-) degree, probing (-), and percussing (-). Nothing special. *22Palatal torsion is seen. Nothing special. CBCT shows that low-density shadows are visible at the root tip of *21*23"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "21, 23 residual root (LC08) 22 uneven teeth (K07.302)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "*21*23 Extraction and implantation*21*23*22 Crown and bridge restoration",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Not disposed.",
+  "visit_type": "首诊"
+}

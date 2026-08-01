@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Consult for jaw restoration."
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Consult for jaw restoration."
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "*31 Third degree looseness, red and swollen gums. CBCT showed that the alveolar bone was resorbed to the root tip. *421, *32 are missing. CBCY shows that the alveolar bone height and width are acceptable. *25,*35 are root-like, defective and subgingival. CBCT showed dark shadow around the tooth root."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "*31 Periodontal disease (K05.600) *421, *32 Partial loss of dentition (K08.104) *25, *35 Residual root (LC08)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "*25,*315 Removal is recommended. *25,4*21,*3125 Implantation restoration.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Explain the condition, treatment plan, cost, prognosis, etc. to the patient. The patient will be informed and ask for consideration, and choose a day for treatment.",
+  "visit_type": "首诊"
+}

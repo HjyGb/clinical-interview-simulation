@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "I have been experiencing hot and cold pain in my left lower back tooth for several weeks."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "I have been experiencing hot and cold pain in my left lower back tooth for several weeks."
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he began to have hot and cold pain in his left lower back tooth a few weeks ago and sought medical attention today.",
+    "past_history": "The patient reported that he had a history of hypertension and diabetes. He had a cerebral infarction 7 years ago. He currently has no mobility impairment and is taking hydroclopidogrel tablets. The patient denied a history of drug allergy and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2C"
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he began to have hot and cold pain in his left lower back tooth a few weeks ago and sought medical attention today.",
+    "past_history": "The patient reported that he had a history of hypertension and diabetes. He had a cerebral infarction 7 years ago. He currently has no mobility impairment and is taking hydroclopidogrel tablets. The patient denied a history of drug allergy and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2C"
+  },
+  "oral_examination": {
+    "oral_examination": "38 High vertical impaction, mucosa covering the distal maxillary surface, no abnormal color, no redness, swelling, or congestion. Nothing special."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "38impacted teeth",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "38 removal",
+    "restoration": "",
+    "notes": ""
+  },
+  "source_handle": "38 Routine blood tests, coagulation, infection, and appointment with a surgeon for elective tooth extraction.",
+  "visit_type": "首诊"
+}

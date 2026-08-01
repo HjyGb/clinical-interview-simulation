@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Pain in left lower back tooth for several days"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Pain in left lower back tooth for several days"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had been having pain in his left lower back tooth for several days and thought it was an inflamed wisdom tooth. He came to our hospital and requested to have it removed.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had been having pain in his left lower back tooth for several days and thought it was an inflamed wisdom tooth. He came to our hospital and requested to have it removed.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "oral_examination": {
+    "oral_examination": "Extraoral: maxillofacial symmetry, bilateral temporomandibular joint symmetry, no snapping, no local tenderness, wide mouth opening\\nThree fingers, mouth opening is normal.\\nIntraoral: Permanent dentition, oral hygiene is average, *48 mesial impacted gums are slightly red and swollen, 1/3 of the crown is exposed, percussion (-).\\n*37 No abnormalities were found on the maxillary surface, percussion (-) CBCT showed *38 mesial impaction *37 low-density shadow and pulp were seen on the distal proximal surface"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "38 Impacted teeth (K01.100) 37 Pulpitis (K04.000)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "38 Root canal removal treatment",
+    "restoration": "",
+    "notes": ""
+  },
+  "source_handle": "38 patients considered, not treated",
+  "visit_type": "首诊"
+}

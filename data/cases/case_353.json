@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Bleeding from brushing teeth has improved."
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Bleeding from brushing teeth has improved."
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "Gum bleeding improved, soft calculus index (D1): 1, calculus index (Cl): 1 = supragingival calculus covers no more than 1/3 of the tooth surface,"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "chronic periodontitis",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "—Full mouth subgingival scaling",
+    "restoration": "",
+    "notes": "Avoid acidic foods within a week and avoid hot and cold stimulation. Maintain oral hygiene and rinse with mouthwash. Regular re-examination and follow-up treatment if any discomfort occurs."
+  },
+  "source_handle": "Most of the teeth underwent subgingival scaling, alternate flushing with hydrogen peroxide and normal saline, and Palio ointment was applied to the entire mouth periodontally.",
+  "visit_type": "复诊"
+}

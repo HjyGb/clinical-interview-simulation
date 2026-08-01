@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Ask for teeth cleaning"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Ask for teeth cleaning"
+  },
+  "present_illness": {
+    "present_illness": "I asked for teeth cleaning and came to our hospital for treatment today.",
+    "past_history": "abled. He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2."
+  },
+  "past_history": {
+    "present_illness": "I asked for teeth cleaning and came to our hospital for treatment today.",
+    "past_history": "abled. He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2."
+  },
+  "oral_examination": {
+    "oral_examination": "Poor oral hygiene, tartar, soft plaque, pigment, obvious redness and swelling of the gums, bleeding at the gum margin, no periodontal pockets, and no obvious loosening of the teeth."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Gingivitis.",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Full mouth ultrasonic supragingival scaling.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Full mouth ultrasonic supragingival scaling and polishing. OHI oral hygiene education, education on brushing teeth, flossing, and using interstitial brushes.",
+  "visit_type": "首诊"
+}

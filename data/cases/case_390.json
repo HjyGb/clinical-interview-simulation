@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Private complaint of tooth decay in lower left back tooth"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Private complaint of tooth decay in lower left back tooth"
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "36 Large area of ​​dental tissue defect on the labial side, black color, and tenderness."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "36 residual crown (K08.302)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "36 It is recommended to plant three months after removal",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "36 Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. 4% articaine block anesthesia and 4% articaine local infiltration anesthesia were used to divide the gums, increase gaps, erect teeth, scrape, and compress to stop bleeding.",
+  "visit_type": "首诊"
+}

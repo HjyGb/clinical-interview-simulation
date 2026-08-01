@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "Consultation about dental implants"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "Consultation about dental implants"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had been missing his maxillary posterior teeth for several months and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had been missing his maxillary posterior teeth for several months and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "16 15 25 26 27 are missing, the gums are flat without bone spurs, the rest is normal, and the remaining teeth need to be checked."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Missing teeth (K00.002)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Implant restoration is recommended.",
+    "restoration": "",
+    "notes": "Avoid biting hard objects. If pulp symptoms occur, undergo root canal treatment."
+  },
+  "source_handle": "Ask for a film consultation and go back to think about it.",
+  "visit_type": "首诊"
+}

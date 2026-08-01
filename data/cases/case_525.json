@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Lower right back tooth has been swollen for several days"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Lower right back tooth has been swollen for several days"
+  },
+  "present_illness": {
+    "present_illness": "A week ago, the patient felt bleeding after brushing his teeth and developed a swelling on the lower right back tooth. Now he came to our hospital for a dental cleaning.",
+    "past_history": "abled. He denies a history of systemic diseases, family history, drug allergies, dental treatment, infectious diseases, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2."
+  },
+  "past_history": {
+    "present_illness": "A week ago, the patient felt bleeding after brushing his teeth and developed a swelling on the lower right back tooth. Now he came to our hospital for a dental cleaning.",
+    "past_history": "abled. He denies a history of systemic diseases, family history, drug allergies, dental treatment, infectious diseases, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2."
+  },
+  "oral_examination": {
+    "oral_examination": "The oral hygiene of the entire mouth was poor, with tartar, soft plaque, and pigment, the gums were obviously red and swollen, bleeding at the gum margin was not reached, and the periodontal pockets were not reached, and the teeth were not obviously loose. 46 The gums on the lingual side are swollen and hemispherical, and they easily bleed and overflow when touched."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Chronic gingivitis.",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Full mouth ultrasonic supragingival scaling. 46Elective subgingival scaling",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Full mouth ultrasonic supragingival scaling, polishing and medication. OHI oral hygiene education, education on brushing teeth, flossing, and using interstitial brushes.",
+  "visit_type": "首诊"
+}

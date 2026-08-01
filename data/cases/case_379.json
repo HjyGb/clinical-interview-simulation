@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "The crown made by an outside hospital fell off and required to be glued back"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "The crown made by an outside hospital fell off and required to be glued back"
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "All-ceramic crowns, 11th dental implant, red and swollen gums around the abutment, and bleeding on probing. 21 is a natural tooth with no obvious abnormalities."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "11 21 Poor restoration (LC13)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "It was recommended that the crown be re-made. The patient requested that the original crown be directly bonded back. He informed that subsequent problems with the crown, abutment teeth, implants, etc. had nothing to do with this bonding.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "The abutment teeth and crowns are cleaned and glass ionomer bonded.",
+  "visit_type": "首诊"
+}

@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "Missing lower half of mouth for several years"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "Missing lower half of mouth for several years"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had been missing teeth in the lower half of his mouth for several years and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had been missing teeth in the lower half of his mouth for several years and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "The alveolar ridge in the lower half of the mouth is low and flat, the alveolar ridge is severely atrophied, there is no bone spur, and the mucosa is normal. The rest is no different."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Single-jaw dentition (K08.101)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Semi-fixed implant restoration of the lower half of the mouth.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "1. The doctor has fulfilled his obligation to inform, and the patient has given full informed consent and signed the &quot;Informed Consent Form for Implantation&quot;. 2. Routine disinfection and draping. 4% articaine 1.7ml 10mm implant, screwed into the healing abutment. Autologous bone is implanted, sutured, and the location for filming can be adjusted.",
+  "visit_type": "首诊"
+}

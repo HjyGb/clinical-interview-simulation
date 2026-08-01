@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "The lower right back tooth has been missing for more than several years."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "The lower right back tooth has been missing for more than several years."
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had been missing his lower right back tooth for several years and now came to our hospital for consultation on implantation.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had been missing his lower right back tooth for several years and now came to our hospital for consultation on implantation.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "oral_examination": {
+    "oral_examination": "*47 The root is in the shape of a stump, caries can be seen, and the root is loose to a degree, when probed (-) and percussed (-). Nothing special. *48 High vertical impaction, visible caries, probe (-), cold (-) percussion (-). cbct shows *48 high vertical obstruction"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Residual root (LC08) 8 impacted teeth (K01.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "*47*48Extraction*47Implantation restoration",
+    "restoration": "",
+    "notes": "It is forbidden to eat foods with pigments within two days, and instructions on how to brush teeth will be provided, and any discomfort will be followed up."
+  },
+  "source_handle": "Not disposed",
+  "visit_type": "首诊"
+}

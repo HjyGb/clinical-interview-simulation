@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Gum irritation and bleeding all over the mouth for several months"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Gum irritation and bleeding all over the mouth for several months"
+  },
+  "present_illness": {
+    "present_illness": "Bleeding after brushing teeth for several months without pain or other discomfort.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2"
+  },
+  "past_history": {
+    "present_illness": "Bleeding after brushing teeth for several months without pain or other discomfort.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2"
+  },
+  "oral_examination": {
+    "oral_examination": "The gums in the whole mouth are red and swollen, and they bleed easily when probed, and the periodontal pockets are not reached. Tartar ( ), pigment ( ) 17 16 The caries is damaged to the dentin layer, probe-, percussion-, cold-, loose-, the gums are no different"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Chronic gingivitis (K05.100) 17 16 Dentin caries (K02.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Full mouth scaling 17 16 Filling treatment",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Full mouth supragingival scaling and polishing. 76 Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Remove cavities and prepare the hole. Clean and blow dry. Etch with acid etchant, rinse and blow dry. Apply adhesive, blow thin, and illuminate. 3M-Z350 resin is filled in layers and light-cured in layers for shaping, jaw adjustment and polishing.",
+  "visit_type": "首诊"
+}

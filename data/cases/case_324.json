@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Seek medical attention for misaligned teeth."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Seek medical attention for misaligned teeth."
+  },
+  "present_illness": {
+    "present_illness": "The patient felt his teeth were misaligned and came for orthodontic consultation.",
+    "past_history": "The parents stated on their behalf that they denied any systemic medical history, family history, drug allergy, or any history of traveling to medium- and high-risk areas within 28 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2."
+  },
+  "past_history": {
+    "present_illness": "The patient felt his teeth were misaligned and came for orthodontic consultation.",
+    "past_history": "The parents stated on their behalf that they denied any systemic medical history, family history, drug allergy, or any history of traveling to medium- and high-risk areas within 28 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2."
+  },
+  "oral_examination": {
+    "oral_examination": "1. The face is slightly asymmetrical from left to right, with the right cheek being plump; the upper and lower labia are protruding on the side; the mandibular joint mobility is normal on both sides, the opening is three fingers horizontally, the opening is toward the middle and lower, and there is no tenderness or snapping in the joint area; 2. The permanent dentition in the mouth, the upper and lower dental arch tips are rounded; 3. The bilateral molars have a neutral relationship, and the front teeth can cover the overbite; the upper and lower front teeth are labially inclined; 4. Oral hygiene is average, and there is no obvious redness, swelling or abnormality in the gums, and they are soft dirt;"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Crooked teeth.",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "The patient fills in the medical record and retains a full set of orthodontic information (intraoral photos, facial photos, 3D models, curved tomographic films, and lateral cephalograms) for orthodontic diagnosis and analysis.",
+  "visit_type": "首诊"
+}

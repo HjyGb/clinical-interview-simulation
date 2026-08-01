@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "13–20",
+    "chief_complaint": "The lower right back tooth has been consciously blackened for several months."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "13–20",
+    "chief_complaint": "The lower right back tooth has been consciously blackened for several months."
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that his lower right back tooth was accidentally discovered to be black a few months ago, and now he came to our hospital to request a filling.",
+    "past_history": "He denied any history of systemic diseases, family history, drug allergies, or dental treatment."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that his lower right back tooth was accidentally discovered to be black a few months ago, and now he came to our hospital to request a filling.",
+    "past_history": "He denied any history of systemic diseases, family history, drug allergies, or dental treatment."
+  },
+  "oral_examination": {
+    "oral_examination": "*47 Ink-like changes can be seen in the maxillofacial pits and fissures, and the probe (-) percussion (-) is cold ( )."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "*47 Pulpitis",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "*47 Root canal treatment and crown restoration",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Under local infiltration anesthesia with 1.7 mIX 1 stick of articaine, remove the caries and open the pulp, suck it dry, use pulp inactivator, clove oil cotton balls, and temporarily seal with glass ionomer.",
+  "visit_type": "首诊"
+}

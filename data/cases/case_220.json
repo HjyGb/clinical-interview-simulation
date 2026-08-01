@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Pain in lower right back tooth."
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Pain in lower right back tooth."
+  },
+  "present_illness": {
+    "present_illness": "The patient complained of pain in the lower right posterior tooth and came to our hospital for treatment.",
+    "past_history": "Hepatitis B patients."
+  },
+  "past_history": {
+    "present_illness": "The patient complained of pain in the lower right posterior tooth and came to our hospital for treatment.",
+    "past_history": "Hepatitis B patients."
+  },
+  "oral_examination": {
+    "oral_examination": "47 The filling body can be seen on the mesial and interproximal (occlusal) surface, and secondary caries can be seen on the edge. Percussion ( ) and probing ( ) show no difference."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "47Chronic apical periodontitis (K04.500x001)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "removal.",
+    "restoration": "",
+    "notes": "Avoid biting hard food, pay attention to oral hygiene, and return to the clinic regularly. Eat and drink after 2 hours."
+  },
+  "source_handle": "Local iodophor disinfection, 2% lidocaine block anesthesia, 4% articaine local infiltration anesthesia, gingival separation, gap enlargement, loosening, forceps removal, scraping, cotton ball compression to stop bleeding.",
+  "visit_type": "首诊"
+}

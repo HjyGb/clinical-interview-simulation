@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "Loose lower right back tooth"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "Loose lower right back tooth"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that the right lower back tooth had been loose for several years and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that the right lower back tooth had been loose for several years and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "47 46 45 degree looseness, periodontal redness and swelling, dental calculus ( ), the rest is normal, the remaining teeth need to be investigated."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "47 46 45 Periodontal disease (K05.600)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "47 46 45 Removable dentures after extraction are recommended.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "47 46 45 Explain the condition, the patient and family members are informed, ask for consideration, and choose a day for treatment.",
+  "visit_type": "首诊"
+}

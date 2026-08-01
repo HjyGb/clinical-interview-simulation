@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "Left lower back tooth loose and uncomfortable for several months"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "Left lower back tooth loose and uncomfortable for several months"
+  },
+  "present_illness": {
+    "present_illness": "The patient felt that his left lower back tooth had become loose a few months ago, and he has become very uncomfortable recently. He now comes to our hospital for treatment.",
+    "past_history": "History of low platelets and teeth grinding at night"
+  },
+  "past_history": {
+    "present_illness": "The patient felt that his left lower back tooth had become loose a few months ago, and he has become very uncomfortable recently. He now comes to our hospital for treatment.",
+    "past_history": "History of low platelets and teeth grinding at night"
+  },
+  "oral_examination": {
+    "oral_examination": "36 The distal interproximal surface is carious, loose I~I, percussion (±), cold (-). There is a wedge-shaped defect in the cervical area of ​​the buccal teeth in the lower anterior teeth area. The defect in 42 is deep near the pulp. The incisal ends of the anterior teeth are severely worn and cold (-). 47.48 stump. The porcelain bridge was repaired in areas 13-21. The crown edges were not tight, secondary caries occurred, second degree loosening, and area 44 was missing. The alveolar bone in the edentulous area was in good shape. The teeth in the whole mouth are loose to varying degrees, and the gums are slightly red and swollen. 36 The distal interproximal caries involved the pulp cavity, and no low-density images were seen in the root apex."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "36 Combined periodontal and pulpal lesions, chronic periodontitis 48 47 residual root",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "36 Root canal treatment Periodontal treatment 48 47 Extraction Full mouth supragingival scaling, subgingival scaling",
+    "restoration": "",
+    "notes": ""
+  },
+  "source_handle": "Remove caries, open the marrow, mix it, and uncover the top of the marrow. Flowable resin tree false wall, upper rubber dam, machine expansion, distal root 20 mm, mesio-buccal root 20.5 mm, mesial lingual root 20 mm, expanded to 0425. Calcium hydroxide is temporarily sealed.",
+  "visit_type": "首诊"
+}

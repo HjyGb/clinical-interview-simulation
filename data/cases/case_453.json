@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "The upper right back tooth has been missing for several months"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "The upper right back tooth has been missing for several months"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had been missing his upper right back tooth for several months and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had been missing his upper right back tooth for several months and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "16 46 The gums are flat and there are no bone spurs. The gap between the missing teeth is slightly narrow and the occlusal space is acceptable. No other abnormalities are found."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "16 46 Missing teeth (K00.002).",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "16 46 implant restoration.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "1. The doctor has fulfilled his obligation to inform, and the patient has fully informed consent and signed the &quot;Informed Consent Form for Implantation&quot;. 2. Routine disinfection and draping. 4% articaine 1.7ml The implant is screwed into the healing abutment. 46Implant the ITI (BLT) 4.8*10mm implant and screw into the healing abutment. Suture and filming position are available.",
+  "visit_type": "首诊"
+}

@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Missing teeth in upper half of mouth"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Missing teeth in upper half of mouth"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had been missing maxillary teeth for several years and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had been missing maxillary teeth for several years and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "11-17 21-23 26 is missing, the gums are flat without bone spurs, the occlusal space between the missing teeth is acceptable, and no other abnormalities are found. 24, 25, and 27 degrees were loose, and the buccal mucosa was normal."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "11-17 21-23 26 Missing teeth (K00.002)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "11 12 16 21 25 23 26 Fixed implant restoration of the upper half of the mouth. Remove 24, 25, 27.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "63113561. The doctor has fulfilled his obligation to inform, and the patient has given full informed consent and signed the &quot;Informed Consent Form for Implantation&quot;. 2. Routine disinfection and draping. 4% articaine 1.7ml Position, prepare the holes to the predetermined depth, implant the Orthodontic 3.75*10mm implants at 11, 13, 21, and 23, and screw in the angle abutment. 16. 26 is implanted with the Orthodontic 4.6*10mm, screwed into the angled abutment, 25 is implanted into the Orthodontic 4.2*10mm, screwed into the angled abutment, implanted with autogenous bone, sutured, and the location for taking the radiograph can be obtained from the upper half of the mouth. Silicone model to make temporary teeth.",
+  "visit_type": "首诊"
+}

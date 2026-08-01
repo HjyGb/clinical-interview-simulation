@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Bleeding occurred all over my mouth after brushing my teeth for 1 week."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Bleeding occurred all over my mouth after brushing my teeth for 1 week."
+  },
+  "present_illness": {
+    "present_illness": "The patient felt bleeding after brushing his teeth a week ago and came to our hospital for treatment today.",
+    "past_history": "abled. He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2C."
+  },
+  "past_history": {
+    "present_illness": "The patient felt bleeding after brushing his teeth a week ago and came to our hospital for treatment today.",
+    "past_history": "abled. He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2C."
+  },
+  "oral_examination": {
+    "oral_examination": "Poor oral hygiene, tartar, soft tartar, obvious redness and swelling of the gums, bleeding at the gum margin, no periodontal pockets, and no obvious loosening of the teeth. 8888 Black carious lesions were seen on the maxillary surface, and the sensitive and hard texture was detected, and when percussed, the teeth were not loose, and the gums were red and swollen. 54455445 Wedge-shaped defect on the buccal surface near the neck, sensitive to detection, yellowish color and hard texture, sensitive to percussion, sensitive to cold stimulation, no loose teeth, red and swollen gums. 766 Black caries were seen on the cheek near the neck, and there was pain on probing, percussion, and dull pain due to cold stimulation. The teeth were not loose, and the gums were red and swollen."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Gingivitis. *18, *28, *38, *48 dental caries. *15, *14, *25, *24, *35, *34, *45, *44 wedge-shaped defects. *47, *46, *36 Deep caries? Pulpitis?",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Treatment PlanFull Mouth Ultrasonic Supragingival Scaling",
+    "restoration": "",
+    "notes": "Routine medical advice and follow-up consultation if any discomfort occurs."
+  },
+  "source_handle": "Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Full mouth ultrasonic supragingival scaling, polishing and medication. OHI oral hygiene education, education on brushing teeth, flossing, and using interstitial brushes.",
+  "visit_type": "首诊"
+}

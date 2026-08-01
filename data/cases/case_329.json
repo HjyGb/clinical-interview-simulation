@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Fillings"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Fillings"
+  },
+  "present_illness": {
+    "present_illness": "I found a cavity in the upper right back tooth, so I came to our hospital for an examination.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2"
+  },
+  "past_history": {
+    "present_illness": "I found a cavity in the upper right back tooth, so I came to our hospital for an examination.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2"
+  },
+  "oral_examination": {
+    "oral_examination": "The caries is deep into the dentin, and the gums are loose when probed, percussed, or cold."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "18 Dentin caries (K02.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "18 filling treatments",
+    "restoration": "",
+    "notes": "Return to the clinic on time and follow up if you feel unwell."
+  },
+  "source_handle": "18 Explain the condition, keep the patient and family informed, ask for consideration, and choose a day for treatment.",
+  "visit_type": "首诊"
+}

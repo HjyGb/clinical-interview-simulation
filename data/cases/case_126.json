@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "The left lower back tooth has been missing for several weeks"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "The left lower back tooth has been missing for several weeks"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that the left lower back tooth had been treated in another hospital, and now he came to our hospital for extraction due to the defect.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "past_history": {
+    "present_illness": "The patient reported that the left lower back tooth had been treated in another hospital, and now he came to our hospital for extraction due to the defect.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "oral_examination": {
+    "oral_examination": "*36 A small area of ​​the crown can be seen on the mesial and lingual side, with caries and 1 degree looseness, probing (-) and percussion (-). Nothing special."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "36 residual crown (K08.302)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "*36 removal",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "*36 Local disinfection with povidone-iodine, alveolar nerve block anesthesia with lidocaine hydrochloride, and local infiltration anesthesia with bistriol. After the anesthesia takes effect, separate the gums, divide the roots, loosen the roots of the teeth, and remove them with tooth extraction forceps. Routinely scratch the tooth extraction wound and apply pressure to stop bleeding.",
+  "visit_type": "首诊"
+}

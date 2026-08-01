@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "The upper right back tooth has been missing for several months"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "The upper right back tooth has been missing for several months"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had been missing his upper right back tooth for several months and now came to our hospital for consultation on implantation.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had been missing his upper right back tooth for several months and now came to our hospital for consultation on implantation.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "17 16 The gums are flat without bone spurs, the mucosa is normal, and the rest is normal."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "17 16 missing teeth (K00.002)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "It is recommended to upgrade internally and implant restoration.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort. Sutures removed in 2 weeks"
+  },
+  "source_handle": "Explain the condition, keep the patient and family informed, ask for consideration, and choose a day for treatment.",
+  "visit_type": "首诊"
+}

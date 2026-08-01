@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Request tooth extraction"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Request tooth extraction"
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "38 28 mesioproximal hole on the maxillofacial surface. The probe can be penetrated, CBCT shows impacted tooth 37 distal proximal hole, the probe can be probed, CBCT shows deep caries"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "18 28 38 Impacted tooth (K01.100) 37 Caries (K02.900x001)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "18 28 38 Recommend extraction 37 Recommend filling",
+    "restoration": "",
+    "notes": "Pay attention to oral hygiene and return to the clinic regularly."
+  },
+  "source_handle": "4% articaine block anesthesia, gingival division, crown division, gap enlargement, loosening, forceps extraction, scraping, suturing and compression to stop bleeding.",
+  "visit_type": "首诊"
+}

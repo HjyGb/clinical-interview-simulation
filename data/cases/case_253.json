@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Receive referral consultation for implantation"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Receive referral consultation for implantation"
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, and a history of traveling to Southeast Asia within 1 week. He denied fever, general muscle aches, joint pain, fatigue, bleeding tendency, lymphadenopathy and other dengue fever-related manifestations."
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, and a history of traveling to Southeast Asia within 1 week. He denied fever, general muscle aches, joint pain, fatigue, bleeding tendency, lymphadenopathy and other dengue fever-related manifestations."
+  },
+  "oral_examination": {
+    "oral_examination": "15 16 17 are missing and the alveolar ridge is slightly sunken. Cold (-), probing (-), percussion (-), loose (-), overall oral hygiene is acceptable, tartar ( ), pigment ( )."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "15 16 17 Dental defect (LC11) treatment plan 765 implant restoration. 15.17 Denteng implantation, 1 gram of bone graft, large membrane, 17 external lift",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Not disposed",
+  "visit_type": "复诊"
+}

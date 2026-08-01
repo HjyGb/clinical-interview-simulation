@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "13–20",
+    "chief_complaint": "The right upper back tooth has been painful due to hot and cold stimulation for a week"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "13–20",
+    "chief_complaint": "The right upper back tooth has been painful due to hot and cold stimulation for a week"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had pain caused by hot and cold stimulation one month ago, and the pain worsened in the past week, with spontaneous pain and night pain, and he requested diagnosis and treatment;",
+    "past_history": "He denies a history of systemic diseases, infectious diseases, drug allergies, surgery, family history, and long-term medication history."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had pain caused by hot and cold stimulation one month ago, and the pain worsened in the past week, with spontaneous pain and night pain, and he requested diagnosis and treatment;",
+    "past_history": "He denies a history of systemic diseases, infectious diseases, drug allergies, surgery, family history, and long-term medication history."
+  },
+  "oral_examination": {
+    "oral_examination": "16. There is extensive caries in the mesial and adjacent areas, and the decay is detected by probing. The probing is sensitive, percussion (-), cold diagnosis (). CBCT showed low-density shadow and pulp on the adjacent surface, but no obvious shadow on the root tip."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "16Pulpitis(K04.000)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "16 After root canal treatment and crown restoration, the patient was informed of the course of treatment, related risks and costs, and the patient agreed to the treatment.",
+    "restoration": "",
+    "notes": "Sutures will be removed after 1-2 weeks"
+  },
+  "source_handle": "16. Under local infiltration anesthesia with 1.7 ml of 4% articaine",
+  "visit_type": "首诊"
+}

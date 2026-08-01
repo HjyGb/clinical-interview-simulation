@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "The left upper posterior tooth was missing for several years"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "The left upper posterior tooth was missing for several years"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported missing left upper posterior teeth for several years and now came to our hospital for treatment.",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "The patient reported missing left upper posterior teeth for several years and now came to our hospital for treatment.",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "Gums are flat without bony tips and spurs, missing tooth space is OK, occlusal space is OK, and other no abnormal CBCT findings indicate that bone mass is OK."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Missing teeth (K00.002)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Planting and restoration.",
+    "restoration": "",
+    "notes": "Avoid biting hard food, pay attention to oral hygiene, and check in regularly. Diet after 2h."
+  },
+  "source_handle": "1. The doctor has fulfilled the obligation of notification, and the patient has fully informed consent and signed the \"informed consent for implantation\". 2, routine disinfection towel. A horizontal incision was made at the top of the alveolar crest. The mucoperiosteum was cut across the whole layer, flap flap was turned over, and the hole was positioned to the predetermined depth. ITI(BLT)4.8*10mm implants were implanted, and the healing base was screw into. Suture it up. The location is okay.",
+  "visit_type": "首诊"
+}

@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "13–20",
+    "chief_complaint": "Ask for tooth filling"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "13–20",
+    "chief_complaint": "Ask for tooth filling"
+  },
+  "present_illness": {
+    "present_illness": "I found cavities in my mouth and came to our hospital for treatment.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2C."
+  },
+  "past_history": {
+    "present_illness": "I found cavities in my mouth and came to our hospital for treatment.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2C."
+  },
+  "oral_examination": {
+    "oral_examination": "15M caries and pulp, probe -, percussion -, cold, loose -, no discomfort in the gums, CBCT shows: caries reaches the medullary cavity 25 caries and pulp, probe -, percussion, cold -, loose -, no discomfort in the gums, CBCT shows: caries reaches the medullary cavity, and low-density shadows can be seen at the root tip."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "15 Chronic pulpitis (K04.002) 25 Chronic apical periodontitis (K04.500)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "15 25Root canal treatment",
+    "restoration": "",
+    "notes": "Pay attention to oral hygiene and return to the clinic regularly."
+  },
+  "source_handle": "15 Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Local infiltration anesthesia with 4% articaine was performed, the pulp was removed, the pulp roof was uncovered, and the root canal was dredged. The root length was measured to be 19mm. Glyde assisted the machine and prepared the machine with nickel-titanium to 0625. The rubber dam was used to isolate moisture at 1% and 3%. Rinse with sodium hypochlorite, rinse with ultrasonic waves, blot dry, and seal the root canal with calcium hydroxide paste and temporary ion sealing. 25 Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Remove the decay and open the pulp, uncover the top of the pulp, clear the root canal, and measure the root length to 18mm. Prepare the machine with nickel-titanium to 0625 with the assistance of Glyde, rinse with 1% and 3% sodium hypochlorite under a rubber dam to isolate moisture, rinse with ultrasonic, and blot dry. The root canal is sealed with calcium hydroxide paste and ions are temporarily sealed.",
+  "visit_type": "首诊"
+}

@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Pain in lower right back tooth for several days"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Pain in lower right back tooth for several days"
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": "The patient reported pain in the right lower back tooth for several days and now came to our hospital for examination."
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": "The patient reported pain in the right lower back tooth for several days and now came to our hospital for examination."
+  },
+  "oral_examination": {
+    "oral_examination": "*48 Mesial impaction, the mucosa covers the distal maxillary surface, cavities can be seen, and decay is detected. The cold ( ) color is normal, and there is no redness, swelling, or congestion. Nothing special"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "48 Impacted teeth (K01.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "48 removal",
+    "restoration": "",
+    "notes": "Routine medical advice and follow-up consultation if any discomfort occurs."
+  },
+  "source_handle": "Patient considers, does not deal with",
+  "visit_type": "复诊"
+}

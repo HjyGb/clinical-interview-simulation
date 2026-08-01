@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "60+",
+    "chief_complaint": "Missing upper right back tooth"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "60+",
+    "chief_complaint": "Missing upper right back tooth"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had been missing his upper right posterior tooth for many years and now came to our hospital for treatment.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, and a history of traveling to Southeast Asia within 1 week. He denied fever, general muscle aches, joint pain, fatigue, bleeding tendency, lymphadenopathy and other dengue fever-related manifestations."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had been missing his upper right posterior tooth for many years and now came to our hospital for treatment.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, and a history of traveling to Southeast Asia within 1 week. He denied fever, general muscle aches, joint pain, fatigue, bleeding tendency, lymphadenopathy and other dengue fever-related manifestations."
+  },
+  "oral_examination": {
+    "oral_examination": "16. The gums are flat without bone spurs, the gap between missing teeth is acceptable, and the bite space is acceptable. No other abnormalities are found."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "16 Missing teeth (K00.002).",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "16 Implant restoration.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "61. The doctor has fulfilled his obligation to inform, and the patient has given full informed consent and signed the &quot;Informed Consent Form for Implantation&quot;. 2. Routine disinfection and draping. 4% articaine 1.7ml , screw in the closing screw. Suture and filming position are available.",
+  "visit_type": "首诊"
+}

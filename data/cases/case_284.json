@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Lower right back tooth discomfort for one month"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Lower right back tooth discomfort for one month"
+  },
+  "present_illness": {
+    "present_illness": "The lower right back tooth is consciously impacted by food and the gums are bleeding.",
+    "past_history": "Nothing special."
+  },
+  "past_history": {
+    "present_illness": "The lower right back tooth is consciously impacted by food and the gums are bleeding.",
+    "past_history": "Nothing special."
+  },
+  "oral_examination": {
+    "oral_examination": "46 Large-area fillings, distal defects, secondary caries, and easy bleeding gums."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "46 Tooth defects (K07.303) Chronic apical periodontitis (K04.500)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "46 root canal retreatment and crown restoration. patients consider",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "",
+  "visit_type": "首诊"
+}

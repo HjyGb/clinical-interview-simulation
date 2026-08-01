@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "He complained that the sub-crown of the lower right posterior tooth had fallen off, and he came to our hospital for treatment and asked for bonding."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "He complained that the sub-crown of the lower right posterior tooth had fallen off, and he came to our hospital for treatment and asked for bonding."
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": "Self-reported allergies (dust, mites)"
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": "Self-reported allergies (dust, mites)"
+  },
+  "oral_examination": {
+    "oral_examination": "47,46 The bonding material is deposited. After probing and tapping, the teeth are not loose and the gums are not red or swollen. 18, 17, 16, 26, 27, 28, 48, 37, black carious lesions were seen on the joint surface, which were rough and hard when detected, and the teeth were not loose, and the gums were red and swollen. 34, 35 Wedge-shaped defect near the neck, sensitive when touched, no loose teeth, red and swollen gums. There is a lot of tartar in the whole mouth, the gums are red and swollen, and they bleed easily when probed."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "47, 46 Tooth defects (K07.303) 18, 17, 16, 26, 27, 28, 48, 37 Caries (K02.900) 34, 35 Wedge-shaped tooth defects (K03.101) Whole-mouth chronic gingivitis (K05 .100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "47,46 rebonded. 17, 16, 26, 27, 34, 35, 37 filling treatment. 18, 28, 48 removed. Full mouth supragingival scaling.",
+    "restoration": "",
+    "notes": ""
+  },
+  "source_handle": "47,46 The condition, treatment plan, cost, prognosis, etc. are explained to the patient, and the patient is informed and agrees to the treatment. The original bonding material is removed and composite glass ionomer bonding is performed. solidify.",
+  "visit_type": "首诊"
+}

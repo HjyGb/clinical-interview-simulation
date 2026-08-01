@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "60+",
+    "chief_complaint": "Ask for teeth cleaning."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "60+",
+    "chief_complaint": "Ask for teeth cleaning."
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2."
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2."
+  },
+  "oral_examination": {
+    "oral_examination": "—The gums of the whole mouth are red and swollen, and they bleed easily when probed, and the periodontal pockets are not reached. Tartar ( ), pigment ( )"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Gingivitis",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Full mouth scaling is recommended",
+    "restoration": "",
+    "notes": "Avoid biting hard food, pay attention to oral hygiene, and return to the clinic regularly. Eat and drink after 2 hours."
+  },
+  "source_handle": "Not processed.",
+  "visit_type": "首诊"
+}

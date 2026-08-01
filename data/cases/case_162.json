@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Implant referral and request for tooth extraction."
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Implant referral and request for tooth extraction."
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": "The blood pressure measured today is 135/88mmHg."
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": "The blood pressure measured today is 135/88mmHg."
+  },
+  "oral_examination": {
+    "oral_examination": "46"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "46, 34, 35, 36 residual root (LC08) 44 chronic apical periodontitis (K04.500) 45 partial loss of dentition (K08.104)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "46, 34, 35, 36, 44 were removed and repaired. 45 restorative treatments.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort"
+  },
+  "source_handle": "Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Local infiltration anesthesia with 3*4% articaine was performed, extraction was performed using the upright and pulling method, and the alveolar socket was scraped and compressed to stop bleeding.",
+  "visit_type": "首诊"
+}

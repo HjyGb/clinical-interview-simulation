@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Pain caused by hot and cold stimulation of left lower back tooth requires diagnosis and treatment"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Pain caused by hot and cold stimulation of left lower back tooth requires diagnosis and treatment"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had hot and cold stimulation pain one month ago, and the pain worsened in the past week, and he requested diagnosis and treatment;",
+    "past_history": "He denies a history of systemic diseases, infectious diseases, drug allergies, surgery, family history, and long-term medication history."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had hot and cold stimulation pain one month ago, and the pain worsened in the past week, and he requested diagnosis and treatment;",
+    "past_history": "He denies a history of systemic diseases, infectious diseases, drug allergies, surgery, family history, and long-term medication history."
+  },
+  "oral_examination": {
+    "oral_examination": "7837 Large area of ​​caries on the distal and proximal surface, and decay is detected. Sensitivity during probing, percussion (-), cold diagnosis ( ). 38 Near middle obstruction. CBCT showed 37 distal low-density shadows and pulp, and no obvious shadow at the root tip."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "*37 Pulpitis (K04.000) *38 Impacted tooth (K01.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "After root canal treatment for tooth 37, the crown was restored, and tooth 38 was extracted. The patient was informed of the course of treatment, related risks and costs, and the patient requested consideration.",
+    "restoration": "",
+    "notes": "After first wearing conventional invisible braces, doctor’s advice is to wear them for more than 22 hours a day. Wear each brace for 7 days before replacing it with the next one. Brush your teeth before wearing braces. Use chewing gum correctly after wearing braces. Oral hygiene education. Follow-up visit after two months. If you feel uncomfortable. Follow up."
+  },
+  "source_handle": "Not disposed",
+  "visit_type": "首诊"
+}

@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Front teeth loose for several days"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Front teeth loose for several days"
+  },
+  "present_illness": {
+    "present_illness": "The patient complained that his front teeth had been loose and uncomfortable in recent years, and now he came to our hospital and requested to have them extracted.",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "The patient complained that his front teeth had been loose and uncomfortable in recent years, and now he came to our hospital and requested to have them extracted.",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "11,21 loosened by 3 degrees, 21 distal gums receded to the middle 1/3 of the root, and the gums in the whole mouth were red, swollen and overflowing with pus."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "11,21 Periodontal disease",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "11,21Extraction after blood sugar control",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "The fasting blood sugar measured before the operation was 12.1mmol/L. It was recommended that the patient&#39;s endocrinology department further diagnose and treat blood sugar control, explain the condition, make the patient informed, and choose a day for treatment.",
+  "visit_type": "首诊"
+}

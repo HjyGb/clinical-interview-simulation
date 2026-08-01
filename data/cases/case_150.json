@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Asked to check lower right wisdom teeth"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Asked to check lower right wisdom teeth"
+  },
+  "present_illness": {
+    "present_illness": "The patient said that he wanted to check the condition of his lower right wisdom teeth and now came to our hospital to request an examination.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "past_history": {
+    "present_illness": "The patient said that he wanted to check the condition of his lower right wisdom teeth and now came to our hospital to request an examination.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "oral_examination": {
+    "oral_examination": "Extraoral: maxillofacial symmetry, bilateral temporomandibular joint symmetry, no snapping, no local tenderness, mouth opening of three fingers, mouth opening shape\\nnormal.\\nIntraoral: *48 Mesial and high impaction, mucosa covering the distal maxillary surface, no abnormal color, no redness, swelling, or congestion. Nothing special. cbct shows *48 high level obstruction"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "*48 impacted teeth (LC10)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "*48 removal",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Not disposed",
+  "visit_type": "首诊"
+}

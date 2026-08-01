@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "The upper left back tooth has been missing for several years"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "The upper left back tooth has been missing for several years"
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "25, 26, and 27 are missing, the alveolar ridge is flat and there are no bone spurs, and the rest is normal."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "25, 26, 27 teeth are missing (K00.002)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "25, 26, 27 Implant Restoration External Lift",
+    "restoration": "",
+    "notes": "Instructions for follow-up consultation for discomfort include chewing a cotton roll for 40 minutes and not brushing teeth and gargling for 24 hours. You can eat and drink after 2 hours. It is recommended that the food should not be too hot."
+  },
+  "source_handle": "25, 26, 27 explain the condition, the patient asks for consideration, and chooses a day for treatment.",
+  "visit_type": "复诊"
+}

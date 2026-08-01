@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Pain in upper right back tooth for one month"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Pain in upper right back tooth for one month"
+  },
+  "present_illness": {
+    "present_illness": "The upper right back tooth had undergone root canal treatment and crown repair at an external hospital. It is now swollen and painful and cannot bite.",
+    "past_history": "Nothing special."
+  },
+  "past_history": {
+    "present_illness": "The upper right back tooth had undergone root canal treatment and crown repair at an external hospital. It is now swollen and painful and cannot bite.",
+    "past_history": "Nothing special."
+  },
+  "oral_examination": {
+    "oral_examination": "17. Full crown repair, edge is acceptable, tap (), loose (-). CT showed that root canal treatment had been performed, the root filling was not dense, and the palatal root was shadowed around its apex. 18 Impaction, root tip is related to 17\\nclose"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "17 Chronic apical periodontitis (K04.500) 18 Impacted teeth (K01.100).",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "",
+    "restoration": "",
+    "notes": "Follow-up for discomfort. Ask for follow-up consultation if you feel unwell. Bite a cotton roll for 40 minutes. Do not brush your teeth or rinse your mouth for 24 hours. You can eat and drink after 2 hours. It is recommended that the food should not be too hot."
+  },
+  "source_handle": "Plan 1: 17 root canal retreatment\\nPlan 2: 17, 18 removal, 17 selective planting\\npatients consider",
+  "visit_type": "首诊"
+}

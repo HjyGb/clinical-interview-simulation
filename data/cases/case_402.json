@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "He complained of pain in the left lower back tooth and came to our hospital for treatment today."
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "He complained of pain in the left lower back tooth and came to our hospital for treatment today."
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "38 The distal blind pocket is covered, the surrounding gums are red and swollen, and the teeth are not loose. CBCT showed that there was a dark shadow in the distal part of the crown, and no obvious abnormality was found in the apex of the root."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "38 Impacted tooth (K01.100) Treatment plan 8 recommends extraction.",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "38 Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Divide the gums, increase the gap, tighten and loosen them, remove them by pulling and pulling, and apply pressure to stop bleeding.",
+  "visit_type": "首诊"
+}

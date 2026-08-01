@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "request inspection"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "request inspection"
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "24 Pain on percussion -, pain on probing -, the tooth is not loose, the proximal filling is visible in the distance, and the edges are tight"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "24Dentin sensitivity?",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "",
+    "restoration": "",
+    "notes": "Strictly abide by the &quot;Precautions after Tooth Extraction&quot;, take oral antibiotics (bring your own), and follow up with doctors if you feel uncomfortable. The stitches were removed after a week."
+  },
+  "source_handle": "Recommended to observe",
+  "visit_type": "首诊"
+}

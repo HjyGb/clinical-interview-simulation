@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "I had recurring pain and discomfort in my left lower back tooth for several months."
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "I had recurring pain and discomfort in my left lower back tooth for several months."
+  },
+  "present_illness": {
+    "present_illness": "The left lower back tooth has been painful due to food impaction for several months. It is often dull or distended, and occasionally spontaneous pain.",
+    "past_history": "Nothing special"
+  },
+  "past_history": {
+    "present_illness": "The left lower back tooth has been painful due to food impaction for several months. It is often dull or distended, and occasionally spontaneous pain.",
+    "past_history": "Nothing special"
+  },
+  "oral_examination": {
+    "oral_examination": "Deep and large dental cavities in the maxillofacial cavity and dental pulp, probing: (+); cold test: (-); looseness: (-); percussion: (-); remaining\\nObvious abnormalities are seen."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "36Chronic pulpitis",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Root canal treatment.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "none",
+  "visit_type": "首诊"
+}

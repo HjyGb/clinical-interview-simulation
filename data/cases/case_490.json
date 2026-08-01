@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Medical treatment for loose teeth"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Medical treatment for loose teeth"
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "27 loosening of 3 degrees, tenderness to percussion, tenderness to probing, and fistula seen on the buccal side. 27 CBCT showed palatal root fracture, large periapical low-density image."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Broken tooth (K02.400)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "It is recommended to delay planting after removal",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "4% articaine block anesthesia, clamp extraction method, cotton ball compression to stop bleeding",
+  "visit_type": "首诊"
+}

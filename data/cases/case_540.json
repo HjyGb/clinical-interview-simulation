@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Pain in upper right back tooth for several days"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Pain in upper right back tooth for several days"
+  },
+  "present_illness": {
+    "present_illness": "The right upper back tooth has been painful for several days, often as dull or distended pain, and occasionally spontaneous pain. The pain was severe, especially at night. He complained that the pain would be worse when he lay down. He came to our hospital for treatment today.",
+    "past_history": "Nothing special"
+  },
+  "past_history": {
+    "present_illness": "The right upper back tooth has been painful for several days, often as dull or distended pain, and occasionally spontaneous pain. The pain was severe, especially at night. He complained that the pain would be worse when he lay down. He came to our hospital for treatment today.",
+    "past_history": "Nothing special"
+  },
+  "oral_examination": {
+    "oral_examination": "16. Deep carious cavity and dental pulp in the mesial adjacent maxillofacial area, causing pain on probing; sensitivity during cold examination, delayed pain; no obvious loosening; percussion pain (-); no other obvious abnormalities were found."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "16Chronic pulpitis (K04.002)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "16 root canal treatments. The patient signed the informed consent.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "4% articaine 1.7mlX1 local infiltration anesthesia. Apply rubber dam, remove decay, open the pulp, uncover the top of the pulp, explore the two root canal orifices, extract the pulp; dredge the root canal, 15",
+  "visit_type": "首诊"
+}

@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "He complained of tooth decay in his mouth and asked for examination and treatment of the affected teeth. He came to our hospital for treatment today."
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "He complained of tooth decay in his mouth and asked for examination and treatment of the affected teeth. He came to our hospital for treatment today."
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": "abled. Nothing special. Denied systemic history."
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": "abled. Nothing special. Denied systemic history."
+  },
+  "oral_examination": {
+    "oral_examination": "*18 Deep caries were seen in the crown. After probing and percussing, the teeth were not loose and the gums were not red or swollen. CBCT showed that deep caries invaded the medullary cavity, and no obvious abnormality was found in the root tip. 706070805M The caries damaged the middle layer of dentin, and it was rough when detected, and the texture was hard to stick to the probe. When percussed, the teeth were not loose, and the gums were not red or swollen. CBCT showed that the carious lesions did not reach the medullary cavity and no obvious abnormalities were found in the root apex."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "8 Deep Caries (LC01) 76785 Dentin Caries (K02.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "88 recommends removal. 7675 recommends filling treatment.",
+    "restoration": "",
+    "notes": ""
+  },
+  "source_handle": "7675 explains the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Corrosion removal, hole preparation, moisture isolation, acid etching, drying, applying adhesive, light blowing, ultrasonic Cole resin filling, light curing, shaping, and polishing. 8. Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Local infiltration anesthesia with 4% articaine was used to divide the gingiva, increase the gap and loosen the gums, and then pull them out and compress to stop bleeding.",
+  "visit_type": "首诊"
+}

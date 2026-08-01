@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "A hole was found in the left lower back tooth for half a year."
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "A hole was found in the left lower back tooth for half a year."
+  },
+  "present_illness": {
+    "present_illness": "Half a year ago, I discovered a hole in my upper front tooth and had occasional pain, so I consulted our hospital.",
+    "past_history": "Nothing special"
+  },
+  "past_history": {
+    "present_illness": "Half a year ago, I discovered a hole in my upper front tooth and had occasional pain, so I consulted our hospital.",
+    "past_history": "Nothing special"
+  },
+  "oral_examination": {
+    "oral_examination": "*47 The maxillofacial pits and fissures are black, and the probe ( ) is sensitive to the cold test; percussion: (-), no obvious looseness."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "*47 deep caries",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "*47Pulp capping and filling surgery",
+    "restoration": "",
+    "notes": "1. You can eat immediately. Do not eat sticky or hard food. 2. If the resin material detaches within 3 months, you can refill it once for free. 3. Maintain oral hygiene, develop good habits of brushing and flossing correctly and conscientiously, conduct regular oral examinations every 3-6 months, and follow up if any discomfort occurs."
+  },
+  "source_handle": "none",
+  "visit_type": "首诊"
+}

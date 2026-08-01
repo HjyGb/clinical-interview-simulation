@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Private prosecution requires oral examination."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Private prosecution requires oral examination."
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": "Have a history of dental treatment."
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": "Have a history of dental treatment."
+  },
+  "oral_examination": {
+    "oral_examination": "The whole mouth&#39;s gums were red and swollen, and the gum margins were bleeding. Several teeth were slightly loose and deep periodontal pockets were seen. CBCT showed alveolar bone horizontal resorption. 22 The crown of the tooth is defective in a large area, there is no response to probing, the tooth is not loose when percussed, and the gums are red and swollen. CBCT showed defect and medullary cavity, and dark shadow at the root tip. 17. There is a filling in the mesial maxillary surface, and the patient is sensitive to cold stimulation. When percussed, the teeth are not loose, and the gums are red and swollen. CBCT showed that there was no obvious dark shadow in the filling material, medullary cavity, and root apex. 23. The caries damaged the dentin layer, and the teeth were rough and the probe was stuck. When percussed, the teeth were not obviously loose, and the gums were red and swollen."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Whole-mouth chronic periodontitis (K05.300) 22 Pulp necrosis (K04.100) 17 Pulpitis (K04.000) 23 Caries (K02.900) 48 Chronic periodontitis (K05.300)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Full mouth systemic periodontal treatment. 17 22 Water Root Canal Treatment Crown Restoration. 23 filling treatment. 48 removal.",
+    "restoration": "",
+    "notes": "It is forbidden to eat sticky food within 24 hours, and you will be followed up for consultation if you feel unwell."
+  },
+  "source_handle": "Explain the condition, treatment plan, cost, prognosis, etc. to the patient so that the patient is informed. The patient refused a blood test. Got a CT scan today.",
+  "visit_type": "首诊"
+}

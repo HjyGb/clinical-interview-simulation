@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Ask for an oral exam."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Ask for an oral exam."
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "The whole mouth&#39;s gums were red and swollen, bleeding on probing, deep periodontal pockets, and gum attachment loss. 46 35-37 Missing teeth. CBCT shows that the alveolar bone height and width are acceptable. 16 26 Large area of ​​maxillofacial defect. When probed and percussed, the teeth were not loose and the gums were red and swollen. 26"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Full mouth chronic periodontitis (LC06) 46 35-37 Partial loss of dentition (K08.104) 88 Caries (K02.900) 26 Chronic pulpitis (K04.002) 16 Tooth defect (K07.303)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Full mouth systemic periodontal treatment. 38 48 removal. 46 35-37 Implant restoration. 26Root canal treatment and crown restoration. 16 Crown restoration is recommended.",
+    "restoration": "",
+    "notes": "Instruct patients to avoid eating foods that are too cold/hot/hard/sticky. If you have looseness and discomfort, you should follow up in time and make an appointment by phone before coming."
+  },
+  "source_handle": "The patient explains the condition, treatment plan, cost, prognosis, etc. The patient is informed and asks for consideration, and chooses a day for treatment.",
+  "visit_type": "首诊"
+}

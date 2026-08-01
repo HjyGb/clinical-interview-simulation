@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Left lower back tooth defect"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Left lower back tooth defect"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had been missing his left lower back teeth for several years and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had been missing his left lower back teeth for several years and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "36 The crown of the tooth is defective in a large area, the texture is soft, and there is no abnormality in the buccal mucosa (-). The rest is normal."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "6Tooth defects (K07.303)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "6 It is recommended to plant immediately after plucking",
+    "restoration": "",
+    "notes": ""
+  },
+  "source_handle": "6. Explain the condition, the patient asks for consideration, and chooses a day for treatment.",
+  "visit_type": "首诊"
+}

@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Gum irritation and bleeding all over the mouth for several months"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Gum irritation and bleeding all over the mouth for several months"
+  },
+  "present_illness": {
+    "present_illness": "Bleeding after brushing teeth for several months without pain or other discomfort.",
+    "past_history": "He denied any history of systemic diseases, infectious diseases and drug allergies. The health code is green and the body temperature is normal. He denies the history of traveling to epidemic risk areas within 14 days and denies the history of close contact with patients with new coronavirus pneumonia."
+  },
+  "past_history": {
+    "present_illness": "Bleeding after brushing teeth for several months without pain or other discomfort.",
+    "past_history": "He denied any history of systemic diseases, infectious diseases and drug allergies. The health code is green and the body temperature is normal. He denies the history of traveling to epidemic risk areas within 14 days and denies the history of close contact with patients with new coronavirus pneumonia."
+  },
+  "oral_examination": {
+    "oral_examination": "The gums in the whole mouth are red and swollen, and they bleed easily when probed, and the periodontal pockets are not reached. Tartar ( ), tooth surface pigment. The face was basically symmetrical, the skin was free of redness and swelling, the mouth opening was normal, and there was no snapping or tenderness in the bilateral temporomandibular joints. *24*44 A wedge-shaped defect can be seen in the cervical third of tooth 44. The caries damage reaches the superficial layer of dentin. The gingival papilla is red, swollen and hard. It hurts (-) when percussion (-). The tooth is not loose. There is no pain when entering the hole with cold stimulation. , no obvious abnormality was found in the gums."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Gingivitis. *24*44 wedge-shaped defect",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Full mouth scaling. *24*44 filling treatments",
+    "restoration": "",
+    "notes": "Avoid acidic foods within a week and avoid hot and cold stimulation. Maintain oral hygiene as directed by your doctor and rinse with mouthwash. Regular re-examination and follow-up treatment if any discomfort occurs."
+  },
+  "source_handle": "Full mouth supragingival scaling, polishing, and medication. (1) Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. (2)*24*44 cavity preparation, gingival retraction, drying of the cavity, filling with 3MESPEFiltekTMz350XT nano resin, light curing, and polishing.",
+  "visit_type": "首诊"
+}

@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "There is a black line on the lower left wisdom tooth for several days"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "There is a black line on the lower left wisdom tooth for several days"
+  },
+  "present_illness": {
+    "present_illness": "The patient complained that a black line was visible on the lower left wisdom tooth and occasional discomfort. He came to our hospital for treatment today.",
+    "past_history": "Nothing special"
+  },
+  "past_history": {
+    "present_illness": "The patient complained that a black line was visible on the lower left wisdom tooth and occasional discomfort. He came to our hospital for treatment today.",
+    "past_history": "Nothing special"
+  },
+  "oral_examination": {
+    "oral_examination": "38. Caries on the occlusal surface, mesial horizontal impaction, mucosa covering the distal maxillary surface, no abnormal color, no redness, swelling, or congestion. Nothing special. 14 15 Black caries can be seen on the proximal surface, pain when percussion (-), sensitivity to cold stimulation, no obvious looseness, no difference in gums"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "38 Impacted teeth 15 Chronic pulpitis 14 Deep caries or chronic pulpitis to be investigated",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "38 Extraction 15 14 Filling treatment",
+    "restoration": "",
+    "notes": "Avoid biting hard food, pay attention to oral hygiene, and return to the clinic regularly. Eat and drink after 2 hours."
+  },
+  "source_handle": "38 local povidone iodine disinfection, 4% articaine block anesthesia. After the anesthesia takes effect, the gums are separated, the crown part of the tooth is divided by grinding with a mobile phone, the mesial obstruction is released, the pieces are loosened, and the tooth extraction forceps are taken out. The tooth extraction wound was routinely scratched and sutured to stop the bleeding. 14 15 4% articaine 1.7mlX1 tube for local infiltration anesthesia. 14 Remove the decay and see that the area near the marrow is red, cap the marrow with calcium silicate, apply adhesive, fill with resin, and mix and polish. 15 Remove the decay, open the pulp, uncover the top of the pulp, explore the two root canal openings, remove the pulp; dredge the root canal, 15",
+  "visit_type": "首诊"
+}

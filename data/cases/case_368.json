@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Discomfort in lower right back tooth"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Discomfort in lower right back tooth"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had swelling and pain in his lower right posterior tooth for several days, and now he came to our hospital for treatment.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, and a history of traveling to Southeast Asia within 1 week. He denied fever, general muscle aches, joint pain, fatigue, bleeding tendency, lymphadenopathy and other dengue fever-related manifestations."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had swelling and pain in his lower right posterior tooth for several days, and now he came to our hospital for treatment.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, and a history of traveling to Southeast Asia within 1 week. He denied fever, general muscle aches, joint pain, fatigue, bleeding tendency, lymphadenopathy and other dengue fever-related manifestations."
+  },
+  "oral_examination": {
+    "oral_examination": "48 38 The mesial level is impacted, the gums are red and swollen, only 1/3 of the (-) crown is exposed, the buccal mucosa is normal, and the rest is normal."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "48 38 impacted teeth (K01.100).",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "48 38 recommended removal.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "48 38 Explain the condition and the patient reschedules the treatment date.",
+  "visit_type": "首诊"
+}

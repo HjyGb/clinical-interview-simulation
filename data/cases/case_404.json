@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "The upper front teeth have been loose for several months"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "The upper front teeth have been loose for several months"
+  },
+  "present_illness": {
+    "present_illness": "The patient said that the upper front teeth were hit by heavy objects in the workshop, causing the upper front teeth to become loose. Now he comes to our hospital for examination.",
+    "past_history": "He denies a history of infectious diseases, denies a history of allergies, has a history of hypertension, has stopped taking medication for 1 week, and his blood pressure is 173/101 mmhg."
+  },
+  "past_history": {
+    "present_illness": "The patient said that the upper front teeth were hit by heavy objects in the workshop, causing the upper front teeth to become loose. Now he comes to our hospital for examination.",
+    "past_history": "He denies a history of infectious diseases, denies a history of allergies, has a history of hypertension, has stopped taking medication for 1 week, and his blood pressure is 173/101 mmhg."
+  },
+  "oral_examination": {
+    "oral_examination": "12*11*12*21*22 ​​Periodontal probing is easy to bleed, and the periodontal pockets are detected, and the whole mouth hygiene is poor; calculus in the pockets can be detected, the gums are red and swollen, the gums are dark red, and the gums can be seen to have proliferated to 1/3 of the crown. , the attached gingival stippling disappears. *11*12 The degree of looseness is III, the periodontal pockets can be detected, and the whole mouth hygiene is poor; the calculus in the pockets can be detected, the gums are red and swollen, and the gums are dark red. It can be seen that the gums have proliferated to 1/3 of the crown, and the attached gingival stippling has disappeared. , knock(-). CBCT shows that the bony wall on the labial side of *11*12 has disappeared, and low-density shadows can be seen at the root."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "*11*12 Periodontal disease (K05.600)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "*11*21*12*22After local systemic periodontal treatment, *11*21 extraction, and implant restoration on the next day",
+    "restoration": "",
+    "notes": ""
+  },
+  "source_handle": "Supragingival and subgingival scaling and polishing. *11*21 Choose a day to remove",
+  "visit_type": "首诊"
+}

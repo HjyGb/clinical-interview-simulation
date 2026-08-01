@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Pain in lower right back tooth for several days"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Pain in lower right back tooth for several days"
+  },
+  "present_illness": {
+    "present_illness": "Pain in the right lower back tooth for several days, often dull or distended, and occasionally spontaneous pain. I feel severe pain today, especially at night",
+    "past_history": "Nothing special"
+  },
+  "past_history": {
+    "present_illness": "Pain in the right lower back tooth for several days, often dull or distended, and occasionally spontaneous pain. I feel severe pain today, especially at night",
+    "past_history": "Nothing special"
+  },
+  "oral_examination": {
+    "oral_examination": "47 Deep caries and pulp on the distal proximal surface, painful on probing; dull on cold examination; no obvious loosening; painful percussion ( ); loosening 1-2 degrees, no other obvious abnormality."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "47 Chronic Pulpitis (K04.002) Treatment Plan 47 Root Canal Treatment. The patient signed the informed consent.",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "",
+    "restoration": "",
+    "notes": "Instructions for follow-up consultation for discomfort include chewing a cotton roll for 40 minutes and not brushing teeth and gargling for 24 hours. You can eat and drink after 2 hours. It is recommended that the food should not be too hot."
+  },
+  "source_handle": "4% articaine 1.7mlX1 local infiltration anesthesia. Apply rubber dam, remove decay, open the pulp, uncover the top of the pulp, explore the two root canal orifices, extract the pulp; dredge the root canal, 15",
+  "visit_type": "首诊"
+}

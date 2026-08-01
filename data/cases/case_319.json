@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "13–20",
+    "chief_complaint": "Inflammation of wisdom teeth"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "13–20",
+    "chief_complaint": "Inflammation of wisdom teeth"
+  },
+  "present_illness": {
+    "present_illness": "My lower right wisdom tooth has been inflamed and painful for a day. I came to our hospital for treatment today.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2."
+  },
+  "past_history": {
+    "present_illness": "My lower right wisdom tooth has been inflamed and painful for a day. I came to our hospital for treatment today.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2."
+  },
+  "oral_examination": {
+    "oral_examination": "48 It can be seen that part of the crown has erupted, and the distal gums are slightly red."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "48 Impacted teeth (K01.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "48Extract the affected tooth after it erupts",
+    "restoration": "",
+    "notes": "Pay attention to oral hygiene and return to the clinic regularly."
+  },
+  "source_handle": "48 not processed",
+  "visit_type": "首诊"
+}

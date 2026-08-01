@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Left upper back tooth discomfort for several days"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Left upper back tooth discomfort for several days"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported discomfort in the upper left posterior tooth for several days and now came to our hospital for treatment.",
+    "past_history": "Nothing special"
+  },
+  "past_history": {
+    "present_illness": "The patient reported discomfort in the upper left posterior tooth for several days and now came to our hospital for treatment.",
+    "past_history": "Nothing special"
+  },
+  "oral_examination": {
+    "oral_examination": "28 Vertical impaction, percussion (-), no abnormality in the buccal mucosa, nothing special."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "28 Impacted teeth (K01.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "28 removal.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Local iodophor disinfection, local infiltration anesthesia with 4% articaine, separation of the gums after the anesthesia takes effect, extraction of loose teeth, routine scraping of the extraction socket, reduction of the extraction socket, and cotton ball compression to stop bleeding.",
+  "visit_type": "首诊"
+}

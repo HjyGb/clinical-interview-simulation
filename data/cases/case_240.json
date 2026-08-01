@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "13–20",
+    "chief_complaint": "He complained of pain in his lower right posterior tooth. He had undergone root canal treatment in another hospital and now came to our hospital for treatment."
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "13–20",
+    "chief_complaint": "He complained of pain in his lower right posterior tooth. He had undergone root canal treatment in another hospital and now came to our hospital for treatment."
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "36 Tooth and maxillofacial fillings, percussion and exploration revealed no obvious looseness of the teeth, and the gums were slightly red and swollen. CBCT showed dark shadow at the root tip."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "6Acute apical periodontitis (K04.401)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "36 root canal re-treatment, crown restoration/implant restoration after extraction.",
+    "restoration": "",
+    "notes": "Do not bite hard objects. If you feel any discomfort, follow up with a doctor."
+  },
+  "source_handle": "6. Explain the condition, treatment plan, cost, prognosis, etc. to the patient. The patient will be informed and ask for consideration and choose a day for treatment.",
+  "visit_type": "首诊"
+}

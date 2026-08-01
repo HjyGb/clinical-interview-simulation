@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "60+",
+    "chief_complaint": "The lower right back tooth feels uncomfortable when biting something for several days."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "60+",
+    "chief_complaint": "The lower right back tooth feels uncomfortable when biting something for several days."
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he felt discomfort in biting the lower right back tooth a few days ago and came to our hospital for treatment today.",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he felt discomfort in biting the lower right back tooth a few days ago and came to our hospital for treatment today.",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "*46 Distal proximal defect, 1-2 degrees of looseness, slightly red and swollen gums"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "*46Chronic periodontitis (K05.300)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "",
+    "restoration": "",
+    "notes": "Chew after 2 hours and do not bite hard objects. Slight swelling and pain in the past few days is normal."
+  },
+  "source_handle": "Not disposed",
+  "visit_type": "首诊"
+}

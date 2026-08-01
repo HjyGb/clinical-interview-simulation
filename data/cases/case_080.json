@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "13–20",
+    "chief_complaint": "Right back tooth pain for several days"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "13–20",
+    "chief_complaint": "Right back tooth pain for several days"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that the right back tooth had pain after eating cold food last month. It will also hurt if he does not eat cold food this month, and it will also hurt at night. He cannot tell the upper and lower pains, so he came to the hospital for examination today.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, and a history of traveling to Southeast Asia within 1 week. He denied fever, general muscle aches, joint pain, fatigue, bleeding tendency, lymphadenopathy and other dengue fever-related manifestations."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that the right back tooth had pain after eating cold food last month. It will also hurt if he does not eat cold food this month, and it will also hurt at night. He cannot tell the upper and lower pains, so he came to the hospital for examination today.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, and a history of traveling to Southeast Asia within 1 week. He denied fever, general muscle aches, joint pain, fatigue, bleeding tendency, lymphadenopathy and other dengue fever-related manifestations."
+  },
+  "oral_examination": {
+    "oral_examination": "*17 There is a deep and large carious cavity in the distal part. Percussion (-) cold examination (-) shows no obvious looseness of the teeth and no obvious redness and swelling of the gums."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "*17 Pulpitis (K04.000)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "*17 Crown restoration after root canal treatment",
+    "restoration": "",
+    "notes": ""
+  },
+  "source_handle": "The patient will go back and think about it before making an appointment for treatment.",
+  "visit_type": "首诊"
+}

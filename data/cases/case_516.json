@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "60+",
+    "chief_complaint": "Lower right back tooth swelling and pain for more than 1 week"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "60+",
+    "chief_complaint": "Lower right back tooth swelling and pain for more than 1 week"
+  },
+  "present_illness": {
+    "present_illness": "The right lower back tooth has been swollen and painful for more than a week, affecting eating. During this period, I took metronidazole to control it.",
+    "past_history": "He has a 5-year history of hypertension, which is controlled by medication. The high/low pressure is 120/80mmHg. He denies any history of drug allergies."
+  },
+  "past_history": {
+    "present_illness": "The right lower back tooth has been swollen and painful for more than a week, affecting eating. During this period, I took metronidazole to control it.",
+    "past_history": "He has a 5-year history of hypertension, which is controlled by medication. The high/low pressure is 120/80mmHg. He denies any history of drug allergies."
+  },
+  "oral_examination": {
+    "oral_examination": "The oral hygiene condition was poor, tartar ( ), the gingival margin was slightly red and swollen, medium in texture and dark in color.\\n11: Zeng Waiyuan’s crown repair, knock ( ), looseness Ⅰo\\n47: Percussion ( ), looseness IIo, a bulge can be seen on the buccal side, and there is no feeling of fluctuation during palpation. CBCT shows: 11 a small area of ​​low-density shadow at the root apex and a thin bony plate on the labial side; 47. a large area of ​​low-density shadow at the root apex."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "11 47 Chronic apical periodontitis (K04.500)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "11 Root canal re-treatment and pseudo-coron restoration 47 Root canal restoration and pseudo-coron restoration",
+    "restoration": "",
+    "notes": "Chew after 2 hours, chew less hard objects, and follow up with a doctor if you feel unwell."
+  },
+  "source_handle": "1: Oral hygiene education 2: Crown restoration after re-treatment of 11 root canals; Crown restoration after 47 root canals 3: Explain the condition and consider it to the patient",
+  "visit_type": "首诊"
+}

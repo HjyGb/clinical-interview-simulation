@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Private prosecution requires oral examination."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Private prosecution requires oral examination."
+  },
+  "present_illness": {
+    "present_illness": "The patient requested to have his teeth filled and came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient requested to have his teeth filled and came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "46 47 37 Black changes were seen on the proximal surface, and the proximal surface was rough and hard, and the probe was stuck. When percussion, the teeth were not loose, and the gums were slightly red and swollen. The mouth is light and has poor hygiene, with tartar and slightly red and swollen gums. 26 CBCT showed white filling and medullary cavity, and no obvious abnormality in the root tip.\\n16 17 The white filling did not reach the medullary cavity, and no obvious abnormality was found in the root tip.\\n38 Horizontal impaction, close to the mandibular neural canal.\\n27 The filling in the root canal and the root tip, and the root tip is dark."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "46 47 37 Caries (K02.900). 26 Pulpitis (K04.000) 16 17 Tooth defect (K07.303) 38 Impacted teeth (K01.100) Whole-mouth chronic gingivitis (K05.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "46 47 37 filling treatment. 26Root canal treatment and crown restoration. 16 17 Inlay restoration. 38 removal. Full mouth ultrasonic supragingival scaling.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "47 Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Corrosion removal and hole preparation, moisture-proof drying, acid etching, drying, applying adhesive, light blowing, 3M nano resin filling, light curing, shaping, and polishing.",
+  "visit_type": "首诊"
+}

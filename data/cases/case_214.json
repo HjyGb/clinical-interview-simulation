@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Request an oral exam"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Request an oral exam"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that there was no obvious discomfort in the mouth, but the lower front teeth were somewhat loose. He requested an oral examination at our hospital.",
+    "past_history": "Good health in the past"
+  },
+  "past_history": {
+    "present_illness": "The patient reported that there was no obvious discomfort in the mouth, but the lower front teeth were somewhat loose. He requested an oral examination at our hospital.",
+    "past_history": "Good health in the past"
+  },
+  "oral_examination": {
+    "oral_examination": "14 Residual crown, root canal orifice exposed, remaining lingual dental tissue about 2mm, percussion (-), probing (-), no obvious loosening 41 42 31 32 Lower anterior teeth area, tooth loosening 2 to 3 degrees, dental calculus ( ), alveolar bone is resorbed and tooth roots are exposed. 24 Deep and large carious cavity on the occlusal surface, food impaction, probing (-), percussion (-), no response to cold test 26 Filling material visible in the distal and adjacent maxillofacial surface, secondary caries at the edge, probing (-), percussion (-) , 1 degree of loosening of multiple teeth in the mouth and defects in the buccal and cervical areas."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Chronic periodontitis 14 44 Apical inflammation 26 Combined periodontal and pulpal lesions",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Treatment plan: Full mouth scaling, periodontal treatment for 2-2 lower front teeth, loose teeth fixed, and extraction of 42 teeth is considered. The rest of the wedge-shaped defects were filled and treated. 14 root canals were re-treated and post-core crown repair/extraction was performed. Implant restoration was performed. 26 root canals were treated and crown repair/extraction was performed. Implant restoration was performed and 44 root canals were treated.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "none",
+  "visit_type": "首诊"
+}

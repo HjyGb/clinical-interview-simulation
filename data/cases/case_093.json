@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Left upper back tooth discomfort for several days"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Left upper back tooth discomfort for several days"
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": "The patient reported that he had felt discomfort in the left upper back tooth in recent days, and now he came to our hospital for examination."
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": "The patient reported that he had felt discomfort in the left upper back tooth in recent days, and now he came to our hospital for examination."
+  },
+  "oral_examination": {
+    "oral_examination": "*27 The filling can be seen in the distal adjacent maxillofacial surface, which is hard in texture and can be touched with cold (-) probing (-) percussion ( )."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "*27Chronic apical periodontitis (K04.500)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Option 1: *27 root canal retreatment (lower success rate)\\nOption 2: *27 removal, selective implantation and restoration\\nThe patient requested that he want to reduce inflammation first.",
+    "restoration": "",
+    "notes": ""
+  },
+  "source_handle": "Prescribe anti-inflammatory drugs",
+  "visit_type": "复诊"
+}

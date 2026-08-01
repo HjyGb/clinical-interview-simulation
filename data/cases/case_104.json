@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Ask for a wisdom teeth check"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Ask for a wisdom teeth check"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that she requested to check the condition of the wisdom teeth to see if they need to be removed.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "past_history": {
+    "present_illness": "The patient reported that she requested to check the condition of the wisdom teeth to see if they need to be removed.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "oral_examination": {
+    "oral_examination": "*38*48 Mesial impaction, 2/3 of the crown exposed, no abnormality in the mucosa, the rest are normal, the remaining teeth need to be checked 5*15 A defect can be seen on the mesial and lingual side, the texture is hard, probe (-) cold (-) percussion ( -)"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "*38*48 impacted teeth (K01.100) 15 tooth defects (K07.303)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "*38*48 extraction and 15 filling treatment",
+    "restoration": "",
+    "notes": "Pay attention to oral hygiene and return to the clinic regularly."
+  },
+  "source_handle": "48 Local povidone-iodine disinfection, alveolar nerve block anesthesia with lidocaine hydrochloride, and infiltration anesthesia with bistriol around the wisdom teeth. After the anesthesia takes effect, the gums are separated, the crown part of the tooth is divided by grinding with a mobile phone, the mesial obstruction is released, the pieces are loosened, and the tooth extraction forceps are taken out. Routinely scratch and scrape the tooth extraction wound and apply pressure to stop bleeding. 15. Remove all decay, prepare the cavity, blow-dry the cavity, apply adhesive, fill with resin, light-cure, adjust the high points of the filling body, and polish.",
+  "visit_type": "首诊"
+}

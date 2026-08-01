@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "The lower right back tooth has been feeling uncomfortable for several days and requires a filling."
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "The lower right back tooth has been feeling uncomfortable for several days and requires a filling."
+  },
+  "present_illness": {
+    "present_illness": "The patient complained of discomfort in the left upper back tooth and requested a dental filling.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "past_history": {
+    "present_illness": "The patient complained of discomfort in the left upper back tooth and requested a dental filling.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "oral_examination": {
+    "oral_examination": "*47, *46 The face is basically symmetrical, the skin has no redness and swelling, the mouth opening is normal, and there is no snapping or tenderness in the bilateral temporomandibular joints. *46 Distal *47 Mesial caries can be seen on the adjacent maxillofacial surface. Pain (-) percussion (-), cold (-) teeth are not loose, and no obvious abnormality is found in the gums. cbct shows *46 distal *47 mesial low-density shadow and near marrow"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "*46*47 Treatment plan for deep caries (LC01) *46*47 Filling treatment (if tentative removal of decay fails to remove the marrow, root canal treatment will be performed)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "*46*47 Filling treatment (if tentative removal of decay fails to remove the marrow, root canal treatment will be performed)",
+    "restoration": "",
+    "notes": "Avoid biting hard food, pay attention to oral hygiene, and return to the clinic regularly."
+  },
+  "source_handle": "76 not disposed",
+  "visit_type": "首诊"
+}

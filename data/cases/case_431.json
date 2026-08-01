@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Consult loose front teeth"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Consult loose front teeth"
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "41 31 32 Teeth loosening three degrees, percussion ±, red and swollen gums. 41 31 32 CBCT showed loss of alveolar bone"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Periodontal Disease (K05.600)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Remove after anti-inflammatory",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Explain the patient's condition, treatment plan, cost, prognosis, etc., and the patient is informed and agrees to the treatment. After anti-inflammatory at home, come to the hospital to remove the affected tooth.",
+  "visit_type": "首诊"
+}

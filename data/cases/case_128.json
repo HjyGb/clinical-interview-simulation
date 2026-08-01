@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Trauma to upper front teeth for more than 2 months"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Trauma to upper front teeth for more than 2 months"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that his upper front teeth had been knocked down 2 months ago, and now he comes to our hospital for consultation and examination.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "past_history": {
+    "present_illness": "The patient reported that his upper front teeth had been knocked down 2 months ago, and now he comes to our hospital for consultation and examination.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "oral_examination": {
+    "oral_examination": "*11 The second degree of looseness, knock (-)."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "11Chronic apical periodontitis (K04.500)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Plan 1: *11 Temporary observation after jaw adjustment;\\nPlan 2: *11 crown repair and fixation;\\nOption 3: *11 Extraction followed by implant restoration",
+    "restoration": "",
+    "notes": "Strictly abide by the &quot;Precautions after Tooth Extraction&quot;, take oral antibiotics (bring your own), and follow up with doctors if you feel uncomfortable. The stitches were removed after a week."
+  },
+  "source_handle": "Not disposed.",
+  "visit_type": "首诊"
+}

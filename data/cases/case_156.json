@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Recurrent pain in upper right back tooth for several months"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Recurrent pain in upper right back tooth for several months"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that the upper right posterior tooth was repeatedly swollen and painful, consciously loose, and unable to bite. He now sought treatment in our hospital.",
+    "past_history": "Good health in the past"
+  },
+  "past_history": {
+    "present_illness": "The patient reported that the upper right posterior tooth was repeatedly swollen and painful, consciously loose, and unable to bite. He now sought treatment in our hospital.",
+    "past_history": "Good health in the past"
+  },
+  "oral_examination": {
+    "oral_examination": "16. Deep caries on the mesial interproximal surface, the remaining tooth tissue is weak, probing (-), percussion ( ), loosening to 2 degrees, deep periodontal pockets to be probed, root bifurcation to III degree, slight periodontal pus overflow, gingiva Slightly red and swollen."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Periodontal pulp syndrome (K04.902)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "16 removal",
+    "restoration": "",
+    "notes": "Regular review"
+  },
+  "source_handle": "",
+  "visit_type": "首诊"
+}

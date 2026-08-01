@@ -1,0 +1,7 @@
+# Patient Agent — System Prompt Placeholder
+#
+# 变量:
+#   {case_context}  — 当前病例的 Tier 1–3 结构化信息
+#   {persona}       — 患者人格参数
+#   {tier}          — 当前允许披露的信息层级
+

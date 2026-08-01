@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Fillings"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Fillings"
+  },
+  "present_illness": {
+    "present_illness": "Found multiple cavities in the mouth and required fillings",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2."
+  },
+  "past_history": {
+    "present_illness": "Found multiple cavities in the mouth and required fillings",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2."
+  },
+  "oral_examination": {
+    "oral_examination": "28 Deep and large carious lesions and pulp, black texture, probe -, percussion -, cold, loose -, no discomfort in the gums 17, 27 Caries damage reaching the dentine layer, probing -, percussion -, cold -, loose -, no difference in the gums 24D The proximal caries is damaged to the deep layer of dentin, probe -, percussion -, cold -, loose -, the gums are no different 25M The proximal caries is damaged to the dentin layer, probe -, percussion -, cold -, loose -, the gums are no different 37 The original filling material can be seen on the buccal side, with secondary caries at the edge. The texture is black, probe-, percussion-, cold-, loose-, and the gums are unremarkable. 28 CBCT shows: the caries reaches the medullary cavity."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "28 Pulpitis (K04.000) 17, 24, 25, 27 Dentin caries (K02.100) 37 Secondary caries (K02.800x001)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "28 extraction, 17, 25, 27 filling treatment, 24, 37 trying marrow preservation and filling treatment",
+    "restoration": "",
+    "notes": "Avoid acidic foods within a week and avoid hot and cold stimulation. Maintain oral hygiene as directed by your doctor and rinse with mouthwash. Regular re-examination and follow-up treatment if any discomfort occurs."
+  },
+  "source_handle": "Explain the condition, keep the patient and family informed, ask for consideration, and choose a day for treatment.",
+  "visit_type": "首诊"
+}

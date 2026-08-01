@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "The lower right back tooth has been missing for several years"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "The lower right back tooth has been missing for several years"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that the lower right back tooth had been missing for several years, and now he came to our hospital to ask for a filling.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "past_history": {
+    "present_illness": "The patient reported that the lower right back tooth had been missing for several years, and now he came to our hospital to ask for a filling.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "oral_examination": {
+    "oral_examination": "*36 Large areas of defects and caries can be seen. Probe (-) Cold (-) Percussion (-) 18, 48 Extraoral: Maxillofacial symmetry, bilateral temporomandibular joint symmetry, no snapping, no local tenderness, mouth open Spend\\nThree fingers, mouth opening is normal.\\nIntraoral: Permanent dentition, oral hygiene is average, gums are slightly red and swollen, *18 shows a small amount of caries on the maxillofacial surface, percussion (-).\\n*48 Vertical impaction can be seen, 1/3 of the tooth crown is exposed, there is no abnormality in the mucosa, and the rest is normal. The remaining teeth need to be investigated. cbct shows *18 vertical high level obstruction\\n*48 Vertically high impaction, the root tip can be seen surrounding the mandibular nerve canal\\n*36 Maxillofacial low-density shadow and near pulp"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "36 tooth defects (K07.303) 18, 48 impacted teeth (K01.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "*36 filling treatment (if pulp leakage occurs during caries removal, root canal treatment will be performed) *18 extraction, *48 extraction (due to the difficulty of contact with the mandibular nerve canal, it is recommended that the gums be trimmed first. The patient agrees)",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "*18 Local povidone iodine disinfection, 4% articaine infiltration anesthesia, after the anesthetic takes effect, separate the gums, loosen the teeth, and remove the tooth with extraction forceps. Routinely scratch the tooth extraction wound and apply pressure to stop bleeding. *48 Under local anesthesia, electric knife trims the gums. *36 Remove all the decay, make sure there is no marrow leakage, prepare the cavity, blow dry the cavity, apply adhesive, fill with resin, light cure, adjust the high points of the filling body, and polish.",
+  "visit_type": "首诊"
+}

@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "13–20",
+    "chief_complaint": "Receive an orthodontic referral"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "13–20",
+    "chief_complaint": "Receive an orthodontic referral"
+  },
+  "present_illness": {
+    "present_illness": "A few days ago, the patient felt that he had black lines on his back teeth for several days. He denied the pain caused by hot and cold stimulation and spontaneous pain, which affected his appearance, so he came to our hospital to ask for fillings.",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "A few days ago, the patient felt that he had black lines on his back teeth for several days. He denied the pain caused by hot and cold stimulation and spontaneous pain, which affected his appearance, so he came to our hospital to ask for fillings.",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "27 37 46 Black caries can be seen in the pits and fissures of the buccal surface and occlusal surface. The probe can be probed. The surface is rough and there is no discomfort during probing. The teeth are slightly sensitive to cold water stimulation. The cold diagnosis is the same as the control teeth. There is no pain when percussion. There is a small amount of soft calculus on the gingival margin."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "27 37 46 Caries (K02.900x001)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "27 37 46 filling treatment",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "After caries removal, the middle layer of dentin is reached, the cavity is trimmed, 3m eighth generation adhesive is applied, 3m nano resin is filled, blended and polished",
+  "visit_type": "首诊"
+}

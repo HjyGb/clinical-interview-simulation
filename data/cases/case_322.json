@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Consultation about dental implants"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Consultation about dental implants"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that his lower left posterior teeth had been extracted from another hospital a few years ago and he now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that his lower left posterior teeth had been extracted from another hospital a few years ago and he now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "36 is missing, the gums are flat and there are no bone spurs, the rest is normal, and the remaining teeth need to be checked. The space between missing teeth is narrow."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "36 Missing teeth (K00.002)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "36 Implantation restoration is recommended.",
+    "restoration": "",
+    "notes": "Avoid acidic foods within a week and avoid hot and cold stimulation. Maintain oral hygiene as directed by your doctor and rinse with mouthwash. Regular re-examination and follow-up treatment if any discomfort occurs."
+  },
+  "source_handle": "36 Film consultation, go back and think about it. Change date",
+  "visit_type": "首诊"
+}

@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "The upper front teeth have been missing for several years"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "The upper front teeth have been missing for several years"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had been missing his upper front teeth for several years and now came to our hospital for consultation on implantation.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had been missing his upper front teeth for several years and now came to our hospital for consultation on implantation.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "oral_examination": {
+    "oral_examination": "21 The missing alveolar ridge is slightly depressed. No obvious abnormality was found in the adjacent teeth, cold (-), probing (-), percussion (-), loose (-). No obvious abnormality was found in the remaining teeth. The opposing teeth are slightly elongated. The oral hygiene of the whole mouth is acceptable, with tartar ( ) and pigment ( ). No obvious abnormalities were found in the bite and joints. CBCT shows that the bone height and bone width are acceptable"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "21 Missing teeth (K00.001)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Implant restoration.",
+    "restoration": "",
+    "notes": "Instructions for follow-up consultation for discomfort include chewing a cotton roll for 40 minutes and not brushing teeth and gargling for 24 hours. You can eat and drink after 2 hours. It is recommended that the food should not be too hot. Follow-up for discomfort."
+  },
+  "source_handle": "Not disposed.",
+  "visit_type": "首诊"
+}

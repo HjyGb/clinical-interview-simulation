@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Request tooth extraction"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Request tooth extraction"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that the lower left posterior tooth had been inflamed and painful a few days ago. The pain was relieved today, and he came to our hospital to have it removed.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that the lower left posterior tooth had been inflamed and painful a few days ago. The pain was relieved today, and he came to our hospital to have it removed.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "Vertical impaction, no redness, swelling or pus in the gums, no abnormality in the buccal mucosa, nothing else special. 28 vertical obstruction, the rest are no different. CBCT shows: no low-density image at the root tip"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "28,38 impacted teeth (K01.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Remove 28, 38.",
+    "restoration": "",
+    "notes": "Pay attention to oral hygiene and return to the clinic regularly."
+  },
+  "source_handle": "Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Local iodophor disinfection, 38 lines of inferior alveolar nerve block anesthesia with 2% lidocaine, distal incision, removal of soft resistance, loosening of the teeth and extraction of the affected teeth, routine scraping of the extraction socket, reduction of the extraction socket, and suturing to stop bleeding . In the 28th line, local infiltration anesthesia with 4% articaine was performed, the gums were separated, the teeth were straightened and loosened, and the affected teeth were extracted. The extraction socket was scraped and repositioned regularly, and cotton ball compression was used to stop bleeding.",
+  "visit_type": "首诊"
+}

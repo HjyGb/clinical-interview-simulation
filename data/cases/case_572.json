@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "toothache"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "toothache"
+  },
+  "present_illness": {
+    "present_illness": "I have been experiencing pain in my left upper back tooth for several days, which has worsened in recent days. I have pain at night, which affects my sleep. I came to see a doctor today.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2."
+  },
+  "past_history": {
+    "present_illness": "I have been experiencing pain in my left upper back tooth for several days, which has worsened in recent days. I have pain at night, which affects my sleep. I came to see a doctor today.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2."
+  },
+  "oral_examination": {
+    "oral_examination": "28 For deep and large caries and pulp, probe and percussion, cold, loosen the gums, no difference"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "28Pulpitis(K04.000)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "removal",
+    "restoration": "",
+    "notes": "Routine medical advice and follow-up consultation if any discomfort occurs."
+  },
+  "source_handle": "Blood test today on 28th, (the patient is in menstrual period, choose a day to have the extraction)",
+  "visit_type": "首诊"
+}

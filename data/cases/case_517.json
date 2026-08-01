@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Request dental implants"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Request dental implants"
+  },
+  "present_illness": {
+    "present_illness": "The patient stated that his upper right back tooth was extracted at Shaw Hospital three months ago and he came to our hospital for dental implantation now.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied symptoms related to COVID-19 such as fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea. His body temperature was 36.2."
+  },
+  "past_history": {
+    "present_illness": "The patient stated that his upper right back tooth was extracted at Shaw Hospital three months ago and he came to our hospital for dental implantation now.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied symptoms related to COVID-19 such as fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea. His body temperature was 36.2."
+  },
+  "oral_examination": {
+    "oral_examination": "16 is missing, the gums are flat, there are no bone spurs, and the rest is normal. CBCT showed: the bone volume was acceptable, but the vertical height was insufficient."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "16. Dentition defect. Treatment Plan 16 Implant Restoration. The patient was informed of the relevant costs and the patient gave full informed consent.",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "16. Routine disinfection and draping. 4% articaine 1.7ml BLT implants,",
+  "visit_type": "首诊"
+}

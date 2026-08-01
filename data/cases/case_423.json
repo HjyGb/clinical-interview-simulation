@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "The right upper back tooth has been feeling uncomfortable for several months."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "The right upper back tooth has been feeling uncomfortable for several months."
+  },
+  "present_illness": {
+    "present_illness": "He complained of pain and discomfort in the upper right posterior tooth a few months ago. Recently, the pain has worsened and affected his eating. He came to our hospital for treatment today.",
+    "past_history": "Denied systemic history. abled."
+  },
+  "past_history": {
+    "present_illness": "He complained of pain and discomfort in the upper right posterior tooth a few months ago. Recently, the pain has worsened and affected his eating. He came to our hospital for treatment today.",
+    "past_history": "Denied systemic history. abled."
+  },
+  "oral_examination": {
+    "oral_examination": "17. The distal caries damage reached the dentin layer, and the gums were loose after probing and percussion. No obvious abnormality was found in the gums. 1E The residual root of the deciduous tooth can be seen on the lingual side of the maxillary premolar. The residual crown 47 is poorly covered by the restoration."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "47 Chronic pulpitis (K04.002) 1E Retained deciduous teeth (K00.608) 47 Residual crown (K08.302)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "17 Crown restoration after root canal treatment. 1E 47 removal",
+    "restoration": "",
+    "notes": "Routine medical advice and follow-up consultation if any discomfort occurs."
+  },
+  "source_handle": "4% articaine 1.7mlX1 local infiltration anesthesia. Apply the rubber dam, remove the decay and open the pulp, uncover the top of the pulp, explore the three root canal orifices, and extract the pulp; GG drill prepares the upper third of the root, 15",
+  "visit_type": "首诊"
+}

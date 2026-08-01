@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "60+",
+    "chief_complaint": "Ask for teeth cleaning"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "60+",
+    "chief_complaint": "Ask for teeth cleaning"
+  },
+  "present_illness": {
+    "present_illness": "The patient asked for teeth cleaning and went to see a doctor today.",
+    "past_history": "The patient reported that he had hypothyroidism and had been taking Euthyrox for a long time. The patient denied any medical history, family history, drug allergy, or history of traveling to medium- and high-risk areas within 14 days. Denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea and other symptoms related to COVID-19. Body temperature 36.2.&quot;"
+  },
+  "past_history": {
+    "present_illness": "The patient asked for teeth cleaning and went to see a doctor today.",
+    "past_history": "The patient reported that he had hypothyroidism and had been taking Euthyrox for a long time. The patient denied any medical history, family history, drug allergy, or history of traveling to medium- and high-risk areas within 14 days. Denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea and other symptoms related to COVID-19. Body temperature 36.2.&quot;"
+  },
+  "oral_examination": {
+    "oral_examination": "Moderate to severe gum recession throughout the mouth, easy bleeding during periodontal probing, degree of looseness, periodontal pockets, deep\\n5mm. Poor overall oral hygiene; soft calculus index (DI): 1, calculus index (CI): 1 = supragingival calculus does not cover the tooth surface beyond\\n1/3, attachment loss can be detected, calculus in the pocket can be detected, bleeding index: 4 = bleeding overflows and overflows into the gingival sulcus after probing, and the gums are red\\nThe gums are swollen, the gums are dark red, and the stippling of the attached gums disappears. 37 is missing and the alveolar ridge is full. No obvious abnormality was found in adjacent teeth. 17 16 In the mouth, the gums were severely receded and the teeth were loosened to a degree of I-II. 14 15 The gums were receding, red and swollen, and the teeth were loose to the first degree in the mouth. Hepatitis B quantitative display 243"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Chronic periodontitis 37Dental defects",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "It is recommended to perform periodontal exploration after scaling and further periodontal treatment. 37 Recommended implant restoration 17 16 Recommended removal followed by implant restoration",
+    "restoration": "",
+    "notes": "Do not bite hard objects. If you feel any discomfort, follow up with a doctor."
+  },
+  "source_handle": "Full mouth supragingival scaling and polishing. 17 16 37 Not processed",
+  "visit_type": "首诊"
+}

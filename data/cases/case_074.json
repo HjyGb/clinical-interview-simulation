@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "13–20",
+    "chief_complaint": "toothache"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "13–20",
+    "chief_complaint": "toothache"
+  },
+  "present_illness": {
+    "present_illness": "The right lower back tooth has been stimulated and painful by cold water for two days. I came to our hospital for treatment today.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied symptoms related to COVID-19 such as fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea. His body temperature was 36.2."
+  },
+  "past_history": {
+    "present_illness": "The right lower back tooth has been stimulated and painful by cold water for two days. I came to our hospital for treatment today.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied symptoms related to COVID-19 such as fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea. His body temperature was 36.2."
+  },
+  "oral_examination": {
+    "oral_examination": "*45 Distal proximal caries and pulp, probing, percussion, cold, loosening, no discomfort in the gums *17 Large area caries and pulp, a large amount of food impaction can be seen in the medullary cavity, probing, percussion, cold, loosening -, there is no discomfort in the gums. CBCT shows: caries near the pulp."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "*17, *45 Pulpitis (K04.000)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "*17, *45 root canal treatment",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "*17, *45 Explain the condition, the patient and family members are informed, ask for consideration, and choose a day for treatment",
+  "visit_type": "首诊"
+}

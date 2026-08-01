@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Request wisdom teeth removal"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Request wisdom teeth removal"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he wanted to have his wisdom teeth removed on both sides.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he wanted to have his wisdom teeth removed on both sides.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "oral_examination": {
+    "oral_examination": "*48 Mesial impaction, mucosa covering the distal maxillary surface, no abnormal color, no redness, swelling, or congestion. No special features *38 High impaction, mucosa covering the distal maxillofacial surface, 1/3 of the crown exposed, no abnormal color, no redness, swelling, or congestion. Nothing special. CBCT showed that *38 was high vertically impacted and the apex compressed the mandibular neural canal.\\n*48 Mesial and high impaction, apical compression of the mandibular neural canal"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "*48*38 impacted teeth (K01.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "*48*38 removal",
+    "restoration": "",
+    "notes": "Second phase after 5.5 months."
+  },
+  "source_handle": "*48*38 patients considered, not dealt with",
+  "visit_type": "首诊"
+}

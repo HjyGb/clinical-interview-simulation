@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "13–20",
+    "chief_complaint": "Pain in left lower back tooth for 3 days"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "13–20",
+    "chief_complaint": "Pain in left lower back tooth for 3 days"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported pain in the left lower back tooth when biting something, and now came to our hospital for examination.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "past_history": {
+    "present_illness": "The patient reported pain in the left lower back tooth when biting something, and now came to our hospital for examination.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "oral_examination": {
+    "oral_examination": "36 For large-area fillings, explore (-) cold (-) and tap ( )."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "36Chronic apical periodontitis (K04.500)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "36 Root canal treatment and crown restoration.",
+    "restoration": "",
+    "notes": "Strictly abide by the &quot;Precautions after Tooth Extraction&quot; and follow up with follow-up consultations if you feel unwell."
+  },
+  "source_handle": "Open the pulp, explore the depth of the root canal, and perform local anesthesia with articaine. The root canal is prepared to F2, MB=ML=D(17.5), and sealed with calcium hydroxide.",
+  "visit_type": "首诊"
+}

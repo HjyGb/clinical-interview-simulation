@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "I have had a cavity in my left lower back tooth for several years."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "I have had a cavity in my left lower back tooth for several years."
+  },
+  "present_illness": {
+    "present_illness": "The patient said that he discovered a hole in his left lower back tooth a few years ago and ignored it. Now he came to our hospital to ask for a filling.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "past_history": {
+    "present_illness": "The patient said that he discovered a hole in his left lower back tooth a few years ago and ignored it. Now he came to our hospital to ask for a filling.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "oral_examination": {
+    "oral_examination": "*36 There is a large area of ​​defect in the distal and adjacent maxillofacial surface, and food residues can be seen. (-) Cold (-) Percussion (-) CBCT shows that low-density shadows are visible in the distal and adjacent maxillofacial surface and the pulp has reached the root bifurcation, and the root tip is visible. low density shadow"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "36 residual crown (K08.302)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "36 removal",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Not treated, patient considered",
+  "visit_type": "首诊"
+}

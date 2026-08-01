@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Ask for a dental checkup"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Ask for a dental checkup"
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "17 Pain on percussion -, pain on probing -, buccal probing and root bifurcation, CBCT showed distal root resorption, impacted wisdom teeth 31-38 41-48 The alveolar bone in the whole mouth was resorbed horizontally, gingival congestion, redness, and tooth surface were seen on the distal root. Covered with a large amount of dental calculus, periodontal exploration showed that the periodontal surface was 31 32 41 42, the gingiva had shrunk to 5-6 mm below the cementum boundary, and the looseness was 2 degrees. The probe could penetrate into the pits and fissures of the maxillofacial area, and the black matter was hard."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "31-38 41-48 Chronic periodontitis (K05.300) 17 Periodontal degeneration (K05.400) 27 7 47 Caries (K02.900x001)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "17 Recommend extraction 27 37 47 Recommend filling 31-38 41-48 Recommend periodontal scaling 31-33 41-43 Recommend periodontal control followed by periodontal fixation",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "31-38 41-48 Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Rinse with 3% hydrogen peroxide, perform ultrasonic scaling and polishing, rinse with 3% hydrogen peroxide, and apply medicine. Scaling and smoothing the root surface. 11 Occlusal trauma, blending",
+  "visit_type": "首诊"
+}

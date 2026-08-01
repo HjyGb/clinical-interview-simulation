@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "13–20",
+    "chief_complaint": "I have had pain in my left upper back tooth for several days."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "13–20",
+    "chief_complaint": "I have had pain in my left upper back tooth for several days."
+  },
+  "present_illness": {
+    "present_illness": "The patient complained of pain in his left posterior tooth for several days, which was often dull or distended, and occasionally had spontaneous pain. The pain is severe, especially at night.",
+    "past_history": "There is no specific denial of a history of systemic diseases, family history, drug allergies, a history of dental treatment, or a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2."
+  },
+  "past_history": {
+    "present_illness": "The patient complained of pain in his left posterior tooth for several days, which was often dull or distended, and occasionally had spontaneous pain. The pain is severe, especially at night.",
+    "past_history": "There is no specific denial of a history of systemic diseases, family history, drug allergies, a history of dental treatment, or a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2."
+  },
+  "oral_examination": {
+    "oral_examination": "*27 Deep and large carious cavities and dental pulp in the buccal and maxillofacial surfaces, probing: (-); cold test: (); percussion: (-); remaining\\nObvious abnormalities are seen. CBCT shows low-density images of the coronal region and pulp, and no obvious dark shadow around the apex."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "*27 Chronic pulpitis",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "*27 Root canal treatment. The patient signed the informed consent.",
+    "restoration": "",
+    "notes": "Routine medical advice and follow-up consultation if any discomfort occurs."
+  },
+  "source_handle": "4% articaine 1.7mlX1 local infiltration anesthesia. Apply rubber dam, remove decay and open the marrow, uncover the top of the marrow, and clear the root canal, 15",
+  "visit_type": "首诊"
+}

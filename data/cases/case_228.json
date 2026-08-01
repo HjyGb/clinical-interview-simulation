@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Broken tooth for several months"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Broken tooth for several months"
+  },
+  "present_illness": {
+    "present_illness": "The lower right tooth was gradually damaged due to tooth decay, which affected chewing without any pain or other discomfort.",
+    "past_history": "Nothing special"
+  },
+  "past_history": {
+    "present_illness": "The lower right tooth was gradually damaged due to tooth decay, which affected chewing without any pain or other discomfort.",
+    "past_history": "Nothing special"
+  },
+  "oral_examination": {
+    "oral_examination": "47 stump root, decayed, loose I, explore (-), knock (-). Nothing special. 48 The crown is damaged, damaged by caries, loose I, probe (-), knock (-). Nothing special. 16. The filling material was visible on the maxillary surface and was loosened by 2 to 3 degrees. Deep periodontal pockets were explored and pus overflowed from the periodontal pockets. Fistulas and pus overflow were visible in the buccal gums."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "48, 47 residual root/crown 16 combined periodontal and pulpal lesions",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "removal",
+    "restoration": "",
+    "notes": "Strictly abide by the &quot;Precautions after Tooth Extraction&quot;, take oral antibiotics (bring your own), and follow up with doctors if you feel uncomfortable"
+  },
+  "source_handle": "Local disinfection with povidone-iodine and local infiltration anesthesia with bistriol. After the anesthesia takes effect, the gums are separated, the teeth are loosened, and the tooth extraction forceps are removed. Routinely scrape the tooth extraction wound to remove inflammatory granulation tissue and apply pressure to stop bleeding.",
+  "visit_type": "首诊"
+}

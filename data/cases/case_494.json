@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Left upper back tooth discomfort for several days"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Left upper back tooth discomfort for several days"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported discomfort in the upper left posterior tooth for several days and now came to our hospital for treatment.",
+    "past_history": "Nothing special"
+  },
+  "past_history": {
+    "present_illness": "The patient reported discomfort in the upper left posterior tooth for several days and now came to our hospital for treatment.",
+    "past_history": "Nothing special"
+  },
+  "oral_examination": {
+    "oral_examination": "38. Low impaction, covered by distal gingiva, no redness, swelling and pus, otherwise nothing special."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "38 Impacted teeth (K01.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "38 removal.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Local iodine disinfection was performed, and 2% lidocaine was used to anesthetize the inferior alveolar nerve tissue. After the anesthesia took effect, the gums were separated, the roots were divided, and the loose teeth were extracted. The extraction socket was routinely scraped, reset, and sutured to stop bleeding.",
+  "visit_type": "首诊"
+}

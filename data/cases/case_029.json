@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Consultation about dental implants"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Consultation about dental implants"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had residual roots of his upper right posterior teeth and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had residual roots of his upper right posterior teeth and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "*18,*16,*15,*14,*24,*25,*46,*37 The residual roots are not loose when tapped (-). There is no abnormality in the buccal mucosa, and the rest are normal. *26, *44 residual crown, percussion on (-) buccal mucosa shows no abnormality, and the rest is normal."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Deficient dentition.",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Implant restoration is recommended.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Ask for a film consultation and go back to think about it.",
+  "visit_type": "首诊"
+}

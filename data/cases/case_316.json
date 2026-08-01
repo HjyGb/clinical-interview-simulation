@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "13–20",
+    "chief_complaint": "He complained of pain in the right lower back tooth and came to our hospital for treatment today."
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "13–20",
+    "chief_complaint": "He complained of pain in the right lower back tooth and came to our hospital for treatment today."
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": "abled. Nothing special."
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": "abled. Nothing special."
+  },
+  "oral_examination": {
+    "oral_examination": "There was a deep and large carious cavity in the mesio-coronal part, and the pulp hole was explored and percussed. It was found that the tooth was not loose and the gingiva was slightly red and swollen. CBCT showed that deep caries penetrated the pulp, and no obvious abnormality was found in the apex. 87217876578 Black changes were seen on the maxillary surface, which was rough and hard when probed, and the probe was stuck. When percussed, the teeth were not loose, and the gums were slightly red and swollen."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Impacted teeth (K01.100) Caries (K02.900)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "removal. Filler treatment.",
+    "restoration": "",
+    "notes": ""
+  },
+  "source_handle": "Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. 18",
+  "visit_type": "首诊"
+}

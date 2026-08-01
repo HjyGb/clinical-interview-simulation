@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Pain in left lower back tooth"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Pain in left lower back tooth"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had been suffering from hot and cold pain in his left lower back tooth for several months. In recent days, the pain had worsened and was accompanied by night pain. He now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had been suffering from hot and cold pain in his left lower back tooth for several months. In recent days, the pain had worsened and was accompanied by night pain. He now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "37. Deep caries on the distal proximal surface. The texture is soft during probing and sensitive during cold diagnosis. There is no abnormality in buccal mucosa percussion (-). The rest is normal."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Acute pulpitis (K04.001)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Crown restoration after root canal treatment.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Local disinfection with iodophor, inferior alveolar nerve block anesthesia with 2% lidocaine, local infiltration anesthesia with 4% articaine, removal of decay, pulp opening, sealing and inactivation, and temporary sealing with OC cotton ball.",
+  "visit_type": "首诊"
+}

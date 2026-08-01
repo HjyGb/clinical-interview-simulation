@@ -1,0 +1,36 @@
+{
+  "raw_records": 2124,
+  "unique_patients": 660,
+  "missing_values": {
+    "filtered_incomplete": 61
+  },
+  "field_presence": {
+    "Main appeal": {
+      "present": 592,
+      "missing": 68
+    },
+    "Present medical history": {
+      "present": 474,
+      "missing": 186
+    },
+    "Past medical history": {
+      "present": 528,
+      "missing": 132
+    },
+    "Oral Check": {
+      "present": 628,
+      "missing": 32
+    },
+    "Diagnosis": {
+      "present": 614,
+      "missing": 46
+    },
+    "Treatment plan": {
+      "present": 545,
+      "missing": 115
+    }
+  },
+  "after_filter": 599,
+  "filtered_out": 61,
+  "filter_rate_pct": 9.2
+}

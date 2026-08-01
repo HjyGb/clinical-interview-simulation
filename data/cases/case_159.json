@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "The lower left tooth is loose."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "The lower left tooth is loose."
+  },
+  "present_illness": {
+    "present_illness": "The patient&#39;s lower left tooth was loose and he came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient&#39;s lower left tooth was loose and he came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "35 residual crown, looseness, 15.25 residual root, nothing special."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "15.25.35 Residual tooth root (K08.300x002)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Removed on 15.25.35.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort, oral antibiotics for 3 days (bring your own), light diet"
+  },
+  "source_handle": "15.25.35 Local iodophor disinfection, local infiltration anesthesia with blue 4% articaine, gingival separation, gap enlargement, loosening, forceps removal, scraping, and cotton ball compression to stop bleeding.",
+  "visit_type": "首诊"
+}

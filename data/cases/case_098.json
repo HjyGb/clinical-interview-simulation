@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "A cavity was found in the left lower back tooth for several days."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "A cavity was found in the left lower back tooth for several days."
+  },
+  "present_illness": {
+    "present_illness": "He complained that he had found a cavity in his left lower back tooth for several days, so he came to our hospital for treatment today.",
+    "past_history": "abled. He denies a history of systemic diseases, family history, drug allergies, and a history of traveling to Southeast Asia within 1 week. He denied fever, general muscle aches, joint pain, fatigue, bleeding tendency, lymphadenopathy and other dengue fever-related manifestations."
+  },
+  "past_history": {
+    "present_illness": "He complained that he had found a cavity in his left lower back tooth for several days, so he came to our hospital for treatment today.",
+    "past_history": "abled. He denies a history of systemic diseases, family history, drug allergies, and a history of traveling to Southeast Asia within 1 week. He denied fever, general muscle aches, joint pain, fatigue, bleeding tendency, lymphadenopathy and other dengue fever-related manifestations."
+  },
+  "oral_examination": {
+    "oral_examination": "37 Caries on the occlusal surface, deep into the middle layer of dentin, probing (-), cold test: (-), percussion: (-); 18 vertical impaction, carious lesions on the occlusal surface, food impaction, probing -, percussion -, loose-, gums-."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "37 Dentin caries (K02.100) 18 Impacted teeth (K01.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "37 Composite resin filling 18 Extraction.",
+    "restoration": "",
+    "notes": "Strictly abide by the &quot;Precautions after Tooth Extraction&quot;, take oral antibiotics, and follow up with follow-up consultations if any discomfort occurs. The stitches were removed after one week."
+  },
+  "source_handle": "37 Remove the caries and prepare the hole. Apply adhesive, blow thin, and illuminate. 3M-Z250 resin is filled in layers, light-cured in layers, and the jaw is contoured and polished. 18. Local disinfection with povidone-iodine and infiltration anesthesia with 4% articaine. After the anesthesia takes effect, the gums are separated, the teeth are loosened, and the tooth extraction forceps are removed. Routinely scratch the tooth extraction wound and apply pressure to stop bleeding.",
+  "visit_type": "首诊"
+}

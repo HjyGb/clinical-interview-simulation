@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Residual root of upper right front tooth"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Residual root of upper right front tooth"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that his lower right front tooth had been fractured traumatically for several weeks, and he now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that his lower right front tooth had been fractured traumatically for several weeks, and he now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "41 Residual root, percussion (-), there is no abnormality in the buccal mucosa, the gap between the missing teeth is narrow, the occlusal space is adequate, the defect reaches 2mm subgingivally, and no other abnormalities are found in the rest."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "41 Residual tooth root (K08.300x002)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "41 Just pull it out and plant it.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "1. The doctor has fulfilled his obligation to inform, and the patient has fully informed consent and signed the &quot;Informed Consent Form for Implantation&quot;. 2. Routine disinfection and draping. 4% articaine 1.7ml 3.3*12mm implant, bone powder periosteum is implanted on the labial side, and screwed into the healing abutment. Suture and filming position are available.",
+  "visit_type": "首诊"
+}

@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "60+",
+    "chief_complaint": "Food impaction in left lower back tooth for several days"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "60+",
+    "chief_complaint": "Food impaction in left lower back tooth for several days"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had food impaction in the lower left posterior tooth for several days, and now he came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had food impaction in the lower left posterior tooth for several days, and now he came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "33-37 had continuous porcelain crowns, 37 and 38 gingival papillae were red and swollen and prone to bleeding when probed, 34 (-) there was no abnormality in the buccal mucosa, and the rest were normal. CBCT showed: 34 root tip low-density images."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "34Chronic apical periodontitis (K04.500)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "It is recommended that 34 root canal treatments be repaired.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Explain the condition, keep the patient and family informed, ask for consideration, and choose a day for treatment.",
+  "visit_type": "首诊"
+}

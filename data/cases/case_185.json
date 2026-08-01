@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Pain in lower right back tooth for several days"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Pain in lower right back tooth for several days"
+  },
+  "present_illness": {
+    "present_illness": "Patient reported pain in lower right posterior tooth and requested examination",
+    "past_history": "He denied any history of systemic diseases, family history, or drug allergies."
+  },
+  "past_history": {
+    "present_illness": "Patient reported pain in lower right posterior tooth and requested examination",
+    "past_history": "He denied any history of systemic diseases, family history, or drug allergies."
+  },
+  "oral_examination": {
+    "oral_examination": "*45 Caries can be seen in the distal part, and gingival hyperplasia can be seen in the cavity. Probe (-) cold ( -) percussion ( )."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "45Chronic apical periodontitis (K04.500)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "*45 root canal treatment",
+    "restoration": "",
+    "notes": "Avoid acidic foods within a week and avoid hot and cold stimulation. Maintain oral hygiene as directed by your doctor and rinse with mouthwash. Regular re-examination and follow-up treatment if any discomfort occurs."
+  },
+  "source_handle": "*45 Remove caries, trim the gums with electrosurgery, measure the length to 16mm, prepare the root to 2506, test the tip (0640), rinse with chlorhexidine and 0.9% sodium chloride, ultrasonic vibration of the root canal, dry and disinfect, insert calcium hydroxide, and temporarily seal.",
+  "visit_type": "首诊"
+}

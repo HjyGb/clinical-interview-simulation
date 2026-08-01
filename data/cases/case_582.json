@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Ask for an oral exam."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Ask for an oral exam."
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "25 47 See the restoration, tap and explore, the teeth are not loose and the gums are slightly red and swollen. CBCT showed a dark shadow at the root tip. 11 15 21 22 26 28 36 37 46 The caries damages the deep layer of dentin, which is rough when probed, and the texture is hard to stick to the probe. When percussed, the teeth are not loose, and the gums are slightly red and swollen. 48 38CBCT showed that the mesiomedian level was impacted. The apex is curved."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "25 47Chronic apical periodontitis (K04.500)11 15 21 22 26 28 36 37 46 Dental caries (K02.900) 48 38 Impacted tooth (K01.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "25 47 It is recommended to remove the restoration and perform root canal retreatment and crown restoration. 51127667 Filling treatment. 48 38 removal.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Explain the condition, treatment plan, cost, prognosis, etc. to the patient. The patient should be informed and ask for consideration. Intraoral CT was taken today.",
+  "visit_type": "首诊"
+}

@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Discomfort in left upper back tooth"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Discomfort in left upper back tooth"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had been experiencing discomfort in his left upper posterior tooth for several months and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had been experiencing discomfort in his left upper posterior tooth for several months and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "26 percussion (-), moderate looseness, buccal mucosa looseness, the rest is no different. CBCT showed: tooth root fracture."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "26 Longitudinal root fissure (K03.801)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "26 Recommend removal",
+    "restoration": "",
+    "notes": "Chew after 2 hours, chew less hard objects, and follow up with a doctor if you feel unwell."
+  },
+  "source_handle": "6. Explain the condition, the patient asks for consideration, and chooses a day for treatment.",
+  "visit_type": "首诊"
+}

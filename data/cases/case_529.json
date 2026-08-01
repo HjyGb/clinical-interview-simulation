@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "13–20",
+    "chief_complaint": "He reported that he had undergone root canal treatment on his right upper back tooth at another hospital one month ago. He now came to our hospital for examination due to pain."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "13–20",
+    "chief_complaint": "He reported that he had undergone root canal treatment on his right upper back tooth at another hospital one month ago. He now came to our hospital for examination due to pain."
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "15. The maxillofacial fillings are in place. When percussed, the teeth are not loose, the gums are not red and swollen, and there are no obvious abnormalities in the periapical mucosa. CBCT showed that the white image in the root canal did not reach the apical foramen, and no obvious abnormality was found in the apex. 17 26 27 36 37 44 46 47 The caries damage reaches the deep layer of dentin, the probe is sensitive, and the probe is stuck. There is black linear caries damage on the maxillofacial surface. When percussion -, the teeth are not loose, and the gums are not red or swollen."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "15 Pulpitis (K04.000)17 26 27 36 37 44 46 47 Dentin caries (K02.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "15 root canal treatment and crown restoration. 17 26 27 36 37 44 46 47 filling treatment.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "15. Explain the condition, treatment plan, cost, prognosis, etc. to the child and his family. The child and his family will be informed and agree to the treatment. Under local infiltration anesthesia with 4% articaine, the original filling was removed, the medullary hole was enlarged, 2 root canals were explored, and the root canals were cleared with hand files to 10",
+  "visit_type": "首诊"
+}

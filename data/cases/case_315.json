@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Conscious bleeding of upper front teeth for several weeks"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Conscious bleeding of upper front teeth for several weeks"
+  },
+  "present_illness": {
+    "present_illness": "The patient complained that his upper front teeth were crowned by a crown made in another hospital. Now he feels bleeding easily and requested an examination.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "past_history": {
+    "present_illness": "The patient complained that his upper front teeth were crowned by a crown made in another hospital. Now he feels bleeding easily and requested an examination.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "oral_examination": {
+    "oral_examination": "Probing for bleeding, tapping (-)"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Poor restoration (LC13)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "After removing the original restoration, we will review the condition of the abutment teeth and formulate a detailed diagnosis and treatment plan.",
+    "restoration": "",
+    "notes": "Instructions for follow-up consultation for discomfort include chewing a cotton roll for 40 minutes and not brushing teeth and gargling for 24 hours. You can eat and drink after 2 hours. It is recommended that the food should not be too hot. See (Precautions after tooth extraction) for details."
+  },
+  "source_handle": "Not disposed",
+  "visit_type": "首诊"
+}

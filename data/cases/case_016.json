@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Periodontal referral"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Periodontal referral"
+  },
+  "present_illness": {
+    "present_illness": "After consulting with many people, I went to our hospital for correction.",
+    "past_history": "He denies any history of major systemic diseases, blood diseases, infectious diseases, or drug allergies."
+  },
+  "past_history": {
+    "present_illness": "After consulting with many people, I went to our hospital for correction.",
+    "past_history": "He denies any history of major systemic diseases, blood diseases, infectious diseases, or drug allergies."
+  },
+  "oral_examination": {
+    "oral_examination": "The anterior teeth are labially inclined, with a deep coverage of 3~5mm, and the overbite is normal. Bilateral molar relationship."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "An&#39;s type",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Oral examination",
+  "visit_type": "首诊"
+}

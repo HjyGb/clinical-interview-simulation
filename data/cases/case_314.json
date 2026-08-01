@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "0–12",
+    "chief_complaint": "Require oral examination and fluoride application"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "0–12",
+    "chief_complaint": "Require oral examination and fluoride application"
+  },
+  "present_illness": {
+    "present_illness": "The child&#39;s parents requested a routine oral examination, but the child did not complain of discomfort and came to our hospital today.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.3."
+  },
+  "past_history": {
+    "present_illness": "The child&#39;s parents requested a routine oral examination, but the child did not complain of discomfort and came to our hospital today.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.3."
+  },
+  "oral_examination": {
+    "oral_examination": "The caries reaches the dentin layer, and the decay is soft and yellowish brown. The reaction of hot and cold diagnosis is the same as that of normal teeth, with pain on probing (-) and percussion (-), no looseness, and no obvious abnormality in the gums."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "caries",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "① Filling surgery (Inform parents of children that RCT is required if swelling and pain occur. Filling materials are free during the warranty period, and root canal treatment costs are paid separately) ② Treat other affected teeth in a timely manner? (Subject to the examination results at the time of final treatment) ③ Oral hygiene education, regular dental check-ups, and fluoride protective varnish",
+    "restoration": "",
+    "notes": ""
+  },
+  "source_handle": "The parents have been informed of the condition, treatment, and cost, and the patient’s family has given informed consent. Due to time conflicts, filling treatment has not been performed for the time being. The entire mouth will be coated with fluoride for the time being. 1. The entire tooth surface will be cleaned and polished, and fluoride protective varnish will be applied. Review within 30.5 hours after 23-6 months. No food or water, no hard objects within 2 hours, brush your teeth after 24 hours",
+  "visit_type": "首诊"
+}

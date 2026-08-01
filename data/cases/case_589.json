@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Conscious discomfort in the back teeth of the mandible for several weeks"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Conscious discomfort in the back teeth of the mandible for several weeks"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that his mandibular posterior teeth had crowns made by an outside hospital. He now felt uncomfortable and requested an examination.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "past_history": {
+    "present_illness": "The patient reported that his mandibular posterior teeth had crowns made by an outside hospital. He now felt uncomfortable and requested an examination.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "oral_examination": {
+    "oral_examination": "*34*35*36*44*45*46 Porcelain crowns and bridges are visible, the metal is exposed, the gums are red and swollen, and the probing easily bleeds. (-)"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Poor restoration (LC13)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "After removing the original restoration, we will review the condition of the abutment teeth and formulate a detailed diagnosis and treatment plan.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Not disposed",
+  "visit_type": "首诊"
+}

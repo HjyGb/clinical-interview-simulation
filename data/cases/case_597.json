@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Receive referral from general department"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Receive referral from general department"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that the doctor had recommended wisdom teeth removal for correction in another hospital, and now he came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that the doctor had recommended wisdom teeth removal for correction in another hospital, and now he came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "38 There was no crown in the mouth, no redness or swelling in the gums, and the rest was normal."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "38 Impacted teeth (K01.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "38 Recommend removal",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "38 Explain the condition, the patient asks for consideration, and chooses a day for treatment.",
+  "visit_type": "首诊"
+}

@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Missing left upper back tooth"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Missing left upper back tooth"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had been missing his upper left posterior tooth for several months and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had been missing his upper left posterior tooth for several months and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "25,27 The gums are flat without bone spurs, the gap between missing teeth is acceptable, and the occlusal space is acceptable. No other abnormalities are found. CBCT showed: bone mass was acceptable."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "25,27 teeth are missing (K00.002).",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "25,27 Implant restoration.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "]571. The doctor has fulfilled his obligation to inform, and the patient gave full informed consent and signed the &quot;Informed Consent Form for Implantation&quot;. 2. Routine disinfection and draping. 4% articaine 1.7ml The implant is screwed into the healing abutment. 27 Implant the 5.05*10mm implant, screw into the healing abutment, suture, and take the radiograph.",
+  "visit_type": "首诊"
+}

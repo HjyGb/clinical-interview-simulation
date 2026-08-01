@@ -1,0 +1,4 @@
+# Intent Classifier Prompt Placeholder
+#
+# 输入: 学生提问 + 对话历史 + 病例上下文
+# 输出: 意图类别 (chief_complaint_inquiry / pain_character_inquiry / ...)

@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Dental protrusion, consultation for correction"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Dental protrusion, consultation for correction"
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "Slightly protruding profile, permanent dentition, bilateral canine molars, normal overbite coverage of front teeth, mild to moderate crowding of lower front teeth"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Malformed teeth (K07.302)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Implant nails assist in distal movement of the maxillary and mandibular dentition and retraction of the front teeth. The mandible is properly sectioned, the teeth are aligned, and the bolt ratio is coordinated.",
+    "restoration": "",
+    "notes": ""
+  },
+  "source_handle": "Explain the condition, keep the patient informed, ask for consideration, and choose a day for treatment.",
+  "visit_type": "复诊"
+}

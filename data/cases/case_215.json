@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Consultation on tooth extraction"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Consultation on tooth extraction"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had been experiencing discomfort in his left lower posterior tooth for several months and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had been experiencing discomfort in his left lower posterior tooth for several months and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "38 There was no tooth crown in the mouth, the gums were red and swollen, and the rest was normal."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "8 Impacted teeth (K01.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "8 Because the front teeth will become loose and sensitive after extraction, it is recommended to be conservative first.",
+    "restoration": "",
+    "notes": "Routine doctor&#39;s advice: follow up with doctors if you feel unwell, and don&#39;t bite hard objects."
+  },
+  "source_handle": "8. Explain the condition. The patient is not willing to have the tooth extracted and will choose a different day for treatment.",
+  "visit_type": "首诊"
+}

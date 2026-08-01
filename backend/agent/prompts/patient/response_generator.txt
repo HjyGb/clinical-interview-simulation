@@ -1,0 +1,7 @@
+# Response Generator Prompt Placeholder
+#
+# 变量:
+#   {retrieved_facts} — Information Retriever 提取的结构化事实
+#   {student_question} — 学生当前提问
+#   {conversation_history} — 对话历史摘要
+#   {persona} — 人格参数

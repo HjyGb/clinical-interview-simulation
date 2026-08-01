@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Consultation about dental implants"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Consultation about dental implants"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that the left lower front tooth had been loose for several months and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that the left lower front tooth had been loose for several months and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "33 degrees looseness, no abnormality in the buccal mucosa, red and swollen gums, otherwise normal. CBCT shows: Alveolar bone has been absorbed to the apical 1/3 of the root, and the apex is a low-density image."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "33 Periodontal disease (K05.600)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "33 Delay planting after removal.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "33 Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Local disinfection with iodophor, local infiltration anesthesia with 4% articaine, extraction of the affected tooth, scraping of granulation tissue, implantation of iodoform gauze strips in the extraction socket, and cotton ball compression to stop bleeding.",
+  "visit_type": "首诊"
+}

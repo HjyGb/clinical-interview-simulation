@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Discomfort in left upper back tooth"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Discomfort in left upper back tooth"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported discomfort in the upper left posterior tooth and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported discomfort in the upper left posterior tooth and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "No intraoral examination was performed. CBCT showed: horizontal obstruction at the mesial position of 38."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "*28, *38 impacted teeth (K01.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Recommend removal",
+    "restoration": "",
+    "notes": "Treat affected teeth as soon as possible and follow up with follow-up consultations if any discomfort occurs."
+  },
+  "source_handle": "Explain the condition, inform the cost, ask the patient to consider it, and choose a day for treatment.",
+  "visit_type": "首诊"
+}

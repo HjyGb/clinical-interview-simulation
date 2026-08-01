@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "The patient requested a filling or extraction of the tooth."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "The patient requested a filling or extraction of the tooth."
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": "Nothing special. Denied systemic history."
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": "Nothing special. Denied systemic history."
+  },
+  "oral_examination": {
+    "oral_examination": "36 The root looks like a stump, and when probed and percussed, there is no looseness, no redness or swelling. CBCT showed a large area of ​​dark shadow at the root tip. 17 16 27 47 46 Black carious lesions were seen on the maxillary surface, which were rough and hard when detected. The probe was stuck and percussion showed no looseness in the teeth and no redness or swelling in the gums. CBCT showed that the caries damage did not reach the medullary cavity."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "36 Residual roots (LC08) 17 16 27 47 46 Caries (K02.900)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "36 removal. 17 16 27 47 46",
+    "restoration": "",
+    "notes": "Chew after 2 hours, chew less hard objects, and follow up with a doctor if you feel unwell."
+  },
+  "source_handle": "46 Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Remove all decay, reach deep dentin, but not reach the exposed pulp point, color comparison, LC pulp protection, backing, acid etching, bonding, nano-resin filling, light curing, grinding and polishing of the high points of the filling body. 36 Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. 2% lidocaine block anesthesia, 4% articaine local infiltration anesthesia, gingival separation, gap enlargement, loosening, extraction by pulling, scraping, and compression to stop bleeding.",
+  "visit_type": "首诊"
+}

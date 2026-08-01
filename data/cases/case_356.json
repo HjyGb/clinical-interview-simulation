@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Check implants"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Check implants"
+  },
+  "present_illness": {
+    "present_illness": "The patient said that he had implants in the United States a few years ago, and the crown and abutment fell off repeatedly. He now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient said that he had implants in the United States a few years ago, and the crown and abutment fell off repeatedly. He now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "36 There is no redness or swelling in the gums and no abnormalities in the buccal mucosa."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "36 Missing teeth (K00.002)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "",
+    "restoration": "",
+    "notes": ""
+  },
+  "source_handle": "36 Since the implant brand is unknown, the patient is asked to contact an American doctor to inquire about the brand before subsequent treatment.",
+  "visit_type": "首诊"
+}

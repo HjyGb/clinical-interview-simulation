@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Pain in left upper back tooth for several days"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Pain in left upper back tooth for several days"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported pain in the upper left posterior tooth for several days and came to our hospital for examination.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "past_history": {
+    "present_illness": "The patient reported pain in the upper left posterior tooth for several days and came to our hospital for examination.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "oral_examination": {
+    "oral_examination": "*26*27 The gums in the gap can be red and swollen, and food impaction can be seen."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Chronic gingivitis (K05.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "26 *27 If local cleaning is not effective, perform local periodontal treatment.",
+    "restoration": "",
+    "notes": "Pay attention to oral hygiene and return to the clinic regularly."
+  },
+  "source_handle": "*26*27 Partial cleaning, placing iodine glycerin",
+  "visit_type": "首诊"
+}

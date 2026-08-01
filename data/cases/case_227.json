@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "The maxillary posterior teeth have been missing for more than several months"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "The maxillary posterior teeth have been missing for more than several months"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that his maxillary posterior teeth had been operated on and extracted in another hospital a few months ago, and now he came to our hospital for consultation on implantation.",
+    "past_history": "Denies any history of systemic diseases, family history, drug allergies, or dental treatment."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that his maxillary posterior teeth had been operated on and extracted in another hospital a few months ago, and now he came to our hospital for consultation on implantation.",
+    "past_history": "Denies any history of systemic diseases, family history, drug allergies, or dental treatment."
+  },
+  "oral_examination": {
+    "oral_examination": "11, 21, and 22 are missing and the missing alveolus is slightly sunken. There were no obvious abnormalities in the adjacent teeth, cold (-), probing (-), percussion (-), loose (-), and no obvious abnormalities in the remaining teeth. The opposing teeth are slightly elongated. The oral hygiene of the whole mouth is acceptable, with tartar () and pigment (). No obvious abnormalities were found in the bite and joints. CBCT shows that 11*21*22 ​​bones are wide and tall."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Missing teeth (K00.001)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Implant restoration.",
+    "restoration": "",
+    "notes": ""
+  },
+  "source_handle": "112 is not resolved.",
+  "visit_type": "首诊"
+}

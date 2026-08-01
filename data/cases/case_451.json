@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Pain in lower right back tooth for several days"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Pain in lower right back tooth for several days"
+  },
+  "present_illness": {
+    "present_illness": "The patient complained of persistent pain in the right lower back tooth for several days, and also had slight pain and discomfort in the left lower back tooth. He came to our hospital for treatment today.",
+    "past_history": "Nothing special"
+  },
+  "past_history": {
+    "present_illness": "The patient complained of persistent pain in the right lower back tooth for several days, and also had slight pain and discomfort in the left lower back tooth. He came to our hospital for treatment today.",
+    "past_history": "Nothing special"
+  },
+  "oral_examination": {
+    "oral_examination": "48 High horizontal impaction, black cavities were seen in the crown, no abnormal color, no redness, swelling, or congestion. Nothing special. 38 residual root, no difference in the gingiva. CBCT shows 47 low-density image near the distal and coronal part."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "48 Impacted teeth (K01.100) 38 Residual tooth roots (K08.301) 47 Tooth defects (K07.303), chronic pulpitis (K04.002) to be investigated",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "48 removal",
+    "restoration": "",
+    "notes": "Instruct patients to avoid eating foods that are too cold/hot/hard/sticky. If you have looseness and discomfort, you should follow up in time and make an appointment by phone before coming."
+  },
+  "source_handle": "48 Local povidone-iodine disinfection, alveolar nerve block anesthesia with lidocaine hydrochloride, and infiltration anesthesia with bistriol around the wisdom teeth. After the anesthesia takes effect, the gums are separated, the crown part of the tooth is divided by grinding with a mobile phone, the mesial obstruction is released, the pieces are loosened, and the tooth extraction forceps are taken out. The tooth extraction wound was scraped and sutured with 2 stitches to stop the bleeding.",
+  "visit_type": "首诊"
+}

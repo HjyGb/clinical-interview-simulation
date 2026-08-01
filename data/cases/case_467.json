@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Left lower back tooth discomfort for several days"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Left lower back tooth discomfort for several days"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported discomfort in the left lower back tooth for several days and now comes to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported discomfort in the left lower back tooth for several days and now comes to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "38 The gums are not red, swollen or overflowing with pus, and the buccal mucosa is normal. The rest is normal. CBCT showed: mesial horizontal impaction."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "38 Impacted teeth (K01.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "38 removal.",
+    "restoration": "",
+    "notes": ""
+  },
+  "source_handle": "Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Local iodine disinfection was performed, and inferior alveolar nerve block anesthesia was performed with 2% lidocaine. After the anesthesia took effect, the flap was incised, the roots were divided, and the extraction was performed in pieces. The extraction socket was scraped and cured regularly, and the extraction socket was reset and sutured to stop bleeding.",
+  "visit_type": "首诊"
+}

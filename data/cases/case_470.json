@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "The upper right tooth has been loose for half a year. Consult for implantation."
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "The upper right tooth has been loose for half a year. Consult for implantation."
+  },
+  "present_illness": {
+    "present_illness": "The upper right tooth has been loose for half a year, which affects chewing. Consultation for implantation.",
+    "past_history": "Nothing special."
+  },
+  "past_history": {
+    "present_illness": "The upper right tooth has been loose for half a year, which affects chewing. Consultation for implantation.",
+    "past_history": "Nothing special."
+  },
+  "oral_examination": {
+    "oral_examination": "12-17 pine 3, a lot of calculus, red, swollen and soft gums; CT showed fair bone mass. 6 is missing, the gap between the missing teeth is acceptable, and CT shows that the bone volume is acceptable. OH is extremely poor, there is a lot of plaque and soft scale, calculus ( ), red and swollen gums and soft texture, and many loose teeth 2~3"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "16Tooth loss caused by accident, extraction or localized periodontal disease (K08.100). Chronic periodontitis (K05.300)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Remove 12, 13, 14, 15, 17. Immediately implant 12, 14, conventionally implant 16, delay load-bearing, and repair the upper 12-13-14-15-16 fixed bridge. 1Periodontal treatment.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "The plan was informed and the patient expressed consideration.",
+  "visit_type": "首诊"
+}

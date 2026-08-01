@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Request tooth extraction"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Request tooth extraction"
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "oral_examination": {
+    "oral_examination": "48 High vertical impaction, mucosa covering the distal maxillary surface, no abnormal color, no redness, swelling, or congestion. Nothing special."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "48 Impacted Tooth Treatment Plan 48 Extraction",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "48. Local povidone-iodine disinfection and alveolar nerve block anesthesia with lidocaine hydrochloride. After the anesthesia takes effect, the gums are separated, divided into pieces and loosened, and the tooth extraction forceps are removed. Routinely scratch the tooth extraction wound and apply pressure to stop bleeding.",
+  "visit_type": "复诊"
+}

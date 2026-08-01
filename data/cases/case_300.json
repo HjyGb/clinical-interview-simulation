@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "End of appointment."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "End of appointment."
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": "abled. Nothing special. Denied systemic history."
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": "abled. Nothing special. Denied systemic history."
+  },
+  "oral_examination": {
+    "oral_examination": "Soften the whole mouth! , the gums are slightly red and swollen, 22 can detect deep periodontal pockets."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "22Chronic periodontitis (K05.300)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "22 Temporary observation, periodontal surgery if necessary later.",
+    "restoration": "",
+    "notes": "End of appointment."
+  },
+  "source_handle": "Full mouth periodontal SPT, H2O2 irrigation.",
+  "visit_type": "复诊"
+}

@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Request dental implants"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Request dental implants"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that the right lower back tooth was damaged due to caries and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that the right lower back tooth was damaged due to caries and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "No abnormality was found in the residual root and buccal mucosa, and the rest were normal. The remaining teeth need to be investigated."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "root stump",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Extraction, transplantation and restoration.",
+    "restoration": "",
+    "notes": ""
+  },
+  "source_handle": "Consult for filming and go back to consider.",
+  "visit_type": "首诊"
+}

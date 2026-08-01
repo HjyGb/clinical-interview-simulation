@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "The left lower back tooth is missing."
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "The left lower back tooth is missing."
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that the left lower back tooth was extracted from another hospital due to caries one year ago and now comes to our hospital for treatment.",
+    "past_history": "abled. Nothing special."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that the left lower back tooth was extracted from another hospital due to caries one year ago and now comes to our hospital for treatment.",
+    "past_history": "abled. Nothing special."
+  },
+  "oral_examination": {
+    "oral_examination": "36 The gums are flat without bone spurs, the opposing teeth are slightly elongated, there is no obvious caries on the adjacent teeth, and there are no abnormalities in the rest. 47 Residual crown, percussion (-), no abnormality was found in the buccal mucosa, and the rest were normal. CBCT showed: 36, 47 bone mass was acceptable."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Deficient dentition. 28 impacted teeth.",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "removal. Implant restoration.",
+    "restoration": "",
+    "notes": "Routine medical advice and follow-up consultation if any discomfort occurs."
+  },
+  "source_handle": "The patient was disinfected with iodophor, and the gums were separated under local infiltration anesthesia with 4% articaine. The affected teeth were straightened and loosened. The extraction socket was routinely scraped and repositioned, and cotton ball compression was used to stop bleeding. 1. The doctor has fulfilled his obligation to inform, and the patient has fully informed consent and signed the &quot;Informed Consent Form for Implantation&quot;. 2. Routine disinfection and draping. 4% articaine 1.7ml The implant is screwed into the healing abutment. 36 is implanted into Newbaite 5.0*10mm, the upper part is screwed into the healing abutment, sutured, and the location for filming is OK.",
+  "visit_type": "首诊"
+}

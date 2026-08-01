@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Check wisdom teeth"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Check wisdom teeth"
+  },
+  "present_illness": {
+    "present_illness": "I want to remove my left lower wisdom tooth, but I occasionally feel pain, so I came to our hospital for a checkup today.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2."
+  },
+  "past_history": {
+    "present_illness": "I want to remove my left lower wisdom tooth, but I occasionally feel pain, so I came to our hospital for a checkup today.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2."
+  },
+  "oral_examination": {
+    "oral_examination": "38 The mesial and low-lying impaction is hidden, and the mucosa covers the distal maxillofacial surface. There is no abnormal color, no redness, swelling, or congestion. Nothing special."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "38 Impacted teeth (K01.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "38 removal",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "38 Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Local povidone-iodine disinfection, alveolar nerve block anesthesia with lidocaine hydrochloride, and infiltration anesthesia with bistriol around the wisdom teeth. After the anesthesia takes effect, the gums are separated, the crown part of the tooth is divided by grinding with a mobile phone, the mesial obstruction is released, the pieces are loosened, and the tooth extraction forceps are taken out. The tooth extraction wound was routinely scratched and sutured (1 stitch) to stop bleeding.",
+  "visit_type": "首诊"
+}

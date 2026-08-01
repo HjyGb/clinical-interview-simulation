@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "The upper right front tooth has been missing for several months"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "The upper right front tooth has been missing for several months"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had been missing his upper right front tooth for several months and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had been missing his upper right front tooth for several months and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "11 The gums are sunken, there are no bone spurs, the gap between the missing teeth is acceptable, the occlusal space is acceptable, the opposing teeth are not obviously elongated, and there are no other abnormalities."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "11 Missing teeth (K00.002)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "11 Implant restoration.",
+    "restoration": "",
+    "notes": ""
+  },
+  "source_handle": "1. The doctor has fulfilled his obligation to inform, and the patient has fully informed consent and signed the &quot;Informed Consent Form for Implantation&quot;. 2. Routine disinfection and draping. 4% Articaine 1.7ml Bone powder periosteum is implanted on the buccal side and screwed into the healing abutment. Suture and filming position are available.",
+  "visit_type": "首诊"
+}

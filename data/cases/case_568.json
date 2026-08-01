@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "13–20",
+    "chief_complaint": "toothache"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "13–20",
+    "chief_complaint": "toothache"
+  },
+  "present_illness": {
+    "present_illness": "There is a hole in the left upper back tooth, and the pain has been obvious recently. I came to our hospital for treatment today.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2C."
+  },
+  "past_history": {
+    "present_illness": "There is a hole in the left upper back tooth, and the pain has been obvious recently. I came to our hospital for treatment today.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2C."
+  },
+  "oral_examination": {
+    "oral_examination": "24M.O Large area of ​​caries and pulp, caries reaches subgingival, probing, percussion, loosening, cold, no discomfort in the gums"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "24Acute apical periodontitis (K04.401)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Post crown restoration after 24 root canal treatments",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "24 Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. The pulp was removed, the pulp roof was uncovered, and the root canal was cleared. Local infiltration anesthesia with 4% articaine was performed. The gingiva was trimmed with electrosurgery to stop bleeding. The mesial false wall was made with flowing resin. The measured root length was B=19mm, P=20mm, Glyde With the help of the machine, use nickel-titanium to prepare to 0625, rinse with 1% and 3% sodium hypochlorite, ultrasonic rinse, blot dry, seal the root canal with calcium hydroxide paste, and temporarily seal with ions.",
+  "visit_type": "首诊"
+}

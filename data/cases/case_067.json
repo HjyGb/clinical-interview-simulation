@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "Request price consultation"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "Request price consultation"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that his upper right back tooth had split when biting a hard object a few years ago, but he felt no abnormality. A week ago, he developed pain when chewing food, and now he came to our hospital for treatment.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2C."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that his upper right back tooth had split when biting a hard object a few years ago, but he felt no abnormality. A week ago, he developed pain when chewing food, and now he came to our hospital for treatment.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2C."
+  },
+  "oral_examination": {
+    "oral_examination": "*26Today, the patient asked for price consultation and refused to have an oral examination. He will take an X-ray examination temporarily, and the remaining teeth are yet to be checked."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "*26 Tooth Splitting Treatment Plan",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "*26 removal",
+    "restoration": "",
+    "notes": "Review after 3 months."
+  },
+  "source_handle": "Today, the patient asked for a consultation on the price. No intraoral examination was performed, and the tooth was extracted at a later date.",
+  "visit_type": "首诊"
+}

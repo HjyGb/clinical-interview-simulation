@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Request tooth extraction"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Request tooth extraction"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he felt discomfort in the upper left posterior tooth, and now he came to our hospital for extraction.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he felt discomfort in the upper left posterior tooth, and now he came to our hospital for extraction.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "28 Vertical impaction, large-area caries on the crown, no redness, swelling or pus in the gums, no abnormality in the buccal mucosa, and the rest is normal. CBCT showed: there was no low-density image in the root tip."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "28 Impacted teeth (K01.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "28 removal",
+    "restoration": "",
+    "notes": "Correct your brushing method and avoid biting hard objects. Follow-up for discomfort"
+  },
+  "source_handle": "28 Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Local disinfection with iodophor, local infiltration anesthesia with 4% articaine, complete extraction of the affected tooth, routine scraping of the extraction socket, reduction of the extraction socket, and cotton ball compression to stop bleeding.",
+  "visit_type": "首诊"
+}

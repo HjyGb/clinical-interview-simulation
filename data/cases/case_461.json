@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Pain in left lower back tooth for 1 day"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Pain in left lower back tooth for 1 day"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that the left lower back tooth had started to hurt since yesterday and requested an examination;",
+    "past_history": "He denies the history of systemic diseases, infectious diseases and drug allergies, denies the history of surgery, denies the family history, and denies the history of long-term medication."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that the left lower back tooth had started to hurt since yesterday and requested an examination;",
+    "past_history": "He denies the history of systemic diseases, infectious diseases and drug allergies, denies the history of surgery, denies the family history, and denies the history of long-term medication."
+  },
+  "oral_examination": {
+    "oral_examination": "*37 Ink-like changes can be seen in the maxillofacial surface. The probe is stuck, the decay is detected, percussion (-), cold diagnosis ()."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "37Chronic pulpitis (K04.002).",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "After the root canal treatment of the tooth, the crown is restored. The patient is informed of the course of treatment, related risks and costs, and the patient agrees to the treatment.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "*37 Under local infiltration anesthesia with 4% articaine 1.7ml",
+  "visit_type": "首诊"
+}

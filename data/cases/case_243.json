@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "There is a hole in the lower left back tooth."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "There is a hole in the lower left back tooth."
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "37 The distal part of the dental tissue is defective, and the pain is - when probing, and the gums are not red or swollen. 13 22 24 34 36 37 46 CBCT showed proximal caries and no low-density image of the root tip."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "13 22 24 34 36 37 46 deep caries (LC01)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "24 34 37 46 Resin filling is recommended. 36 Recommended crown restorations",
+    "restoration": "",
+    "notes": ""
+  },
+  "source_handle": "37 Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Local infiltration anesthesia with 4% articaine was used to remove all decay, reaching the deep dentin, but not reaching the pulp exposure point. The upper collar surface repair system, pulp protective pad, resin filling, grinding and polishing of the high point of the filling body were performed. 24 34 36 Explain the condition, treatment plan, cost, prognosis, etc. to the patient. The patient is informed and agrees to the treatment. Remove all decay, reach the dentine layer, but not reach the pulp exposure point, use the upper collar surface repair system, resin filling, adjust the high point of the filling body, and polish",
+  "visit_type": "首诊"
+}

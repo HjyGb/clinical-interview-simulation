@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Discomfort in left lower back tooth"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Discomfort in left lower back tooth"
+  },
+  "present_illness": {
+    "present_illness": "The patient consulted about extraction of the lower left wisdom tooth.",
+    "past_history": "He denies any history of systemic diseases, family history, drug allergies, or dental treatment."
+  },
+  "past_history": {
+    "present_illness": "The patient consulted about extraction of the lower left wisdom tooth.",
+    "past_history": "He denies any history of systemic diseases, family history, drug allergies, or dental treatment."
+  },
+  "oral_examination": {
+    "oral_examination": "38 The mesial level is impacted, 2/3 of the tooth crown is exposed, the mucosa is normal, and the rest is normal. The remaining teeth need to be investigated."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "38 impacted teeth.",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "38 removal.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort. Instructions for follow-up consultation for discomfort include chewing a cotton roll for 40 minutes and not brushing teeth and gargling for 24 hours. You can eat and drink after 2 hours. It is recommended that the food should not be too hot."
+  },
+  "source_handle": "1. Inform the patient of the relevant costs and precautions, give informed consent to the treatment and sign a tooth extraction consent form. 2. Local iodophor disinfection, left mandibular block anesthesia with 2% lidocaine, and local infiltration anesthesia with 4% articaine. After the anesthesia takes effect, separate the gingiva, divide the crown, remove the mesial resistance, and loosen the pieces. The extraction forceps were taken out, the extraction socket was scraped and repositioned as usual, and a stitch was sutured to stop the bleeding.",
+  "visit_type": "首诊"
+}

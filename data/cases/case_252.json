@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "The left lower back tooth became loose for several days and required treatment."
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "The left lower back tooth became loose for several days and required treatment."
+  },
+  "present_illness": {
+    "present_illness": "The patient&#39;s left lower back tooth has been loose for several days and he came to the clinic today to request implant treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient&#39;s left lower back tooth has been loose for several days and he came to the clinic today to request implant treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "37 38 II looseness, red and swollen gums. CBCT shows 37 38 large periapical low-density shadow."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Chronic periodontitis (K05.300)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Remove 37 38",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Explain the condition, keep the patient and family informed, ask for consideration, and choose a day for treatment.",
+  "visit_type": "首诊"
+}

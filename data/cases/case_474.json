@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Pain in upper left front tooth for several days"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Pain in upper left front tooth for several days"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had felt pain in his upper left front tooth in recent days, and now he came to our hospital for examination and treatment.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had felt pain in his upper left front tooth in recent days, and now he came to our hospital for examination and treatment.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "oral_examination": {
+    "oral_examination": "2. Extensive caries on the distal and adjacent maxillofacial surfaces, sensitive to probing, percussion (-), and cold diagnosis ()."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "22Pulpitis(K04.000)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Root canal treatment Crown restoration/filling treatment",
+    "restoration": "",
+    "notes": ""
+  },
+  "source_handle": "Local infiltration anesthesia with 4% articaine was performed, the decay was removed, the pulp was opened, one canal was explored, the length was measured to 21mm, the root was prepared to (0435), a rubber dam was used to isolate the moisture, a film was taken to test the tip, and 3% sodium hypochlorite and 0.9% sodium chloride rinsed Root canal ultrasonic oscillation, drying and disinfection, irootsp hot gutta-percha vertical pressure root filling, resin filling.",
+  "visit_type": "首诊"
+}

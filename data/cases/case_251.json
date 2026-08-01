@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "13–20",
+    "chief_complaint": "Left upper back tooth discomfort for several weeks"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "13–20",
+    "chief_complaint": "Left upper back tooth discomfort for several weeks"
+  },
+  "present_illness": {
+    "present_illness": "The patient complained of discomfort in the left upper posterior tooth for several weeks and food impaction pain, and requested treatment.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "past_history": {
+    "present_illness": "The patient complained of discomfort in the left upper posterior tooth for several weeks and food impaction pain, and requested treatment.",
+    "past_history": "Denies any history of systemic diseases, family history, or drug allergies"
+  },
+  "oral_examination": {
+    "oral_examination": "The face was basically symmetrical, the skin was free of redness and swelling, the mouth opening was normal, and there was no snapping or tenderness in the bilateral temporomandibular joints. *26 Ink-like changes can be seen in the mesial area, with hardness, pain when probing (-) when percussed (-), cold (-), the teeth are not loose, and no obvious abnormality is found in the gums. *27 Caries can be seen in the distal part, the texture is soft, food residues can be detected, pain is detected (-) when percussed (-), cold (-) shows no looseness in the teeth, and no obvious abnormality in the gums. cbct shows *38*48 horizontal impaction, the root tip has compressed the mandibular neural canal cbct shows *26 mesial low-density shadow near the marrow, no abnormality in the root tip\\n*27 Distal low-density shadow near the pulp, no abnormality in the root tip."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "36 37 Caries (K02.900)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "36 37 filling treatment. (If pain occurs later, root canal treatment may be performed)",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "(1) Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. (2) Remove all decay, prepare the cavity, blow-dry the cavity, apply adhesive, fill with resin, light-cure, adjust the high points of the filling body, and polish. 88 Transfer to the dean for consultation",
+  "visit_type": "首诊"
+}

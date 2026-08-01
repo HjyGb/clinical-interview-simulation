@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Biting discomfort on the right back tooth for several weeks"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Biting discomfort on the right back tooth for several weeks"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had experienced discomfort in biting the right posterior teeth a few weeks ago, and now he sought medical advice.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2C."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had experienced discomfort in biting the right posterior teeth a few weeks ago, and now he sought medical advice.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2C."
+  },
+  "oral_examination": {
+    "oral_examination": "15 In the mouth, the teeth were in place, knocked loose, and there was a hidden crack on the palatal tooth surface. The gums in the whole mouth are red and swollen, and they bleed easily when probed, and the periodontal pockets are not reached. Tartar ( ), pigment ( ) 1. Teeth discoloration, looseness and looseness were observed in the mouth, and there was no reaction in the electrodynamic test. Examination revealed a circular radiolucent area around the apex, surrounded by a radiopaque white line."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "15 Cracked teeth, marginal gingivitis (K05.104) 21 Chronic apical periodontitis (K04.500)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "15 root canal treatments, full mouth scaling, 21 root canal treatments",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "15 Untreated: Full mouth supragingival scaling and polishing. Not processed",
+  "visit_type": "首诊"
+}

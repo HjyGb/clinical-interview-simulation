@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Many teeth are missing in the mouth, please consult for implantation"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "Many teeth are missing in the mouth, please consult for implantation"
+  },
+  "present_illness": {
+    "present_illness": "In recent years, many teeth have been lost in the mouth, which affects chewing. Consultation for implant restoration.",
+    "past_history": "Diabetes, irregular medication, blood sugar after meal today is 12mmol/L. Smoking 20 cigarettes/day."
+  },
+  "past_history": {
+    "present_illness": "In recent years, many teeth have been lost in the mouth, which affects chewing. Consultation for implant restoration.",
+    "past_history": "Diabetes, irregular medication, blood sugar after meal today is 12mmol/L. Smoking 20 cigarettes/day."
+  },
+  "oral_examination": {
+    "oral_examination": "Only 32, 42, 43, 47 are left in the lower jaw, and 2 are loose. 14, 15 are loose 2, and 16 is missing. 25 loose 2, 26 missing. 2. No clear carious lesions were found, and there was pain on percussion ( ) and palpation of the apical area ( )."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Tooth loss due to accident, extraction or localized periodontal disease (K08.100). Chronic periodontitis (K05.300) Chronic apical periodontitis (K04.500x001)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "The lower half of the mouth was repaired with implants. 14,25 Immediate implantation, 16,26 implantation with internal lifting, 14-16 fixed bridge repair. Periodontal treatment. 2. Comprehensive diagnosis and treatment.",
+    "restoration": "",
+    "notes": ""
+  },
+  "source_handle": "The patient was informed of the plan and agreed. The patient chose ITI pure titanium implants and made an appointment for surgery.",
+  "visit_type": "首诊"
+}

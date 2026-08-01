@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Requested removal of lower left wisdom teeth."
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Requested removal of lower left wisdom teeth."
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he wanted to have his lower left wisdom teeth removed.",
+    "past_history": "He is generally in good health and denies a history of systemic diseases such as diabetes, cardiovascular and cerebrovascular diseases, hypertension, and blood diseases. He denies a history of hepatitis, tuberculosis, typhoid fever, drug allergies, and surgery. Blood test positive for hepatitis B"
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he wanted to have his lower left wisdom teeth removed.",
+    "past_history": "He is generally in good health and denies a history of systemic diseases such as diabetes, cardiovascular and cerebrovascular diseases, hypertension, and blood diseases. He denies a history of hepatitis, tuberculosis, typhoid fever, drug allergies, and surgery. Blood test positive for hepatitis B"
+  },
+  "oral_examination": {
+    "oral_examination": "Extraoral: maxillofacial symmetry, bilateral temporomandibular joint symmetry, no snapping, no local tenderness, mouth opening of three fingers, mouth opening shape\\nnormal.\\nIntraoral: Permanent dentition, oral hygiene is average, 38 gingiva slightly red and swollen, 1/2 of the crown exposed, high level impaction (-). cbct shows *38 high level obstruction"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "38 impacted teeth (K01.100).",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "It is recommended to extract the tooth. Inform the patient of the related risks and complications during the tooth extraction, as well as the related costs. The patient expresses his understanding and willingness to accept the treatment.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "*38 Local disinfection, draping, and after confirming that there is no blood in the withdrawal, perform inferior alveolar nerve block anesthesia with 2% lidocaine and 1.7ml articaine *1 branch, local infiltration anesthesia, separate the crown, increase the gap, and minimally invasive The tooth was erect, the tooth was extracted and the wound was scraped, one stitch was sutured, compression was used to stop the bleeding, and postoperative medical instructions were given.",
+  "visit_type": "首诊"
+}

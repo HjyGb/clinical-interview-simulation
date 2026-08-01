@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "See the doctor for 2-3 days of pain in the lower right back tooth"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "See the doctor for 2-3 days of pain in the lower right back tooth"
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "36 Residual root, pain when percussion -, pain when probing -, no loose teeth, no redness and swelling of gums, CBCT periapical low-density image 17 16 47 Maxillofacial pit and fissure caries, probe can be penetrated, pain when percussion -, pain when probing -, Black in color and hard in texture, 46 teeth are missing, the alveolar ridge is flat, and the gap between the missing teeth is narrow."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "36 Residual tooth root (K08.301) 17 16 47 Caries (K02.900)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "17 16 47 Recommended filling 36 Recommended extraction followed by implant restoration 46 Recommended fixed bridge restoration",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Remove all decay, reach deep dentin, but not reach the pulp exposure point, fill with ultrasonic resin, adjust the high point of the filling body, polish with 62% lidocaine block anesthesia, 4% articaine local infiltration anesthesia, gingival separation, and augmentation If the gap is tight and loose, remove it with forceps, scrape, rinse with normal saline, and apply compression to stop bleeding.",
+  "visit_type": "首诊"
+}

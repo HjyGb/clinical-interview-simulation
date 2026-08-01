@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Missing jaw for several years"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Missing jaw for several years"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had been missing his mandibular teeth for several years and now came to our hospital for consultation on implants to repair his front teeth.",
+    "past_history": "He denied any history of systemic diseases, family history, drug allergies, or dental treatment."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had been missing his mandibular teeth for several years and now came to our hospital for consultation on implants to repair his front teeth.",
+    "past_history": "He denied any history of systemic diseases, family history, drug allergies, or dental treatment."
+  },
+  "oral_examination": {
+    "oral_examination": "*31*32*36*41*42*43 Missing alveolar ridge is sunken. There were no obvious abnormalities in the adjacent teeth, cold (-), probing (-), percussion (-), loose (-), and no obvious abnormalities in the remaining teeth. The opposing teeth are slightly elongated. The oral hygiene of the whole mouth is acceptable, with tartar () and pigment (). No obvious abnormalities were found in the bite and joints. cbct shows *31*32*36*41*42*43 bone mass is acceptable"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Missing teeth (K00.001)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Option 1: Restoration of crown and bridge with implants\\nOption 2: Removable denture repair",
+    "restoration": "",
+    "notes": "Do not bite hard objects and return to the clinic after one week."
+  },
+  "source_handle": "Not disposed.",
+  "visit_type": "首诊"
+}

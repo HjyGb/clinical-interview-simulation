@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "13–20",
+    "chief_complaint": "Pain in left lower back tooth for several days"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "13–20",
+    "chief_complaint": "Pain in left lower back tooth for several days"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported pain in the left lower back tooth for several days and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported pain in the left lower back tooth for several days and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "*35 residual root, part of the defect reaches 2mm below the gums, the texture is soft, tap ( ), and the medullary hole is detected, the rest is normal. CBCT shows: low-density image of the root tip."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "*35 Residual root (K08.300x002) Chronic apical periodontitis (K04.500x001)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "*35 flush open.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "*35 Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Open the pulp for drainage, and open the CP after flushing.",
+  "visit_type": "首诊"
+}

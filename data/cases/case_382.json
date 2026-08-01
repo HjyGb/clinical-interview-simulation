@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "Consultation about dental implants"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "Consultation about dental implants"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported loose mandibular teeth and now comes to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported loose mandibular teeth and now comes to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "There were 34 residual roots, 35 caries, 36 split roots, 45, 46, and 47 loose teeth, and the rest were the same as 3-3 missing mandibles, flat gums, and no bone spurs."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Missing teeth (K00.002)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "34, 45, 46, 47 removed. A segmented implantation technique was performed, two 44*46 pieces were implanted, and 45 consecutive crowns were restored. Three seeds of 43*33*34 were planted, and 42, 41, 31, and 32 were consecutively restored. (A total of 5 plants and 5 crowns were planted).",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Explain the condition, ask the patient to consider, and choose a day for treatment.",
+  "visit_type": "首诊"
+}

@@ -1,0 +1,35 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+
+# Node.js
+node_modules/
+.vite/
+frontend/dist/
+
+# Environment
+.env
+
+# Database
+*.db
+*.sqlite3
+
+# Raw data (contains PHI — never commit)
+data/raw/
+medical_records.csv
+
+# IDE
+.vscode/settings.json
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

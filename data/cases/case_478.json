@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Request dental implants"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Request dental implants"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had had residual crown and root of his upper right front tooth for several years and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had had residual crown and root of his upper right front tooth for several years and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "11 12 21 There is no abnormality in the labial mucosa. Percussion (-), the bite space is acceptable, there is no redness and swelling in the gums, and no other abnormalities are found. CBCT showed: insufficient bone mass."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Residual root (K08.300x002) Residual crown (K08.302)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Implant restoration.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "1. The doctor has fulfilled his obligation to inform, and the patient has fully informed consent and signed the &quot;Informed Consent Form for Implantation&quot;. 2. Routine disinfection and draping. 4% articaine 1.7ml Dentium 3.7*12mm implant, 21 implanted Dentium 4.0*12mm, implanted with bone powder periosteum, and screwed into the healing abutment. Suture and filming position are available.",
+  "visit_type": "首诊"
+}

@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Receive referral from general department"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Receive referral from general department"
+  },
+  "present_illness": {
+    "present_illness": "Cit",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "Cit",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "Cit"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Cit",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Cit",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Explain the condition, treatment plan, and cost to the patient, consider the patient&#39;s requirements, and choose a day for treatment.",
+  "visit_type": "首诊"
+}

@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Pain in upper right back tooth for several days"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Pain in upper right back tooth for several days"
+  },
+  "present_illness": {
+    "present_illness": "The pain in the upper right back tooth has been recurring since it erupted, and it has started to hurt again recently. Now I am seeking treatment at our hospital and requesting that it be extracted.",
+    "past_history": "Nothing special"
+  },
+  "past_history": {
+    "present_illness": "The pain in the upper right back tooth has been recurring since it erupted, and it has started to hurt again recently. Now I am seeking treatment at our hospital and requesting that it be extracted.",
+    "past_history": "Nothing special"
+  },
+  "oral_examination": {
+    "oral_examination": "18. The cheek is impacted in the middle, the commissure is carious, the mesial food is impacted, and the gums are slightly red and swollen. Nothing special."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "18 impacted teeth (K01.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "18 removal",
+    "restoration": "",
+    "notes": "Pay attention to oral hygiene and return to the clinic regularly."
+  },
+  "source_handle": "18. Local anesthesia is performed. After the anesthesia takes effect, the gums are separated, the teeth are loosened, and the tooth extraction forceps are removed. Routinely scratch the tooth extraction wound and apply cotton ball compression to stop bleeding.",
+  "visit_type": "首诊"
+}

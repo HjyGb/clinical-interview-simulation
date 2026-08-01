@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Ask for an inspection."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Ask for an inspection."
+  },
+  "present_illness": {
+    "present_illness": "The patient complained of loose teeth in the mouth and came to our hospital for treatment.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied symptoms related to COVID-19 such as fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea. His body temperature was 36.2."
+  },
+  "past_history": {
+    "present_illness": "The patient complained of loose teeth in the mouth and came to our hospital for treatment.",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, dental treatment, and a history of traveling to medium- and high-risk areas within 14 days. He denied symptoms related to COVID-19 such as fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea. His body temperature was 36.2."
+  },
+  "oral_examination": {
+    "oral_examination": "18.26.27.36.38.47.48 looseness, red and swollen gums, but no other obvious abnormalities. The loosening was grade II, the gums were red and swollen, and no other obvious abnormalities were found."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Apical periodontitis. Periodontitis of remaining teeth.",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "18 26 27 36 38 48 47 removed. 26 27 36 47 recommended for planting. Referral to Dr. Liu Hanqing for consultation. Yu Ya recommended periodontal treatment. The patient chooses elective treatment.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "none.",
+  "visit_type": "首诊"
+}

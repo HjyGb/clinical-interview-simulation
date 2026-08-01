@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "The crown of the left upper back tooth has been left for several months"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "The crown of the left upper back tooth has been left for several months"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had had a residual crown on his upper left posterior tooth for several months and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had had a residual crown on his upper left posterior tooth for several months and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "25 residual crowns, suspected root canal filling material can be seen, the texture is soft by percussion (-), the defect reaches 2mm subgingivally, and there is no abnormality in the buccal mucosa. The rest are no different. 11 and 21 are mesioproximal caries. No probing pain, nothing else."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "25 broken crown (K08.302)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "After removal, the transplantation was postponed and resin filling was performed on 11 and 21 days.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort. Maintain oral hygiene and rinse your mouth with mouthwash. Oral antibiotics (bring your own)."
+  },
+  "source_handle": "Explain the condition, keep the patient and family informed, ask for consideration, and choose a day for treatment.",
+  "visit_type": "首诊"
+}

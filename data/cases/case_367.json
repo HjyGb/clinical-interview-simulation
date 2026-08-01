@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Ask for teeth cleaning."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Ask for teeth cleaning."
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": "Nothing special"
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": "Nothing special"
+  },
+  "oral_examination": {
+    "oral_examination": "There is supragingival and subgingival calculus in the whole mouth. The calculus covers 1/2 of the lingual surface of the anterior teeth and has less pigment adhesion. 15 14 46 34 35 36 Pit and fissures can be seen on the cervical edge of the mesial and distal teeth, and they are sensitive to mechanical stimulation."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Gingivitis 15 14 46 34 35 36 wedge-shaped defect.",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Full mouth scaling",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Full mouth supragingival scaling and polishing.",
+  "visit_type": "首诊"
+}

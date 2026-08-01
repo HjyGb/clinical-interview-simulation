@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "I had pain in my right lower back tooth and came to our hospital for treatment today."
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "I had pain in my right lower back tooth and came to our hospital for treatment today."
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "46 Large area of ​​maxillofacial defect, probing and percussing revealed no loose teeth and slightly red and swollen gums. CBCT showed that deep caries penetrated the pulp, and no obvious abnormality was found in the apex."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "46 Pulpitis (K04.000).",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "46 root canal treatment",
+    "restoration": "",
+    "notes": "Make a follow-up appointment one week later for crown protection."
+  },
+  "source_handle": "Explain the condition, treatment plan, cost, prognosis, etc. to the patient. The patient’s informed request will be considered and a treatment date will be selected.",
+  "visit_type": "首诊"
+}

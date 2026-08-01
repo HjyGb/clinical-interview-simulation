@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Gum irritation and bleeding all over the mouth for several months"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Gum irritation and bleeding all over the mouth for several months"
+  },
+  "present_illness": {
+    "present_illness": "Bleeding after brushing teeth for several months without pain or other discomfort.",
+    "past_history": "He denied any history of systemic diseases, infectious diseases and drug allergies. The health code is green and the body temperature is normal. He denies the history of traveling to epidemic risk areas within 14 days and denies the history of close contact with patients with new coronavirus pneumonia."
+  },
+  "past_history": {
+    "present_illness": "Bleeding after brushing teeth for several months without pain or other discomfort.",
+    "past_history": "He denied any history of systemic diseases, infectious diseases and drug allergies. The health code is green and the body temperature is normal. He denies the history of traveling to epidemic risk areas within 14 days and denies the history of close contact with patients with new coronavirus pneumonia."
+  },
+  "oral_examination": {
+    "oral_examination": "The gums in the whole mouth are red and swollen, and they bleed easily when probed, and the periodontal pockets are not reached. Tartar (~), tooth surface pigment. *16, *25 stump, no obvious pain"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Gingivitis. *16, *25 stump",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Full mouth scaling; *16, *25 rows are removed and the sites are preserved for selective planting.",
+    "restoration": "",
+    "notes": "1. Inform routine medical advice 2. Follow up if you feel unwell"
+  },
+  "source_handle": "Full mouth supragingival scaling, polishing, and medication. *16 Extraction under local anesthesia with articaine, scraping of the alveolar socket, placement of Bonacet, and one suture",
+  "visit_type": "首诊"
+}

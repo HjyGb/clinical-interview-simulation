@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "0–12",
+    "chief_complaint": "Multiple teeth in the mouth had &quot;cavities&quot; for several days."
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "0–12",
+    "chief_complaint": "Multiple teeth in the mouth had &quot;cavities&quot; for several days."
+  },
+  "present_illness": {
+    "present_illness": "The parents of the child discovered that there were many “holes” in the child’s teeth and denied any history of pain or other discomfort. They came to our hospital to request examination and treatment.",
+    "past_history": "He denies any history of systemic disease or drug allergy."
+  },
+  "past_history": {
+    "present_illness": "The parents of the child discovered that there were many “holes” in the child’s teeth and denied any history of pain or other discomfort. They came to our hospital to request examination and treatment.",
+    "past_history": "He denies any history of systemic disease or drug allergy."
+  },
+  "oral_examination": {
+    "oral_examination": "DE is root-like, loose, the gums are red and swollen, and the permanent teeth have not erupted."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "DE extraction of residual tooth root (K08.301) treatment plan.",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "",
+    "restoration": "",
+    "notes": "1. You can eat and drink immediately after resin filling; 2. If you have sensitivity to hot and cold stimulation or pain when biting something after filling, you need to contact the attending doctor for follow-up treatment; 3. Children&#39;s dentistry is special, and children cry and are uncooperative. Sometimes, the filling may fall off, and the resin filling can be filled once for free within six months (except for loss caused by secondary caries or tooth trauma and fracture); 4. Remove the residual root in the mouth as soon as possible, and follow up for follow-up treatment if discomfort occurs."
+  },
+  "source_handle": "DESTA The forceps were removed under local anesthesia with articaine and compression was used to stop bleeding.",
+  "visit_type": "首诊"
+}

@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "The upper right front tooth has been loose for several years."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "The upper right front tooth has been loose for several years."
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that his upper right front incisor had been loose for several years, and he now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that his upper right front incisor had been loose for several years, and he now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "11 12 Grade III loosening, periodontal pus, and no abnormality in the buccal mucosa. The rest is normal."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "11 12 Periodontal disease (K05.600)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "12 Implant restoration. With 11 crowns.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "1. The doctor has fulfilled his obligation to inform, and the patient has fully informed consent and signed the &quot;Informed Consent Form for Implantation&quot;. 2. Routine disinfection and draping. 4% articaine 1.7ml )4.1*12mm implant is implanted into the bone powder periosteum on the labial side and screwed into the healing abutment. Suture and filming position are available.",
+  "visit_type": "首诊"
+}

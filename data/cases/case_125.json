@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "He complained of pain in the left lower back tooth and came to our hospital for treatment today."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "He complained of pain in the left lower back tooth and came to our hospital for treatment today."
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": "abled. Nothing special."
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": "abled. Nothing special."
+  },
+  "oral_examination": {
+    "oral_examination": "37 The old fillings can be seen on the maxillary surface, the edges are rough, and the teeth are not loose upon percussion, and the gums are red and swollen. 36CBCT showed deep caries penetrating the pulp."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "36 Pulpitis (K04.000) 37 Pulp necrosis (K04.100)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "36,37 Crown restoration is recommended after root canal treatment.",
+    "restoration": "",
+    "notes": "Strictly abide by the &quot;Precautions after Tooth Extraction&quot;, take oral antibiotics (bring your own), and follow up with doctors if you feel uncomfortable."
+  },
+  "source_handle": "Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. 4% articaine block anesthesia. 36",
+  "visit_type": "首诊"
+}

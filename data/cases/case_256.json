@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Seek medical attention for misaligned teeth and protruding teeth."
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Seek medical attention for misaligned teeth and protruding teeth."
+  },
+  "present_illness": {
+    "present_illness": "The patient felt that his teeth were misaligned and his teeth were protruding, so he came for orthodontic consultation.",
+    "past_history": "He denies any history of systemic disease, family history, drug allergies, or any history of traveling to medium- and high-risk areas within 28 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2."
+  },
+  "past_history": {
+    "present_illness": "The patient felt that his teeth were misaligned and his teeth were protruding, so he came for orthodontic consultation.",
+    "past_history": "He denies any history of systemic disease, family history, drug allergies, or any history of traveling to medium- and high-risk areas within 28 days. He denied &quot;fever, dry cough, fatigue, loss of smell and taste, nasal congestion, runny nose, sore throat, conjunctivitis, myalgia and diarrhea&quot; and other symptoms related to COVID-19. Body temperature 36.2."
+  },
+  "oral_examination": {
+    "oral_examination": "The face shape is slightly asymmetrical, with the right cheek being plump; the upper and lower lips are protruding on the side; the mobility of the bilateral temporomandibular joints is normal, the opening is three fingers horizontally, the opening is downward and middle, and there is no tenderness or snapping in the joint area; 2. Constant pain in the mouth; The dentition, the upper and lower dental arches are rounded, and the anterior segments of the upper and lower dentition are crowded; 3. The bilateral molars have a neutral relationship, the anterior teeth are deeply covered by 4 mm, the overbite is acceptable, and the midlines of the upper and lower dentition are uneven; the upper and lower anterior teeth are labial Inclined; 4. Oral hygiene is average, with no obvious redness, swelling, abnormality or soft scale in the gums;"
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Crooked teeth.",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "",
+    "restoration": "",
+    "notes": "Avoid acidic foods within a week and avoid hot and cold stimulation. Maintain oral hygiene as directed by your doctor and rinse with mouthwash. Regular re-examination and follow-up treatment if any discomfort occurs."
+  },
+  "source_handle": "The patient fills in the medical record and retains a full set of orthodontic information (intraoral photos, facial photos, 3D models, curved tomographic films, and lateral cephalograms) for orthodontic diagnosis and analysis.",
+  "visit_type": "首诊"
+}

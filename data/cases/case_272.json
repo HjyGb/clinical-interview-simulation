@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "The sutures were removed two weeks after the lower half of the implant surgery."
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "41–60",
+    "chief_complaint": "The sutures were removed two weeks after the lower half of the implant surgery."
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": "Cit."
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": "Cit."
+  },
+  "oral_examination": {
+    "oral_examination": "The upper parts of 31-36 and 41-46 implants are repaired in place. Implantation sites 32, 34, 36, 42, 44, 46. The wound healed well and the sutures were in place."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "31-36,41-46 Tooth loss caused by accident, extraction or localized periodontal disease (K08.100).",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "31-36, 41-46 are the same as above.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "31-36, 41-46 are further blended and polished. Remove the upper temporary repair, disinfect the planting area, remove the stitches, reinstall the upper repair, apply force to 15Ncm, and seal the hole with water tape and resin.",
+  "visit_type": "复诊"
+}

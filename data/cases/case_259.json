@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "The lower right back tooth has been missing for several years"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "The lower right back tooth has been missing for several years"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that his mandibular posterior teeth had fallen out a few years ago, and now he came to our hospital for consultation on implantation.",
+    "past_history": "He denied any history of systemic diseases, family history, drug allergies, or dental treatment."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that his mandibular posterior teeth had fallen out a few years ago, and now he came to our hospital for consultation on implantation.",
+    "past_history": "He denied any history of systemic diseases, family history, drug allergies, or dental treatment."
+  },
+  "oral_examination": {
+    "oral_examination": "*44The missing alveolar ridge is slightly depressed. No obvious abnormality was found in the adjacent teeth, cold (-), probing (-), percussion (-), loose (-). No obvious abnormality was found in the remaining teeth. The opposing teeth are slightly elongated. The oral hygiene of the whole mouth is acceptable, with tartar ( ) and pigment ( ). No obvious abnormalities were found in the bite and joints."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "44 Missing teeth (K00.001)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "44 Implant restoration.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "4 Not disposed.",
+  "visit_type": "首诊"
+}

@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Receive comprehensive referral"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "Receive comprehensive referral"
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "17 13 23 24 25 26 32 33 48 45 44 42 Grade III looseness, red and swollen gums, poor oral environment, nothing else. 16 15 14 22 34 37 38 43 Stumped root, knock (-), the rest is the same, the remaining teeth are missing."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Residual tooth root (K08.300x002) Periodontal disease (K05.600)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "It is recommended to remove loose teeth and residual roots, and perform full-mouth fixed implant restoration or semi-fixed restoration, or full-mouth removable denture restoration.",
+    "restoration": "",
+    "notes": "Instruct patients to avoid eating foods that are too cold/hot/hard/sticky. If you have looseness and discomfort, you should follow up in time and make an appointment by phone before coming."
+  },
+  "source_handle": "Explain the condition, keep the patient and family informed, and ask for consideration",
+  "visit_type": "复诊"
+}

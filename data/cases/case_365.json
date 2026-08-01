@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Bite pain in left lower back tooth for several days"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Bite pain in left lower back tooth for several days"
+  },
+  "present_illness": {
+    "present_illness": "The patient complained of occlusal pain on the lower left posterior tooth for several days and came to our hospital for treatment today.",
+    "past_history": "Nothing special"
+  },
+  "past_history": {
+    "present_illness": "The patient complained of occlusal pain on the lower left posterior tooth for several days and came to our hospital for treatment today.",
+    "past_history": "Nothing special"
+  },
+  "oral_examination": {
+    "oral_examination": "36 There is a white filling on the maxillary surface, which is painful when percussed ( ), loosened by 1 degree, and the gums are normal."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "36 Chronic apical periodontitis (K04.500) treatment plan 6 root canal treatment, crown restoration.",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "",
+    "restoration": "",
+    "notes": ""
+  },
+  "source_handle": "4% articaine 1.7mlX1 local infiltration anesthesia. Remove the original filling body, remove the decay and open the pulp, uncover the top of the pulp, explore the three root canal openings, and dredge the root canal, 15",
+  "visit_type": "首诊"
+}

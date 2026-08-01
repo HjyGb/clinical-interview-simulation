@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "The upper right back tooth has been missing for several years"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "60+",
+    "chief_complaint": "The upper right back tooth has been missing for several years"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that he had been missing his upper right back teeth for several years and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that he had been missing his upper right back teeth for several years and now came to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "14 16 21 24 26 The gums are sunken, there are no bone spurs, the gap between the missing teeth is acceptable, the bite space is slightly low, and there are no other abnormalities. No obvious abnormalities were found in the bite and joints. 26 CBCT shows: Insufficient bone height."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "14 16 21 24 26 Missing teeth (K00.002). Treatment Plan Implant Restoration.",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "",
+    "restoration": "",
+    "notes": "It is forbidden to eat foods with pigments within two days, and instructions on how to brush teeth will be provided, and any discomfort will be followed up."
+  },
+  "source_handle": "14 16 21 24 261. The doctor has fulfilled his obligation to inform, and the patient has given full informed consent and signed the &quot;Informed Consent Form for Implantation&quot;. 2. Routine disinfection and draping. 4% articaine 1.7ml *10mm implant, screwed into the healing abutment. 14. 24 Nobel CC4.3*11.5mm implant, screwed into the healing abutment and sutured, 11 Nobel CC3.5*13mm implant, screwed into the healing abutment, lifting surgery within 26, implantation of 4.3*10mm implant , screw into the healing abutment, suture, and take pictures.",
+  "visit_type": "首诊"
+}

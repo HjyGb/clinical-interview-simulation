@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Ask for tooth filling"
+  },
+  "chief_complaint": {
+    "gender": "男",
+    "age_range": "21–40",
+    "chief_complaint": "Ask for tooth filling"
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, and a history of traveling to Southeast Asia within 1 week. He denied fever, general muscle aches, joint pain, fatigue, bleeding tendency, lymphadenopathy and other dengue fever-related manifestations."
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": "He denies a history of systemic diseases, family history, drug allergies, and a history of traveling to Southeast Asia within 1 week. He denied fever, general muscle aches, joint pain, fatigue, bleeding tendency, lymphadenopathy and other dengue fever-related manifestations."
+  },
+  "oral_examination": {
+    "oral_examination": "11. The distal and 12. mesial proximal surfaces are black, and when percussed (-), there is no abnormality in the buccal mucosa, and the rest are normal. 37. 47 The buccal sulcus turned black, and the probe was stuck. When percussion (-), there was no abnormality in the buccal mucosa, and the rest were normal."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Caries (K02.900x001)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Resin filling.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Explain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to the treatment. Local iodine disinfection, 11, 12, 4% articaine local infiltration anesthesia, 11, 12, 37, 47 to remove putrefaction, do not explore the medullary hole, trim and prepare the hole, acid etching, flushing, moisture-proof and dry , ultrasonic resin filling, blending and polishing.",
+  "visit_type": "复诊"
+}

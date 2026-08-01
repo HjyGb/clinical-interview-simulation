@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Bilateral joints have limited mouth opening and chewing pain for several years"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Bilateral joints have limited mouth opening and chewing pain for several years"
+  },
+  "present_illness": {
+    "present_illness": "The patient reported that his bilateral joints had been snapping for several years, and he recently developed pain when opening his mouth to chew and limited mouth opening. He now comes to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "past_history": {
+    "present_illness": "The patient reported that his bilateral joints had been snapping for several years, and he recently developed pain when opening his mouth to chew and limited mouth opening. He now comes to our hospital for treatment.",
+    "past_history": "abled."
+  },
+  "oral_examination": {
+    "oral_examination": "Side joint tenderness ( ), pain when opening and closing the mouth ( ), chewing pain ( ), mouth opening 1.5CM. CBCT showed that the bilateral temporomandibular joints were in good shape and the bone cortex was intact and smooth."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Temporomandibular joint disorder (K07.600x001).",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "It is recommended to perform temporomandibular function exercises and active opening exercises.",
+    "restoration": "",
+    "notes": "Make a follow-up appointment one week later for crown protection."
+  },
+  "source_handle": "Teach temporomandibular joint function exercises, active opening exercises and precautions.",
+  "visit_type": "首诊"
+}

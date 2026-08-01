@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "There is a hole in the left lower back tooth and pain for several days"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "There is a hole in the left lower back tooth and pain for several days"
+  },
+  "present_illness": {
+    "present_illness": "The left lower back tooth suffers from food impaction for several days, usually dull or distended pain, and occasionally spontaneous pain.",
+    "past_history": "Nothing special"
+  },
+  "past_history": {
+    "present_illness": "The left lower back tooth suffers from food impaction for several days, usually dull or distended pain, and occasionally spontaneous pain.",
+    "past_history": "Nothing special"
+  },
+  "oral_examination": {
+    "oral_examination": "46. ​​Deep and large caries on the maxillofacial surface, painful on probing; slow on cold examination; no obvious loosening; no pain on percussion; no other obvious abnormalities were found."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "46Chronic pulpitis.",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "46 root canal treatment.",
+    "restoration": "",
+    "notes": ""
+  },
+  "source_handle": "6 not disposed",
+  "visit_type": "首诊"
+}

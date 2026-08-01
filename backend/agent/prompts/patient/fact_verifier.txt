@@ -1,0 +1,4 @@
+# Fact Verifier Prompt Placeholder
+#
+# 输入: 生成的回答 + 检索到的事实
+# 输出: {pass: bool, violations: [{claim, matched_fact, severity}]}

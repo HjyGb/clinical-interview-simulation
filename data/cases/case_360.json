@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "The teeth were uncomfortable due to hot and cold stimulation for several months."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "41–60",
+    "chief_complaint": "The teeth were uncomfortable due to hot and cold stimulation for several months."
+  },
+  "present_illness": {
+    "present_illness": "Self-reported teeth",
+    "past_history": "Denied systemic history. Nothing special. abled."
+  },
+  "past_history": {
+    "present_illness": "Self-reported teeth",
+    "past_history": "Denied systemic history. Nothing special. abled."
+  },
+  "oral_examination": {
+    "oral_examination": "15 14 26 32 36 41 45 46 Deep wedge-shaped groove in the neck of the tooth, neat edges, smooth and hard surface; reaching the shallow and deep layers of the dentin; the probe feels sour, cold water stimulates soreness, no percussion pain, and the gums are not special 17 Looseness 3 degrees , the periodontal pocket overflows with pus, explores the root bifurcation, explores the periodontal pocket in the mesial, central and distal parts of the buccal side until it reaches the tooth root apex, and the gums are red and swollen. 26 loosened 2 degrees, the palatal root was exposed, the root bifurcation was detected, the mesial periodontal pocket was detected directly to the root tip, and the gums were slightly red and swollen."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "15 14 26 32 36 41 45 46 wedge-shaped tooth defect (K03.101) 17 26 periodontal disease (K05.600)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "15 14 26 32 36 41 45 46 filling. 26Periodontal scaling. Recommend removal",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "46 45 41 32 36 Decay removal, cavity preparation, blow drying, moisture isolation, adhesive application, resin filling, occlusion adjustment, and polishing. 17 26 Rinse the periodontal pocket with hydrogen peroxide and scrape off the food residue on the surface. 6 Scalt the periodontal pocket, rinse and apply medicine.",
+  "visit_type": "首诊"
+}

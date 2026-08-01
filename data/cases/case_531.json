@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "The lower right back tooth has been missing for several days"
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "The lower right back tooth has been missing for several days"
+  },
+  "present_illness": {
+    "present_illness": "The patient complained that a large piece of his lower right back tooth had fallen out a few days ago, so he came to our hospital for treatment.",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "The patient complained that a large piece of his lower right back tooth had fallen out a few days ago, so he came to our hospital for treatment.",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "46 The lingual defect is deep to the subgingival level, painful to percussion (-), and no obvious loosening."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "46 broken crown",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Plan 1: Crown restoration after root canal treatment\\nOption 2: Implantation and restoration after extraction\\nExplain the condition, treatment plan, cost, prognosis, etc. to the patient, and the patient is informed and agrees to option 2.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Under the anesthesia of 4% articaine 1.7ml Implant restoration",
+  "visit_type": "首诊"
+}

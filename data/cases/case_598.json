@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "The upper right front tooth has not erupted and requires correction."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "The upper right front tooth has not erupted and requires correction."
+  },
+  "present_illness": {
+    "present_illness": "The patient complained that since the tooth replacement, the upper right front tooth had not erupted, which affected its function and appearance, so he came to our department to seek correction.",
+    "past_history": "Nothing special."
+  },
+  "past_history": {
+    "present_illness": "The patient complained that since the tooth replacement, the upper right front tooth had not erupted, which affected its function and appearance, so he came to our department to seek correction.",
+    "past_history": "Nothing special."
+  },
+  "oral_examination": {
+    "oral_examination": "13 is not cute yet, 12 can be palpated on the lip side."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "Misaligned teeth (K07.302)13 Impacted teeth (K01.000)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "",
+    "restoration": "",
+    "notes": "Instruct patients to avoid eating foods that are too cold/hot/hard/sticky. If you have looseness and discomfort, you should follow up in time and make an appointment by phone before coming."
+  },
+  "source_handle": "Explain the condition, keep the patient and family informed, ask for consideration, and choose a day for treatment.",
+  "visit_type": "首诊"
+}

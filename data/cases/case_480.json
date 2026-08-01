@@ -1,0 +1,40 @@
+{
+  "basic_info": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Self-conscious left lower back teeth scraping tongue."
+  },
+  "chief_complaint": {
+    "gender": "女",
+    "age_range": "21–40",
+    "chief_complaint": "Self-conscious left lower back teeth scraping tongue."
+  },
+  "present_illness": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "past_history": {
+    "present_illness": "",
+    "past_history": ""
+  },
+  "oral_examination": {
+    "oral_examination": "17 27 47 maxillofacial caries, black, probable. 37 Old filling visible on maxillofacial surface, severe wear."
+  },
+  "auxiliary_examination": {
+    "xray": "",
+    "cbct": ""
+  },
+  "diagnosis": {
+    "primary": "17 27 47 Caries (K02.900)",
+    "secondary": [],
+    "icd_code": ""
+  },
+  "treatment_plan": {
+    "emergency": "",
+    "definitive": "Resin filling is recommended.",
+    "restoration": "",
+    "notes": "Follow-up for discomfort."
+  },
+  "source_handle": "Explain the patient's condition, treatment plan, cost, prognosis, etc., and the patient is informed and agrees to the treatment. Remove detrification, reach dentin layer, upper collar surface repair system, resin filling, grinding filling body height, polishing",
+  "visit_type": "首诊"
+}
