@@ -210,6 +210,22 @@ def end_session(db: Session, session_id: int) -> dict | None:
     return {"status": "ended", "ended_at": session.ended_at.isoformat()}
 
 
+def delete_session(db: Session, session_id: int) -> dict | None:
+    """Delete a session and all associated messages & assessments (hard delete)."""
+    session = db.query(SessionModel).filter_by(id=session_id).first()
+    if not session:
+        return None
+
+    # Cascade: delete children first to avoid FK issues
+    db.query(Message).filter_by(session_id=session_id).delete()
+    db.query(AssessmentModel).filter_by(session_id=session_id).delete()
+    db.delete(session)
+    db.commit()
+
+    logger.info(f"[Session] deleted session {session_id}")
+    return {"deleted": True, "session_id": session_id}
+
+
 def list_user_sessions(db: Session, user_id: int) -> list[dict]:
     """List all sessions for a user with case info and assessment status."""
     rows = (

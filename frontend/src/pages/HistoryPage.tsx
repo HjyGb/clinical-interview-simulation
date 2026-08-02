@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { listSessions, getMessages } from '../api/sessions';
+import { deleteSession, listSessions, getMessages } from '../api/sessions';
 import { getAssessment } from '../api/assessments';
 import ChatBubble from '../components/ChatBubble';
 import ScoreCard from '../components/ScoreCard';
@@ -52,6 +52,8 @@ export default function HistoryPage() {
   const [assessment, setAssessment] = useState<AssessmentResult | null>(null);
   const [assessLoading, setAssessLoading] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [deleteTarget, setDeleteTarget] = useState<SessionListItem | null>(null);
+  const [deleting, setDeleting] = useState(false);
 
   // Fetch session list on mount
   useEffect(() => {
@@ -92,6 +94,28 @@ export default function HistoryPage() {
   }, [selectedId, loadSessionData]);
 
   const handleSelectSession = (id: number) => setSelectedId(id);
+
+  const handleDelete = async () => {
+    if (!deleteTarget) return;
+    setDeleting(true);
+    try {
+      await deleteSession(deleteTarget.id);
+      // Remove from local list
+      const updated = sessions.filter((s) => s.id !== deleteTarget.id);
+      setSessions(updated);
+      // If deleted session was selected, pick another
+      if (selectedId === deleteTarget.id) {
+        setSelectedId(updated.length > 0 ? updated[0].id : null);
+        setMessages([]);
+        setAssessment(null);
+      }
+      setDeleteTarget(null);
+    } catch (e) {
+      console.error('删除失败:', e);
+    } finally {
+      setDeleting(false);
+    }
+  };
 
   // Find the currently selected session
   const selectedSession = sessions.find((s) => s.id === selectedId) || null;
@@ -200,15 +224,15 @@ export default function HistoryPage() {
                 <div
                   key={s.id}
                   onClick={() => handleSelectSession(s.id)}
-                  className={`px-4 py-3 border-b border-[var(--color-border)] cursor-pointer
-                              transition-colors
+                  className={`group px-4 py-3 border-b border-[var(--color-border)] cursor-pointer
+                              transition-colors relative
                               ${isSelected
                                 ? 'bg-[var(--color-primary-light)] border-l-2 border-l-[var(--color-primary)]'
                                 : 'hover:bg-gray-50 border-l-2 border-l-transparent'
                               }`}
                 >
                   <div className="flex justify-between items-start gap-2">
-                    <p className="text-sm font-medium text-[var(--color-text)] truncate leading-snug">
+                    <p className="text-sm font-medium text-[var(--color-text)] truncate leading-snug pr-5">
                       {s.case_title}
                     </p>
                     <StatusBadge status={statusLabel} />
@@ -227,6 +251,19 @@ export default function HistoryPage() {
                       {s.max_rounds} 轮
                     </span>
                   </div>
+                  {/* Delete button — visible on hover */}
+                  <button
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setDeleteTarget(s);
+                    }}
+                    title="删除此记录"
+                    className="absolute top-2 right-2 w-6 h-6 rounded flex items-center justify-center
+                               opacity-0 group-hover:opacity-100 transition-opacity
+                               text-[var(--color-text-secondary)] hover:text-red-500 hover:bg-red-50"
+                  >
+                    🗑️
+                  </button>
                 </div>
               );
             })}
@@ -375,6 +412,52 @@ export default function HistoryPage() {
                 病例：{selectedSession.case_title} · {formatDate(selectedSession.started_at)}
               </p>
             )}
+          </div>
+        </Modal>
+      )}
+
+      {/* Modal: delete confirmation */}
+      {deleteTarget && (
+        <Modal
+          title="确认删除"
+          onClose={() => !deleting && setDeleteTarget(null)}
+          maxWidth="max-w-sm"
+        >
+          <div className="space-y-4">
+            <p className="text-sm text-[var(--color-text)]">
+              确定要删除以下练习记录吗？
+            </p>
+            <div className="bg-gray-50 rounded-lg p-3 space-y-1">
+              <p className="text-sm font-medium text-[var(--color-text)]">
+                {deleteTarget.case_title}
+              </p>
+              <p className="text-xs text-[var(--color-text-secondary)]">
+                {deleteTarget.case_department} · {formatDate(deleteTarget.started_at)} · {deleteTarget.max_rounds} 轮
+              </p>
+            </div>
+            <p className="text-xs text-red-500">
+              ⚠️ 此操作不可恢复，对话记录和评估结果将被永久删除。
+            </p>
+            <div className="flex gap-3 justify-end pt-2">
+              <button
+                onClick={() => setDeleteTarget(null)}
+                disabled={deleting}
+                className="px-4 py-2 rounded-lg text-sm font-medium transition-all
+                           border border-[var(--color-border)] text-[var(--color-text-secondary)]
+                           hover:bg-gray-50 disabled:opacity-50"
+              >
+                取消
+              </button>
+              <button
+                onClick={handleDelete}
+                disabled={deleting}
+                className="px-4 py-2 rounded-lg text-sm font-medium transition-all
+                           bg-red-500 text-white hover:bg-red-600
+                           disabled:opacity-50 active:scale-[0.98]"
+              >
+                {deleting ? '删除中...' : '确认删除'}
+              </button>
+            </div>
           </div>
         </Modal>
       )}

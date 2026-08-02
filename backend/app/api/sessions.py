@@ -130,3 +130,18 @@ def end_session(
     if not result:
         raise HTTPException(status_code=404, detail="会话不存在")
     return result
+
+
+@router.delete("/{session_id}")
+def delete_session(
+    session_id: int,
+    db: Session = Depends(get_db),
+    current_user: dict = Depends(get_current_user),
+):
+    """Delete a session and all associated messages & assessments."""
+    user_id = int(current_user["sub"])
+    _verify_ownership(db, session_id, user_id)
+    result = session_service.delete_session(db, session_id)
+    if not result:
+        raise HTTPException(status_code=404, detail="会话不存在")
+    return result

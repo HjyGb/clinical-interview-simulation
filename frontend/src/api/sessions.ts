@@ -1,4 +1,4 @@
-import { apiGet, apiPost, apiPostSSE } from './client';
+import { apiDelete, apiGet, apiPost, apiPostSSE } from './client';
 import type { SessionInfo, ChatMessage, SessionListItem } from '../types';
 
 export function createSession(caseId: number): Promise<SessionInfo> {
@@ -28,4 +28,8 @@ export function endSession(sessionId: number): Promise<{ status: string }> {
 
 export function listSessions(): Promise<{ sessions: SessionListItem[]; total: number }> {
   return apiGet('/sessions');
+}
+
+export function deleteSession(sessionId: number): Promise<{ deleted: boolean; session_id: number }> {
+  return apiDelete(`/sessions/${sessionId}`);
 }

@@ -50,6 +50,23 @@ export async function apiPost<T>(path: string, body?: unknown): Promise<T> {
   return res.json();
 }
 
+export async function apiDelete<T>(path: string): Promise<T> {
+  const token = getToken();
+  const res = await fetch(`${API_BASE}${path}`, {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json',
+      ...(token ? { Authorization: `Bearer ${token}` } : {}),
+    },
+  });
+  if (!res.ok) {
+    handleAuthError(res);
+    const err = await res.json().catch(() => ({ detail: res.statusText }));
+    throw new Error(err.detail || `HTTP ${res.status}`);
+  }
+  return res.json();
+}
+
 export async function apiPostSSE(
   path: string,
   body: unknown,
