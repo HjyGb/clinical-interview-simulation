@@ -19,8 +19,8 @@ frontend/dist/
 *.db
 *.sqlite3
 
-# Raw data (contains PHI — never commit)
-data/raw/
+# Data directory (cases, database, raw data — contains PHI)
+data/
 medical_records.csv
 
 # IDE
@@ -33,6 +33,9 @@ Thumbs.db
 
 # Local files (scratch, notes, experiments)
 local/
+
+# Claude Code memory
+memory/
 
 # Logs
 *.log

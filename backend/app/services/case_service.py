@@ -9,6 +9,29 @@ from app.models.case import Case
 _TIER4_KEYS = {"diagnosis", "treatment_plan"}
 
 
+def _safe_get(data: dict, *paths: str, default: str = "") -> str:
+    """Try multiple dot-separated paths in order, return first non-empty value.
+
+    Supports both MVP schema (e.g. chief_complaint at data.chief_complaint)
+    and auto-generated schema (e.g. chief_complaint at data.basic_info.chief_complaint).
+    """
+    for path in paths:
+        keys = path.split(".")
+        val: object = data
+        try:
+            for k in keys:
+                if isinstance(val, dict):
+                    val = val.get(k, {})
+                else:
+                    val = {}
+                    break
+        except (AttributeError, TypeError):
+            val = {}
+        if isinstance(val, str) and val.strip():
+            return val.strip()
+    return default
+
+
 def _strip_tier4(data: dict) -> dict:
     """Remove Tier 4 fields from case data before returning to students."""
     return {k: v for k, v in data.items() if k not in _TIER4_KEYS}
@@ -34,8 +57,9 @@ def list_cases(
             "title": c.title,
             "department": c.department,
             "difficulty": c.difficulty,
-            "visit_type": c.data.get("basic_info", {}).get("visit_type", "首诊"),
-            "chief_complaint": c.data.get("basic_info", {}).get("chief_complaint", ""),
+            "visit_type": _safe_get(c.data, "basic_info.visit_type", "visit_type", default="首诊"),
+            "chief_complaint": _safe_get(c.data, "chief_complaint", "basic_info.chief_complaint", default=""),
+            "case_number": _safe_get(c.data, "case_number", default=""),
         }
         for c in cases
     ]

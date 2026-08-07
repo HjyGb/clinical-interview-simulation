@@ -10,6 +10,7 @@ class CaseSummary(BaseModel):
     difficulty: str
     visit_type: str = "首诊"
     chief_complaint: str = ""
+    case_number: str = ""
 
 
 class CaseListResponse(BaseModel):

@@ -25,6 +25,7 @@ export interface CaseSummary {
   difficulty: string;
   visit_type: string;
   chief_complaint: string;
+  case_number: string;
 }
 
 export interface CaseDetail {
