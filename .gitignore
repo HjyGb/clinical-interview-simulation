@@ -39,3 +39,6 @@ memory/
 
 # Logs
 *.log
+
+# Env backups (may contain real keys)
+.env.bak*

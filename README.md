@@ -262,12 +262,10 @@ Clinical Interview Simulation/
 │   └── raw/                        # 原始数据
 │       └── medical_records.csv     # 2124条口腔门诊病历 (含PHI, 不进git)
 ├── docs/                           # 设计文档
+│   ├── patient-simulation-roadmap.md      # 当前阶段入口（病人模拟）
 │   ├── project-requirements-overview.md  # 项目需求总览 (PRD)
-│   ├── architecture-design.md            # 技术架构设计
-│   ├── assessment-evaluation-standards.md # 评估标准体系说明
-│   ├── persona-style-system-design.md    # 人格风格系统设计
-│   ├── real-case-data-integration-plan-v2.md # 真实病例集成方案
-│   └── frontend-improvement-plan.md      # 前端改造方案
+│   └── architecture-design.md            # 技术架构设计
+├── old_docs/                       # 归档文档（推迟/已过时）
 ├── local/                          # 本地开发资源
 │   └── FRONTEND_STYLING_GUIDE.md   # 前端样式参考文档
 ├── memory/                         # Claude Code 持久记忆
@@ -515,12 +513,10 @@ npm test
 
 | 文档 | 内容 |
 |------|------|
+| [病人模拟路线图](docs/patient-simulation-roadmap.md) | **当前阶段入口**：现状、新数据(30例 docx)结构、数据处理、分步落地 |
 | [项目需求总览](docs/project-requirements-overview.md) | 完整 PRD：背景、用户画像、功能需求、数据资产、MVP 范围 |
 | [技术架构设计](docs/architecture-design.md) | 系统架构图、数据流、DB Schema、API 设计、Agent 核心设计 |
-| [评估标准体系](docs/assessment-evaluation-standards.md) | 双轨评估详细说明：评分维度、扣分规则、输出格式 |
-| [人格风格系统](docs/persona-style-system-design.md) | 81 种人格组合设计：焦虑度 × 话量 × 信任度 × 语言风格 |
-| [病例集成方案 V2](docs/real-case-data-integration-plan-v2.md) | 真实病历 → 标准化病例的翻译、审校、结构化流程 |
-| [前端改造方案](docs/frontend-improvement-plan.md) | 从 inline style 迁移到 Tailwind CSS + CSS 变量的改造计划 |
+| [归档文档](old_docs/) | 评分标准、数据解耦、前端改造、persona、旧数据集成、会议准备（推迟/已过时） |
 | [前端样式参考](local/FRONTEND_STYLING_GUIDE.md) | PatientAgent 2.0 设计系统：颜色、排版、组件、动画、布局 |
 
 ---

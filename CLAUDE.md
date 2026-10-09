@@ -30,12 +30,10 @@ Key docs:
 
 | File | Purpose |
 |---|---|
+| `docs/patient-simulation-roadmap.md` | **Current phase entry point** — project state, the new 30-case docx data structure, data processing, step-by-step roadmap |
 | `docs/project-requirements-overview.md` | Full PRD — personas, functional/non-functional requirements, data assets, risks |
 | `docs/architecture-design.md` | Technical architecture — system diagrams, data flow, DB schema, API design, Agent core design |
-| `docs/assessment-evaluation-standards.md` | Scoring rubrics — Station 4 + MAAS-Global |
-| `docs/persona-style-system-design.md` | Persona system — 81 combinations (anxiety × verbosity × trust × language) |
-| `docs/real-case-data-integration-plan-v2.md` | Real case data pipeline — translation + review, data structure design |
-| `docs/frontend-improvement-plan.md` | Frontend migration plan — inline style → Tailwind CSS 4 + CSS variables |
+| `old_docs/` | Archived (deferred/superseded): assessment standards, data-schema decoupling, frontend plan, persona, old data pipeline, meeting prep |
 | `README.md` | Project README (Chinese). Note: its path claims are stale — prompts live in `backend/agent/prompts/`, not `backend/prompts/`. |
 
 ## Development Commands
