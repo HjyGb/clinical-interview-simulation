@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c ' *)",
+      "Bash(git ls-tree *)",
+      "Bash(grep -cE 'data/cases/case_[0-9]+\\\\.json$')",
+      "Bash(git check-ignore *)",
+      "Bash(.venv/Scripts/python.exe -c ' *)",
+      "Bash(.venv/Scripts/python.exe -c \"from jose import jwt; print\\('jose OK'\\)\")",
+      "Bash(grep -E 'case_[0-9]+\\\\.json$')",
+      "Bash(rm -f mvp.tmp)",
+      "Bash(cd \"C:/Users/34747/.claude/projects/d--PPPProject-agent-clinical-interview-simulation/memory\" 2>/dev/null && ls -la && echo \"--- MEMORY.md ---\" && cat MEMORY.md 2>/dev/null || echo \"\\(memory dir listing failed\\)\")",
+      "Read(//c/Users/34747/.claude/projects/d--PPPProject-agent-clinical-interview-simulation/memory/**)",
+      "Bash(.venv/Scripts/python.exe -u -c ' *)",
+      "Bash(git checkout *)",
+      "Bash(git reset *)",
+      "Bash(.venv/Scripts/python.exe ../scripts/seed_db.py)"
+    ]
+  }
+}
