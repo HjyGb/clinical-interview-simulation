@@ -58,8 +58,11 @@ def list_cases(
             "department": c.department,
             "difficulty": c.difficulty,
             "visit_type": _safe_get(c.data, "basic_info.visit_type", "visit_type", default="首诊"),
-            "chief_complaint": _safe_get(c.data, "chief_complaint", "basic_info.chief_complaint", default=""),
-            "case_number": _safe_get(c.data, "case_number", default=""),
+            # v2.1 patient.json: 主诉文本在 data.opening；旧嵌套 schema 的两条路径保留兜底。
+            "chief_complaint": _safe_get(
+                c.data, "opening", "chief_complaint", "basic_info.chief_complaint", default=""
+            ),
+            "case_number": _safe_get(c.data, "case_number", "case_id", default=""),
         }
         for c in cases
     ]
@@ -89,5 +92,6 @@ def get_case_full(db: Session, case_id: int) -> dict | None:
         "title": case.title,
         "department": case.department,
         "difficulty": case.difficulty,
-        "data": case.data,  # Full data including Tier 4
+        "data": case.data,            # 患者侧：identity/opening/facts/psychology
+        "exam_data": case.exam_data,  # 检查侧：E 项。只给检查模块用，不进患者上下文
     }

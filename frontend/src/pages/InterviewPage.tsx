@@ -79,6 +79,9 @@ export default function InterviewPage() {
             case 'token':
               store.appendToken(data.token as string);
               break;
+            case 'exam':
+              store.appendExam(data.content as string);
+              break;
             case 'limit_warning':
               setRoundsLeft(data.remaining_rounds as number);
               break;

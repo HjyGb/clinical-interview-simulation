@@ -1,11 +1,32 @@
+import type { ChatMessage } from '../types';
+
 interface Props {
-  role: 'student' | 'patient';
+  role: ChatMessage['role'];
   content: string;
   isStreaming?: boolean;
 }
 
 export default function ChatBubble({ role, content, isStreaming }: Props) {
   const isStudent = role === 'student';
+
+  // 检查结果不是患者说的话，用独立的检查卡片渲染，避免和患者气泡混淆。
+  if (role === 'exam') {
+    return (
+      <div className="flex mb-4 justify-start">
+        <div className="max-w-[85%] flex items-start gap-2">
+          <span className="text-lg shrink-0 select-none">📋</span>
+          <div
+            className="px-4 py-2.5 text-sm leading-relaxed whitespace-pre-wrap break-words
+                       bg-blue-50/70 text-[var(--color-text)]
+                       border border-blue-200/70 rounded-xl"
+          >
+            <div className="text-xs font-medium text-blue-700 mb-1">检查结果</div>
+            {content}
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div

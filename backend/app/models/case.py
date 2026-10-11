@@ -16,7 +16,10 @@ class Case(Base):
     title: Mapped[str] = mapped_column(String(200), nullable=False)
     department: Mapped[str] = mapped_column(String(50), default="口腔科")
     difficulty: Mapped[str] = mapped_column(String(20), default="intermediate")  # beginner / intermediate / advanced
-    data: Mapped[dict] = mapped_column(JSON, nullable=False)       # full structured case (Tier 1–4)
+    data: Mapped[dict] = mapped_column(JSON, nullable=False)       # patient side: identity/opening/facts/psychology
+    # 检查侧数据（E 项：label/level/aliases/result/boundary），与 data 分开存。
+    # 分开的意义是结构性的：患者 Agent 拿不到检查结果，检查模块拿不到患者事实。
+    exam_data: Mapped[dict | None] = mapped_column(JSON, nullable=True)
     status: Mapped[str] = mapped_column(String(20), default="draft")  # draft / reviewed / published / archived
     created_by: Mapped[int | None] = mapped_column(Integer, nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime, server_default=func.now())

@@ -37,12 +37,8 @@ async def create_session(
     db.commit()
     db.refresh(session)
 
-    # Generate the patient's opening statement via LLM
-    try:
-        opening = await get_opening_statement(case_data, DEFAULT_PERSONA)
-    except Exception as e:
-        logger.error(f"[Session] opening statement generation failed: {e}")
-        opening = "你好...（患者暂时无法说话，请稍后再试）"
+    # 开场白直接取自病例数据（固定文本），不再调 LLM，保证每位学生看到同一句
+    opening = get_opening_statement(case_data, DEFAULT_PERSONA)
 
     # Store as the first patient message (round 0)
     opening_msg = Message(
@@ -68,15 +64,25 @@ async def create_session(
     }
 
 
+def _student_turn_count(db: Session, session_id: int) -> int:
+    """How many student turns so far. This is what a 'round' means.
+
+    Counting all rows and dividing by 2 was only valid while every round was
+    exactly one student + one patient row. Exam results add a third row type,
+    so count student rows directly.
+    """
+    return db.query(Message).filter_by(session_id=session_id, role="student").count()
+
+
 def get_session(db: Session, session_id: int) -> dict | None:
     """Get session details."""
     s = db.query(SessionModel).filter_by(id=session_id).first()
     if not s:
         return None
 
-    # Count messages for current round
-    msg_count = db.query(Message).filter_by(session_id=s.id).count()
-    current_round = msg_count // 2  # Each round = student msg + patient msg
+    # 一轮 = 学生的一次发言。按学生消息数算，不按总消息数——
+    # 检查结果（role="exam"）是额外的回复行，用总数除 2 会算错轮次。
+    current_round = _student_turn_count(db, s.id)
 
     return {
         "id": s.id,
@@ -91,11 +97,16 @@ def get_session(db: Session, session_id: int) -> dict | None:
 
 
 def get_messages(db: Session, session_id: int) -> list[dict]:
-    """Get all messages for a session, ordered by creation time."""
+    """Get all messages for a session, ordered by creation time.
+
+    `created_at` comes from SQLite's CURRENT_TIMESTAMP, which has **1-second**
+    resolution — every message in a session usually shares the same value. Tie-break
+    on `id` so the order is deterministic; the patient's memory depends on it.
+    """
     msgs = (
         db.query(Message)
         .filter_by(session_id=session_id)
-        .order_by(Message.created_at)
+        .order_by(Message.created_at, Message.id)
         .all()
     )
     return [
@@ -105,6 +116,7 @@ def get_messages(db: Session, session_id: int) -> list[dict]:
             "role": m.role,
             "content": m.content,
             "round_num": m.round_num,
+            "disclosed": m.disclosed or [],
             "created_at": m.created_at,
         }
         for m in msgs
@@ -116,8 +128,9 @@ async def add_student_message(
     session_id: int,
     content: str,
     case_data: dict,
+    exam_data: dict | None = None,
 ) -> AsyncIterator[dict]:
-    """Process a student message through the Patient Agent and yield SSE events.
+    """Process a student message through the Agent and yield SSE events.
 
     Yields:
         SSE event dicts: {"event": str, "data": dict}
@@ -127,9 +140,8 @@ async def add_student_message(
         yield {"event": "error", "data": {"message": "Session not found or not active"}}
         return
 
-    # Check round limit
-    msg_count = db.query(Message).filter_by(session_id=session_id).count()
-    current_round = msg_count // 2 + 1  # upcoming round
+    # Check round limit（一轮 = 学生一次发言）
+    current_round = _student_turn_count(db, session_id) + 1  # upcoming round
 
     if current_round > session.max_rounds:
         yield {"event": "error", "data": {"message": f"已达到最大轮次（{session.max_rounds}轮），请提交诊断"}}
@@ -148,41 +160,52 @@ async def add_student_message(
     # Get conversation history
     history = get_messages(db, session_id)
 
-    # Process through Patient Agent
-    patient_content_parts: list[str] = []
-    intent_result = None
-    fact_verify = None
+    # Process through the Agent
+    reply_parts: list[str] = []
+    reply_role = "patient"
+    done_data: dict = {}
 
     async for event in process_message(
         student_message=content,
         case_data=case_data,
-        conversation_history=[{"role": h["role"], "content": h["content"]} for h in history[:-1]],  # exclude just-added student msg
+        # exclude just-added student msg; carry `disclosed` so the patient remembers what it already said
+        conversation_history=[
+            {"role": h["role"], "content": h["content"], "disclosed": h.get("disclosed") or []}
+            for h in history[:-1]
+        ],
+        exam_data=exam_data,
     ):
         event_type = event["event"]
 
-        if event_type == "intent":
-            intent_result = event["data"]
+        if event_type == "token":
+            reply_parts.append(event["data"]["token"])
             yield event
-        elif event_type == "token":
-            patient_content_parts.append(event["data"]["token"])
+        elif event_type == "exam":
+            # 检查结果是整段文本（数据原文，逐字不流式），由前端单独渲染成检查卡片
+            reply_role = "exam"
+            reply_parts.append(event["data"]["content"])
             yield event
         elif event_type == "done":
-            fact_verify = event["data"].get("fact_verify", {"pass": True, "violations": []})
-            intent_result = event["data"]
+            done_data = event["data"]
+        else:
+            # "intent" 等上游事件原样透传给前端
+            yield event
 
-    # Store patient message
-    full_response = "".join(patient_content_parts)
-    intent_str = intent_result.get("class", "") if isinstance(intent_result, dict) else ""
+    # Store the reply. 检查结果以 role="exam" 落库——它不是患者说的话，
+    # 混进 role="patient" 会让回放和审计都失真。
+    full_response = "".join(reply_parts)
+    question_type = done_data.get("question_type", "")
+    disclosed = done_data.get("disclosed", [])
 
-    patient_msg = Message(
+    reply_msg = Message(
         session_id=session_id,
-        role="patient",
+        role=reply_role,
         content=full_response,
         round_num=current_round,
-        intent=intent_str,
-        fact_verify=fact_verify,
+        intent=question_type,
+        disclosed=disclosed,
     )
-    db.add(patient_msg)
+    db.add(reply_msg)
     db.commit()
 
     # Round limit warning
@@ -196,7 +219,17 @@ async def add_student_message(
             },
         }
 
-    yield {"event": "done", "data": {"round": current_round, "fact_verify": fact_verify}}
+    # exam_ids 只对检查结果有意义；disclosed 只对患者回复有意义。两个都带上，
+    # 前端/测试按 question_type 各取所需。
+    yield {
+        "event": "done",
+        "data": {
+            "round": current_round,
+            "question_type": question_type,
+            "disclosed": disclosed,
+            "exam_ids": done_data.get("exam_ids", []),
+        },
+    }
 
 
 def end_session(db: Session, session_id: int) -> dict | None:

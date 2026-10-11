@@ -31,6 +31,9 @@ Key docs:
 | File | Purpose |
 |---|---|
 | `docs/patient-simulation-roadmap.md` | **Current phase entry point** — project state, the new 30-case docx data structure, data processing, step-by-step roadmap |
+| `docs/patient-simulation-dev-plan.md` | **Construction plan (M1–M5)** — per-phase file changes, self/you test split, and "actual vs expected" records per phase |
+| `docs/model-selection.md` | Model roles (generation/selection/evaluation), current pick, production scale answer |
+| `docs/positioning-and-principles.md` | 5 principles (P1–P5) — faithfulness over cleverness, engine/content separation |
 | `docs/project-requirements-overview.md` | Full PRD — personas, functional/non-functional requirements, data assets, risks |
 | `docs/architecture-design.md` | Technical architecture — system diagrams, data flow, DB schema, API design, Agent core design |
 | `old_docs/` | Archived (deferred/superseded): assessment standards, data-schema decoupling, frontend plan, persona, old data pipeline, meeting prep |

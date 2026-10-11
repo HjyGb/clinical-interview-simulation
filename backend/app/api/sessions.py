@@ -101,6 +101,7 @@ async def send_message(
             session_id=session_id,
             content=req.content,
             case_data=case["data"],
+            exam_data=case.get("exam_data"),
         ):
             event_name = event.get("event", "message")
             data = event.get("data", {})

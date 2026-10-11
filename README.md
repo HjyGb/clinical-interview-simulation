@@ -263,6 +263,8 @@ Clinical Interview Simulation/
 │       └── medical_records.csv     # 2124条口腔门诊病历 (含PHI, 不进git)
 ├── docs/                           # 设计文档
 │   ├── patient-simulation-roadmap.md      # 当前阶段入口（病人模拟）
+│   ├── patient-simulation-dev-plan.md     # 施工图（M1–M5，含各阶段实测记录）
+│   ├── model-selection.md                  # 模型选型（角色/现选/落地规模）
 │   ├── project-requirements-overview.md  # 项目需求总览 (PRD)
 │   └── architecture-design.md            # 技术架构设计
 ├── old_docs/                       # 归档文档（推迟/已过时）
@@ -514,6 +516,9 @@ npm test
 | 文档 | 内容 |
 |------|------|
 | [病人模拟路线图](docs/patient-simulation-roadmap.md) | **当前阶段入口**：现状、新数据(30例 docx)结构、数据处理、分步落地 |
+| [病人模拟开发方案](docs/patient-simulation-dev-plan.md) | **施工图（M1–M5）**：各阶段改动文件、自测/你测分工、每阶段"实际 vs 预判"记录 |
+| [模型选型](docs/model-selection.md) | 三种模型角色、当前选型、真正落地所需规模 |
+| [定位与原则](docs/positioning-and-principles.md) | 五原则（P1–P5）：忠实优先、引擎/内容分离 |
 | [项目需求总览](docs/project-requirements-overview.md) | 完整 PRD：背景、用户画像、功能需求、数据资产、MVP 范围 |
 | [技术架构设计](docs/architecture-design.md) | 系统架构图、数据流、DB Schema、API 设计、Agent 核心设计 |
 | [归档文档](old_docs/) | 评分标准、数据解耦、前端改造、persona、旧数据集成、会议准备（推迟/已过时） |
