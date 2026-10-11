@@ -30,7 +30,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 DOCX_TEXT = ROOT / "data" / "raw" / "_docx.txt"
-CASES_DIR = ROOT / "data" / "cases"
+CASES_DIR = ROOT / "data" / "cases"          # 只放最终进系统的数据
+STAGING_DIR = ROOT / "data" / "staging"      # 中间产物，可随时重建
 GAP_REPORT = ROOT / "data" / "tests" / "exam_subitem_gaps.md"
 
 SLICED_CASES = ["EN01", "PE01", "PR01", "MU01", "SU01"]
@@ -310,30 +311,34 @@ def main() -> None:
             print(f"  Warning: {case_id} 未在 docx 中找到 A2 段")
             continue
 
-        existing_path = CASES_DIR / f"{case_id.lower()}.exam.json"
-        existing = json.loads(existing_path.read_text(encoding="utf-8")) if existing_path.exists() else {"exams": {}}
+        # 项名/等级/结果沿用已核对过的那份最终数据；没有则退回 data/old 里的旧扁平版
+        final_path = CASES_DIR / f"{case_id.lower()}.exam.json"
+        legacy_path = ROOT / "data" / "old" / f"{case_id.lower()}.exam.flat.json"
+        base_path = final_path if final_path.exists() else legacy_path
+        base = json.loads(base_path.read_text(encoding="utf-8")) if base_path.exists() else {"exams": {}}
 
         exams = {}
         for it in items:
             exam_id = it["id"]
-            old = existing.get("exams", {}).get(exam_id, {})
+            old = base.get("exams", {}).get(exam_id, {})
             subitems, has_labels = split_aliases(it.get("aliases_raw", ""))
             exams[exam_id] = {
-                "label": old.get("label", ""),          # 标签沿用已核对过的那份
+                "label": old.get("label", ""),
                 "level": old.get("level", it["level"]),
-                "aliases": [a for s in subitems for a in s["aliases"]],   # 扁平形式保留，兼容现有匹配
-                "subitems": subitems,                                     # 新增：医院的子项分组
+                "aliases": [a for s in subitems for a in s["aliases"]],   # 扁平并集，兼容旧匹配
+                "subitems": subitems,                                     # 医院的子项分组
                 "subitems_labelled": has_labels,
                 "result": old.get("result"),
                 "boundary": it.get("boundary_raw", old.get("boundary", "")),
             }
 
         out = {"case_id": case_id, "exams": exams}
-        staging = CASES_DIR / f"{case_id.lower()}.exam.new.json"
+        STAGING_DIR.mkdir(parents=True, exist_ok=True)
+        staging = STAGING_DIR / f"{case_id.lower()}.exam.new.json"
         staging.write_text(json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
         n_sub = sum(len(e["subitems"]) for e in exams.values())
         n_lab = sum(1 for e in exams.values() if e["subitems_labelled"])
-        print(f"  {case_id}: {len(exams)} 项 → {n_sub} 个子项（{n_lab} 项有标签） → {staging.name}")
+        print(f"  {case_id}: {len(exams)} 项 → {n_sub} 个子项（{n_lab} 项有标签） → staging/{staging.name}")
 
 
 if __name__ == "__main__":

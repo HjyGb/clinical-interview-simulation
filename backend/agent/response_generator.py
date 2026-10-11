@@ -12,6 +12,8 @@ is what keeps it from dumping the whole history at once.
 
 from collections.abc import AsyncIterator
 
+from loguru import logger
+
 from agent.fact_selector import build_facts_catalog, render_catalog
 from agent.llm_client import chat_stream
 from app.config import settings
@@ -20,8 +22,12 @@ from app.config import settings
 RESPONSE_PROMPT: str | None = None
 SYSTEM_BASE_PROMPT: str | None = None
 
-MAX_HISTORY_MSGS = 24      # 全对话历史都要给（B04 指代、B12 复述都靠它）
-MAX_CHARS_PER_MSG = 300
+# 记忆窗口。**一次会话上限 25 轮 = 最多 51 条消息**，窗口必须盖得住整场，
+# 否则患者会忘掉前半段——实测：窗口 24 条（12 轮）时，第 20 轮就复述不出第 1 轮的解释，
+# 还会反过来否认学生说过（"您还没跟我讲过下一步呢"）。
+# 会话是有界的，所以"全量给"既简单又无损；50 条 × 500 字 ≈ 6–8k token，qwen-plus 完全吃得下。
+MAX_HISTORY_MSGS = 60
+MAX_CHARS_PER_MSG = 500
 
 
 def _load_prompts() -> tuple[str, str]:
@@ -75,12 +81,26 @@ def _format_already_disclosed(already_disclosed: list[str]) -> str:
 
 
 def _format_history(history: list[dict]) -> str:
-    """Format the conversation so far."""
+    """Format the conversation so far — the patient's memory.
+
+    Truncation here means **forgetting**, which is invisible to every other test:
+    the patient simply denies having been told something. So if the history ever
+    outgrows the window, say so loudly instead of dropping the early turns silently.
+    """
     if not history:
         return "（这是对话的开始，还没有之前的交流）"
+
+    if len(history) > MAX_HISTORY_MSGS:
+        # 走到这里说明 max_rounds 被调得比窗口还大——患者会开始遗忘开场白。
+        logger.warning(
+            f"[Generator] 历史 {len(history)} 条超出记忆窗口 {MAX_HISTORY_MSGS} 条，"
+            f"最早 {len(history) - MAX_HISTORY_MSGS} 条将被遗忘。"
+            f"MAX_HISTORY_MSGS 必须 ≥ 一场会话的最大消息数（2 × max_rounds + 1）。"
+        )
+
     lines = []
     for msg in history[-MAX_HISTORY_MSGS:]:
-        role_label = "学生" if msg.get("role") == "student" else "患者"
+        role_label = {"student": "学生", "patient": "患者", "exam": "检查"}.get(msg.get("role"), "系统")
         content = msg.get("content", "")[:MAX_CHARS_PER_MSG]
         lines.append(f"{role_label}：{content}")
     return "\n".join(lines)

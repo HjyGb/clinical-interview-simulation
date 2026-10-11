@@ -31,7 +31,9 @@ async def create_session(
         case_id=case_id,
         persona=persona,
         status="active",
-        max_rounds=12,
+        # 25 轮：医院的 S01 常规路径本身就有 13 步，12 轮装不下。
+        # 开发测试期放宽，正式值待与医院确认问诊时长后再定。
+        max_rounds=25,
     )
     db.add(session)
     db.commit()
@@ -228,6 +230,7 @@ async def add_student_message(
             "question_type": question_type,
             "disclosed": disclosed,
             "exam_ids": done_data.get("exam_ids", []),
+            "subitem_keys": done_data.get("subitem_keys", []),
         },
     }
 

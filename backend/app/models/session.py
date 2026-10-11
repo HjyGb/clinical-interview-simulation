@@ -17,6 +17,6 @@ class Session(Base):
     case_id: Mapped[int] = mapped_column(Integer, ForeignKey("cases.id"), nullable=False)
     persona: Mapped[dict] = mapped_column(JSON, nullable=False)     # persona config snapshot
     status: Mapped[str] = mapped_column(String(20), default="active")  # active / ended / abandoned
-    max_rounds: Mapped[int] = mapped_column(Integer, default=12)
+    max_rounds: Mapped[int] = mapped_column(Integer, default=25)
     started_at: Mapped[datetime] = mapped_column(DateTime, server_default=func.now())
     ended_at: Mapped[datetime | None] = mapped_column(DateTime, nullable=True)

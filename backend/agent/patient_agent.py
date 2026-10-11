@@ -11,6 +11,7 @@ The real defence is upstream — the data boundary (no D/DD/T/G/R in the case
 data) plus this gate.
 """
 
+import re
 from collections.abc import AsyncIterator
 
 from loguru import logger
@@ -22,18 +23,23 @@ from agent.persona import DEFAULT_PERSONA, PersonaConfig
 from agent.response_generator import generate_response
 
 
-def _summarize_history(history: list[dict], max_msgs: int = 6) -> str:
+# 披露轨迹里"患者事实"的形态（H01/P02…）。检查子项键（E02.cold）不属于此类。
+_DISCLOSED_FACT_ID = re.compile(r"^[HP]\d{2}$")
+
+
+def _summarize_history(history: list[dict], max_msgs: int = 16) -> str:
     """Format recent turns for the selector.
 
-    The selector needs enough context to resolve references ("刚才说的那个…"),
-    so this keeps more than the old intent classifier did.
+    The selector needs context to resolve references — "刚才说的"、隔了几轮的指代。
+    窗口太小会漏掉指代对象（原先只有 6 条 = 3 轮）。检查结果行也一并给，
+    这样"再次返回36牙周检查"这类重复申请能对上。
     """
     if not history:
         return "（对话刚开始）"
     recent = history[-max_msgs:]
     lines = []
     for msg in recent:
-        role = "学生" if msg.get("role") == "student" else "患者"
+        role = {"student": "学生", "patient": "患者", "exam": "检查"}.get(msg.get("role"), "系统")
         content = msg.get("content", "")[:200]
         lines.append(f"{role}: {content}")
     return "\n".join(lines)
@@ -73,11 +79,12 @@ async def process_message(
     """
     persona = persona or DEFAULT_PERSONA
 
-    # 本会话此前已经披露过的事实（来自历史里每条患者消息的 disclosed），供生成器避免重复
+    # 本会话此前已经披露过的事实（来自历史里每条患者消息的 disclosed），供生成器避免重复。
+    # 只取 H/P 编号：检查消息的 disclosed 存的是 "E02.cold" 这种子项键，喂给患者会变成胡话。
     already_disclosed: list[str] = []
     for msg in conversation_history:
         for fact_id in msg.get("disclosed") or []:
-            if fact_id not in already_disclosed:
+            if _DISCLOSED_FACT_ID.match(str(fact_id)) and fact_id not in already_disclosed:
                 already_disclosed.append(fact_id)
 
     # ── Step 1: Fact selection (lite) ──────────────────────────
@@ -91,9 +98,15 @@ async def process_message(
         result = exam_module.answer(student_message, exam_data)
         yield {"event": "intent", "data": {"question_type": EXAM_QUESTION_TYPE,
                                            "asked_facts": [], "exam_ids": result["exam_ids"]}}
-        yield {"event": "exam", "data": {"exam_ids": result["exam_ids"], "content": result["content"]}}
+        yield {"event": "exam", "data": {"exam_ids": result["exam_ids"],
+                                         "subitem_keys": result["subitem_keys"],
+                                         "content": result["content"]}}
+        # 检查结果的披露轨迹 = 命中的子项（形如 "E02.cold"）；disclosed 字段复用但格式不同，
+        # 因此 already_disclosed 侧要按 H/P 过滤（见上方 _DISCLOSED_FACT_ID）。
         yield {"event": "done", "data": {"question_type": EXAM_QUESTION_TYPE,
-                                         "exam_ids": result["exam_ids"], "disclosed": []}}
+                                         "exam_ids": result["exam_ids"],
+                                         "subitem_keys": result["subitem_keys"],
+                                         "disclosed": result["subitem_keys"] or result["exam_ids"]}}
         return
 
     if selector_result["question_type"] == ERROR_QUESTION_TYPE:
