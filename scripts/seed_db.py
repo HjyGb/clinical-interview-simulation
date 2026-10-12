@@ -55,6 +55,17 @@ def _seed_users(db) -> None:
     db.commit()
 
 
+def _load_sidecar(case_id: str, kind: str) -> dict | None:
+    """Load data/cases/<case>.<kind>.json (answer / rubric). Missing file is not fatal —
+    the case still loads, just without scoring data. Loudly noted, never silently blanked."""
+    path = CASES_DIR / f"{case_id.lower()}.{kind}.json"
+    if not path.exists():
+        print(f"  Note: {path.name} not found — {case_id} loaded without {kind} data")
+        return None
+    with open(path, "r", encoding="utf-8") as f:
+        return json.load(f)
+
+
 def _load_patient_cases(db) -> tuple[int, int]:
     """Load data/cases/*.patient.json (patient-simulation schema). Returns (added, skipped)."""
     files = sorted(CASES_DIR.glob("*.patient.json"))
@@ -86,6 +97,10 @@ def _load_patient_cases(db) -> tuple[int, int]:
         else:
             print(f"  Note: {exam_path.name} not found — {title} loaded without exam data")
 
+        # 评分侧数据：参考答案（A2 隐藏块）与 R 锚点（A3 页）。独立列，只有评分链路读得到。
+        answer_key = _load_sidecar(title, "answer")
+        scoring_rubric = _load_sidecar(title, "rubric")
+
         raw_difficulty = case_data.get("difficulty", "")
         db.add(Case(
             title=title,
@@ -93,6 +108,8 @@ def _load_patient_cases(db) -> tuple[int, int]:
             difficulty=DIFFICULTY_MAP.get(raw_difficulty, DEFAULT_DIFFICULTY),
             data=case_data,          # 整份 patient.json：identity + opening + facts + psychology
             exam_data=exam_data,     # 整份 exam.json：E 项的 label/level/aliases/result/boundary
+            answer_key=answer_key,   # 整份 answer.json：D/DD/T/G（评分链路专用）
+            scoring_rubric=scoring_rubric,  # 整份 rubric.json：R01–R14 锚点（评分链路专用）
             status="published",
         ))
         added_count += 1

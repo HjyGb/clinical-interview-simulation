@@ -38,13 +38,13 @@ async def submit_assessment(
     if existing:
         return existing
 
-    # Submit
+    # 答卷五项（字段名以 scoring.llm_judge.ANSWER_FIELDS 为准）
     student_report = {
         "primary_diagnosis": req.primary_diagnosis,
+        "diagnosis_reason": req.diagnosis_reason,
         "differential_diagnosis": req.differential_diagnosis,
-        "evidence": req.evidence,
-        "suggested_exams": req.suggested_exams,
-        "treatment_plan": req.treatment_plan,
+        "immediate_plan": req.immediate_plan,
+        "staged_plan": req.staged_plan,
     }
 
     _ = assessment_service.submit_diagnosis(db, session_id, student_report)

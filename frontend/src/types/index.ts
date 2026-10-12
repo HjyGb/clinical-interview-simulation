@@ -62,34 +62,93 @@ export interface SSEEvent {
   data: Record<string, unknown>;
 }
 
+/** 学员答卷五项，一一对应 R06–R10。字段名以后端 scoring.llm_judge.ANSWER_FIELDS 为准。 */
 export interface DiagnosisSubmit {
+  /** ① 诊断（部位 + 确定性） */
   primary_diagnosis: string;
+  /** ② 诊断理由（推理链，不是只报病名） */
+  diagnosis_reason: string;
+  /** ③ 鉴别诊断（含区分依据） */
   differential_diagnosis: string;
-  evidence: string;
-  suggested_exams: string;
-  treatment_plan: string;
+  /** ④ 近期处理 */
+  immediate_plan: string;
+  /** ⑤ 阶段计划与复评 */
+  staged_plan: string;
 }
 
-export interface ScoreDimension {
+export type ItemStatus = 'scored' | 'ne' | 'na' | 'skipped_safety';
+
+export interface ScoringEvidence {
+  n: number;
+  met: boolean;
+  quote: string;
+  ref: string;
+  downgraded: boolean;
+}
+
+export interface ScoringItem {
+  id: string;
   name: string;
   score: number;
   max_score: number;
-  justification: string;
-  missed_items: string[];
-  suggestions: string[];
+  status: ItemStatus;
+  note: string;
+  evidence: ScoringEvidence[];
 }
 
-export interface AssessmentBlock {
-  total_score: number;
-  max_score: number;
-  dimensions: ScoreDimension[];
+export interface ViewGroup {
+  name: string;
+  items: string[];
+  score: number;
+  max: number;
+}
+
+export interface ScoringView {
+  name: string;
+  groups: ViewGroup[];
+}
+
+export interface SafetyFlag {
+  index: number;
+  error: string;
+  hit: boolean;
+  evidence_quote: string;
+  evidence_ref: string;
+  checked: boolean;
+}
+
+export interface SafetyReport {
+  flags: SafetyFlag[];
+  hits: number;
+  unchecked: number;
+  requires_review: boolean;
+  safety_priority_case: boolean;
+  stop_evidence: string;
+}
+
+export interface ScoringTotal {
+  raw_total: number;
+  /** 可评上限：NE/NA 扣掉后真正可能拿到的上限 */
+  raw_max_counted: number;
+  /** 名义满分（14 × 2 = 28） */
+  raw_max_nominal: number;
+  excluded: Record<string, string[]>;
+}
+
+export interface AssessmentReport {
+  items: ScoringItem[];
+  views: ScoringView[];
+  total: ScoringTotal;
+  safety: SafetyReport;
+  system_errors: number;
+  scoring_note: string;
 }
 
 export interface AssessmentResult {
   id: number;
   session_id: number;
-  diagnostic: AssessmentBlock;
-  communication: AssessmentBlock;
+  report: AssessmentReport;
+  raw_total: number;
   comment: string | null;
   student_report?: DiagnosisSubmit;
   created_at: string;

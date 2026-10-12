@@ -328,11 +328,11 @@ export default function HistoryPage() {
                   </h3>
                   {assessment?.student_report ? (
                     <div className="space-y-2 bg-gray-50 rounded-lg p-3">
-                      <FieldDisplay label="主诊断" value={assessment.student_report.primary_diagnosis} />
-                      <FieldDisplay label="鉴别诊断" value={assessment.student_report.differential_diagnosis} />
-                      <FieldDisplay label="诊断依据" value={assessment.student_report.evidence} />
-                      <FieldDisplay label="建议检查" value={assessment.student_report.suggested_exams} />
-                      <FieldDisplay label="治疗方案" value={assessment.student_report.treatment_plan} />
+                      <FieldDisplay label="① 主诊断" value={assessment.student_report.primary_diagnosis} />
+                      <FieldDisplay label="② 诊断理由" value={assessment.student_report.diagnosis_reason} />
+                      <FieldDisplay label="③ 鉴别诊断" value={assessment.student_report.differential_diagnosis} />
+                      <FieldDisplay label="④ 近期处理" value={assessment.student_report.immediate_plan} />
+                      <FieldDisplay label="⑤ 阶段计划" value={assessment.student_report.staged_plan} />
                     </div>
                   ) : (
                     <p className="text-xs text-[var(--color-text-secondary)] bg-gray-50 rounded-lg p-3">
@@ -348,28 +348,32 @@ export default function HistoryPage() {
                       📊 评估概览
                     </h3>
                     <div className="bg-gray-50 rounded-lg p-3 space-y-3">
+                      {assessment.report?.safety?.requires_review && (
+                        <p className="text-[11px] text-red-600 font-medium">
+                          ⚠ 有安全标记需人工复核
+                        </p>
+                      )}
                       <div className="text-center">
                         <span className="text-2xl font-bold text-[var(--color-primary)]">
-                          {((assessment.diagnostic.total_score + assessment.communication.total_score) / 2).toFixed(1)}
+                          {assessment.raw_total}
                         </span>
                         <span className="text-xs text-[var(--color-text-secondary)] ml-1">
-                          综合评分
+                          / {assessment.report.total.raw_max_counted} 原始分
                         </span>
                       </div>
-                      <div>
-                        <div className="flex justify-between text-[10px] text-[var(--color-text-secondary)] mb-0.5">
-                          <span>诊断能力</span>
-                          <span>{assessment.diagnostic.total_score}/{assessment.diagnostic.max_score}</span>
-                        </div>
-                        <ProgressBar value={assessment.diagnostic.total_score} max={assessment.diagnostic.max_score} size="sm" />
-                      </div>
-                      <div>
-                        <div className="flex justify-between text-[10px] text-[var(--color-text-secondary)] mb-0.5">
-                          <span>沟通能力</span>
-                          <span>{assessment.communication.total_score}/{assessment.communication.max_score}</span>
-                        </div>
-                        <ProgressBar value={assessment.communication.total_score} max={assessment.communication.max_score} size="sm" />
-                      </div>
+                      {assessment.report.views.map((v) => {
+                        const score = v.groups.reduce((s, g) => s + g.score, 0);
+                        const max = v.groups.reduce((s, g) => s + g.max, 0);
+                        return (
+                          <div key={v.name}>
+                            <div className="flex justify-between text-[10px] text-[var(--color-text-secondary)] mb-0.5">
+                              <span>{v.name}</span>
+                              <span>{score}/{max}</span>
+                            </div>
+                            <ProgressBar value={score} max={max} size="sm" />
+                          </div>
+                        );
+                      })}
                     </div>
                   </div>
                 )}
@@ -405,8 +409,7 @@ export default function HistoryPage() {
           maxWidth="max-w-2xl"
         >
           <div className="space-y-6">
-            <ScoreCard title="🏥 诊断能力评估 (Station 4 标准)" block={assessment.diagnostic} />
-            <ScoreCard title="💬 沟通能力评估 (MAAS-Global 标准)" block={assessment.communication} />
+            <ScoreCard report={assessment.report} />
             {selectedSession && (
               <p className="text-xs text-[var(--color-text-secondary)] text-center">
                 病例：{selectedSession.case_title} · {formatDate(selectedSession.started_at)}

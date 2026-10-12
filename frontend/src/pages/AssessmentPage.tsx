@@ -30,7 +30,7 @@ export default function AssessmentPage() {
       <div className="flex flex-col items-center justify-center h-screen gap-3 text-[var(--color-text-secondary)]">
         <span className="text-4xl">📊</span>
         <p className="text-lg font-medium">正在生成评估报告...</p>
-        <LoadingDots text="AI 正在分析你的问诊表现" />
+        <LoadingDots text="正在逐条对照评分锚点" />
       </div>
     );
   }
@@ -50,34 +50,17 @@ export default function AssessmentPage() {
     );
   }
 
-  const compositeScore = ((result.diagnostic.total_score + result.communication.total_score) / 2).toFixed(1);
-  const compositePct = parseFloat(compositeScore);
-  const scoreColor =
-    compositePct >= 85
-      ? 'text-green-600'
-      : compositePct >= 70
-        ? 'text-amber-600'
-        : 'text-red-600';
-
   return (
     <div className="max-w-3xl mx-auto py-8 px-4">
-      {/* Header */}
-      <div className="text-center mb-8">
-        <h1 className="text-2xl font-bold text-[var(--color-text)] mb-2">
-          📊 评估报告
-        </h1>
-        <div className="flex items-center justify-center gap-2">
-          <span className={`text-5xl font-bold ${scoreColor}`}>{compositeScore}</span>
-          <span className="text-lg text-[var(--color-text-secondary)]">/ 100</span>
-        </div>
-        <p className="text-sm text-[var(--color-text-secondary)] mt-1">综合评分</p>
+      <div className="text-center mb-6">
+        <h1 className="text-2xl font-bold text-[var(--color-text)] mb-1">📊 评估报告</h1>
+        <p className="text-sm text-[var(--color-text-secondary)]">
+          依据 R01–R14 逐项评分 · 临床能力与沟通人文分别呈现
+        </p>
       </div>
 
-      {/* Score Cards */}
-      <ScoreCard title="🏥 诊断能力评估 (Station 4 标准)" block={result.diagnostic} />
-      <ScoreCard title="💬 沟通能力评估 (MAAS-Global 标准)" block={result.communication} />
+      <ScoreCard report={result.report} />
 
-      {/* Actions */}
       <div className="flex justify-center gap-3 mt-6">
         <button
           onClick={() => navigate('/cases')}

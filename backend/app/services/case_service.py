@@ -83,7 +83,18 @@ def get_case(db: Session, case_id: int) -> dict | None:
 
 
 def get_case_full(db: Session, case_id: int) -> dict | None:
-    """Get full case data including Tier 4 (for internal use by Agent/Evaluator)."""
+    """Get every column, for internal use by the Agent / scoring chains.
+
+    ⚠️ **This returns the hidden answer key.** Callers MUST pass only the slice each
+    consumer is allowed to see:
+
+        - 患者 Agent      ← `data`         (never answer_key / exam_data / scoring_rubric)
+        - 检查模块        ← `exam_data`
+        - 评分链路        ← `answer_key` + `scoring_rubric`
+
+    Isolation is structural (who gets which key), not prompt-enforced. Proven by
+    scripts/verify_scoring_isolation.py — if you add a caller, add it there too.
+    """
     case = db.query(Case).filter_by(id=case_id).first()
     if not case:
         return None
@@ -94,4 +105,6 @@ def get_case_full(db: Session, case_id: int) -> dict | None:
         "difficulty": case.difficulty,
         "data": case.data,            # 患者侧：identity/opening/facts/psychology
         "exam_data": case.exam_data,  # 检查侧：E 项。只给检查模块用，不进患者上下文
+        "answer_key": case.answer_key,        # 评分侧：D/DD/T/G（隐藏参考答案）
+        "scoring_rubric": case.scoring_rubric,  # 评分侧：R01–R14 锚点
     }

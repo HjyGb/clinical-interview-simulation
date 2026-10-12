@@ -8,36 +8,32 @@ Clinical Interview Simulation — an LLM-powered virtual standardized patient (S
 
 **Tech stack:** Python 3.10+ / FastAPI backend, React 18 + Vite + TypeScript + Tailwind CSS 4 + Zustand frontend, SQLite (dev) → PostgreSQL (prod), LLM via 阿里百炼 DashScope (OpenAI-compatible API, `openai` SDK), JWT auth.
 
+**Where things stand (2026-10-11):** the **patient-simulation core is built and verified** — patient roleplay, a separate exam module, and a data schema with sub-item trimming. **The assessment/evaluation code is stale and currently incompatible with the new case data** (see Known Defects). Details: [docs/architecture-current.md](docs/architecture-current.md).
+
 ## Repository State
 
-MVP-complete E2E flow: login → case selection → AI interview (SSE streaming) → diagnosis submission → dual-track assessment → history replay.
-
-**`data/` is empty in the working tree and gitignored** (untracked in commit `3b30ce9`). 600 of the case files still exist in history:
-
-```bash
-git checkout HEAD~1 -- data/cases   # restores 599 case_*.json + mvp_cases.json
-```
-
-Without this, `scripts/seed_db.py` cannot find `data/cases/mvp_cases.json`, the seeded DB has **0 cases**, and the case list page is empty. `backend/data/app.db` currently holds 1 user and 0 cases.
-
-This command **stages** the restored files, so a later `git commit` would re-add 600 case files the owner deliberately untracked. Prefer `git checkout HEAD~1 -- data/cases && git reset -- data/cases` to restore the working tree without staging, and check `git status` before any commit.
-
-`data/cases/intermediate/` is **not** recoverable from git (never tracked), and `data/raw/medical_records.csv` was never committed at all (PHI). Rebuilding the full enriched case set therefore means re-running the whole pipeline from the CSV, which is only present on the owner's machine.
-
-**There is no test suite.** `backend/tests/` contains only `__init__.py`; there is no `pytest.ini`/`conftest.py`, and `frontend/src` has no `*.test.*` files. `pytest` and `npm test` both succeed while running nothing. Do not describe test coverage as existing.
+- `backend/data/app.db` holds **2 users / 5 cases** (`EN01` `PE01` `PR01` `MU01` `SU01`), all `schema_version: 2.2`.
+- The 5 cases also have scoring data on disk — `<case>.answer.json` (hidden D/DD/T/G reference answer) and `<case>.rubric.json` (R01–R14 anchors + critical errors) — **extracted but not yet in the DB**. See [docs/scoring-system-design.md](docs/scoring-system-design.md).
+- **`data/` is gitignored** (protects `medical_records.csv`'s PHI). The 5 sliced cases and the test data therefore exist **only on the owner's machine**.
+- Directory convention: `data/cases/` = **final data only**; `data/staging/` = regenerable intermediates; `data/old/` = superseded; `data/tests/` = specs, review tables, reports; `data/raw/` = the hospital docx.
+- **There is no test suite** in the pytest/vitest sense (`pytest` and `npm test` both pass while running nothing). Verification lives in the four scripts listed under Testing below.
 
 Key docs:
 
 | File | Purpose |
 |---|---|
-| `docs/patient-simulation-roadmap.md` | **Current phase entry point** — project state, the new 30-case docx data structure, data processing, step-by-step roadmap |
-| `docs/patient-simulation-dev-plan.md` | **Construction plan (M1–M5)** — per-phase file changes, self/you test split, and "actual vs expected" records per phase |
-| `docs/model-selection.md` | Model roles (generation/selection/evaluation), current pick, production scale answer |
-| `docs/positioning-and-principles.md` | 5 principles (P1–P5) — faithfulness over cleverness, engine/content separation |
-| `docs/project-requirements-overview.md` | Full PRD — personas, functional/non-functional requirements, data assets, risks |
-| `docs/architecture-design.md` | Technical architecture — system diagrams, data flow, DB schema, API design, Agent core design |
-| `old_docs/` | Archived (deferred/superseded): assessment standards, data-schema decoupling, frontend plan, persona, old data pipeline, meeting prep |
-| `README.md` | Project README (Chinese). Note: its path claims are stale — prompts live in `backend/agent/prompts/`, not `backend/prompts/`. |
+| `docs/architecture-current.md` | **Current-state entry point** — roles, data flow, prompts, SSE, known gaps |
+| `docs/patient-simulation-dev-plan.md` | Construction record M1–M7 (patient sim) + S1 (scoring data) — per-phase changes and "actual vs expected" |
+| `docs/scoring-system-design.md` | **Scoring design** — R01–R14 framework, why LLM judges anchors but code scores, data-extraction plan |
+| `docs/scoring-dev-plan.md` | **Scoring construction record** — S1–P3 done, P4–P7 pending; the assessment module's own plan (kept separate from the patient-sim one) |
+| `docs/case-data-schema.md` | **Case data template v2.2** — field tables, validation rules V1–V7 |
+| `docs/data-requirements.md` | Why the data has the shape it does (four-level label hierarchy) |
+| `docs/case-data-structure.md` | The hospital docx's own numbering system (H/P/E/D/R/B/S/K/V) |
+| `docs/positioning-and-principles.md` | P1–P5: faithfulness over cleverness, engine/content separation |
+| `docs/model-selection.md` | Model roles, current picks, production-scale answer |
+| `docs/patient-roleplay-architecture.md` | **Design rationale** (why this architecture) — implemented; §2 is historical |
+| `docs/project-requirements-overview.md` | Original PRD |
+| `old_docs/` | Archived: pre-implementation architecture design, agent redesign proposal, old roadmap, scoring standards, persona, frontend plan |
 
 ## Development Commands
 
@@ -54,127 +50,162 @@ cd frontend
 npm install
 npm run dev          # :5173, proxies /api → :8000 (see vite.config.ts)
 npm run build        # tsc && vite build
-npm test             # vitest — no test files exist yet
 
 # Seed DB (also from backend/ — see the CWD note below)
 cd backend
-python ../scripts/seed_db.py             # test001/123456 + teacher001/123456, loads MVP + enriched cases
-
-# Environment sanity check (Python version, venv, deps, API key, raw data, SQLite write)
-python scripts/check_env.py
+python ../scripts/seed_db.py             # test001/123456 + teacher001/123456, loads data/cases/*.patient.json + *.exam.json
 ```
-
-The title-based dedupe in `seed_db.py` means re-running is safe; it also only imports cases whose `status == "published"`.
 
 ### Configuration gotchas
 
 - `.env` lives at the **repo root** and is loaded by absolute path (`backend/app/config.py`), so it is found regardless of CWD.
-- `.env` sets `LLM_MODEL_PRO` / `LLM_MODEL_LITE`, overriding the `qwen-plus`/`qwen-turbo` defaults in `config.py`. These are two different model tiers: `pro` for generation/evaluation, `lite` for classification/verification.
-- **Model choice interacts badly with reasoning ("thinking") models — verify before switching.** `agent/llm_client.py` only reads `message.content`, ignoring `reasoning_content`, and nothing checks `finish_reason`. A reasoning model spends its token budget on reasoning first: on the evaluator prompt (`max_tokens=2048`) `deepseek-v4.1-flash` returned `reasoning_tokens=2048, text_tokens=0, content='', finish_reason='length'`, so `json.loads("")` raised `Expecting value: line 1 column 1 (char 0)` and `evaluator_agent` fell back to **0/100 on both tracks with no error shown to the student** — `AssessmentPage.tsx` computes the composite score without checking the `error` field, so a total evaluation failure renders as a legitimate 0 分. Detect the class by inspecting `usage.completion_tokens_details.reasoning_tokens` (>0 ⇒ reasoning model). Verified 2026-09-25: `deepseek-v4.1-flash`, `deepseek-v4-pro-0813`, `qwen3.7-flash-2026-07-15` are reasoning models; `deepseek-v3.2`, `deepseek-v3.1`, `deepseek-v3`, `qwen-plus`, `qwen-turbo` are not.
-- DashScope free quota is granted **per model row**, independently. A bare alias and its dated snapshot are separate rows with separate quotas — `qwen3.7-flash` was exhausted while `qwen3.7-flash-2026-07-15` still worked. `403 AllocationQuota.FreeTierOnly` means that specific model row's free quota is gone while the account is in free-tier-only mode; it is not an invalid-key error (a bad key returns 401). Disabling that mode (百炼控制台) frees the rows that were blocked; some stay blocked regardless.
-- **Verified working pair (2026-09-25): `LLM_MODEL_PRO=deepseek-v3.1`, `LLM_MODEL_LITE=qwen-turbo`** — both non-reasoning, both available, full 4-step pipeline plus dual-track evaluator confirmed error-free end to end. Avoid reasoning models for the `pro` tier: the evaluator fails *intermittently* (one track scored 30/100 while the other returned 0/100 with `Unterminated string` in the same run), and streaming time-to-first-token degrades from ~0.25s to ~2.5s, which students feel as silence after every question.
-- `DATABASE_URL=sqlite:///./data/app.db` is **CWD-relative** (verified: the resolved URL is identical from both directories, so SQLAlchemy expands it at connect time against the CWD). Running from `backend/` uses `backend/data/app.db` — the real DB, currently 1 user / 0 cases. Running `uvicorn` or `seed_db.py` from the repo root instead creates a **second, empty** `data/app.db` at the root, and the app will look seeded-but-empty. Keep the CWD at `backend/` for every backend command.
-- **No Alembic.** Tables are created by `Base.metadata.create_all` on startup, which creates missing tables but never alters existing ones. After changing a model, delete `backend/data/app.db` and re-run `seed_db.py`.
-- Prompt templates are `.txt` files lazily cached in module-level globals (`RESPONSE_PROMPT`, `INTENT_CLASSIFIER_PROMPT`, …). Editing a `.txt` needs a **server restart** — `--reload` only watches `.py`.
-- Prompt templates are rendered with `str.format()` and contain literal JSON examples, so any literal brace must be escaped as `{{` / `}}`. Placeholders in use: `{gender}`, `{age_range}`, `{retrieved_facts}`, `{persona_style}`, `{student_question}`, `{conversation_history}`, `{generated_response}`, plus the evaluator's `{true_diagnosis}` / `{true_treatment_plan}` / `{student_*}` fields. A typo'd or unescaped brace raises at generation time, not at import time.
+- **Models (verified working 2026-10-11): `LLM_MODEL_PRO=qwen-plus`, `LLM_MODEL_LITE=qwen-turbo`** — both non-reasoning. `deepseek-v3.1` (the previous `pro`) was **removed from DashScope**; `/models` now lists only the `deepseek-v4*` line.
+- **Reasoning ("thinking") models break the pipeline — verify before switching.** `agent/llm_client.py` reads only `message.content`, ignores `reasoning_content`, and never checks `finish_reason`. A reasoning model burns its budget on reasoning first: on a `max_tokens=2048` prompt, `deepseek-v4.1-flash` returned `reasoning_tokens=2048, text_tokens=0, content='', finish_reason='length'`. Detect the class via `usage.completion_tokens_details.reasoning_tokens` (>0 ⇒ reasoning). Known reasoning models: `deepseek-v4.1-flash`, `deepseek-v4-pro-0813`, `qwen3.7-flash-2026-07-15`, `qwen3.5-flash/plus`. Known non-reasoning: `qwen-turbo`, `qwen-plus`, `qwen-max`, `qwen-flash`, `qwen-long`.
+- **DashScope error codes are not interchangeable.** `Arrearage` (**400**, account in arrears) blocks **every** model regardless of quota — check the 费用与成本 page, not the model console. `AllocationQuota.FreeTierOnly` (**403**) means one model row's free quota is spent and the account is in stop-at-quota mode. `model_not_found` (**404**) means the model id no longer exists. Free quota is granted **per model row**, and expiry silently switches to pay-as-you-go unless "用完即停" is enabled.
+- `DATABASE_URL=sqlite:///./data/app.db` is **CWD-relative**. Run everything from `backend/` or you will silently create a second empty `data/app.db` at the repo root. **Scripts that import `app` must `os.chdir(ROOT / "backend")` first** — the test scripts do.
+- **No Alembic.** Tables are created by `Base.metadata.create_all` on startup, which creates missing tables but never alters existing ones. **After changing a model, delete `backend/data/app.db` and re-run `seed_db.py`.**
+- Prompt templates are `.txt` files lazily cached in module-level globals. Editing a `.txt` needs a **server restart** — `--reload` only watches `.py`.
+- Prompt templates are rendered with `str.format()`, so any literal brace must be escaped as `{{` / `}}`. A typo'd brace raises at generation time, not import time.
 
 ## Architecture
 
-### Layering
+Full current-state description: [docs/architecture-current.md](docs/architecture-current.md). The essentials:
 
-```
-frontend/src/{pages,components,stores,api}   React + Zustand + fetch/SSE wrapper
-        ↓ /api/v1 (JWT Bearer)
-backend/app/api/         4 routers: auth, cases, sessions, assessments
-backend/app/services/    orchestration; session_service calls the Agent, assessment_service calls the Evaluator
-backend/app/{models,schemas,middleware}/  SQLAlchemy models, Pydantic I/O, JWT dependency
-        ↓
-backend/agent/           LLM core — no DB access, takes case_data dicts
-        ↓ OpenAI-compatible API
-阿里百炼 DashScope
-```
+### Three roles, three data sets
 
-Services are module-level **functions**, not classes. `deps`: routers get a `Session` via `get_db()` and the JWT payload via `get_current_user` (a FastAPI dependency, not ASGI middleware despite the directory name). User id is `int(current_user["sub"])`; every session/assessment route calls `_verify_ownership` (404 if missing, 403 if not the owner).
+| Role | Code | Model |
+|---|---|---|
+| **Patient** | `agent/patient_agent.py` | pro (generate) + lite (select) |
+| **Exam** | `agent/exam_module.py` | **pure Python, no LLM** |
+| ~~Evaluator~~ | `agent/evaluator_agent.py` | pro — **stale, see Known Defects** |
 
-### Patient Agent pipeline (`backend/agent/`)
+### Patient pipeline — 3 steps, not the old 4
 
-`patient_agent.process_message()` runs 4 steps and yields SSE events as it goes:
+`patient_agent.process_message()` yields SSE events:
 
-1. **`intent_classifier.classify_intent()`** — LLM (lite, `temperature=0`). Returns `{intent, tier, confidence}`; on JSON parse failure falls back to `chief_complaint_inquiry`/tier 1. Yields an `intent` event.
-2. **`info_retriever.retrieve()`** — **pure Python, no LLM**. Maps intent → field paths (`INTENT_FIELD_MAP`) then filters by tier (`TIER_ALLOWED_SECTIONS`). This is the anti-hallucination mechanism: facts come from exact dict lookups, never from the model.
-3. **`response_generator.generate_response()`** — LLM (pro, `temperature=0.3`, streaming). Turns the retrieved facts into colloquial Chinese, styled by the persona fragment.
-4. **`fact_verifier.verify()`** — LLM (lite, `temperature=0`) comparing the finished response against the facts. Runs **after** tokens have already been streamed, so violations are logged, not retracted; it also fails open (`{"pass": True}`) on any exception or parse error.
+1. **`fact_selector.select_facts()`** — LLM (lite, `temperature=0`). Returns `{question_type, asked_facts[], reason}`. `question_type ∈ open | targeted | unknown | meta | exam | error`. Yields an `intent` event.
+2. **Exam branch** — if `question_type == "exam"`, hand off to `exam_module` and return.
+3. **`disclosure.gate()`** — **pure Python**. Turns `asked_facts` into this turn's `allowed_facts`, records the trace. `open` expands to H01–H04; `unknown`/`meta`/`error` allow nothing.
+4. **`response_generator.generate_response()`** — LLM (pro, `temperature=0.3`, streaming).
 
-**To make a new fact retrievable** you must edit `INTENT_FIELD_MAP` (which intents can see it) *and* `TIER_ALLOWED_SECTIONS` (at which tier) in `backend/agent/info_retriever.py`. Field labels sent to the prompt are derived from the dotted path (`present_illness.onset` → `present_illness → onset`); a path whose top-level section isn't in the allowed tier set is silently dropped.
+The old post-hoc fact verifier is **gone**: it ran after tokens were streamed, so it could only log, never retract. The real defences are the data boundary plus the gate.
 
-### Tiered disclosure (Tier 4 = diagnosis/treatment)
+**To change what the patient may say**, edit the case JSON — not the code. The system prompt carries the patient's whole persona; per-turn trimming happens in `disclosure.py`.
 
-Enforced in two independent places — change one and the other still holds:
+### Exam module — two-level matching, pure Python
 
-- `case_service._strip_tier4()` removes top-level `diagnosis` / `treatment_plan` keys for the student-facing API (`get_case`). Internal callers use `get_case_full()`, which deliberately returns them.
-- `info_retriever.TIER_ALLOWED_SECTIONS[4] = set()` plus the empty field lists for `diagnosis_guess` / `treatment_inquiry` — the Agent gets no facts for Tier 4 questions.
+`exam_module.answer()`:
+1. **Item level** — match the message against each E item's `label` + `aliases`. Containment rule: when one matched phrase is a substring of another, only the longer wins (otherwise "缺牙区及邻牙检查" also matches E02's alias "邻牙检查" and splices two exams together). **Whole-item precedence**: if the item's `label` appears in the message, return the whole `result` and skip sub-item resolution.
+2. **Sub-item level** — return only the matched sub-items' `result_fragments`. The docx requires this ("相关子项请求仅返回该项结果，不可返回整个 E 项").
+3. No match → `NOT_PROVIDED`, which explicitly says missing ≠ normal.
 
-The Agent never sees a stripped case, so Tier 4 discipline for the *dialogue* rests on the retriever plus the prompt's "answer 不清楚 when you have no facts" rule.
+### Scoring module — `backend/scoring/`
 
-### Evaluator (`backend/agent/evaluator_agent.py`)
+`R01–R14` scoring, replacing the deleted self-made dual-track (Station 4 + MAAS). The hospital's own framework:
+14 items × 0–2 = 28 raw points, **no pass mark, weights undecided**. Full design: [docs/scoring-system-design.md](docs/scoring-system-design.md).
 
-`evaluate()` runs `evaluate_diagnostic` (Station 4) and `evaluate_communication` (MAAS-Global) concurrently with `asyncio.gather` (pro model, `temperature=0`); neither can fail the other. Both return `{total_score, max_score, dimensions[]}` and degrade to a zero-score dict with an `error` field. `_normalize_dimensions()` backfills missing `missed_items` / `suggestions` arrays before persisting.
+**The split that matters** — LLM judges anchors, code does arithmetic:
 
-`POST /api/v1/sessions/{id}/assessment` is **synchronous** — it blocks through both LLM calls and returns the stored result. Re-submitting returns the existing assessment unchanged (no re-evaluation).
+| | Items | How |
+|---|---|---|
+| **Pure Python** | R01–R04 | Read the disclosure trace (`Message.disclosed`) and exam-request trace — the patient/exam modules already recorded the evidence |
+| **LLM** | R05–R14 | Judge against the item anchor + the shared 1/0 anchors, but **must quote evidence**; a score with no quote is zeroed |
+
+- `scoring/sub_anchors.py` — R01–R04 get one sub-anchor per reference ID; R05–R14 are *not* split (a holistic criterion)
+- `scoring/aggregate.py` — all sub-anchors met → 2, partial → 1, none → 0; `enforce_evidence` downgrades unsupported hits; `NE/NA/SKIPPED_SAFETY` are *not* 0 (see `report_ceiling`)
+- `scoring/deterministic.py` — R01–R04 judging. **R04's required exams are exactly the case's `level == "关键"` E items** (verified item by item)
+- `scoring/llm_judge.py` — R05–R14, one item per call. `ANSWER_FIELDS` is the single authority for the 5-field answer sheet; the frontend form must match it
+- `scoring/evidence.py` — `quote_is_from`: **the quote must actually come from where that item is supposed to look** (report items → the report, dialogue items → the dialogue). Caught the model sourcing report items from the conversation
+- `scoring/safety.py` — critical errors as a **separate channel**, never summed in. `requires_review` is true for hits *and* for un-checked errors (a failed check is not "safe")
+- `scoring/runner.py` — assembles the report: raw total + two views, **no composite score**
+
+**Scoring only ever reads `Case.answer_key` / `Case.scoring_rubric`.** It never touches the patient slice, and the patient pipeline never touches the answer key (proven by `verify_scoring_isolation.py`).
+
+### Data boundary is physical, not prompt-enforced
+
+| Data | Where | Who reads it |
+|---|---|---|
+| `identity` / `opening` / `facts` / `psychology` | `Case.data` | patient only |
+| `exams` (label/level/aliases/result/subitems) | `Case.exam_data` | exam module only |
+| `D/DD/T/G` reference answer | `Case.answer_key` | **scoring chain only** |
+| `R01–R14` anchors + critical errors | `Case.scoring_rubric` | **scoring chain only** |
+
+> The diagnosis is back in the DB (as `answer_key`) since the scoring module landed. The patient
+> pipeline still only ever receives `case["data"]` — proven by `scripts/verify_scoring_isolation.py`.
 
 ### SSE contract
 
-`POST /api/v1/sessions/{id}/messages` returns `text/event-stream`, produced by `session_service.add_student_message()`. Event names: `intent`, `token` (many), `done`, `error`, `limit_warning`. The frontend parses these by hand in `apiPostSSE` (`frontend/src/api/client.ts`), so adding an event type means touching both the backend `yield` and that parser, plus `interviewStore.ts` for state.
+`POST /api/v1/sessions/{id}/messages` returns `text/event-stream`. Events: `intent`, `token` (many), `exam`, `done`, `limit_warning`, `error`. The frontend parses these by hand in `apiPostSSE` (`frontend/src/api/client.ts`), so adding an event type means touching the backend `yield`, that parser, **and** `interviewStore.ts`.
 
-`interviewStore.appendToken` accumulates tokens into a synthetic message with `id: -1`; that sentinel is how the UI knows it's still streaming.
+### Rounds, memory, and the disclosure trace
 
-### Round accounting
+- **A round = one student message.** `current_round` counts student rows, not all rows — exam results add a third row type and broke the old `message_count // 2`.
+- `max_rounds = 25` (the hospital's S01 script has 13 steps; 12 did not fit).
+- **The patient's memory is a window**: `MAX_HISTORY_MSGS = 60` messages × 500 chars ≈ 29 turns. **It must stay ≥ 2 × max_rounds + 1** — raising `max_rounds` without raising this makes the patient silently forget the opening. The code logs a WARNING when the window is exceeded.
+- `Message.disclosed` records what each reply gave away: `["H01","P02"]` for patient replies, `["E02.cold"]` for exam replies. `already_disclosed` (fed to the patient) **filters to `^[HP]\d{2}$`** so exam keys never leak into the patient's prompt.
 
-Round number is **derived, not stored**: `current_round = message_count // 2 + 1`, because each round is one student message plus one patient message. The opening statement is stored as a patient message with `round_num=0`. Any new message row (a system message, a retry) shifts every subsequent round number and the `max_rounds=12` limit check.
+### Prompt inventory
 
-### Case data shape
+`agent/prompts/patient/system_base.txt` (stable persona + 8 behaviour rules) · `response_generator.txt` (per-turn) · `fact_selector.txt` (selection) · `prompts/exam/subitem_splitter.txt` (build-time only) · `prompts/evaluator/*.txt` (stale).
 
-`Case.data` is a JSON blob (SQLAlchemy JSON column); there is no per-field schema. The Agent expects root-level sections:
-
-```
-basic_info{gender, age_range, visit_type}, chief_complaint,
-present_illness{onset, duration, character, aggravating_factors, relieving_factors, radiation},
-past_history{dental, medical, allergy, medication},
-oral_examination{inspection, percussion, palpation, mobility, thermal, periodontal},
-auxiliary_examination{xray, cbct},
-diagnosis{primary, …}, treatment_plan{definitive, …}     # Tier 4
-```
-
-Two shapes have existed historically — MVP cases put `chief_complaint` at the root, auto-generated ones nested it under `basic_info`. `case_service._safe_get()` handles both for list/detail views, but note that `patient_agent.get_opening_statement()` reads `basic_info.chief_complaint` while `info_retriever` reads root-level `chief_complaint`; a case carrying only one of the two will have a correct opening but a blank answer to "哪里不舒服".
-
-## Data pipeline (`scripts/`)
-
-Run in order; each stage feeds the next and the outputs are gitignored:
+## Data pipeline
 
 ```
-data/raw/medical_records.csv  (2,124 English clinical records, PHI — never commit)
-  → clean_data_v2.py    → data/cases/intermediate/case_XXX.json  (English, quality-filtered)
-  → enrich_cases.py     → data/cases/case_XXX.json               (Chinese, unified schema)
-  → seed_db.py          → Cases rows (published only)
+data/raw/Oral_Agent_SP_Development_Cases30_v2.docx   (hospital source, 30 cases)
+  → scripts/extract_exam_items.py     → data/staging/<case>.exam.new.json  (+ a report of missing sub-item labels)
+  → scripts/build_exam_v2.py          → data/cases/<case>.exam.json        (validated, sub-items resolved)
+  → scripts/seed_db.py                → cases rows (data + exam_data columns)
+
+scripts/extract_behavior_tests.py     → data/tests/behavior_tests.json     (B1/B2 tests from the docx)
+
+# Scoring data (S1, 2026-10-12) — extract → verify → promote; never hand-copied, never paraphrased
+scripts/extract_answer_key.py  → data/staging/<case>.answer.new.json  (+ data/tests/answer_key_gaps.md)
+scripts/extract_rubric.py      → data/staging/<case>.rubric.new.json  (+ data/scoring/rubric_common.json)
+scripts/verify_scoring_data.py → data/cases/<case>.{answer,rubric}.json  (only if A1–A7 pass)
 ```
 
-`enrich_cases.py` is a two-step LLM process per case: a Translation Agent (English → Chinese structured JSON) then a Review Agent cross-checking against the English source. `clean_data_v1` is superseded. **Cross-lingual fact transfer is the known weak point** — the source facts are English while all dialogue, prompts, and UI are Chinese.
+**`verify_scoring_data.py` is the safety net for the scoring data**: it proves each rule A1–A7,
+including **A7 — every anchor/reference-answer string must be a verbatim substring of the docx**
+(medical content may only be transcribed, never rewritten). A case that fails is **not promoted**;
+a silent paraphrase would otherwise land as a plausible-looking rubric.
 
-**Restoring `data/cases` does not give you 599 usable cases — it gives you 3.** `seed_db.py` skips any case whose `status != "published"`, and *every one* of the 599 `case_XXX.json` files in history lacks a `status` key entirely (verified against `HEAD~1`), so they all fall through the `"draft"` default and are silently skipped; the script only reports them as `skipped_count`. `enrich_cases.py:467` does write `status: "published"`, so those 599 are stale outputs from before that line existed. Only `mvp_cases.json` carries `status: "published"` — 3 hand-curated cases, and their `data` is the shape the Agent actually expects (`basic_info`, `chief_complaint`, `present_illness`, `past_history`, `oral_examination`, `auxiliary_examination`, `diagnosis`, `treatment_plan`). To load the wider set, backfill `status` into those files or relax the filter in `seed_db.py` — but check the schema first, since untracked-from-birth enrichment output may not match the retriever's field paths.
+**`build_exam_v2.py` is the safety net for sub-item splitting**: an LLM proposes which sentence of an exam result belongs to which sub-item, then the script proves it — V1 every fragment is a verbatim substring of `result`, V2 the fragments cover `result` completely with no overlap, V3 the sub-item name traces to an alias. Failures retry with feedback, then fall back to returning the whole item — **never silently accept a bad split**.
 
-## Key Design Decisions
+`clean_data_v2.py` / `enrich_cases.py` are the **legacy** pipeline for the old English CSV (PHI, never committed). They are not used by the current case set.
 
-1. **Structured field lookup > pure RAG** for fact grounding — hallucination ceiling target <5%.
-2. **Dual-track assessment**: Station 4 (diagnostic) + MAAS-Global (communication), run in parallel, averaged for the composite score.
-3. **Tiered information disclosure**: facts split into 4 tiers; the Agent reveals 1–3, Tier 4 is permanently hidden.
-4. **Chinese UI/dialogue, English clinical source data.**
-5. **Single-developer project** — scope discipline matters; MVP trumps completeness. No message queue, cache layer, or microservices at this stage.
+## Testing
+
+Four standalone scripts, run from the repo root (they `chdir` to `backend/` themselves):
+
+| Script | What it proves | Last result |
+|---|---|---|
+| `scripts/spike_fact_selector.py` | Fact-ID accuracy vs the docx's own `依据` | 135/135 |
+| `scripts/run_behavior_tests.py` | B01–B12 through the real HTTP API, 3 runs each | 165/165 |
+| `scripts/run_exam_subitem_tests.py` | Sub-item trimming (pure Python) | 18/18 |
+| `scripts/verify_exam_coverage.py` | Exam module against the requirement, item by item | all pass |
+| `scripts/verify_scoring_isolation.py` | **The answer key can't reach the patient or the student** (LLM stubbed, no real calls) | 5/5 checks, I1–I5 |
+| `scripts/run_scoring_deterministic_tests.py` | Sub-anchor decomposition, aggregation, R01–R04 (pure Python) | 76/76 |
+| `scripts/run_scoring_llm_tests.py` | R05–R14 LLM judging — discrimination (good vs empty), evidence enforcement, safety channel | 8/8 (EN01/MU01/SU01) |
+| `scripts/run_scoring_report.py` | **Prints a full R14 report for human review** (not an assertion) | EN01/MU01 good/empty artefacts in `data/tests/` |
+
+B06 is excluded from ID scoring: its `依据` means "the whole fact base must not be contradicted", not "these are the facts being asked about".
+
+**B09/B10 cannot catch sub-item bugs** — they request a *whole* item, so trimming good or bad both pass. That is why `run_exam_subitem_tests.py` exists.
+
+## Known Defects
+
+1. ~~**The evaluator is incompatible with the current case data.**~~ **Fixed (P6, 2026-10-12):** the stale dual-track evaluator was deleted and replaced by the R01–R14 chain (`backend/scoring/`), which scores against `Case.answer_key` + `Case.scoring_rubric`. See [docs/scoring-system-design.md](docs/scoring-system-design.md).
+2. ~~**Evaluator failures render as a real 0 分.**~~ **Fixed (P6, 2026-10-12):** a failed scoring call returns `NE` (unscorable, reported separately) and the scoring chain as a whole raises instead of persisting a plausible-looking 0. `report_ceiling` reports the achievable maximum alongside the raw total, so NE/NA can't be misread as lost marks.
+3. **Sub-item names/attribution are `derived`** (we supplied them; the hospital left most groups unnamed). Review tables: `data/tests/exam_split_review_*.md`. If the hospital disagrees, their answer wins — the data keeps the original `result` and a `source` marker so it can be replaced.
+4. **Minor patient-side residues**: the selector occasionally records an empty disclosure trace for "probably negative" questions it answers correctly; `qwen-plus` occasionally appends an invented soft clause after a hedge.
+5. **Two holes in the hospital's own docx** (found during S1 extraction, not our parsing): **SU06 has no `教师参考草案（隐藏）` block** (29 of 30 cases do) → that case cannot be scored; **EN02's block lacks the `医学依据` line**. Report in `data/tests/answer_key_gaps.md`; both need to go back to the hospital.
 
 ## Architecture Constraints
 
-- The LLM API is the **only external dependency** — a single point of failure. All LLM calls go through `agent/llm_client.py`, which owns the shared `AsyncOpenAI` singleton and does exponential-backoff retries (3 attempts). `chat_stream` cannot truly retry a partial stream.
+- The LLM API is the **only external dependency** — a single point of failure. All calls go through `agent/llm_client.py` (shared `AsyncOpenAI` singleton, 3 attempts with exponential backoff). `chat_stream` cannot truly retry a partial stream.
 - SQLite for dev/demo only; concurrent writes block under load.
-- `temperature=0` for classification and verification; `0.3` for patient generation.
+- `temperature=0` for selection; `0.3` for patient generation.
 - API keys via environment variables only, never hardcoded.
 - `medical_records.csv` must never be committed (`data/` and `*.db` are gitignored).
-- Login **auto-registers** any unknown username as a `student` with the supplied password — there is no registration endpoint or invite check.
+- Login **auto-registers** any unknown username as a `student` — there is no registration endpoint or invite check.
+- **Failures must look like failures.** Never let an LLM fallback return something that reads as a legitimate business value; the selector uses `question_type: "error"`, deliberately outside `VALID_QUESTION_TYPES`.
