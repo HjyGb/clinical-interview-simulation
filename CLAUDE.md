@@ -4,11 +4,11 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Clinical Interview Simulation — an LLM-powered virtual standardized patient (SP) system for dental education. Students practice clinical interviewing by conversing with AI patients, then receive automated dual-track assessment (diagnostic accuracy + communication skills).
+Clinical Interview Simulation — an LLM-powered virtual standardized patient (SP) system for dental education. Students practice clinical interviewing by conversing with AI patients, then receive automated assessment against the hospital's own `R01–R14` interview framework (14 items × 0–2).
 
 **Tech stack:** Python 3.10+ / FastAPI backend, React 18 + Vite + TypeScript + Tailwind CSS 4 + Zustand frontend, SQLite (dev) → PostgreSQL (prod), LLM via 阿里百炼 DashScope (OpenAI-compatible API, `openai` SDK), JWT auth.
 
-**Where things stand (2026-10-11):** the **patient-simulation core is built and verified** — patient roleplay, a separate exam module, and a data schema with sub-item trimming. **The assessment/evaluation code is stale and currently incompatible with the new case data** (see Known Defects). Details: [docs/architecture-current.md](docs/architecture-current.md).
+**Where things stand (2026-10-12):** the **patient-simulation core is built and verified** — patient roleplay, a separate exam module, and a data schema with sub-item trimming. The **scoring chain was rebuilt** (P6) on the hospital's own `R01–R14` framework, and the stale dual-track evaluator is **deleted** — both old defects are closed (see Known Defects). What is left is data work, not code work: 25 of 30 cases not yet sliced, sub-item names awaiting hospital review, and two holes in the hospital's own docx. Details: [docs/architecture-current.md](docs/architecture-current.md).
 
 ## Repository State
 
@@ -16,7 +16,7 @@ Clinical Interview Simulation — an LLM-powered virtual standardized patient (S
 - The 5 cases also have scoring data on disk — `<case>.answer.json` (hidden D/DD/T/G reference answer) and `<case>.rubric.json` (R01–R14 anchors + critical errors) — **extracted but not yet in the DB**. See [docs/scoring-system-design.md](docs/scoring-system-design.md).
 - **`data/` is gitignored** (protects `medical_records.csv`'s PHI). The 5 sliced cases and the test data therefore exist **only on the owner's machine**.
 - Directory convention: `data/cases/` = **final data only**; `data/staging/` = regenerable intermediates; `data/old/` = superseded; `data/tests/` = specs, review tables, reports; `data/raw/` = the hospital docx.
-- **There is no test suite** in the pytest/vitest sense (`pytest` and `npm test` both pass while running nothing). Verification lives in the four scripts listed under Testing below.
+- **There is no test suite** in the pytest/vitest sense (`pytest` and `npm test` both pass while running nothing). Verification lives in the standalone scripts listed under Testing below.
 
 Key docs:
 
@@ -79,7 +79,9 @@ Full current-state description: [docs/architecture-current.md](docs/architecture
 |---|---|---|
 | **Patient** | `agent/patient_agent.py` | pro (generate) + lite (select) |
 | **Exam** | `agent/exam_module.py` | **pure Python, no LLM** |
-| ~~Evaluator~~ | `agent/evaluator_agent.py` | pro — **stale, see Known Defects** |
+| **Scoring** | `backend/scoring/` | mixed — R01–R04 pure Python, R05–R14 pro |
+
+`agent/evaluator_agent.py` (the old dual-track evaluator) has been **deleted** — see [Scoring module](#scoring-module--backendscoring) below.
 
 ### Patient pipeline — 3 steps, not the old 4
 
@@ -150,7 +152,7 @@ The old post-hoc fact verifier is **gone**: it ran after tokens were streamed, s
 
 ### Prompt inventory
 
-`agent/prompts/patient/system_base.txt` (stable persona + 8 behaviour rules) · `response_generator.txt` (per-turn) · `fact_selector.txt` (selection) · `prompts/exam/subitem_splitter.txt` (build-time only) · `prompts/evaluator/*.txt` (stale).
+`agent/prompts/patient/system_base.txt` (stable persona + 8 behaviour rules) · `response_generator.txt` (per-turn) · `fact_selector.txt` (selection) · `prompts/exam/subitem_splitter.txt` (build-time only) · `prompts/scoring/r14_item.txt` + `critical_error.txt` (R05–R14 judging).
 
 ## Data pipeline
 
@@ -179,7 +181,7 @@ a silent paraphrase would otherwise land as a plausible-looking rubric.
 
 ## Testing
 
-Four standalone scripts, run from the repo root (they `chdir` to `backend/` themselves):
+Standalone scripts, run from the repo root (they `chdir` to `backend/` themselves):
 
 | Script | What it proves | Last result |
 |---|---|---|
