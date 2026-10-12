@@ -199,7 +199,7 @@ export default function HistoryPage() {
 
       {/* 3-panel body */}
       <div
-        className="flex-1 grid overflow-hidden"
+        className="flex-1 min-h-0 grid overflow-hidden"
         style={{ gridTemplateColumns: '1fr 3fr 2fr' }}
       >
         {/* ══ Left: Session List ══ */}
@@ -212,7 +212,7 @@ export default function HistoryPage() {
               共 {sessions.length} 条
             </p>
           </div>
-          <div className="flex-1 overflow-y-auto">
+          <div className="flex-1 min-h-0 overflow-y-auto">
             {sessions.map((s) => {
               const isSelected = s.id === selectedId;
               let statusLabel = s.status;
@@ -278,7 +278,7 @@ export default function HistoryPage() {
             </h2>
             {msgsLoading && <LoadingDots text="" />}
           </div>
-          <div className="flex-1 overflow-y-auto px-5 py-4">
+          <div className="flex-1 min-h-0 overflow-y-auto px-5 py-4">
             {!selectedSession ? (
               <div className="flex items-center justify-center h-full text-sm text-[var(--color-text-secondary)]">
                 👈 请从左侧选择一个练习记录
@@ -314,7 +314,7 @@ export default function HistoryPage() {
               诊断与评估
             </h2>
           </div>
-          <div className="flex-1 overflow-y-auto p-4 space-y-4">
+          <div className="flex-1 min-h-0 overflow-y-auto p-4 space-y-4">
             {!selectedSession ? (
               <p className="text-sm text-[var(--color-text-secondary)]">
                 请选择一个练习记录

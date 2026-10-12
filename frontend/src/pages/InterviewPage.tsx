@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
-import { getMessages, sendMessage, endSession } from '../api/sessions';
+import { getMessages, getSession, sendMessage, endSession } from '../api/sessions';
 import { submitAssessment } from '../api/assessments';
 import ChatBubble from '../components/ChatBubble';
 import ChatInput from '../components/ChatInput';
@@ -15,7 +15,16 @@ export default function InterviewPage() {
   const { id } = useParams<{ id: string }>();
   const sessionId = Number(id);
   const navigate = useNavigate();
-  const store = useInterviewStore();
+
+  // 逐字段订阅。**不要** `const store = useInterviewStore()`——
+  // 那会订阅整个 store，每次状态变化 store 的引用都变，挂载 effect 就会跟着重跑，
+  // 结果是每发一条消息就把全部历史重新拉一遍（并持续打断滚动）。
+  const messages = useInterviewStore((s) => s.messages);
+  const currentRound = useInterviewStore((s) => s.currentRound);
+  const maxRounds = useInterviewStore((s) => s.maxRounds);
+  const isStreaming = useInterviewStore((s) => s.isStreaming);
+  const isEnded = useInterviewStore((s) => s.isEnded);
+
   const [showDiagnosis, setShowDiagnosis] = useState(false);
   const [assessing, setAssessing] = useState(false);
   const [roundsLeft, setRoundsLeft] = useState<number | null>(null);
@@ -23,7 +32,7 @@ export default function InterviewPage() {
   const [error, setError] = useState<string | null>(null);
   const chatEndRef = useRef<HTMLDivElement>(null);
 
-  // Load messages on mount
+  // Load session + messages on mount
   useEffect(() => {
     let cancelled = false;
     const token = localStorage.getItem('token');
@@ -32,12 +41,14 @@ export default function InterviewPage() {
       return;
     }
 
-    getMessages(sessionId)
-      .then((res) => {
+    // 会话信息与消息一起取：max_rounds 只能来自后端，缺了就会显示成占位值。
+    Promise.all([getSession(sessionId), getMessages(sessionId)])
+      .then(([sess, res]) => {
         if (cancelled) return;
-        store.reset();
+        const s = useInterviewStore.getState();
+        s.setSession(sessionId, sess.max_rounds);
         for (const msg of res.messages) {
-          store.addMessage(msg);
+          s.addMessage(msg);
         }
         setLoading(false);
       })
@@ -48,27 +59,34 @@ export default function InterviewPage() {
       });
 
     return () => { cancelled = true; };
-  }, [sessionId, navigate, store]);
+  }, [sessionId, navigate]);
 
-  // Auto-scroll on new messages
+  // 只在用户本来就在底部时才自动跟随。否则流式期间每来一个 token 都会
+  // 把他手动向上翻看历史的动作拽回底部——看起来就像"划不上去"。
+  const scrollBoxRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
-    chatEndRef.current?.scrollIntoView({ behavior: 'smooth' });
-  }, [store.messages]);
+    const box = scrollBoxRef.current;
+    if (!box) return;
+    const nearBottom = box.scrollHeight - box.scrollTop - box.clientHeight < 120;
+    if (nearBottom) {
+      chatEndRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    }
+  }, [messages]);
 
   const handleSend = useCallback(async (content: string) => {
-    if (store.isStreaming || store.isEnded) return;
+    if (isStreaming || isEnded) return;
 
     setError(null);
-    store.addMessage({
+    useInterviewStore.getState().addMessage({
       id: Date.now(),
       session_id: sessionId,
       role: 'student' as const,
       content,
-      round_num: store.currentRound + 1,
+      round_num: currentRound + 1,
       created_at: new Date().toISOString(),
     });
 
-    store.setStreaming(true);
+    useInterviewStore.getState().setStreaming(true);
 
     try {
       await sendMessage(
@@ -77,16 +95,19 @@ export default function InterviewPage() {
         (event, data) => {
           switch (event) {
             case 'token':
-              store.appendToken(data.token as string);
+              useInterviewStore.getState().appendToken(data.token as string);
               break;
             case 'exam':
-              store.appendExam(data.content as string);
+              useInterviewStore.getState().appendExam(data.content as string);
+              break;
+            case 'data_gap':
+              useInterviewStore.getState().appendSystem(data.message as string);
               break;
             case 'limit_warning':
               setRoundsLeft(data.remaining_rounds as number);
               break;
             case 'error':
-              store.setStreaming(false);
+              useInterviewStore.getState().setStreaming(false);
               setError(data.message as string);
               break;
           }
@@ -94,12 +115,12 @@ export default function InterviewPage() {
       );
     } catch (e) {
       if ((e as Error).name !== 'AbortError') {
-        store.setStreaming(false);
+        useInterviewStore.getState().setStreaming(false);
         setError(`发送失败：${(e as Error).message}`);
       }
     }
-    store.setStreaming(false);
-  }, [sessionId, store]);
+    useInterviewStore.getState().setStreaming(false);
+  }, [sessionId, currentRound]);
 
   const handleDiagnosisSubmit = async (diagnosis: DiagnosisSubmit) => {
     setAssessing(true);
@@ -116,7 +137,7 @@ export default function InterviewPage() {
   const handleEndSession = async () => {
     try {
       await endSession(sessionId);
-      store.setEnded();
+      useInterviewStore.getState().setEnded();
       setShowDiagnosis(true);
     } catch (e) {
       setError(`结束会话失败：${(e as Error).message}`);
@@ -135,7 +156,7 @@ export default function InterviewPage() {
   }
 
   // ── Error State (no messages) ──
-  if (error && store.messages.length === 0) {
+  if (error && messages.length === 0) {
     return (
       <div className="flex flex-col items-center justify-center h-screen gap-2">
         <p className="text-lg text-[var(--color-error)]">❌ 加载失败</p>
@@ -176,9 +197,9 @@ export default function InterviewPage() {
             </span>
           )}
           <span className="text-xs text-[var(--color-text-secondary)]">
-            第 {store.currentRound}/{store.maxRounds} 轮
+            第 {currentRound}/{maxRounds || '—'} 轮
           </span>
-          {!store.isEnded && (
+          {!isEnded && (
             <button
               onClick={handleEndSession}
               className="px-3.5 py-1.5 rounded-md text-xs font-medium text-white
@@ -204,22 +225,22 @@ export default function InterviewPage() {
       )}
 
       {/* Messages area */}
-      <div className="flex-1 overflow-y-auto px-5 py-4">
-        {store.messages.map((msg, i) => (
+      <div ref={scrollBoxRef} className="flex-1 min-h-0 overflow-y-auto px-5 py-4">
+        {messages.map((msg, i) => (
           <ChatBubble
             key={msg.id === -1 ? `stream-${i}` : msg.id}
             role={msg.role}
             content={msg.content}
-            isStreaming={msg.id === -1 && store.isStreaming}
+            isStreaming={msg.id === -1 && isStreaming}
           />
         ))}
         <div ref={chatEndRef} />
       </div>
 
       {/* Round warning */}
-      {!store.isEnded && roundsLeft !== null && roundsLeft <= 2 && (
+      {!isEnded && roundsLeft !== null && roundsLeft <= 2 && (
         <Alert type="warning" className="rounded-none border-l-0 text-center">
-          已达到最大问诊轮次 ({store.maxRounds})，请提交病例诊断记录。
+          已达到最大问诊轮次 ({maxRounds})，请提交病例诊断记录。
         </Alert>
       )}
 
@@ -231,11 +252,11 @@ export default function InterviewPage() {
       ) : (
         <ChatInput
           onSend={handleSend}
-          disabled={store.isStreaming || store.isEnded}
+          disabled={isStreaming || isEnded}
           placeholder={
-            store.isStreaming
+            isStreaming
               ? '患者正在输入...'
-              : store.isEnded
+              : isEnded
                 ? '问诊已结束 — 点击上方"结束问诊"提交诊断'
                 : '输入你的问诊问题，按 Enter 发送'
           }

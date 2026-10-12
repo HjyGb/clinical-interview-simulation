@@ -23,7 +23,27 @@ FACT_SELECTOR_PROMPT: str | None = None
 # `unknown` = 问的是患者本人的情况，但事实清单里没有对应条目（家族史/饮酒…）。
 # 与 `meta`（问的根本不是患者的事）区分开：两者都不给事实，但患者该做的反应不同。
 # `exam` = 学生要检查/化验/影像的客观结果。不由患者回答，转给检查模块（见 exam_module）。
-VALID_QUESTION_TYPES = {"open", "targeted", "meta", "unknown", "exam"}
+VALID_QUESTION_TYPES = {"open", "targeted", "meta", "unknown", "exam", "explain"}
+
+# `explain` = 学生在**向患者交代**（解释病情/计划、交代注意事项），不是在问。
+# 医院 S01 第 12 步的期望依据就是 [P03]——即"学员解释完之后，患者该更新理解"。
+# 没有这个类型时，这类陈述会被塞进 `meta`，患者就去回避了（实测踩过，见
+# docs/simulation-quality-plan.md §1.1）。
+EXPLAIN_QUESTION_TYPE = "explain"
+
+# `unknown` = 问的是患者本人的事，但病例里根本没设定。
+# 医院规则（_docx.txt:83）：这种情况**由控制器说明"模拟资料不足"**，
+# 不能让患者假装记不清。见 patient_agent 的 data_gap 分支。
+UNKNOWN_QUESTION_TYPE = "unknown"
+
+# 那一句话就是控制器的说明，不是患者台词。
+DATA_GAP_MESSAGE = (
+    "模拟资料不足：本病例未设定这项信息。"
+    "未设定不等于「没有」或「正常」，也不影响本次练习的评定。"
+)
+
+# 学员在解释时，患者要做的是"更新理解"，而不是复述事实——由门控发放 P03。
+EXPLAIN_ALLOWED = ["P03"]
 
 EXAM_QUESTION_TYPE = "exam"
 

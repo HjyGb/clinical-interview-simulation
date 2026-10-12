@@ -182,6 +182,12 @@ async def add_student_message(
         if event_type == "token":
             reply_parts.append(event["data"]["token"])
             yield event
+        elif event_type == "data_gap":
+            # 模拟资料不足由**系统**说明，不是患者说话——单独立一个 role，
+            # 回放和审计才看得出"这句不是这个患者讲的"。
+            reply_role = "system"
+            reply_parts.append(event["data"]["message"])
+            yield event
         elif event_type == "exam":
             # 检查结果是整段文本（数据原文，逐字不流式），由前端单独渲染成检查卡片
             reply_role = "exam"

@@ -18,7 +18,7 @@ from loguru import logger
 
 from agent import exam_module
 from agent.disclosure import gate, to_generator_facts
-from agent.fact_selector import ERROR_QUESTION_TYPE, EXAM_QUESTION_TYPE, select_facts
+from agent.fact_selector import DATA_GAP_MESSAGE, UNKNOWN_QUESTION_TYPE, ERROR_QUESTION_TYPE, EXAM_QUESTION_TYPE, select_facts
 from agent.persona import DEFAULT_PERSONA, PersonaConfig
 from agent.response_generator import generate_response
 
@@ -122,6 +122,19 @@ async def process_message(
             "reason": selector_result.get("reason", ""),
         },
     }
+
+    if selector_result["question_type"] == UNKNOWN_QUESTION_TYPE:
+        # 医院原文（_docx.txt:83）：「问及未设定事实时标记 NEEDS_CASE_COMPLETION，
+        # 由控制器说明模拟资料不足；**不能把病例缺失默认成患者否认或患者记不清**。」
+        # 所以这里**不出患者台词**——"你喝不喝酒"这种事患者本人清楚得很，
+        # 让他装糊涂既不像真人，也把"病例没设"悄悄变成了"患者记不清"。
+        yield {"event": "data_gap",
+               "data": {"message": DATA_GAP_MESSAGE,
+                        "question_type": UNKNOWN_QUESTION_TYPE}}
+        yield {"event": "done",
+               "data": {"question_type": UNKNOWN_QUESTION_TYPE,
+                        "asked_facts": [], "disclosed": []}}
+        return
 
     # ── Step 2: Disclosure gate (pure Python) ──────────────────
     disclosure = gate(case_data, selector_result)

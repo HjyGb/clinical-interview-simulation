@@ -50,8 +50,9 @@ export interface SessionInfo {
 export interface ChatMessage {
   id: number;
   session_id: number;
-  // exam = 检查结果。不是患者说的话，单独渲染成检查卡片。
-  role: 'student' | 'patient' | 'exam';
+  // exam = 检查结果；system = 系统说明（如「模拟资料不足」）。
+  // 后两者都不是患者说的话，单独渲染，免得和患者气泡混淆。
+  role: 'student' | 'patient' | 'exam' | 'system';
   content: string;
   round_num: number;
   created_at: string;

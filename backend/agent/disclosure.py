@@ -18,7 +18,13 @@ Replaces `info_retriever` (INTENT_FIELD_MAP / TIER_ALLOWED_SECTIONS).
 
 from loguru import logger
 
-from agent.fact_selector import ERROR_QUESTION_TYPE, OPEN_QUESTION_DEFAULT, build_facts_catalog
+from agent.fact_selector import (
+    ERROR_QUESTION_TYPE,
+    EXPLAIN_ALLOWED,
+    EXPLAIN_QUESTION_TYPE,
+    OPEN_QUESTION_DEFAULT,
+    build_facts_catalog,
+)
 
 
 def gate(case_data: dict, selector_result: dict) -> dict:
@@ -46,6 +52,12 @@ def gate(case_data: dict, selector_result: dict) -> dict:
         # 真正的防线是数据边界——D/DD/T/G/R 根本不在 case_data 里，
         # 所以即便是 meta，模型也无从泄露，只是"答不上来"。
         allowed_ids: list[str] = []
+    elif question_type == EXPLAIN_QUESTION_TYPE:
+        # 学员在向患者解释/告知。患者此刻要做的不是"回答事实"，而是"更新理解"（P03）：
+        # 复述实际听到的要点、对没听懂的术语发问、保留自己的担忧。所以这里放行 P03，
+        # 不给任何 H——患者不该借机把病史倒出来。
+        # 医院 S01 第 12 步的依据就是 [P03]，这条是照它的设计来的。
+        allowed_ids = [i for i in EXPLAIN_ALLOWED if i in catalog]
     elif question_type == "open":
         # 开放式问诊：按脚本给 H01–H04，再并入 selector 额外点中的（去重、保序）
         allowed_ids = [i for i in OPEN_QUESTION_DEFAULT if i in catalog]

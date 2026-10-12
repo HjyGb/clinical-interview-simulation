@@ -25,7 +25,9 @@ Key docs:
 | `docs/architecture-current.md` | **Current-state entry point** — roles, data flow, prompts, SSE, known gaps |
 | `docs/patient-simulation-dev-plan.md` | Construction record M1–M7 (patient sim) + S1 (scoring data) — per-phase changes and "actual vs expected" |
 | `docs/scoring-system-design.md` | **Scoring design** — R01–R14 framework, why LLM judges anchors but code scores, data-extraction plan |
-| `docs/scoring-dev-plan.md` | **Scoring construction record** — S1–P3 done, P4–P7 pending; the assessment module's own plan (kept separate from the patient-sim one) |
+| `docs/scoring-dev-plan.md` | **Scoring construction record** — S1–P7 done; the assessment module's own plan |
+| `docs/simulation-quality-plan.md` | **Patient-side naturalness / P03 / sim-vs-scoring alignment** — Q1–Q6 plus a prompt & orchestration audit (§6); includes the L1 metric methodology for fuzzy improvements |
+| `docs/hospital-open-questions.md` | **Open questions for the hospital** — each item annotated with the phase / doc / section it came from |
 | `docs/case-data-schema.md` | **Case data template v2.2** — field tables, validation rules V1–V7 |
 | `docs/data-requirements.md` | Why the data has the shape it does (four-level label hierarchy) |
 | `docs/case-data-structure.md` | The hospital docx's own numbering system (H/P/E/D/R/B/S/K/V) |
@@ -83,7 +85,7 @@ Full current-state description: [docs/architecture-current.md](docs/architecture
 
 `patient_agent.process_message()` yields SSE events:
 
-1. **`fact_selector.select_facts()`** — LLM (lite, `temperature=0`). Returns `{question_type, asked_facts[], reason}`. `question_type ∈ open | targeted | unknown | meta | exam | error`. Yields an `intent` event.
+1. **`fact_selector.select_facts()`** — LLM (lite, `temperature=0`). Returns `{question_type, asked_facts[], reason}`. `question_type ∈ open | targeted | unknown | meta | exam | explain | error`. Yields an `intent` event.
 2. **Exam branch** — if `question_type == "exam"`, hand off to `exam_module` and return.
 3. **`disclosure.gate()`** — **pure Python**. Turns `asked_facts` into this turn's `allowed_facts`, records the trace. `open` expands to H01–H04; `unknown`/`meta`/`error` allow nothing.
 4. **`response_generator.generate_response()`** — LLM (pro, `temperature=0.3`, streaming).
@@ -135,7 +137,9 @@ The old post-hoc fact verifier is **gone**: it ran after tokens were streamed, s
 
 ### SSE contract
 
-`POST /api/v1/sessions/{id}/messages` returns `text/event-stream`. Events: `intent`, `token` (many), `exam`, `done`, `limit_warning`, `error`. The frontend parses these by hand in `apiPostSSE` (`frontend/src/api/client.ts`), so adding an event type means touching the backend `yield`, that parser, **and** `interviewStore.ts`.
+`POST /api/v1/sessions/{id}/messages` returns `text/event-stream`. Events: `intent`, `token` (many), `exam`, `data_gap`, `done`, `limit_warning`, `error`.
+
+`data_gap` = the hospital's `NEEDS_CASE_COMPLETION`: the student asked about something the case never set. **The patient does not speak** — the *controller* says so (`_docx.txt:83` forbids making the patient feign forgetfulness). It persists as `role="system"`, not `patient`. The frontend parses these by hand in `apiPostSSE` (`frontend/src/api/client.ts`), so adding an event type means touching the backend `yield`, that parser, **and** `interviewStore.ts`.
 
 ### Rounds, memory, and the disclosure trace
 
@@ -186,6 +190,8 @@ Four standalone scripts, run from the repo root (they `chdir` to `backend/` them
 | `scripts/verify_scoring_isolation.py` | **The answer key can't reach the patient or the student** (LLM stubbed, no real calls) | 5/5 checks, I1–I5 |
 | `scripts/run_scoring_deterministic_tests.py` | Sub-anchor decomposition, aggregation, R01–R04 (pure Python) | 76/76 |
 | `scripts/run_scoring_llm_tests.py` | R05–R14 LLM judging — discrimination (good vs empty), evidence enforcement, safety channel | 8/8 (EN01/MU01/SU01) |
+| `scripts/run_s01_s02_tests.py` | **S01/S02 multi-turn regression** — the hospital's continuity spec (B tests reset every turn and can't catch these) | 25/25 (EN01) |
+| `scripts/measure_sim_quality.py` | **L1 hard metrics** (template-reproduction / repeat / boundary) from a saved run — no LLM calls | M1 16.7% → 5.6% |
 | `scripts/run_scoring_report.py` | **Prints a full R14 report for human review** (not an assertion) | EN01/MU01 good/empty artefacts in `data/tests/` |
 
 B06 is excluded from ID scoring: its `依据` means "the whole fact base must not be contradicted", not "these are the facts being asked about".
@@ -209,3 +215,5 @@ B06 is excluded from ID scoring: its `依据` means "the whole fact base must no
 - `medical_records.csv` must never be committed (`data/` and `*.db` are gitignored).
 - Login **auto-registers** any unknown username as a `student` — there is no registration endpoint or invite check.
 - **Failures must look like failures.** Never let an LLM fallback return something that reads as a legitimate business value; the selector uses `question_type: "error"`, deliberately outside `VALID_QUESTION_TYPES`.
+- **Run a new checker against known-good samples before trusting a red result.** This project has been bitten four separate times by a *checker* being wrong while the data was fine — substring matching that read a question ("有没有拍过") as an assertion, an event type not collected, a leak pattern that flagged the patient quoting the attacker back. When a new check goes red, suspect the check first.
+- **In prompts: give short concrete examples of what counts as a violation, not canned sentences to say.** Concrete negative examples measurably change model behaviour (5/5 → 0/5 invention on one probe); a canned reply gets replayed verbatim in the wrong situation.

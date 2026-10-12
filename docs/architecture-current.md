@@ -65,9 +65,14 @@ backend/agent/          LLM 核心（不碰数据库，只收 dict）
 |---|---|---|---|
 | `open` | 学生请患者不受限地自述 | H01–H04 | 自然叙述一段 |
 | `targeted` | 针对性追问（**必须至少命中一条事实**） | 命中的事实 | 照给 |
-| `unknown` | 问的是患者本人的事，但清单里没有（家族史、饮酒…） | 无 | **"没太注意"**，不得说成"没有" |
+| `unknown` | 问的是患者本人的事，但清单里没有（家族史、饮酒…） | 无 | **患者不回答**：由控制器出 `data_gap`「模拟资料不足」（见 §4.2） |
 | `meta` | 与患者本人无关（要后台答案、让你别扮演…） | 无 | 患者口吻回避，然后继续正常对话 |
 | `exam` | 要求出具检查/化验/影像结果 | — | 转检查模块 |
+| `explain` | 学员在**向患者交代**病情/计划/注意事项（陈述而非提问） | P03 | 更新理解：复述要点、**追问没听懂的术语**、保留担忧 |
+
+> `unknown` 的处理依据医院原文（`_docx.txt:83`）：「问及未设定事实时标记 `NEEDS_CASE_COMPLETION`，
+> **由控制器说明模拟资料不足**；不能把病例缺失默认成患者否认**或患者记不清**」。
+> 所以不出一句患者台词——让他装糊涂既不像真人，也把"病例没设"混同成了"患者记不清"。
 | `error` | **上游调用失败**（刻意不在合法类型内） | 无 | "没听清，能再说一遍吗" |
 
 ### 3.2 检查模块（`exam_module.py`）
@@ -120,6 +125,7 @@ POST /api/v1/sessions/{id}/messages  {content}
 | `intent` | `{question_type, asked_facts, [exam_ids], [reason]}` | 每次都有 |
 | `token` | `{token}` — 多个 | 患者回答（流式） |
 | `exam` | `{exam_ids, subitem_keys, content}` | 检查结果（整段，不流式） |
+| `data_gap` | `{message, question_type}` | **模拟资料不足**（问的是病例没设定的信息）。患者**不说话**，由控制器说明 |
 | `done` | `{round, question_type, disclosed, exam_ids, subitem_keys}` | 每次都有 |
 | `limit_warning` | `{remaining_rounds, message}` | 剩 ≤2 轮时 |
 | `error` | `{message}` | 轮次超限 / 会话失效 |
@@ -171,7 +177,7 @@ data/scoring/rubric_common.json  ← 册前共同 1/0 锚点 + 全局规则
 | `users` | username / password(bcrypt) / role。**登录会自动注册**未知用户名 |
 | `cases` | title(中性编号,如 EN01) / department / difficulty / **data** / **exam_data** / **answer_key** / **scoring_rubric** / status |
 | `sessions` | user_id / case_id / persona / status / **max_rounds=25** / started_at / ended_at |
-| `messages` | session_id / **role(student\|patient\|exam)** / content / round_num / intent / **disclosed** / fact_verify(废弃) |
+| `messages` | session_id / **role(student\|patient\|exam\|system)** / content / round_num / intent / **disclosed** / fact_verify(废弃) |
 | `assessments` | session_id / **report**（14 项 + 视图 + 可评上限 + 安全标记）/ raw_total / comment / student_report |
 
 **没有 Alembic**：改模型必须删库重建（`rm backend/data/app.db && python ../scripts/seed_db.py`）。

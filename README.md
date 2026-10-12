@@ -286,7 +286,6 @@ Clinical Interview Simulation/
 │   └── project-requirements-overview.md   # 原 PRD
 ├── old_docs/                       # 归档：开工前架构设计、agent 改造提案、旧路线图、评分标准、persona、前端计划
 ├── local/                          # 本地开发资源
-│   └── FRONTEND_STYLING_GUIDE.md   # 前端样式参考文档
 ├── memory/                         # Claude Code 持久记忆
 ├── .claude/                        # Claude Code 配置
 ├── .gitignore
@@ -580,7 +579,6 @@ python scripts/verify_exam_coverage.py        # 检查模块逐条需求核对
 | [模型选型](docs/model-selection.md) | 三种模型角色、当前选型、真正落地所需规模 |
 | [项目需求总览](docs/project-requirements-overview.md) | 原 PRD：背景、用户画像、功能需求 |
 | [归档文档](old_docs/) | 开工前架构设计、agent 改造提案、旧路线图、评分标准、persona、前端计划、会议准备 |
-| [前端样式参考](local/FRONTEND_STYLING_GUIDE.md) | 设计系统：颜色、排版、组件、动画、布局 |
 
 ---
 

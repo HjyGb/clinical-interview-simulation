@@ -28,6 +28,19 @@ export default function ChatBubble({ role, content, isStreaming }: Props) {
     );
   }
 
+  // 系统说明：不是患者说的话，居中、弱化，避免被当成角色的台词
+  if (role === 'system') {
+    return (
+      <div className="flex mb-4 justify-center">
+        <div className="max-w-[85%] px-3.5 py-2 text-xs leading-relaxed whitespace-pre-wrap break-words
+                        text-[var(--color-text-secondary)] bg-amber-50/70
+                        border border-dashed border-amber-300 rounded-lg">
+          {content}
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div
       className={`flex mb-4 ${isStudent ? 'justify-end' : 'justify-start'}`}

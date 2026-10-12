@@ -12,6 +12,7 @@ interface InterviewState {
   addMessage: (msg: ChatMessage) => void;
   appendToken: (token: string) => void;
   appendExam: (content: string) => void;
+  appendSystem: (content: string) => void;
   setStreaming: (v: boolean) => void;
   setEnded: () => void;
   reset: () => void;
@@ -21,7 +22,9 @@ export const useInterviewStore = create<InterviewState>((set, get) => ({
   sessionId: null,
   messages: [],
   currentRound: 0,
-  maxRounds: 12,
+  // 0 = 未知。真实值只能来自会话接口的 max_rounds，**不要在这里写死轮数**——
+  // 写死过一次 12，导致界面一直显示「第 15/12 轮」（见 CLAUDE.md 的注意点）。
+  maxRounds: 0,
   isStreaming: false,
   isEnded: false,
 
@@ -77,14 +80,31 @@ export const useInterviewStore = create<InterviewState>((set, get) => ({
       ],
     })),
 
+  // 系统说明（模拟资料不足）：整段文本、不流式、不计入轮次
+  appendSystem: (content) =>
+    set((s) => ({
+      messages: [
+        ...s.messages,
+        {
+          id: -1,
+          session_id: s.sessionId || 0,
+          role: 'system',
+          content,
+          round_num: s.currentRound,
+          created_at: new Date().toISOString(),
+        },
+      ],
+    })),
+
   setStreaming: (v) => set({ isStreaming: v }),
   setEnded: () => set({ isEnded: true }),
+  // 清掉一次会话的**瞬时**状态。maxRounds 是会话元数据，不在这里重置——
+  // 它由 setSession 从后端带进来，重置它只会把真实轮数抹掉。
   reset: () =>
     set({
       sessionId: null,
       messages: [],
       currentRound: 0,
-      maxRounds: 12,
       isStreaming: false,
       isEnded: false,
     }),
